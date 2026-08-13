@@ -1,0 +1,89 @@
+{
+  "schema": "emmy-noether-ja-publication-receipt/1.0",
+  "observed_at": "2026-08-13T17:21:53.4296963+02:00",
+  "owner_task": "019fce2f-fd80-7791-9cc9-fbaf58d984b6",
+  "source_authority": {
+    "pointer_id": "NOETH-DE-AUTH-v051-20260811",
+    "pointer_sha256": "2B36556DCF123F19281AB6BF36CE6E46BEE8ADDBF37DA682032372306564D0DE",
+    "body_id": "NOETH-DE-ED-0014",
+    "body_bytes": 2154011,
+    "body_sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58"
+  },
+  "japanese_target": {
+    "version": "r10",
+    "root_sha256": "8F09B0F66573391DD39C12FB0BC74F9FD1DB1C24F4CC80F79D4F9D430C6E3B92",
+    "editable_set_sha256": "7662AEC5E211163816EF28BCC3A9432AEB5B24D925E088BC5D4C624B6941FEB5",
+    "original_pdf_bytes": 2940503,
+    "original_pdf_pages": 421,
+    "original_pdf_sha256": "1194204B23B02A302E925590DD5A8D411F7FC308A9E12F763C485674C6CB0E25"
+  },
+  "zenodo": {
+    "record_id": 21921485,
+    "published_at": "2026-08-13T17:19:06.016346+02:00",
+    "stable_language_concept_doi": "10.5281/zenodo.21921484",
+    "exact_version_doi": "10.5281/zenodo.21921485",
+    "record_url": "https://zenodo.org/records/21921485",
+    "direct_reader_preview": "https://zenodo.org/records/21921485/files/00_EMMY_NOETHER_JA_COMPLETE_LINKED_READER.pdf",
+    "direct_reader_download": "https://zenodo.org/records/21921485/files/00_EMMY_NOETHER_JA_COMPLETE_LINKED_READER.pdf?download=1",
+    "metadata_payload_sha256_before_publication": "9B1AED73A12B97FC2C896D26126FF25AECB7E88E3093FA9B194CACD463E0EF55",
+    "anonymous_sha256_readback": "PASS_ALL_4"
+  },
+  "github": {
+    "repository": "https://github.com/KokunoYumeto/emmy-noether-ja",
+    "payload_commit": "ec2770bf7bec71a6cec1cb96d3ac3df0a833aef8",
+    "tag": "ja-r10-20260813",
+    "release_id": 370012755,
+    "release_url": "https://github.com/KokunoYumeto/emmy-noether-ja/releases/tag/ja-r10-20260813",
+    "release_asset_digest_check": "PASS_ALL_4"
+  },
+  "public_files": [
+    {
+      "name": "00_EMMY_NOETHER_JA_COMPLETE_LINKED_READER.pdf",
+      "bytes": 3221983,
+      "sha256": "96028566D3CE811EB31FA520918060EA18DF43ACA9390099E643411303580A16",
+      "zenodo_anonymous_readback": "match",
+      "github_release_digest": "match"
+    },
+    {
+      "name": "01_EMMY_NOETHER_JA_EDITABLE_SOURCES.zip",
+      "bytes": 1167130,
+      "sha256": "F7D3230551E523EE977EC39EA0CC85D57F39120A2F98A7F2B96B42A9FC701B2D",
+      "zenodo_anonymous_readback": "match",
+      "github_release_digest": "match"
+    },
+    {
+      "name": "02_EMMY_NOETHER_JA_EVIDENCE_AND_PROVENANCE.zip",
+      "bytes": 38193122,
+      "sha256": "66AACEB436A2AFAF5682A901B8CBA96B9F0761C7A5195F777F1AA650012AA278",
+      "zenodo_anonymous_readback": "match",
+      "github_release_digest": "match"
+    },
+    {
+      "name": "03_EMMY_NOETHER_JA_SHA256_MANIFEST.txt",
+      "bytes": 1516,
+      "sha256": "311B6AD9DA2F93710AAA08DBAD81C557C5D1BB02F3D918575DCEDECA05738F37",
+      "zenodo_anonymous_readback": "match",
+      "github_release_digest": "match"
+    }
+  ],
+  "global_hub": {
+    "stable_concept_doi": "10.5281/zenodo.20412587",
+    "current_record_id": 21910733,
+    "current_exact_doi": "10.5281/zenodo.21910733",
+    "metadata_only_update_at": "2026-08-13T17:21:26.161241+02:00",
+    "files_changed": false,
+    "version_doi_changed": false,
+    "description_before_sha256": "1DD4C425B5001A7D568FD233B290D12212BBB3455F24F11B6427E2832AA9B0D0",
+    "description_after_sha256": "9088390286EBF854B2FDBFD35508B6A4A11448CE626857EC3C5EB3617CD29B70",
+    "has_part_relation": "10.5281/zenodo.21921484"
+  },
+  "qa_disclosure": {
+    "complete_corpus_coverage": true,
+    "defect_free_claim": false,
+    "final_r10_independent_return_present": false,
+    "pending_formula_or_meaning_candidate_findings": 4,
+    "tounicode_issue_open": true,
+    "clean_day_gate": "0/3",
+    "human_review_required_for_publication": false
+  }
+}
