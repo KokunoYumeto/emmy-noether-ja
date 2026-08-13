@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "version": "2026-08-13 r10",
+  "source_replay": "PASS for pointer/body identity, complete 58-span custody, lineage, coverage, and bounded ED0011-to-ED0014 delta; independent r10 semantic audit did not freeze a final return",
+  "model_or_agent_checks": "Earlier r03-r08 checker returns are preserved. The r10 checker independently replayed custody/lineage/coverage and reported four inherited semantic/formula candidate defects before its archived session stopped without ja_r10.csv or ja_r10.md.",
+  "deterministic_build": "PASS: the exact r10 source produced byte-identical 421-page PDFs in two fixed-epoch serial XeLaTeX builds; SHA-256 1194204B23B02A302E925590DD5A8D411F7FC308A9E12F763C485674C6CB0E25.",
+  "publication_reader_build": "PASS: invariant publication cover plus exact r10 body re-exported reproducibly as a 422-page reader; hash is recorded in ARTIFACT_SHA256.tsv and the public manifest.",
+  "rendered_inspection": "The independent r08 checker recorded 421/421 visual QA for the predecessor body. The r10 producer did not claim rendered-page approval. The publication cover and first body page were freshly rendered and inspected for packaging only.",
+  "extraction": "OPEN: CJK-NOETH-EXT-SYS-001; classic math subsets lack ToUnicode and produce disallowed control characters in extraction.",
+  "clean_day_gate": "0/3 after the ED0014/r10 authority and target change; publication does not convert this synchronization gate into a clean-audit claim.",
+  "artifact_manifest": "evidence/ARTIFACT_SHA256.tsv",
+  "unresolved_items": "evidence/UNRESOLVED_ITEMS.tsv",
+  "human_review_required": false,
+  "release_closed": true,
+  "closure_reason": "Exact corpus coverage and artifact identity are closed for this disclosed research snapshot. Semantic/formula, extraction, and multi-day synchronization limitations remain explicit and are not represented as passed."
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "declared_object_scope": "The maintained complete Emmy Noether mathematical-paper corpus, including the Post-P43 material bound by the cumulative German authority",
+  "original_or_source_title": "Emmy Noether: canonical working German corpus",
+  "original_or_source_edition": "NOETH-DE-AUTH-v051-20260811 / NOETH-DE-ED-0014",
+  "original_or_source_identifier": "10.5281/zenodo.20412587",
+  "source_artifact_path": "03_projects/noether/07_german_canon_control/candidates/ED0014/noether.tex",
+  "source_artifact_bytes": 2154011,
+  "source_artifact_sha256": "EE226847656BC4D65EDDA9E9BF9BB1D25797C0C6D672D267D94A97FD88C7AD58",
+  "authority_pointer_path": "03_projects/noether/07_german_canon_control/CURRENT_GERMAN_AUTHORITY_POINTER.json",
+  "authority_pointer_id": "NOETH-DE-AUTH-v051-20260811",
+  "authority_pointer_bytes": 152755,
+  "authority_pointer_sha256": "2B36556DCF123F19281AB6BF36CE6E46BEE8ADDBF37DA682032372306564D0DE",
+  "coverage_and_topology": "All 58 frozen source spans cover ED0014 physical LF lines 1-24146 exactly once; the Japanese target consists of reader.tex plus t0.tex through t7.tex and one exact rosette asset.",
+  "japanese_r10_root_sha256": "8F09B0F66573391DD39C12FB0BC74F9FD1DB1C24F4CC80F79D4F9D430C6E3B92",
+  "japanese_r10_editable_set_sha256": "7662AEC5E211163816EF28BCC3A9432AEB5B24D925E088BC5D4C624B6941FEB5",
+  "authority_hierarchy": [
+    "Exact current pointer bytes",
+    "Resolved ED0014 body bytes",
+    "Frozen r10 span manifest and change ledger",
+    "Primary-print evidence recorded by the German authority owner"
+  ],
+  "excluded_scope": [
+    "SGA",
+    "Japanese works outside the maintained Noether corpus",
+    "Any claim of defect-free critical-edition status"
+  ]
+}

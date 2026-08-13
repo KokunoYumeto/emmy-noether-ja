@@ -1,0 +1,258 @@
+\clearpage
+\subsection*{代数関数に関する Noether の基本定理のための必要十分な重複度条件：H. Kapferer}\label{notwendige-und-hinreichende-multiplizitaetsbedingungen-zum-noetherschen-fundamentalsatz-der-algebraischen-funktionen}
+
+\begin{center}
+（E. Noether との共同補遺を付す）
+
+Math. Ann. 97, (1927), S. 559--567
+\end{center}
+
+以下では、Noether の基本定理を必要十分な重複度条件という形に強める\srcfn{1)}{詳しい叙述については、A. Loewy（Freiburg i. Br.）の企画による Heidelberger Akademie-Berichte 1927 の特別号「Beiträge zur Algebra」に掲載された、同名の私の論文を参照されたい。この特別号には複数の著者の論文が収められている。}。ここおよび以下ではイデアル論の概念や定理を用いないが、この定理のイデアル論的理解\srcfn{2)}{例えば B. L. van der Waerden, ``Zur Nullstellentheorie der Polynomideale''. Math. Annalen 96 (1926), S. 203 を参照。}に従って、Noether の基本定理に含まれる一連の事実を、次の二つの独立した命題\srcfn{3)}{引用した論文の \S 1 では、二つの命題を個別かつ直接に、すなわちイデアル論的概念を用いずに証明した。}にまとめる。
+
+\textbf{定理 Ia.} \(x,y\) の互いに素な二多項式 \(\varphi,\psi\)（係数は任意の複素数）の各共通零点 \(x=\alpha, y=\beta\) に対して、最小の正整数 \(\varrho\) が存在し、加群 \((\varphi,\psi,p^\varrho)\) が表すすべての多項式の集合は、\(\sigma>\varrho\) を任意の整数とした加群 \((\varphi,\psi,p^\sigma)\) が表す集合とちょうど同じである。ここで \(p=(x-\alpha,y-\beta)\) である\srcfn{4)}{文字 \(p\) と \(q\) を選んだのは、それらが表す内容が、近年の文献で通常用いられる素イデアル \(p\) および準素イデアル \(q\) の概念と一致することを想起させるためである。}。
+
+\textbf{定理 Ib.} この概念的に一意に定まる多項式集合を \(q\) と表し、また \(s\) 個の異なる零点の第 \(i\) 番目 \(x=\alpha_i, y=\beta_i\) に関する場合には \(q_i\) と表す。このとき、\(x,y\) の所与の多項式 \(K\) が可除性 \(K\equiv0(\varphi,\psi)\) をもつための必要十分条件は、次の \(s\) 個の合同式が同時に満たされることである：
+\[
+K\equiv0(q_1),\quad K\equiv0(q_2),\quad\ldots,\quad K\equiv0(q_s).
+\]
+
+歴史的には、この主題に関する Max Noether の基礎論文の序論\srcfn{5)}{Max Noether, ``Über einen Satz aus der Theorie der algebraischen Funktionen'', Math. Annalen 6 (1872).}を参照すれば、基本定理は次の基本問題を解こうとする努力から生まれた。\emph{\(x,y\) の各所与の多項式 \(K\) について、それが \((\varphi,\psi)\) で割り切れるか否かを判定できなければならない。}すなわち、さらに二つの \(x,y\) の多項式 \(\lambda,\mu\) が存在して、等式
+\[
+K=\lambda\cdot\varphi+\mu\cdot\psi
+\]
+が \(x,y\) の恒等式となるか否かを判定することである。
+
+この問題は Noether の定理によって解かれてはいない。むしろ同定理は、提出された問題をより簡単な問題へ移す、基本的ではあるが一つの\emph{還元}\srcfn{6)}{この還元は、初等整数論から誰もが知る次の還元に比べられる。自然数 \(A\) が自然数 \(B\) で割り切れるという性質は、\(A\) が \(p_1^{a_1}\)、\(p_2^{a_2}\)、\(\ldots\)、\(p_s^{a_s}\) のそれぞれで割り切れることと同値である。ここで \(p_1,p_2,\ldots,p_s\) は \(B=p_1^{a_1}p_2^{a_2}\cdots p_s^{a_s}\) の相異なる素因数である。素数冪に対応するものとして、まさに「準素イデアル」――本文では \(q\) と表す――の概念を理解すべきである。［E. Noether, ``Idealtheorie in Ringbereichen'', Math. Annalen 83 (1921), Einleitung 参照。］}とみなすべきである。そのより簡単な問題とは、各合同式 \(K\equiv0(q)\) が成り立つための必要十分条件を問うことである。では、いつ \(K\equiv0(q)\) なのか。この後者の問いが答えられて初めて、M. Noether の当初の問題も解決される。これが本論文の目的であり、実際に達成される。すなわち、\(K\equiv0(q)\) のために必要十分な、有限個の、実際にも容易に検査できる\emph{重複度条件}を与える。\(K\equiv0(q)\) の十分条件ではあるが必要条件ではない条件は既知で、文献ではしばしば次の形で適用・引用される。
+
+合同式 \(K\equiv0(\varphi,\psi)\) が成り立つためには、\(\varphi=0\)、\(\psi=0\) の各交点が、多項式 \(K\) において「十分」高い重複度で現れることが\emph{十分である}。
+
+この定理は定理 I に特殊場合として含まれる。実際、\(K\) における \(\varrho\) 重点は \(K\equiv0(p^\varrho)\) と同値であり、なおさら \(K\equiv0(\varphi,\psi,p^\varrho)\)、すなわち \(K\equiv0(q)\) である。しかし逆は成り立たない。
+
+予告した問題の解法は、簡潔には次のように特徴づけられる。各 \(q\) には \(t\) 個の\emph{正}整数の系 \((g_1),(g_2),\ldots,(g_t)\) を対応させることができ、加群 \((K,q)\) には同数の\emph{正または負}の整数 \((K_1),(K_2),\ldots,(K_t)\) を対応させることができる。そして次の\emph{主定理}が成り立つ。
+
+\textbf{定理 II.} \emph{\(K\equiv0(q)\) のための必要十分条件は、\(t\) 個の条件}
+\[
+(K_1)\geq(g_1),\quad (K_2)\geq(g_2),\quad\ldots,\quad (K_t)\geq(g_t)
+\]
+\emph{が同時に満たされることである。このとき}
+\[
+(g_1)+(g_2)+\cdots+(g_t)=\mu,
+\]
+\emph{ここで \(\mu\) は \(q\) に対応し、終結式によって定義される交点重複度である。}
+
+証明のため、一般性を失うことなく、\((\varphi,\psi)\) の \(q\) に対応する零点を \(x=0, y=0\) と仮定する。さらに一般に、\(A(x,y)\) が \(x,y\) の任意の多項式\srcfn{7)}{\(A(x,y)\) として有理分数関数 \(C(x,y):D(x,y)\) も許せば、\((A)=(C)-(D)\) となる。この後者の場合、\((A)\) は負の値を取ることもある。}であるとき、記号 \((A)\) は \(A(0,y)\) に因子として \(y\) が何回現れるかを示す数を表すものとする。ただし \(A(0,y)\) が恒等的に消える場合は \((A)=\infty\) と置く。\(q\) に対応する数 \((g_1),(g_2),\ldots,(g_t)\) は、手続の方法論的基礎をなす次の方程式系によって定義される：
+\begin{equation}
+\tag{1}
+\begin{aligned}
+f_1\cdot g_1(0,y):y^{(g_1)}-g_1\cdot f_1(0,y):y^{(g_1)}&=x\cdot h_1,\\
+f_2\cdot g_2(0,y):y^{(g_2)}-g_2\cdot f_2(0,y):y^{(g_2)}&=x\cdot h_2,\\
+&\vdots \qquad\qquad\vdots\qquad\qquad\vdots\\
+f_r\cdot g_r(0,y):y^{(g_r)}-g_r\cdot f_r(0,y):y^{(g_r)}&=x\cdot h_r.
+\end{aligned}
+\end{equation}
+
+これは所与の多項式対 \(\varphi,\psi\) だけから構成される。すなわち多項式 \(f_1,g_1\) は、順序を除けば \(\varphi,\psi\) と同一と定義する。その順序は \((f_1)\geq(g_1)\) となるようにする。この規約を置くとき、そしてそのときに限り、\(h_1\) は整式となる。
+
+多項式 \(f_2,g_2\) は、付帯条件 \((f_2)\geq(g_2)\) のもとで \(h_1,g_1\) と同一と定義する。一般に多項式対 \(f_r,g_r\) は、付帯条件 \((f_r)\geq(g_r)\) のもとで \(h_{r-1},g_{r-1}\) と同一と定義する。
+
+方程式系 (1) は、説明した仕方で無限に続けることができる。しかし主定理のために作る必要があるのは、この系の最初の \(t\) 本の方程式だけであり、\(t\) は次の事実によって定まる。
+
+\textbf{補題 I.} 自然数 \(t\) が存在し［しかも \(t\leqq\mu\)。ここで \(\mu\) は \(\varphi=0,\ \psi=0\) における点 \(x=0, y=0\) の交点重複度である］、(1) により定義される最初の \(t\) 個の数、すなわち \((g_1),(g_2),\ldots,(g_t)\) はすべて\emph{零より大きい}一方、\((g_{t+1})\) およびその後のすべては\emph{零に等しい}。
+
+実際、終結式の積定理を考慮すると、点 \(x=0, y=0\) における \(f_r=0, g_r=0\) の交点重複度は
+\[
+\mu-(g_1)-(g_2)-\cdots-(g_r)
+\]
+に等しい。このことから、\emph{遅くとも \(\mu\) 段階で停止する}ことが従う。同時に
+\begin{equation}
+\tag{2}
+\mu=(g_1)+(g_2)+\cdots+(g_t)
+\end{equation}
+を得る。この公式は、該当する零点が既知ならば、交点重複度を定めるための一般的で有理的、かつ実際にも容易に実行できる方法を与える点で注目に値する。
+
+こうして数 \((g_i)\) がわかれば、数 \((K_i)\) は (1) に対応する次の方程式系によって定まる：
+\begin{equation}
+\tag{3}
+\begin{aligned}
+K_1\cdot g_1(0,y):y^{(g_1)}-g_1\cdot K_1(0,y):y^{(g_1)}&=x\cdot K_2,\\
+K_2\cdot g_2(0,y):y^{(g_2)}-g_2\cdot K_2(0,y):y^{(g_2)}&=x\cdot K_3,\\
+&\vdots \qquad\qquad\vdots\qquad\qquad\vdots\\
+K_r\cdot g_r(0,y):y^{(g_r)}-g_r\cdot K_r(0,y):y^{(g_r)}&=x\cdot K_{r+1}.
+\end{aligned}
+\end{equation}
+
+\(K_1\) は \(K\) と同一と定義する。\(K_2\) が整式となるのは、明らかに \((K_1)\geq(g_1)\) のとき、かつそのときに限る。後者が満たされるならば、さらに \(K_3\) が整式となるのは \((K_2)\geq(g_2)\) のとき、かつそのときに限る。一般に、\(K_r\) がすでに整式であるならば、\(K_{r+1}\) が整式となるのは \((K_r)\geq(g_r)\) のとき、かつそのときに限る。
+
+主定理（定理 II）の証明は、さらに次の補題に基づく。
+
+\textbf{補題 II.} \((f_i,g_i,p^e)=q^{(i)}\) と置けば、無限整数列 \(1,2,\ldots\) の各 \(i\) に対して次の定理が成り立つ。
+
+合同式
+\[
+K_i\equiv0(q^{(i)})
+\]
+のための\emph{必要十分条件は、次の二条件が同時に満たされることである：}
+\[
+(K_i)\geq(g_i)\quad\text{かつ}\quad K_{i+1}\equiv0(q^{(i+1)}).
+\]
+
+補題の証明\srcfn{8)}{「補遺」の注意 I における証明も参照。}は、方程式系 (1) と (3) を組み合わせることによって得られる。補題 I により \(g_{t+1}\) は原点でもはや消えず、したがって加群 \(q^{(t+1)}\) は\emph{すべて}の多項式からなり（単位イデアルであり）、ゆえに \(K_{t+1}\equiv0(q^{(t+1)})\) は自明となる。これを考慮すれば、補題 II を \(t\) 回適用することで主定理が証明される。
+
+\begin{center}
+\rule{4cm}{0.4pt}
+\end{center}
+
+証明は前掲論文に譲り、主定理に二つの補足を付け加える。
+
+\textbf{補足 I.} 主定理の数 \(t\) は、
+\[
+x^\nu\equiv0(q)
+\]
+となる最小の正数 \(\nu\) と一致する\srcfn{9)}{ここでは、Frl. Grete Hermann［``Die Frage der endlich vielen Schritte in der Theorie der Polynomideale''（K. Hentzelt の遺稿定理を利用）、Math. Annalen 95 (1926)］による評価とは対照的に、\emph{正確な}指数が得られる。そこでは、問題設定ははるかに一般的であるものの、上界だけが与えられている。}。
+
+\textbf{補足 II.} 方程式系 (1) と (3)、およびそれらで \(x\) と \(y\) を交換して得る系は、適切に組み合わせれば、\(q\) に「属する」指数 \(\varrho\)、すなわち定理 Ia の最小指数 \(\varrho\) を数値的に正確に定める有理的方法を与える。
+
+E. Bertini\srcfn{10)}{E. Bertini, Math. Annalen 34 (1889).} は \(\varrho\) の一般公式を与えた。しかし、この公式が必ずしも \(\varrho\) の最小値を与えないことは、引用した論文で例 \(\varphi=x^3+y^4;\ \psi=x^2+y^3\) により示される。最後に、Bertini の公式そのものも、われわれの主定理によって新しい仕方で基礎づけられることを述べておく。
+
+\begin{center}
+\rule{4cm}{0.4pt}
+\end{center}
+
+主定理の興味深い\emph{特殊化}は、該当する \(q=(\varphi,\psi,p^e)\) の零点が、二曲線 \(\varphi=0,\ \psi=0\) の少なくとも一方において\emph{単純点}であるという制限的仮定から得られる。例えばそれが \(\psi\) の単純点ならば、主定理の数 \(t\) は\emph{ちょうど} \(\mu\) に等しく、主定理の \(t\) 個の不等式を\emph{一つ}の重複度条件で置き換えられることが示せる。これは次の一般定理を導く。
+
+\textbf{定理 III.} \emph{\(\varphi=0,\ \psi=0\) の\emph{すべての}交点が \(\psi\) において\emph{単純点}であるならば、\(K\) が \(\psi\) と互いに素であると仮定して、合同式 \(K\equiv0(\varphi,\psi)\) が成り立つための\emph{必要十分条件}は、\(K\) がこれらすべての点で消え、しかも曲線対 \(K=0,\ \psi=0\) における各交点重複度が、曲線対 \(\varphi=0,\ \psi=0\) におけるものと少なくとも同じ大きさであることである。}
+
+この定理 III は、さらに特別な理由から注目に値する。すなわち、そこで要求される重複度条件が満たされるか否かは、(1) に基づく公式 (2) とは独立に、有限回の\emph{微分}によって判定できる。このことは、私が 1923 年に立てた次の「定理」\srcfn{11)}{H. Kapferer, ``Über die Multiplizität der Schnittpunkte von zwei algebraischen Kurven''. Jahresber. der D. M.-V. 32 (1923).}を引用すれば直ちに明らかである。
+
+\(A,B\) を \(x,y\) の任意の二つの互いに素な多項式とし、\(P\) を共通点であって\emph{\(B\) の単純点}であるものとする。この点の交点としての重複度が数 \(\mu\) に等しいための必要十分条件は、同じ点の曲線対 \(A'=0, B=0\) における重複度が\emph{ちょうど} \(\mu-1\) であることである。ここで
+\[
+A'=\frac{\partial A}{\partial x}\cdot\frac{\partial B}{\partial y}
+-\frac{\partial A}{\partial y}\cdot\frac{\partial B}{\partial x}.
+\]
+
+\begin{center}
+\rule{4cm}{0.4pt}
+\end{center}
+
+最後に、主定理（定理 II）はわずかな変更によって三変数 \(x,y,z\) の斉次多項式にも移せることを述べておく。この移行は、上の特殊場合には特に簡潔に行われる。すなわち次が示せる。
+
+\textbf{定理 III への補足.} \(\varphi,\psi,K\) を\emph{三}変数の\emph{斉次}多項式と解するときも、定理 III は文言まで含めて全く変更なく成り立つ\srcfn{12)}{三変数の斉次合同式 \(K(x,y,z)\equiv0(\varphi(x,y,z),\psi(x,y,z))\) が成り立つ条件を問う問題は、強く特殊化された仮定のもとではあるが、A. Ostrowski, ``Über die Maxwellsche Erzeugung der Kugelfunktionen'', Jahresb. der D. M.-V. 33 (1925) の研究の中心問題でもある。この論文では、\(\varphi\) がすべて一次因子に分解すること、\(\varphi\) と \(K\) が同じ次数であること、\(\psi=x^2+y^2+z^2\) であることを仮定する。したがって、ここでは \(\psi\) が全く特異点をもたないので、Ostrowski の論文の主定理はわれわれの定理 III の特殊場合とみなせる。}。
+
+\subsection*{E. Noether との共同補遺\srcfn{13)}{イデアル論的解釈は E. Noether により、基礎となる (5) と (6) の証明は H. Kapferer による。}}\label{zusatz-gemeinsam-mit-e.-noether.}
+
+方程式系 (1) は同時に、\emph{\(q\) を法とする完全剰余系を決定する}有理的方法を与える。完全剰余系とは、係数領域 \(\mathsf P\) に関して、\(q\) を法として\emph{線形独立}な\emph{有限個}の剰余類の完全代表系をいう。これによって主定理の証明の各段階が非常に明瞭になる。同時に、副結果として、\emph{終結式重複度 \(\mu\) がイデアル \(q\) の長さと一致する}ことが得られる。
+
+すなわち、それは剰余類環の階数、または \(\mathsf P\) に関して線形独立な剰余類の個数に等しい\srcfn{14)}{一般性を失うことなく、体 \(\mathsf P\) は代数的閉体と仮定する。この範囲では、微分条件を除く先行するすべての定理が実際に成り立つ。\(q\) の長さは、\(p\) から \(q\) へ至るイデアルの組成列の長さとしても定義される。E. Noether, Jahresber. d. d. Math.-Ver. 34 (1925), S. 101（斜め頁付け）を参照。より詳しくは H. Grell, Math. Annalen 97 (1927), S. 529 を参照。二つの重複度数が一致することについて文献にある証明（\(n\) 変数の場合）は非常に複雑であり、最も簡単なのは未刊の Hentzelt の遺稿証明である。}。
+
+完全剰余系は、(1) と補題 II の記号を用いれば次の定理によって特徴づけられる。
+
+\textbf{定理 IV.} \emph{\(q\) を法とする完全剰余系は、次の多項式によって与えられる：}
+\[
+h_t,\ h_ty,\ldots,h_ty^{(g_t)-1};\ \ldots;\
+h_i,\ h_iy,\ldots,h_iy^{(g_i)-1};\ \ldots;\
+h_1,\ h_1y,\ldots,h_1y^{(g_1)-1}.
+\]
+\emph{ここで各 \(h_i,h_iy,\ldots,h_iy^{(g_i)-1}\) は、\(q^{(i)}\) を法とした \(q^{(i+1)}\) の完全剰余系を与える。}
+
+定義から直ちに \(q^{(i+1)}=(q^{(i)},h_i)\)、したがって \(q^{(i)}\equiv0(q^{(i+1)})\) が従う。したがって定理 IV は、次を示せば証明される：
+\begin{equation}
+\tag{4}
+h_i x\equiv0(q^{(i)});\qquad
+h_i y^{(g_i)}\equiv0(q^{(i)})
+\end{equation}
+および
+\begin{equation}
+\tag{5}
+ h_iF(y)\equiv0(q^{(i)})
+ \text{ から }F(y)\equiv0(y^{(g_i)})\text{ が従う。}
+\end{equation}
+
+実際、関係式 (4) は、\(h_i,h_iy,\ldots,h_iy^{(g_i)-1}\) の線形結合が、\(q^{(i)}\) を法とする \(q^{(i+1)}\) の剰余類を尽くすことを述べ、(5) は線形独立性を表す。\(q^{(t+1)}\) は単位イデアルに等しくなる――これはいまや \(q\) の有限長から従う――ので、これから定理 IV の証明が得られ、同時に \(q\) の長さが \((g_1)+\cdots+(g_t)\) に等しく、したがって (2) により終結式重複度と一致することが得られる。
+
+関係式 (4) の第一式は (1) から読み取れる。第二式は次のように得られる。
+
+\(h_ig_i\equiv0(q^{(i)})\) である。したがって (4) の第一関係式により、\(h_ig_i(0,y)\equiv0(q^{(i)})\)、または
+\[
+h_iy^{(g_i)}\cdot(g_i(0,y):y^{(g_i)})\equiv0(q^{(i)})
+\]
+でもある。\(g_i(0,y):y^{(g_i)}\not\equiv0(y)\) であるから、ここから \(h_iy^{(g_i)}\equiv0(q^{(i)})\) が従う。
+
+(5) の証明に先立って、(1) から直ちに読み取れる次の\emph{注意}を述べる。\(f_i\) と \(g_i\) が共通因子としてもちうるのは、\(y\) で割れない \(y\) の多項式 \(d_i(y)\) だけである：
+\[
+f_i=d_i(y)\bar f_i,\qquad g_i=d_i(y)\bar g_i,
+\]
+そして \(\bar f_i\) と \(\bar g_i\) は互いに素である。\(d_i(y)\not\equiv0(p)\) であるから、\(q^{(i)}\) は \((\bar f_i,\bar g_i,p^e)\) にも等しい。さらに、\(q\) の約数として、これは各 \(\sigma\geq\varrho\) について \((\bar f_i,\bar g_i,p^\sigma)\) に等しい。したがって \(q^{(i)}\) は、\((\bar f_i,\bar g_i)\) の原点に属する準素成分である。
+
+\(\gamma_1,\delta_1;\ldots;\gamma_r,\delta_r\) を、\((\bar f_i,\bar g_i)\) の \(x=0, y=0\) と異なる零点とし、\(\tau_1,\ldots,\tau_r\) を \((\bar f_i,\bar g_i)\) の対応する準素成分の指数とする。さらに積
+\[
+P=((x-\gamma_1)+u(y-\delta_1))^{\tau_1}\cdots
+((x-\gamma_r)+u(y-\delta_r))^{\tau_r}
+\]
+において、不定元 \(u\) を \(\mathsf P\) のある元へ特殊化し、\(P\not\equiv0(p)\) が保たれるようにする。\(G(x,y)\) を、特殊化した \(P\) と \(d(y)\) との積に等しいと置けば、\(G(x,y)\not\equiv0(p)\) かつ \(q^{(i)}\cdot G(x,y)\equiv0(f_i,g_i)\) となる。
+
+仮定 \(h_iF(y)\equiv0(q^{(i)})\) から、\(h_iF(y)G(x,y)\equiv0(f_i,g_i)\) が従う。これを (1) と合わせて恒等式の形に書けば、
+\[
+h_iF(y)G=A f_i+B g_i;\qquad
+h_ix=(g_i(0,y):y^{(g_i)})\cdot f_i
+-(f(0,y):y^{(g_i)})g_i.
+\]
+これから
+\[
+\bar f_i(xA-F(y)H)\equiv0(\bar g_i);\qquad
+H=G(x,y)\cdot g_i(0,y):y^{(g_i)}\not\equiv0(p)
+\]
+を得る。
+
+\(\bar f_i\) と \(\bar g_i\) が互いに素であることから、さらに
+\[
+xA-F(y)H\equiv0(\bar g_i)
+\]
+が従う。したがって
+\[
+F(y)H\equiv0(\bar g_i,x)
+\equiv0(\bar g_i,x,p^\sigma)=(y^{(g_i)},x),
+\]
+ゆえに \(F(y)\equiv0(y^{(g_i)})\) である。これで (5)、したがって定理 IV が証明された。
+
+\textbf{注意 I.} 関係式 (4)、(5) および補題 II は、イデアル商の間で互いに相反する関係式\srcfn{15)}{商 \(\mathfrak a:\mathfrak b\) とは、\(\mathfrak b c\equiv0(\mathfrak a)\) となるような多項式 \(c(x,y)\) 全体をいうことは周知である。}として書ける。ここで第二関係式の証明は、同時に補題 II の証明を与える：
+\begin{equation}
+\tag{6}
+q^{(i)}:q^{(i+1)}=(q^{(i)},x)=(y^{(g_i)},x);\qquad
+q^{(i)}:(q^{(i)},x)=q^{(i+1)}.\srcfnmark{16)}
+\end{equation}
+\srcfntext{16)}{互いに相反するこの二関係式のうち一方は、既約イデアルの一般理論により他方を含意する。Macaulay, Modular Systems, Nr. 72 und 73. Cambridge Tracts 19 (1916) を参照。}
+
+第一関係式は (4) と (5) をまとめたものである。第二関係式については、\(x\cdot q^{(i+1)}\equiv0(q^{(i)})\) は (4) で証明済みであり、その逆は (5) と同様に得られることに注意する。\(xM\equiv0(q^{(i)})\) から、上と同じように
+\[
+xMG\equiv0(f_i,g_i);\quad\text{したがって}\quad
+xMG\cdot g_i(0,y):y^{(g_i)}\equiv0(xh_i,g_i)
+\]
+が従う。
+
+定義により \(g_i\not\equiv0(x)\)――\((f_i)\geq(g_i)\)――なので、ここから
+\[
+M\cdot(G\cdot g_i(0,y):y^{(g_i)})
+\equiv0(h_i,g_i)\equiv0(q^{(i+1)}),
+\quad\text{したがって}\quad M\equiv0(q^{(i+1)})
+\]
+を得る。
+
+補題 II の条件が必要であることは、いまや次のように従う。\(K_i\equiv0(q_i)\) から \(K_i(0,y)\equiv0(y^{(g_i)},x)\) が従い、したがって \((K_i)\geq(g_i)\) である。ゆえに (3) により
+\[
+xK_{i+1}\equiv0(q^{(i)});\quad
+\text{したがって――(6) の第二関係式により――}\quad
+K_{i+1}\equiv0(q^{(i+1)}).
+\]
+
+条件が十分であることは直ちに読み取れる。補題 II を有限回適用すれば主定理が得られる。同様に、(6) の第二関係式を反復すれば補足 I、すなわち \(q:x^t=q^{(t+1)}\)、したがって単位イデアルに等しいことが得られる。しかも \(q:x^{t-1}=q^{(t)}\) であるため、\(t\) はこの性質をもつ最低の冪である。
+
+\textbf{注意 II.} \(q\) で割り切れない多項式 \(K\) について、さらに次がいえる。\(K\equiv0(q^{(i+1)})\)、\(K\not\equiv0(q^{(i)})\) ならば、\((K,q^{(i)})=(h_iy^{(K)},q^{(i)})\) となる。実際、定理 IV により、\(c(y)\not\equiv0(y)\) として \(K\equiv h_iy^\lambda c(y)\pmod {q^{(i)}}\) であり、したがって
+\[
+(K,q^{(i)})=(h_iy^\lambda,q^{(i)}).
+\]
+
+このとき \(y^{(g_i)-\lambda}K\equiv0(q^{(i)})\) であり、(5) により、これはその性質をもつ最低の冪である。一方、補題 II により \((g_i)-(K)\) がその最低の冪であるから、\(\lambda=(K)\) となる。
+
+\begin{center}
+（1926 年 10 月 24 日受理。）
+\end{center}

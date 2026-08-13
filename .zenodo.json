@@ -1,0 +1,39 @@
+{
+  "creators": [
+    {"name": "Noether, Emmy"}
+  ],
+  "contributors": [
+    {"name": "Manuscript Typesetting Project", "type": "Editor"},
+    {"name": "OpenAI Codex", "type": "Other"}
+  ],
+  "title": "エミー・ネーター数学論文全集 — 完全日本語版 / Emmy Noether: Complete Japanese Corpus Edition",
+  "version": "2026-08-13 r10",
+  "access_right": "open",
+  "description": "<p><strong><a href=\"https://zenodo.org/records/21921485/files/00_EMMY_NOETHER_JA_COMPLETE_LINKED_READER.pdf\">完全日本語版リーダーをプレビュー</a></strong> / <a href=\"https://zenodo.org/records/21921485/files/00_EMMY_NOETHER_JA_COMPLETE_LINKED_READER.pdf?download=1\">PDF を直接ダウンロード</a>.</p><p>エミー・ネーターの維持対象数学論文コーパス全体（Post-P43 資料を含む）の日本語累積版 r10。完全とは収録範囲を意味し、無欠陥または外部承認済みという意味ではない。基準は NOETH-DE-AUTH-v051-20260811 / ED0014。独立 r10 監査が確定返却前に残した数式・意味上の候補指摘 4 件と、数式フォントの ToUnicode 不足を明示して公開する。ソース ZIP と証拠・来歴 ZIP は全変更箇所、用語、反証、ビルド、チェック返却、統治資料、ハッシュを保存する。</p><p>This is the standalone Japanese cumulative edition of the maintained complete Emmy Noether mathematical corpus. It is complete in coverage, with four inherited formula/meaning observations and the shared ToUnicode extraction defect openly unresolved. DataCite intent: this Japanese edition <em>IsTranslationOf</em> the source corpus represented by 10.5281/zenodo.20412587 and <em>IsPartOf</em> that multilingual hub.</p>",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.20412587",
+      "relation": "isPartOf",
+      "resource_type": "publication-other"
+    },
+    {
+      "identifier": "https://github.com/KokunoYumeto/emmy-noether-ja",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    }
+  ],
+  "keywords": [
+    "Emmy Noether",
+    "エミー・ネーター",
+    "mathematics",
+    "algebra",
+    "Japanese",
+    "日本語",
+    "translation",
+    "complete corpus edition"
+  ],
+  "license": "cc-zero",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "language": "jpn"
+}

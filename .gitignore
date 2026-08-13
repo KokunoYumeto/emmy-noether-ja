@@ -1,0 +1,7 @@
+tmp/
+*.aux
+*.out
+*.toc
+*.xdv
+*.synctex.gz
+*.zip.tmp

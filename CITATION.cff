@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "この日本語版を引用する際は preferred-citation を使用してください。"
+title: "エミー・ネーター数学論文全集 — 完全日本語版のソースと証拠"
+type: software
+authors:
+  - name: "Manuscript Typesetting Project"
+repository-code: "https://github.com/KokunoYumeto/emmy-noether-ja"
+version: "2026-08-13 r10"
+preferred-citation:
+  type: book
+  title: "エミー・ネーター数学論文全集 — 完全日本語版 / Emmy Noether: Complete Japanese Corpus Edition"
+  authors:
+    - family-names: "Noether"
+      given-names: "Emmy"
+  translators:
+    - name: "Manuscript Typesetting Project / OpenAI Codex"
+  languages:
+    - "jpn"
+  doi: "10.5281/zenodo.21921485"
+  version: "2026-08-13 r10"
+  year: "2026"
+  url: "https://doi.org/10.5281/zenodo.21921485"
