@@ -1,0 +1,297 @@
+\begingroup
+\IfFontExistsTF{FreeSerif}{\fontspec{FreeSerif}}{\fontspec{Latin Modern Roman}}
+\let\rOneOneOnemathbf\mathbf
+\renewcommand{\mathbf}[1]{\ensuremath{\rOneOneOnemathbf{#1}}}
+\let\rOneOneOnemathfrak\mathfrak
+\renewcommand{\mathfrak}[1]{\ensuremath{\rOneOneOnemathfrak{#1}}}
+\let\rOneOneOnemathsf\mathsf
+\renewcommand{\mathsf}[1]{\ensuremath{\rOneOneOnemathsf{#1}}}
+\let\rOneOneOnemathbb\mathbb
+\renewcommand{\mathbb}[1]{\ensuremath{\rOneOneOnemathbb{#1}}}
+\let\rOneOneOnemathcal\mathcal
+\renewcommand{\mathcal}[1]{\ensuremath{\rOneOneOnemathcal{#1}}}
+\providecommand{\mathscr}[1]{\mathcal{#1}}
+\let\rOneOneOnemathscr\mathscr
+\renewcommand{\mathscr}[1]{\ensuremath{\rOneOneOnemathscr{#1}}}
+\providecommand{\texorpdfstring}[2]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\clearpage
+\begin{center}
+\vspace*{3.5em}
+{\LARGE\bfseries 超複素量の代数\par}
+\vspace{3.5em}
+{\large E. Noether 教授講義\par}
+{\large 1929/30 年冬学期\par}
+\vspace{1.5em}
+{\large M. Deuring 教授編\par}
+\vspace{4em}
+{\Large\bfseries 目次\par}
+\end{center}
+\vspace{1em}
+\begingroup
+\small
+\setlength{\parindent}{0pt}
+\newcommand{\tocline}[2]{\noindent #1\dotfill #2\par}
+\newcommand{\tocsec}[3]{\noindent\hspace*{1.2em}\S\,#1.\quad #2\dotfill #3\par}
+\tocline{\textbf{序論}}{3}
+\medskip
+\tocline{\textbf{第 I 章：表現}}{3}
+\tocsec{1}{直接表現の定義 --- 相反表現の定義}{3}
+\tocsec{2}{表現類}{4}
+\tocsec{3}{表現加群}{4}
+\tocsec{4}{表現加群と表現との関係}{5}
+\medskip
+\tocline{\textbf{第 II 章：可換体のガロア理論}}{7}
+\tocsec{5}{超複素系の係数拡大}{7}
+\tocsec{6}{可換系の既約表現}{8}
+\tocsec{7}{一つの体の同型写像}{8}
+\tocsec{8}{分解体}{9}
+\tocsec{9}{$Z_1$ から各 $Z_i$ への同型写像}{9}
+\tocsec{10}{ガロア群}{9}
+\tocsec{11}{ガロア理論の基本定理}{9}
+\tocsec{12}{成分 $e_i$ の形式的意味}{11}
+\tocsec{13}{一般延長定理}{12}
+\medskip
+\tocline{\textbf{第 III 章：アーベル群}}{13}
+\tocsec{14}{群環}{13}
+\tocsec{15}{アーベル群の群環}{14}
+\tocsec{16}{指標関係式}{15}
+\tocsec{17}{アーベル群のガロア理論}{15}
+\medskip
+\tocline{\textbf{第 IV 章：両側単純環}}{18}
+\tocsec{18}{補題}{18}
+\tocsec{19}{係数体の非可換拡大体における両側単純超複素系の表現}{19}
+\tocsec{20}{非可換体}{22}
+\tocsec{21}{非可換体のガロア理論}{26}
+\clearpage
+\tocline{\textbf{第 V 章：因子系}}{29}
+\tocsec{22}{中心を指定した体の群}{29}
+\tocsec{23}{因子系}{30}
+\tocsec{24}{因子系の乗法}{33}
+\tocsec{25}{ガロア的な極大可換部分体をもつ $\mathfrak K_r$ の標準表現}{39}
+\tocsec{26}{交叉表現の乗法}{43}
+\medskip
+\tocline{\textbf{第 VI 章：接合積の理論}}{44}
+\tocsec{27}{$\mathfrak R_r$ の接合積としての表現}{44}
+\tocsec{28}{因子系の積定理}{47}
+\tocsec{29}{最小の場合の主種定理}{50}
+\tocsec{30}{巡回分解体への特殊化}{50}
+\tocsec{31}{巡回特殊例の応用}{52}
+\endgroup
+\clearpage
+
+\section*{序論}\label{einleitung}
+
+本講義は環の一般表現論を扱う。この理論は、一方では有限群の表現論から、他方では超複素数系の代数的・算術的理論から発展したものである。このように表現論を一般化して捉える立場には、従来の立場（Frobenius、Schur）に比べて次の利点がある。
+
+群そのものではなく群環、さらに一般には超複素系または任意の環を考察するため、環とイデアルの理論を利用でき、多くの見通しの悪い計算から表現論を解放できる。一般の環論・イデアル論を用いることは、理論を簡明にするだけではない。たとえば群とその部分群との関係という問題を前進させ、さらに新たな応用領域を開く。一般表現論によって、ガロア理論に新しくきわめて簡明な基礎づけを与えることができ、また、おそらくそれ以上に重要なこととして、非可換体のガロア理論を構成できる。
+
+群論・環論・イデアル論の基本概念、および表現論の一般定理は、Noether の論文 ``Hyperkomplexe Größen und Darstellungstheorie'', \emph{Mathematische Zeitschrift} 30, 641 にある。以下 M. Z. と略記するこの論文は、本講義録を補うものとみなすべきである。M. Z. と同じ内容は、Noether の講義「超複素量と群指標」（1927/28 年冬学期）の講義録にも見いだされる。
+
+ここでは、形式的な点でのみ新しい相反表現加群および相反表現を導入するために、表現と表現加群の概念を簡潔に説明する。
+
+\section*{第 I 章　表現}\label{kapitel-i.-darstellungen}
+
+$\mathfrak{o}$ を表現される環、$\mathsf T$ を表現が行われる別の環とする。
+
+\subsection*{§ 1. 直接表現の定義}\label{definition-der-direkten-darstellung}
+
+$\mathfrak{o}$ の $\mathsf T$ における $n$ 次の\emph{直接表現}とは、$\mathsf T$ の元を成分とする $n$ 次行列環 $\mathsf T_n$ の部分環 $\mathfrak D$ であって、$\mathfrak{o}$ がそこへ環準同型に写されるものをいう。記号では
+
+\[
+\mathfrak{o}\to\mathfrak D\subseteq\mathsf T_n.
+\]
+
+\subsection*{相反表現の定義}\label{definition-der-reziproken-darstellung}
+
+$\mathfrak{o}$ の $\mathsf T^*$ における $n$ 次の\emph{相反表現}とは、$\mathsf T^*$ の元を成分とする $n$ 次行列環 $\mathsf T_n^*$ の部分環 $\mathfrak D^*$ であって、$\mathfrak{o}$ がそこへ相反環準同型に写されるものをいう。相反環準同型とは次の意味である。$\mathfrak{o}$ の元 $c,d$ に $\mathfrak D^*$ の元 $c^*,d^*$ が対応するとき、$\mathfrak{o}$ の元 $cd$ には $\mathfrak D^*$ の元 $d^*\cdot c^*$ が、$\mathfrak{o}$ の元 $c+d$ には $c^*+d^*$ が対応する。記号では
+
+\[
+\mathfrak{o}\nrightarrow\mathfrak D^*\subseteq\mathsf T_n^*.
+\]
+
+相反準同型の例を一つ挙げよう。可換体上の $n$ 行行列にその転置行列を対応させる写像は、相反環同型である。
+
+一般に、任意の環 $\mathsf T$ に対して、それと相反同型な環 $\mathsf T^*$ を次のように構成できる。
+
+$\mathsf T$ の各元 $c$ に記号 $c^*$ を対応させ、これらの記号の加法を $c^*+d^*=(c+d)^*$、乗法を
+
+\[
+c^*\cdot d^*=(dc)^*
+\]
+
+によって定める。記号 $c^*$ 全体は、$\mathsf T$ と相反同型な環 $\mathsf T^*$ をなす。
+
+\subsection*{§ 2. 表現類}\label{darstellungsklassen}
+
+$\mathfrak{o}$ の $\mathsf T$ における直接表現 $\mathfrak D$ は、正則行列 $P$ で各元を変換することによって同型な表現 $\mathfrak D'$ に移せる。すなわち、$\mathfrak{o}$ の元 $c$ に $C\in\mathfrak D$ を対応させる代わりに、$P^{-1}CP\in P^{-1}\mathfrak D P$ を対応させる。
+
+このような変換によって互いに移り合う二つの表現を\emph{同値}という。
+
+一つの表現と同値な表現全体を一つの\emph{表現類}（d. D. K.）という。
+
+相反表現の同値性も同様に定義する。一方が他方から正則行列による変換で得られるとき、二つの相反表現は同値であるという。一つの固定した相反表現と同値なもの全体を一つの\emph{相反表現類}という。
+
+\subsection*{\texorpdfstring{$\S$ 3. 表現加群}{\textbackslash S 3. Darstellungsmoduln}}\label{s-3.-darstellungsmoduln}
+
+\emph{直接表現加群}（d. D. M.）の定義。
+
+$\mathfrak{o}$ の $\mathsf T$ に関する直接表現加群とは、$\mathfrak{o},\mathsf T$-双加群 $\mathfrak M$、すなわち加法的に書かれたアーベル群であって、$\mathfrak{o}$ に関して左加群、$\mathsf T$ に関して右加群であり、混合結合則
+$c\in\mathfrak{o}$、$m\in\mathfrak M$、$\tau\in\mathsf T$ に対して $(cm)\tau=c(m\tau)$
+を満たすもののうち、有限個の一元 $\mathsf T$-加群の直和として書け、かつ $x_i\tau=0$ ならば $\tau=0$ となるものをいう：
+
+\[
+\mathfrak M=x_1\cdot\mathsf T+x_2\cdot\mathsf T+\cdots+x_n\cdot\mathsf T.
+\]
+
+\emph{相反表現加群}（r. D. M.）の定義。
+
+$\mathfrak{o}$ の $\mathsf T^*$ に関する相反表現加群とは、$\mathfrak{o}$-左加群かつ $\mathsf T^*$-左加群である $\mathfrak M^*$ であって、可換則（$c\in\mathfrak{o}$、$m\in\mathfrak M^*$、$\tau\in\mathsf T^*$ ならば $c(\tau^*m^*)=\tau^*(cm)$）を満たし、有限個の単純 $\mathsf T^*$-加群の直和として書け、かつ $\tau^*\cdot x_i^*=0$ ならば $\tau^*=0$ となるものをいう：
+
+\[
+\mathfrak M^*=\mathsf T^*\cdot x_1+\cdots+\mathsf T^*\cdot x_n.
+\]
+
+\subsection*{§ 4. 表現加群と表現との関係}\label{der-zusammenhang-zwischen-darstellungsmoduln-und-darstellungen}
+
+\textbf{1.} \emph{各表現加群は一意的に一つの表現類を与える（d. D. M. は d. D. K. を、r. D. M. は r. D. K. を与える）。}
+
+その仕方は次のとおりである。
+
+d. D. M. $\mathfrak M$ に $\mathfrak{o}$ の元 $c$ を掛けることは、$\mathfrak M$ からそれ自身への準同型を意味する。結合則 $(cm)\tau=c(m\tau)$ により、この準同型は $\mathsf T$ の元を作用素として許す。したがってこれは $\mathfrak M$ からそれ自身への\emph{線型変換}である。すなわち、対応 $m\mapsto cm=m'$ は次の性質をもつ：
+
+\[
+\text{$y_i\mapsto y_i'(=cy_i)$ ならば、同時に }
+\sum y_i\tau_i\mapsto \sum y_i'\tau_i\left(=c\sum y_i\tau_i\right).
+\]
+
+二つの線型変換
+
+\[
+\mathfrak T_1:\ m\mapsto m'(=c_1m)
+\quad\text{および}\quad
+\mathfrak T_2:\ m\mapsto m''(=c_2m)
+\]
+
+の和 $\mathfrak T_1+\mathfrak T_2$ を変換 $m\mapsto m'+m''(=(c_1+c_2)m)$ として、その積 $\mathfrak T_1\cdot\mathfrak T_2$ を合成変換 $m\mapsto(m'')'=c_1c_2m$ として定める。このとき、$\mathfrak{o}$ の元が生成する $\mathfrak M$ の相異なる線型変換全体は、$\mathfrak{o}$ の環準同型像 $\overline{\mathfrak D}$ をなす。
+
+次に $\mathfrak M$ の任意の基底 $x_1,\ldots,x_n$ を取る。$c$ が生成する $\mathfrak M$ の線型変換は、基底元 $x_i$ がどのように変換されるか、すなわち方程式系
+
+\[
+x'_j=cx_j=\sum x_i\gamma_{ij}
+\]
+
+の行列 $(\gamma_{ij})=C$ がわかれば、明らかに一意に定まる。他の元 $x=\sum x_j\tau_j$ に対しては単に $x'=\sum x'_j\tau_j$ だからである。これらの行列 $C$ は相異なる線型変換と一意に対応し（互いに他方を定める）、容易にわかるように $\overline{\mathfrak D}$ と同型な環をなす。したがってこれは $\mathfrak{o}$ の環準同型像、すなわち $\mathfrak{o}$ の $n$ 次表現である。
+
+$\overline{\mathfrak D}$ とこの表現との同型は、次の式に表れている。$c\in\mathfrak{o}$ が生成する線型変換に行列 $C$ が対応して
+
+\[
+c(x_1,\ldots,x_n)=(x_1,\ldots,x_n)C
+\]
+
+が成り立ち、同様に $d\in\mathfrak{o}$ と $D\in\mathsf T_n$ が対応して
+
+\[
+d(x_1,\ldots,x_n)=(x_1,\ldots,x_n)D
+\]
+
+が成り立つならば、明らかに
+
+\[
+\begin{aligned}
+(c+d)(x_1,\ldots,x_n)
+&=(cx_1+dx_1,\ldots,cx_n+dx_n)\\
+&=(x_1,\ldots,x_n)(C+D)
+\end{aligned}
+\]
+
+および
+
+\[
+\begin{aligned}
+cd(x_1,\ldots,x_n)
+&=c(dx_1,\ldots,dx_n)=c((x_1,\ldots,x_n)D)\\
+&=(cx_1,\ldots,cx_n)D=(x_1,\ldots,x_n)CD
+\end{aligned}
+\]
+
+を得る。このように、$\mathfrak{o}$ が生成する $\mathfrak M$ の自己線型変換を、$\mathfrak M$ の特定の基底 $x_\nu$ によって実現すると、$\mathfrak{o}$ の $\mathsf T$ における $n$ 次表現が得られる。
+
+$(y_1,\ldots,y_n)$ を $\mathfrak M$ の別の基底とする。それは正則行列を掛けることによって $x_1,\ldots,x_n$ から得られる：
+
+\[(y_1,\ldots,y_n)=(x_1,\ldots,x_n)P.\]
+
+$\mathfrak M$ のある線型変換が基底 $x_\nu$ に関して行列 $C$ で実現されるならば、基底 $y_\nu$ に関しては $P^{-1}CP$ で実現される。実際、
+
+\[c(x_1,\ldots,x_n)=(x_1,\ldots,x_n)C\]
+
+ならば
+
+\[
+\begin{aligned}
+c(y_1,\ldots,y_n)
+&=c(x_1,\ldots,x_n)P=((x_1,\ldots,x_n)C)P\\
+&=(x_1,\ldots,x_n)CP=((y_1,\ldots,y_n)P^{-1})CP\\
+&=(y_1,\ldots,y_n)P^{-1}CP
+\end{aligned}
+\]
+
+が成り立つ。ここから直ちに次が従う。
+
+\emph{$\mathfrak M$ のすべての基底を用いて、$\mathfrak{o}$ が $\mathfrak M$ 上に誘導する線型変換を実現すれば、$\mathfrak M$ は一つの表現類に属するすべての表現を与える。}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \emph{各表現類は、1. で述べた仕方で一つの表現加群によって生成される。}（再び直接表現に限って論じる。）
+\end{enumerate}
+
+\emph{証明。} 類の中から一つの表現を固定し、それが準同型対応 $c\mapsto C$ で与えられているとする。表現の次数を $n$ とし、$n$ 個の不定元 $x_1,\ldots,x_n$ によって $\mathsf T$-右加群
+
+\[\mathfrak{M} = x_1 \mathsf{T} + \dots + x_n \mathsf{T}\]
+
+を作る（通常の計算法則 $\sum x_i\tau_i+\sum x_i\overline{\tau}_i=\sum x_i(\tau_i+\overline{\tau}_i)$、$\sum x_i\tau_i=\sum x_i\overline{\tau}_i$ が成り立つのは、すべての $i$ について $\tau_i=\overline{\tau}_i$ のとき、かつそのときに限ること、ならびに $(\sum x_i\tau_i)\varrho=\sum x_i\tau_i\varrho$ を用いる）。そして、$(x_1',\ldots,x_n')=(x_1,\ldots,x_n)C$ であり、ここで $C$ は $\mathfrak{o}$ の元 $c$ に表現によって対応する行列であるとき、$c\sum x_i\tau_i=\sum x_i'\tau_i$ と定めて、これを $\mathfrak{o}$-左加群にする。
+
+この規定により $\mathfrak M$ は $\mathfrak{o},\mathsf T$-双加群になる。第一に、準同型関係
+
+\[
+c+d\mapsto C+D \quad \text{および} \quad cd\mapsto CD
+\]
+
+から
+
+\[
+(c+d)x_i=cx_i+dx_i
+\]
+
+および
+
+\[
+cd\cdot x_i=c\cdot dx_i,\quad\text{さらに}\quad
+c\left(\sum x_i\tau_i+\sum x_i\overline{\tau}_i\right)
+=c\sum x_i\tau_i+c\sum x_i\overline{\tau}_i
+\]
+
+が従う。これらは左加群の性質である。第二に、明らかに
+
+\[c(\sum x_i \, \tau_i \, \varrho) = (c \, \sum x_i \, \tau_i) \cdot \varrho\]
+
+が成り立つ。これは混合結合則である。
+
+したがって $\mathfrak M$ は表現加群であり、その線型変換の実現に基底 $x_1,\ldots,x_n$ を用いれば、使用した表現が 1. で述べた仕方によって生成される。他の基底は、その類に属する残りの表現を与える。
+
+相反表現および相反表現加群についてもすべて同様である。その結果、加群
+
+\[\mathfrak{M}^* = \mathsf{T}^* x_1^* + \dots + \mathsf{T}^* x_n^*\]
+
+は、$\mathfrak{o}$ の元 $c$ に、等式
+
+\[
+c\begin{pmatrix}x_1\\ \vdots\\ x_n\end{pmatrix}
+=\begin{pmatrix}cx_1\\ \vdots\\ cx_n\end{pmatrix}
+=C\begin{pmatrix}x_1\\ \vdots\\ x_n\end{pmatrix}
+\]
+
+に現れる行列 $C$ を対応させることによって、$\mathfrak{o}$ の $\mathsf T^*$ における相反表現を生成する。異なる基底は、ここでも同じ一つの類に属する異なる表現を与える。

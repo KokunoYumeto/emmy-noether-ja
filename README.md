@@ -1,35 +1,42 @@
-# エミー・ネーター数学論文集 — 日本語訳
+# エミー・ネーター — 数学著作集・日本語版
 
-エミー・ネーターの論文1–43、M. Deuring筆録の1929/30年冬学期講義「超複素量の代数」、H. Kapfererの論文とE. Noetherの補遺、文献目録および書評・書籍等の一覧を収録する。不変式、イデアル、体、代数および表現論を扱う。
+論文1–43、M. Deuringが筆記した1929/30年の講義、KapfererとNoetherの論文および補遺、書誌と巻末一覧を収録します。
 
-## 閲覧と編集用ソース
+## 底本の本文
 
-### 基礎本文 — 422頁
+1. [PDF](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-24-r2/01-noether-ja-base.pdf)
+2. [編集可能なLaTeXソース](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-24-r2/02-noether-ja-base.tex)
+3. [ソース一式](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-24-r2/03-noether-ja-base-sources.zip)
 
-1. [PDFを読む](https://github.com/KokunoYumeto/emmy-noether-ja/blob/main/editions/2026-10-24/ja/reader-edition/01-noether-ja-base.pdf)
-2. [全文のLaTeXを入手](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-24/02-noether-ja-base.tex)
-3. [組版用ソース一式を入手](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-24/03-noether-ja-base-sources.zip)
+## 校訂を含む本文
 
-### 校訂本文・編集注 — 427頁
-
-1. [PDFを読む](https://github.com/KokunoYumeto/emmy-noether-ja/blob/main/editions/2026-10-24/ja/reader-edition/04-noether-ja-emendations.pdf)
-2. [全文のLaTeXを入手](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-24/05-noether-ja-emendations.tex)
-3. [組版用ソース一式を入手](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-24/06-noether-ja-emendations-sources.zip)
-
-両版とも上記の収録範囲を含む。基礎本文は、校訂注で論じる原著の読みを保持する。校訂本文の変更理由は、別の編集注に記す。これらの注は全収録作品についての網羅的な校訂を意味しない。
-
-直接ダウンロードできる各LaTeXファイルには、その版の本文全体が含まれる。各ZIPには同じ全文ファイル、元の分割ソース、必要な組版手順とスクリプトを収録する。XeLaTeXとソースに指定されたフォント・パッケージが必要である。フォントは同梱しない。[SHA-256一覧](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-24/07-SHA256SUMS.txt)
-
-## 著者・翻訳・来歴
+1. [PDF](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-24-r2/04-noether-ja-emendations.pdf)
+2. [編集可能なLaTeXソース](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-24-r2/05-noether-ja-emendations.tex)
+3. [ソース一式](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-24-r2/06-noether-ja-emendations-sources.zip)
 
 原著者はEmmy Noetherおよび各作品に記載する共著者である。講義録はM. Deuringの筆録による。日本語訳はAIによる翻訳。初版の制作主体はManuscript Typesetting Project / OpenAI Codexであり、当時の正確なモデルは現存する来歴資料からは確定していない。本版のAIによる訂正・組版：OpenAI Codex — GPT-6 Astra、Ultra。発行者による人間の翻訳または学術的査読を示すものではない。
 
 底本：[日本語版2026-08-13 r10](https://doi.org/10.5281/zenodo.21921485)、[ドイツ語版ED0014/v051](https://doi.org/10.5281/zenodo.21908301)。これらのDOIは底本の識別子であり、今回のGitHub版に付与された識別子ではない。各作品の原刊情報、署名および引用は本文に記載する。
 
-## 権利
+継承した翻訳の正確なモデルと推論設定は、現存する制作記録からは確定していません。 AIによる訂正・組版：2026年10月23–24日。刊行日：2026年10月24日。
 
-原著および保護される派生的寄与の権利は、それぞれの権利者に帰属する。本版は、権利者が異議を唱えないであろうとの発行者の推定に基づき、非商用かつ純粋に教育的な目的のために無料で提供する。これは推定であり、許諾が確認されたことを意味しない。無料で閲覧できること自体は、派生版の公開を許可するものではない。
+直接入手できる累積LaTeXには、各本文とプリアンブルが編集可能なコードとして収録されています。付属のPythonプログラムで元のファイル構成を展開し、XeLaTeXで組版した各PDFを読む順序で結合します。画像やPDFページを翻刻の代わりには用いません。ZIPには元の構成、同じ累積LaTeX、組版プログラムを収録しています。Python 3、pypdf、および各プリアンブルに指定されたTeXパッケージとフォントが必要です。TeXとフォントの版によってPDFのバイト列は変わる場合があります。固定された内部組版日は刊行日ではありません。
 
-権利者は[GitHubのissue](https://github.com/KokunoYumeto/emmy-noether-ja/issues/new)から異議を申し出ることができる。発行者は権利者の要請に応じ、該当資料を取り下げる。本版による新たな包括的ライセンスの付与またはパブリックドメインへの提供は行わない。旧版の権利表示は、その旧版と実際に付与された権利の範囲に限り存続する。
+[Python](https://github.com/KokunoYumeto/emmy-noether-ja/blob/main/editions/2026-10-24-r2/ja/build.py) · [SHA-256](https://github.com/KokunoYumeto/emmy-noether-ja/blob/main/editions/2026-10-24-r2/ja/07-noether-ja-SHA256SUMS.txt)
 
-[著者・来歴・権利](editions/2026-10-24/ja/reader-edition/RIGHTS.md) · [旧版の権利表示](editions/2026-10-24/ja/reader-edition/NOTICE_HISTORIQUE.md) · [旧版](https://github.com/KokunoYumeto/emmy-noether-ja/releases/tag/ja-r10-20260813)
+組版プログラムはAI作成：OpenAI Codex — GPT-6 Astra、Ultra、2026年10月24日。
+
+## 著者・来歴・権利
+
+権利はそれぞれの権利者に帰属します。非営利かつ純粋な教育目的での無償配布は、権利者が反対しないという発行者の推定に基づき、許諾の取得を意味しません。無料公開だけで翻訳の公開が許可されるわけではありません。権利者は下記から異議を申し立てることができ、発行者は要請に応じて対象資料を取り下げます。新たなライセンスやパブリックドメインへの提供は行いません。
+
+[権利者からの申し立て](https://github.com/KokunoYumeto/emmy-noether-ja/issues/new).
+
+## 以前の版
+
+- [zenodo.21908301](https://doi.org/10.5281/zenodo.21908301).
+- [zenodo.21921485](https://doi.org/10.5281/zenodo.21921485).
+
+[GitHub](https://github.com/KokunoYumeto/emmy-noether-ja/releases).
+
+[旧版の権利表示](https://github.com/KokunoYumeto/emmy-noether-ja/blob/main/editions/2026-10-24/ja/reader-edition/NOTICE_HISTORIQUE.md).

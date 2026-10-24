@@ -1,0 +1,961 @@
+\section*{第 V 章　因子系}\label{kapitel-v.-faktorensysteme}
+
+\subsection*{\S 22. 与えられた中心をもつ体の群}\label{die-gruppe-der-koerper-mit-gegebenem-zentrum}
+
+以下の考察では、固定した可換体 \(\mathsf P\) を基礎とする。自己同型体 \(\mathfrak K\) が \(\mathsf P\) 上有限階数で、しかも \(\mathsf P\) 自身を中心とする体であるような行列環 \(\mathfrak K_r\) 全体は、「直積形成」に関して乗法的に閉じた系をなす。このような二つの環 \(\mathfrak K_r\) と \(\mathfrak L_s\) の直積とは、単に \(\mathfrak K_r\) の基礎体を \(\mathfrak L_s\) へ拡大して得られる環 \(\mathfrak K_r\cdot\mathfrak L_s\) のことである：
+\[
+\mathfrak K_r\times\mathfrak L_s=\mathfrak K_r\cdot\mathfrak L_s.
+\]
+22 頁の注意により、この直積形成は可換である：
+\[
+\mathfrak K_r\times\mathfrak L_s=\mathfrak L_s\times\mathfrak K_r.
+\]
+すべての \(\mathfrak K_r\) の系が乗法的に閉じているという主張は、したがって \(\mathfrak K_r\times\mathfrak L_s=\mathfrak K_r\mathfrak L_s\) が常に再び行列環であり、その自己同型体 \(\mathfrak M\) の中心が \(\mathsf P\) である、ということにほかならない。\(\mathsf P\) に関する有限階数性は明らかである。20 頁の定理 1 により、\(\mathfrak K_r\times\mathfrak L_s\) は両側単純かつ完全可約であり、したがって \(\mathsf P\) の拡大体 \(\mathfrak M\) 上の行列環である。\(\mathfrak M\) の中心が \(\mathsf P\) に等しいことは、第一に \(\mathsf P\) が確かに中心に含まれ、第二にその中心が \(\mathfrak K\)（または \(\mathfrak L\)）の中心 \(\mathsf P\) に含まれなければならないことから直ちに従う。積 \(\mathfrak K_r\times\mathfrak L_s\) は明らかに結合的である。\(\mathfrak K_r\) は乗法的に閉じた系をなすが、群ではない。実際、\(\mathfrak K_r\times\mathfrak L_s=\mathfrak M_m\) ならば必ず \(m\geq rs\) であり、したがって \(r>m\) のとき、方程式 \(\mathfrak K_r\times\mathfrak L_s=\mathfrak M_m\) を満たす \(\mathfrak L_s\) は見いだせない。
+
+ここで、同じ \(\mathfrak K\) をもつすべての \(\mathfrak K_r\) を一つの類 \(\{\mathfrak K\}\) にまとめる。すると次が成り立つ。\(\mathfrak K_r\) と \(\mathfrak K_{r'}\) が同じ類 \(\{\mathfrak K\}\) に属し、\(\mathfrak L_s\) と \(\mathfrak L_{s'}\) が同じ類 \(\{\mathfrak L\}\) に属するならば、\(\mathfrak K_r\times\mathfrak L_s\) と \(\mathfrak K_{r'}\times\mathfrak L_{s'}\) も同じ類に属する。\(\mathfrak K_r\times\mathfrak L_s\) が \(\mathfrak K\times\mathfrak L\) と同じ類に属すること、すなわち \(\mathfrak K\times\mathfrak L=\mathfrak M_m\) ならば \(\mathfrak K_r\times\mathfrak L_s\) も \(\mathfrak M\) 上の行列環であることを示せば十分である。これは容易にわかる。実際、
+\[
+\mathfrak K_r\times\mathfrak L
+=\left(\sum_1^r\mathfrak K c_{ik}\right)\mathfrak L
+=\sum_1^r\mathfrak K_{\mathfrak L}c_{ik}
+=\sum_1^r\mathfrak M_m c_{ik}.
+\]
+これは \(\mathfrak M_m\) 上の次数 \(r\) の行列環であり、もちろん \(\mathfrak M\) 上の次数 \(mr\) の行列環である。さらに全く同様に、
+\[
+\mathfrak K_r\times\mathfrak L_s
+=\left(\sum_1^s\mathfrak L d_{ik}\right)_{\mathfrak K_r}
+=\sum_1^s\mathfrak L_{\mathfrak K_r}d_{ik}
+=\sum_1^s\mathfrak M_{mr}d_{ik}
+=\mathfrak M_{mrs}
+\]
+を得て、主張は証明された。\(\mathfrak L\times\mathfrak K=\mathfrak M_m\) から \(\mathfrak K_r\times\mathfrak L_s=\mathfrak M_{mrs}\) が従うことを記憶しておこう。
+
+以上から、二つの類 \(\{\mathfrak K\}\) と \(\{\mathfrak L\}\) の積を、\(\{\mathfrak K\}\) の代表元と \(\{\mathfrak L\}\) の代表元との積の類として定義すれば、この定義は代表元の選び方に依存しない。
+
+したがって写像 \(\mathfrak K_r\mapsto\{\mathfrak K\}\) は、すべての \(\mathfrak K_r\) の系からすべての類 \(\{\mathfrak K\}\) の集合への準同型であり、類 \(\{\mathfrak K\}\) の集合 \(\mathscr K\) は乗法的に閉じた系である。\(\mathscr K\) が群であることを証明しよう。単位元が類 \(\{\mathsf P\}\) であることは、\(\mathfrak K_r\times\mathsf P=\mathfrak K_r\) から直ちにわかる。
+
+そこで、各類 \(\{\mathfrak K\}\) に対して逆類 \(\{\mathfrak K\}^{-1}\) が存在することだけを示せばよい。\(\{\overline{\mathfrak K}\}\) が \(\mathfrak K\) と相反同型な体を表すとき、
+\[
+\{\mathfrak K\}^{-1}=\{\overline{\mathfrak K}\}
+\]
+と置かなければならないことがわかる。言い換えれば、\(\mathfrak K\times\overline{\mathfrak K}\) が \(\mathsf P\) 上の行列環でなければならない。あるいは、\(\mathfrak K\) が \(\mathsf P\) 上階数 \(t^2\)、したがって \(\mathfrak K\times\overline{\mathfrak K}\) が階数 \(t^4\) をもつならば、\(\mathfrak K\times\overline{\mathfrak K}\) は \(t^2\) 個の単純左イデアルに分解しなければならない。これは次のことから従う。\(\mathfrak K\times\overline{\mathfrak K}\) の単純左イデアルは、\(\overline{\mathfrak K}\) から \(\mathfrak K\) への既約な相反表現（これは次数 1 である）の表現加群として、\(\mathfrak K\) 上階数 1、したがって \(\mathsf P\) 上階数 \(t^2\) をもつ。
+
+\(\mathsf P\) と \(\mathfrak K\) の間に、中心がやはり \(\mathsf P\) である体が存在しないとき、\(\mathfrak K\) を\emph{単純体}と呼ぶことにする。
+
+\textbf{定理.} \emph{任意の体 \(\mathfrak K\) は単純部分体 \(\mathfrak K^{(i)}\) の直積である：}
+\[
+\mathfrak K=\mathfrak K^{(1)}\times\cdots\times\mathfrak K^{(p)}.
+\]
+
+\emph{証明.} \(\mathfrak K^{(1)}\) が中心 \(\mathsf P\) をもつ \(\mathfrak K\) の部分体ならば、中心 \(\mathsf P\) をもつ \(\mathfrak K\) の部分体 \(\mathfrak S\) で
+\[
+\mathfrak K^{(1)}\times\mathfrak S=\mathfrak K
+\]
+を満たすものが存在することを示せば十分である。いずれにせよ、
+\[
+\{\mathfrak K^{(1)}\}\times\{\mathfrak S\}=\{\mathfrak K\}
+\]
+という性質をもつ類 \(\{\mathfrak S\}\) は存在する。実際、
+\[
+\{\mathfrak S\}=\{\overline{\mathfrak K^{(1)}}\}\times\{\mathfrak K\}.
+\qquad
+\text{ここで}\qquad
+\overline{\mathfrak K^{(1)}}\times\mathfrak K=\mathfrak S_\lambda
+\]
+とする。すると
+\[
+\mathfrak K^{(1)}\times\mathfrak S_\lambda
+=\mathfrak K^{(1)}\times\overline{\mathfrak K^{(1)}}\times\mathfrak K
+=\mathsf P_{t^2}\times\mathfrak K
+=\mathfrak K_{t^2},
+\qquad
+t^2=\mathfrak K^{(1)}\text{ の階数}.
+\]
+ところが \(\mathfrak K^{(1)}\times\mathfrak S_\lambda\) は少なくとも \(\lambda\) に等しい次数の行列環であるから、\(\lambda\leq t^2\) である。\(\overline{\mathfrak K^{(1)}}\) は \(\mathfrak K\) において次数 1 の相反表現を許すので、\(\mathfrak S_\lambda=\overline{\mathfrak K^{(1)}}\times\mathfrak K\) は \(\mathfrak K\) 上階数 1 の単純イデアルに分解しなければならない。したがって \(\lambda\geq t^2\)、ゆえに \(\lambda=t^2\) であり、
+\[
+\mathfrak K_{t^2}=\mathfrak K^{(1)}\times\mathfrak S_{t^2}.
+\]
+それゆえ \(\mathfrak K^{(1)}\times\mathfrak S\) 自身が体でなければならず、
+\[
+\mathfrak K^{(1)}\times\mathfrak S_{t^2}
+=\bigl(\mathfrak K^{(1)}\times\mathfrak S\bigr)_{t^2}
+=\mathfrak K_{t^2}.
+\]
+\(\mathfrak K^{(1)}\times\mathfrak S\) は \(\mathfrak K_{t^2}\) のある分解における単純左イデアルの自己同型体であり、\(\mathfrak K\) は \(\mathfrak K_{t^2}\) の別の分解における単純左イデアルの自己同型体である。しかし \(\mathfrak K_{t^2}\) の任意の二つの異なる左イデアルは一つの分解に組み入れられるから、\(\mathfrak K\) と \(\mathfrak K^{(1)}\times\mathfrak S\) は同型であり、この同型は \(\mathsf P\) の各元を固定するように選べる。したがって、25 頁の定理 7 により、この同型は \(\mathfrak K_{t^2}\) の内部自己同型から生じる。
+\[
+\mathfrak K
+=\lambda^{-1}\bigl(\mathfrak K^{(1)}\times\mathfrak S\bigr)\lambda
+=\lambda^{-1}\mathfrak K^{(1)}\lambda\times\lambda^{-1}\mathfrak S\lambda,
+\qquad
+\lambda\in\mathfrak K_{t^2}.
+\]
+\(\lambda^{-1}\mathfrak K^{(1)}\lambda\) は \(\mathfrak K^{(1)}\) と同型な \(\mathfrak K\) の部分体であるから、25 頁の定理 7 により、適当な \(\mu\in\mathfrak K\) を用いて
+\[
+\mu^{-1}\lambda^{-1}\mathfrak K^{(1)}\lambda\mu=\mathfrak K^{(1)}
+\]
+となる。したがって
+\[
+\mu^{-1}\mathfrak K\mu
+=\mathfrak K
+=\mathfrak K^{(1)}\times\mu^{-1}\lambda^{-1}\mathfrak S\lambda\mu,
+\]
+となり、主張は証明された。
+
+\subsection*{\S 23. 因子系}\label{faktorensysteme}
+
+以下の考察では、基礎体 \(\mathsf P\) が完全であると仮定する。その代わりに、中心 \(\mathsf P\) をもつ非可換体 \(\mathfrak K\) のうち、各 \(\mathfrak K_r\) が \(\mathsf P\) 上第一種の極大可換部分体を含むものだけを考える、というより一般的な仮定を置いてもよい。（その後 Köthe が示したように、これはすべての \(\mathfrak K\) について成り立つ。）
+
+\(Z\) を、中心 \(\mathsf P\) をもつ非可換体 \(\mathfrak K\) の分解体とする。\(Z\) から \(\mathfrak K\) への既約表現 \(\mathfrak Z\) の次数を \(r\) とすると、これは \(\mathfrak K_r\) の極大可換部分体である。\(\Gamma\) を \(Z\) のガロア体とする。すなわち
+\[
+\mathfrak Z_\Gamma=e_1\Gamma+\cdots+e_n\Gamma
+\qquad\text{（9 頁）}
+\]
+である。\(n\) は \(Z\) の \(\mathsf P\) 上の次数である。すると、\(\Gamma\) によって拡大した環 \(\mathfrak K_r\) にも分解
+\[
+\mathfrak K_{r\Gamma}=\mathfrak K_{r\Gamma}e_1+\cdots+\mathfrak K_{r\Gamma}e_n
+\]
+すなわち
+\[
+\mathfrak K_{r\Gamma}=\mathfrak l_1+\cdots+\mathfrak l_n,\qquad
+\mathfrak l_i=\mathfrak K_{r\Gamma}e_i
+\]
+が得られる。\(\mathfrak l_i\) は明らかに左イデアルである。しかも単純左イデアルである。実際、\(Z\) は分解体であるから、\(\mathfrak K_{r\Gamma}\) は \(\Gamma\) 上次数 \(r\cdot t=n\) の行列環である（23 頁の定理 4、および 22 頁の \(n=rt\)）。このように得た \(\mathfrak K_{r\Gamma}\) の単純左イデアルへの分解は、\(\mathfrak K\) と \(Z\) の代数的性質に特に適合している。実際、18 頁と同様に、\(\Gamma/\mathsf P\) のガロア群 \(\mathfrak G\) の置換 \(S\) をすべての \(\mathfrak K_{r\Gamma}\) の元へ作用させる際、各 \(\mathfrak K_r\) の元 \(z\) に対して
+\[
+S(z)=z
+\]
+と定めれば、イデアル \(\mathfrak l_i\) は共役である。すなわち、ある \(\mathfrak l_j\) に \(S\) を作用させると別のイデアル
+\[
+S(\mathfrak l_j)=\mathfrak l_i
+\]
+が得られる。これは、単位元の各既約成分 \(e_j\) が別の \(e_i\) へ移らなければならないからである（11 頁も参照）。
+
+表現加群 \(e_i\Gamma\) によって、\(\mathfrak Z\) は \(\Gamma\) の部分体 \(Z_i\) へ写される。\(\mathfrak Z\) の表現 \(Z_i\) はすでに \(Z_i\) に含まれるので、\(\mathfrak Z_{Z_i}\) は表現加群 \(e_iZ_i\) を分離しなければならず、したがって \(e_i\) はすでに \(\mathfrak Z_{Z_i}\) に属する。\(\{Z_i,Z_k\}\) を \(Z_i\) と \(Z_k\) の合成体とする。\(\mathfrak K_{r\{Z_i,Z_k\}}\) は二つの左イデアル
+\[
+\bar{\mathfrak l}_i=\mathfrak K_{r\{Z_i,Z_k\}}e_i,\qquad
+\bar{\mathfrak l}_k=\mathfrak K_{r\{Z_i,Z_k\}}e_k
+\]
+を分離し、これらは \(\mathfrak l_i=\mathfrak K_{r\Gamma}\bar{\mathfrak l}_i\) であるため単純である。したがって
+\[
+\bar{\mathfrak l}_i=\sum_{\lambda=1}^m\{Z_i,Z_k\}c_{\lambda i}^{(ik)},\qquad
+\bar{\mathfrak l}_k=\sum_{\lambda}\{Z_i,Z_k\}c_{\lambda k}^{(ik)}.
+\]
+ここで \(c_{\lambda\rho}^{(ik)}\) は \(\mathfrak K_{r\{Z_i,Z_k\}}\) の行列単位系である。
+
+\(\mathfrak K_{r\{Z_i,Z_k\}}\) を作用素領域として、\(\bar{\mathfrak l}_i\) から \(\bar{\mathfrak l}_k\) への各同型 \(a_i\mapsto a_k\) は、\(e_i\mapsto p_{ik}\) となる元 \(p_{ik}\) によって特徴づけられる。実際、そのとき \(a_i=a_ie_i\mapsto a_ip_{ik}\)、したがって \(\bar{\mathfrak l}_i\cdot p_{ik}=\bar{\mathfrak l}_k\) である。このような \(p_{ik}\) はすべて明らかに
+\[
+p_{ik}=c_{ik}^{(ik)}\gamma_{ik},\qquad
+\gamma_{ik}\ne0\quad\text{かつ}\quad \gamma_{ik}\in\{Z_i,Z_k\}
+\]
+である。\(a_i\mapsto a_ip_{ik}\) によって、\(\mathfrak l_i\) から \(\mathfrak l_k\) への作用素同型も与えられる。ここで、このような \(p_{ik}\) の特定の系を、共役性条件を課して選ぶ。
+
+\(S\) の添字 \(i\) への作用を
+\[
+S(i)=k,\qquad\text{ただし}\qquad S(Z_i)=Z_k
+\]
+によって定める。各添字対 \((\nu,\mu)\) には、\(S(\nu,\mu)=(1,k)\) という形の共役な対が少なくとも一つ存在する。共役な添字対の各類から固定した対 \((1,k)\) を一つ選び、この \((1,k)\) に対して
+\[
+p_{1k}=c_{1k}^{(1k)}\gamma_{1k},\qquad
+\gamma_{1k}\ne0\quad\text{かつ}\quad \gamma_{1k}\in\{Z_1,Z_k\}
+\]
+を、それ以外は任意に定める。そして \(S(1,k)=(\nu,\mu)\) のとき
+\[
+p_{\nu\mu}=S(p_{1k})
+\]
+と置く。この \(p_{\nu\mu}\) は実際
+\[
+p_{\nu\mu}=c_{\nu\mu}^{(\nu\mu)}\gamma_{\nu\mu},\qquad
+\gamma_{\nu\mu}\ne0\quad\text{かつ}\quad \gamma_{\nu\mu}\in\{Z_\nu,Z_\mu\}
+\]
+という形をもつ。なぜなら、\(\bar{\mathfrak l}_1\) から \(\bar{\mathfrak l}_k\) への同型
+\[
+a_1\mapsto a_1p_{1k},\qquad
+\text{特に}\qquad e_1\mapsto p_{1k}
+\]
+に \(S\) を作用させると、\(\bar{\mathfrak l}_\nu\) から \(\bar{\mathfrak l}_\mu\) への同型
+\[
+a_\nu\mapsto a_\nu p_{\nu\mu},\qquad
+\text{特に}\qquad e_\nu\mapsto p_{\nu\mu}
+\]
+が得られるからである。
+
+\(c_{\lambda\rho}\) を \(\mathfrak K_{r\Gamma}\) の行列単位系とすると、\(p_{\nu\mu}\) は
+\[
+p_{\nu\mu}=c_{\nu\mu}\bar\gamma_{\nu\mu}
+\]
+とも書けることは明らかである。したがって関係式
+\[
+c_{ij}c_{1k}=0,\quad\text{もし }j\ne1,
+\qquad
+c_{ij}c_{jk}=c_{ik}
+\]
+から、関係式
+\[
+\begin{aligned}
+p_{ij}p_{1k}&=0,\quad &&\text{もし }j\ne1,\\
+p_{ij}p_{jk}&=\alpha_{ik}^{(j)}p_{ik},
+&&\alpha_{ik}^{(j)}\in\Gamma
+\quad\text{（より正確には }\alpha_{ik}^{(j)}\in\{Z_i,Z_j,Z_k\}\text{）}
+\end{aligned}
+\]
+が従う。\(n^3\) 個の量 \(\alpha\) は、「擬行列単位」系 \(p_{ik}\) に属する、\emph{\(Z\) を基礎とした \(\mathfrak K\) の因子系}をなす。
+
+\(\alpha\) は共役である。\(S(i,k,j)=(\nu,\mu,\tau)\) ならば
+\[
+S\bigl(\alpha_{ik}^{(j)}\bigr)=\alpha_{\nu\mu}^{\tau}.
+\]
+
+擬行列単位の任意の系 \(p_{ik}^*\) は、最初の \(p_{ik}\) に \(\{Z_i,Z_k\}\) の任意の \(\delta_{ik}\ne0\) を掛けることによって、ある系 \(p_{ik}\) から得られる。すなわち
+\[
+p_{1k}^*=p_{1k}\delta_{1k}
+\]
+とし、さらに \(S(1,k)=(\nu,\mu)\) のとき
+\[
+p_{\nu\mu}^*=S(p_{1k}^*)
+\]
+と置く。したがって
+\[
+p_{\nu\mu}^*=p_{\nu\mu}\delta_{\nu\mu},
+\qquad \delta_{\nu\mu}\in\{Z_\nu,Z_\mu\}.
+\]
+\(\delta_{\nu\mu}\) は共役であり、\(S(i,k)=(\nu,\mu)\) ならば \(S(\delta_{ik})=\delta_{\nu\mu}\) である。\(\alpha^*\) を \(p_{ik}^*\) に属する因子系とすれば、
+\[
+\alpha_{ik}^{(j)*}=\frac{\delta_{ij}\delta_{jk}}{\delta_{ik}}\alpha_{ik}^{(j)}.
+\]
+
+因子系 \(\alpha^*\) と \(\alpha\) を\emph{同伴する}という（\(p_{ik}^*\) と \(p_{ik}\) についても同様である）。\(Z\) を基礎とした \(\mathfrak K\) のすべての因子系は、同伴する因子系の一つの類 \(\{\alpha\}\) をなす。
+
+類 \(\{\alpha\}\) は、その定義の基礎とする \(Z\) から \(\mathfrak K_r\) への表現 \(\mathfrak Z\) の選び方に依存しない。実際、ある \(\mathfrak Z\) から別の \(\mathfrak Z'\) への移行は、\(\mathfrak K_r\) の元、したがって \(\mathfrak G\)-不変な元 \(\lambda\) による変換で行えるので、\(\mathfrak Z\) に属する系 \(p_{ik}\) から、\(\mathfrak Z'\) に属する系
+\[
+p'_{ik}=\lambda^{-1}p_{ik}\lambda
+\]
+が得られる。そして \(p_{ik}\) と \(p'_{ik}\) の因子系は同一である。
+
+因子系とは \(\mathfrak K_{n\Gamma}\) の乗法表にほかならないが、\(\mathfrak K\) の特別な代数的性質に適合した乗法表である。
+
+\subsection*{\S 24. 因子系の乗法}\label{multiplikation-von-faktorensystemen}
+
+非可換体 \(\mathfrak K\) の分解体という代わりに、\(\{\mathfrak K\}\) の分解体ともいう。この言い方には意味がある。というのも、\(\mathfrak K_Z\) とともに各環 \(\mathfrak K_{rZ}\) も絶対既約成分に分解し、逆もまた成り立つからである。
+
+中心 \(\mathsf P\) をもつ任意の二体 \(\mathfrak K,\mathfrak S\) は共通の分解体をもつ。例えば、\(\mathfrak K\) の分解体と \(\mathfrak S\) の分解体との合成体がそれである。
+
+\textbf{定理 1.} \emph{ある体 \(Z\) を分解体にもつ \(\{\mathfrak K\}\) は、すべての \(\{\mathfrak K\}\) の群 \(\mathscr K\) の部分群 \(\mathscr K_Z\) をなす。}
+
+\emph{証明.} \(\mathfrak K\) と \(\mathfrak S\) が \(Z\) を分解体にもつならば、\(\mathfrak K_Z\) と \(\mathfrak S_Z\)、したがって \((\mathfrak K\times\mathfrak S)_Z\) も絶対既約成分に分解する。すなわち \(Z\) は \(\{\mathfrak K\times\mathfrak S\}\) の分解体である（23 頁の定理 4）。
+
+相反同型な体はすべての分解体を共有する。
+
+補助的考察を行う。
+\[
+\mathfrak K_r=\mathfrak L_1+\cdots+\mathfrak L_r,\qquad
+\mathsf P_m=\mathfrak z_1+\cdots+\mathfrak z_m
+\]
+を、\(\mathfrak K_r\) と \(\mathsf P_m\) の単純左イデアルへの分解とする。このとき
+\[
+\mathfrak K_{rm}=\mathfrak K_r\times\mathsf P_m
+=\mathfrak L_1\mathfrak z_1+\cdots+\mathfrak L_i\mathfrak z_j+\cdots+\mathfrak L_r\mathfrak z_m
+\]
+は、\(\mathfrak K_{rm}\) を零でない \(rm\) 個、したがって単純な左イデアルへ分解したものである。それゆえ、\(\mathfrak K_{rm}\) の任意の \(r\)-成分左イデアル \(A\) は、\(r\)-成分左イデアル
+\[
+\mathfrak L_1\mathfrak z_1+\cdots+\mathfrak L_r\mathfrak z_1=\mathfrak K_r\mathfrak z_1
+\]
+と \(\mathfrak K_r\) の内部自己同型によって結ばれている：
+\[
+A=\tau^{-1}\mathfrak K_r\tau\cdot\tau^{-1}\mathfrak z_1\tau
+=\mathfrak K'_r\cdot\mathfrak z'_1.
+\]
+
+\(\mathfrak K_{r\Gamma}=\mathfrak l_1+\cdots+\mathfrak l_n\) を、\(\mathfrak K_r\) 内のある \(\mathfrak Z\) に属する、\(\mathfrak K_{r\Gamma}\) の共役な左イデアルへの分解とし、\(\mathfrak l_i=\mathfrak K_{r\Gamma}e_i\) とする。このとき
+\[
+S(\tau^{-1}\mathfrak l_i\tau\cdot\mathfrak z'_1)
+=S(\tau^{-1}\mathfrak l_i\tau)\,\mathfrak z'_1
+=\tau^{-1}(S\mathfrak l_i)\tau\cdot\mathfrak z'_1
+=\tau^{-1}\mathfrak l_k\tau\cdot\mathfrak z'_1
+\]
+であるから、
+\[
+\tag{1}
+A_\Gamma=\mathfrak l'_1\mathfrak z'_1+\cdots+\mathfrak l'_n\mathfrak z'_1
+\]
+は \(A_\Gamma\) の共役な左イデアルへの分解である。\(\tau^{-1}e_i\tau=e'_i\) と置き、\(E'\) を \(\mathfrak z'_1\) の単位元とすれば、
+\[
+\mathfrak l'_i\mathfrak z'_1=\mathfrak K_{rm\Gamma}\cdot e'_iE'
+\]
+である。
+
+共役な左イデアルへの任意の別の分解
+\[
+\tag{2}
+A_\Gamma=\mathfrak q_1+\cdots+\mathfrak q_n,\qquad
+S\mathfrak q_i=\mathfrak q_k\quad\text{もし}\quad
+S\mathfrak l'_i\mathfrak z'_1=\mathfrak l'_k\mathfrak z'_1
+\]
+は、ある \(\mathfrak K_{rm}\) の元 \(\lambda\) による変換によって (1) から得られる：
+\[
+\mathfrak q_i=\lambda^{-1}\mathfrak l'_i\mathfrak z'_1\lambda,
+\qquad
+\text{したがって、\(e_i^*\) を \(\mathfrak q_i\) の単位元とすれば}\quad
+e_i^*=\lambda^{-1}e'_iE'\lambda.
+\]
+
+その証明は、次の補題から直ちに従う。
+
+\textbf{補題.} \emph{\(A\) を \(\mathfrak K_n\) の左イデアルとし、}
+\[
+A=\mathfrak l_1+\cdots+\mathfrak l_n
+=\mathfrak K_{n\Gamma}e_1+\cdots+\mathfrak K_{n\Gamma}e_n
+\]
+\emph{を、仮定により存在する共役な左イデアルへの分解とする。この際、一般性を失うことなく \(\mathfrak l_i\) を共役と仮定してよい。}
+
+\emph{\(\mathfrak z\) が \(A\) と作用素同型であり、同じ仮定が満たされているとする：}
+\[
+\mathfrak z=\mathfrak q_1+\cdots+\mathfrak q_n
+=\mathfrak K_{n\Gamma}e_1^*+\cdots+\mathfrak K_{n\Gamma}e_n^*
+\]
+\emph{（したがって \(\mathfrak q_i\) と \(e_i^*\) は共役である）。このとき \(\mathfrak K_n\) の正則元 \(\lambda\) で、\(\mathfrak q_i=\lambda^{-1}\mathfrak l_i\lambda\) を満たすものが存在する。}
+
+\emph{証明. 1. \(e_i\) を共役と仮定してよいことは次のように従う。} \(e_1\) を \(\mathfrak l_1\) の任意の生成冪等元、すなわち \(\mathfrak l_1=\mathfrak K_{n\Gamma}e_1\) とする。\(\Gamma\) の自己同型を作用させれば \(\mathfrak l_i=\mathfrak K_{n\Gamma}e_i\) が従い、ここで \(e_i\) は \(e_1\) と共役で、やはり生成冪等元である。
+
+2. \emph{任意の \(\mathfrak l\) は任意の \(\mathfrak q\) と同型である。} 実際、\(\mathfrak l\) は共役であるためすべて同じ（絶対）長をもち、\(\mathfrak z\) と \(A\) は同型と仮定され、しかも \(\mathfrak l\) と \(\mathfrak q\) の個数は一致するからである。
+
+3. 対応
+\[
+\tag{3}
+e_1\mapsto s_1=e_1s_1;\qquad
+e_1^*\mapsto t_1=e_1^*t_1;\qquad
+s_1t_1=e_1;\qquad
+t_1s_1=e_1^*
+\]
+によって、\(\mathfrak l_1\) と \(\mathfrak q_1\) の間の同型とその逆を固定する。すべての自己同型を作用させることにより、(3) は
+\[
+e_i\mapsto s_i=e_is_i;\qquad
+e_i^*\mapsto t_i=e_i^*t_i;\qquad
+s_it_i=e_i;\qquad
+t_is_i=e_i^*
+\]
+へ移る。こうして同型 \(\mathfrak q_i=\mathfrak l_is_i\) と \(\mathfrak l_i=\mathfrak q_it_i\) が定められる。
+
+4. ここで
+\[
+s=s_1+\cdots+s_n;\qquad t=t_1+\cdots+t_n
+\]
+と置く。すると
+\[
+\mathfrak q_i=\mathfrak l_is;\qquad
+\mathfrak l_i=\mathfrak q_it;\qquad
+st=e_1+\cdots+e_n=\xi;\qquad
+ts=e_1^*+\cdots+e_n^*=\xi^*
+\]
+を得る。ここで \(\xi\) と \(\xi^*\) は \(\mathfrak K_n\) に属し、
+\[
+A\xi=A,\qquad \mathfrak z\xi^*=\mathfrak z
+\quad\text{（}\mathfrak l_i\xi=\mathfrak l_i\mathfrak l_i=\mathfrak l_i\text{ であるため）},
+\]
+\[
+\xi^2=\xi,\qquad \xi^{*2}=\xi^*
+\]
+となる。いま \(e=\overline E+E=\overline E^*+E^*\) と置き、したがって
+\[
+\mathfrak K_n=\overline A+A
+=\mathfrak K_n\overline\xi+\mathfrak K_n\xi
+=\overline{\mathfrak z}+\mathfrak z
+=\mathfrak K_n\overline\xi^*+\mathfrak K_n\xi^*
+\]
+とすれば、さらに \(\overline A\) と \(\overline{\mathfrak z}\) は同型になる。そこで
+\[
+\overline E\mapsto\overline s=\overline E\,\overline s
+\qquad\text{および}\qquad
+\overline E^*\mapsto\overline t=\overline E^*\overline t
+\]
+を相互に逆な同型とし、
+\[
+\lambda=s+\overline s,\qquad \mu=t+\overline t
+\]
+と置けば、
+\[
+\lambda\mu=\mu\lambda=e,\qquad
+\mathfrak l_i\lambda=\mathfrak q_i,\qquad
+\lambda^{-1}\mathfrak q_i=\mathfrak q_i
+\quad
+(\lambda^{-1}\mathfrak q_i\subseteq\mathfrak q_i
+=\lambda\cdot\lambda^{-1}\mathfrak q_i\subseteq\lambda^{-1}\mathfrak q_i)
+\]
+となり、したがって
+\[
+\lambda^{-1}\mathfrak l_i\lambda=\mathfrak q_i,\qquad \text{証明終。}
+\]
+
+分解 (1) に対して、再び元
+\[
+r_{ik}=c_{ik}^{\prime(ik)}\gamma_{ik},\qquad \gamma_{ik}\in\{Z_i,Z_k\}
+\]
+を定めることができる。これらは \(e'_iE'\mapsto r_{ik}\) によってイデアル \(\mathfrak l'_i\mathfrak z'_1\) と \(\mathfrak l'_k\mathfrak z'_1\) の間の作用素同型を与え、また \(S(i,k)=(\nu,\mu)\) のとき共役性条件 \(S(r_{ik})=r_{\nu\mu}\) を満たす。これらは
+\[
+r_{ij}r_{jk}=\alpha_{ik}^{(j)}r_{ik}
+\]
+によって \(A_\Gamma\) の因子系 \(\alpha\) を定める。ここで重要なのは、\(A_\Gamma\) の因子系を定めるために任意の分解 (2) も同様に使えることである。実際、(1) に属する系 \(r_{ik}\) を \(r'_{ik}=\lambda^{-1}r_{ik}\lambda\) で置き換えると、\(e_i^*\mapsto r'_{ik}\) は \(\mathfrak q_i\) から \(\mathfrak q_k\) への作用素同型を与える。\(\lambda\) は \(\mathfrak q\)-不変なので、\(r'_{ik}\) は共役性条件を満たし、しかも \(r'_{ik}\) は \(r_{ik}\) と同じ因子系をもつ。
+
+\(\mathfrak K\) の擬行列単位系 \(p_{ik}\) を取れば、
+\[
+r_{ik}=\tau^{-1}p_{ik}\tau\cdot E'
+\]
+は同じ因子系をもつ \(A_\Gamma\) の \(r_{ik}\)-系である。したがって次の補助定理を得る。
+
+\textbf{定理.} \emph{\(A_\Gamma\) の共役な左イデアルへの任意の分解}
+\[
+A_\Gamma=\mathfrak q_1+\cdots+\mathfrak q_n
+\]
+\emph{を用いて作られる \(A_\Gamma\) の因子系は、\(\mathfrak K_r\) の因子系と同じである。}
+
+次の定理は、\(\alpha_{ik}^{(j)}\) と \(\beta_{ik}^{(j)}\) がそれぞれ、\(Z\) を基礎とする \(\{\mathfrak K\}\) と \(\{\mathfrak S\}\) の因子系ならば、\(\varepsilon_{ik}^{(j)}=\alpha_{ik}^{(j)}\cdot\beta_{ik}^{(j)}\) が、\(Z\) を基礎とする \(\{\mathfrak K\times\mathfrak S\}\) の因子系であることを示す。したがって、同伴する因子系の二類 \(\{\alpha\}\)、\(\{\beta\}\) の\emph{積 \(\{\alpha\}\times\{\beta\}\)} を、類 \(\{\alpha_{ik}^{(j)}\beta_{ik}^{(j)}\}\) として定義することには意味がある。
+
+\textbf{定理 2.} \emph{\(\{\mathfrak K\}\) が、\(Z\) を基礎として同伴する因子系の類 \(\{\alpha\}\) をもつとする。分解体 \(Z\) をもつすべての \(\{\mathfrak K\}\) の類 \(\{\alpha\}\) は群をなし、\(\{\mathfrak K\}\mapsto\{\alpha\}\) によって \(\mathscr K_Z\) と同型に対応する。}
+
+\textbf{証明のために}次の二点を示さなければならない。
+
+1. \(\{\mathfrak K\}\) が因子系 \(\alpha_{ik}^{(j)}\) を、\(\{\mathfrak S\}\) が \(\beta_{ik}^{(j)}\) をもつならば、\(\varepsilon_{ik}^{(j)}=\alpha_{ik}^{(j)}\beta_{ik}^{(j)}\) は \(\{\mathfrak K\times\mathfrak S\}\) の因子系である。
+
+2. \(\{\mathfrak K\}\) が因子系 \(\alpha_{ik}^{(j)}=1\) をもつならば、\(\mathfrak K=\mathsf P\) である。
+
+1. \(Z\) から \(\mathfrak K\)、\(\mathfrak S\) への既約表現の次数をそれぞれ \(r,s\) とし、
+\[
+\mathfrak K_{r\Gamma}=\mathfrak l_1+\cdots+\mathfrak l_n,\qquad
+\mathfrak S_{s\Gamma}=\mathfrak m_1+\cdots+\mathfrak m_n
+\]
+を共役なイデアルへの分解とする。ここで \(\mathfrak l_i\) と \(\mathfrak m_i\) は互いに対応するイデアルとする（それぞれ \(\mathfrak Z_r\) および \(\mathfrak Z'_r\) の対応する成分から導かれる）。すると
+\[
+(\mathfrak K_r\times\mathfrak S_s)_\Gamma
+=\mathfrak l_1\mathfrak m_1+\cdots+\mathfrak l_i\mathfrak m_j+\cdots+\mathfrak l_n\mathfrak m_n
+\]
+は、零でない \(n^2\) 個、したがって単純なイデアルへの分解である。それゆえ
+\[
+A_1=\mathfrak l_1\mathfrak m_1+\mathfrak l_2\mathfrak m_2+\cdots+\mathfrak l_n\mathfrak m_n
+\]
+は絶対長 \(n\) のイデアルである。\(\mathfrak m_i\) は \(\mathfrak l_i\) と同じように変換されるので、\(A_1\) はすべての \(S\) に対して不変である。したがって
+\[
+A_1=A_\Gamma
+\]
+となる \(\mathfrak K_r\times\mathfrak S_s\) のイデアル \(A\) が存在する（18 頁の補題）。
+
+\(\mathfrak K\times\mathfrak S\) の単純イデアルの自己同型体 \(\mathfrak M\) における \(\mathfrak Z\) の既約表現の次数を \(u\) とすると、\(A\) は \(u\) 個の単純イデアルに分解する（絶対長が \(n\) だからである）。したがって補助定理により、\(A\) の因子系は \(\mathfrak M\) の因子系でもある。
+
+ところで、定義に用いる \(A_\Gamma\) の共役なイデアルへの分解は
+\[
+\tag{3}
+A_\Gamma=\mathfrak l_1\mathfrak m_1+\mathfrak l_2\mathfrak m_2+\cdots+\mathfrak l_n\mathfrak m_n
+\]
+である。\(\alpha_{ik}^{(j)}\)、\(\beta_{ik}^{(j)}\) がそれぞれ \(\mathfrak K\)、\(\mathfrak S\) の擬行列単位 \(p_{ik}\)、\(q_{ik}\) に属するならば、\(r_{ik}=p_{ik}q_{ik}\) は明らかに、分解 (3) に対する \(A_\Gamma\) の擬行列単位系である。これに属する因子系 \(\varepsilon_{ik}^{(j)}=\alpha_{ik}^{(j)}\beta_{ik}^{(j)}\) は、したがって \(\mathfrak M\) の因子系でもある。
+
+2. \(\{\mathfrak K\}\) が因子系 \(\alpha_{ik}^{(j)}=1\) をもち、対応する擬行列単位を \(p_{ik}\)、共役なイデアルへの分解を
+\[
+\mathfrak K_{r\Gamma}=\mathfrak l_1+\cdots+\mathfrak l_n
+\]
+とする。\(\mathfrak K=\mathsf P\)、または \(\mathfrak K_r=\mathsf P_r\)、または \(\mathfrak K_r\) に \(n\)-成分左イデアル \(\mathfrak l\) が存在することを示さなければならない。なぜなら、単純な \(\mathfrak K_r\)-左イデアルは階数 \(t^2r\) をもつので、整数 \(h\) によって \(n=t^2rh\) となるか、または \(t=1\) でなければならないからである。
+
+\(\mathfrak K_{r\Gamma}\)-イデアル
+\[
+\Omega=\mathfrak l_1(p_{11}+\cdots+p_{1n})
+\]
+は零でなく（\(e_1\sum_i p_{1i}\ne0\)）、単純であり、したがって階数 \(n\) である。\(\Omega\) は \(\mathfrak G\)-不変である。実際、\(\alpha_{ik}^{(j)}=1\) であるから、
+\[
+S\Omega
+=\mathfrak l_i\sum_\nu S p_{1\nu}
+=\mathfrak l_i\sum_\mu p_{i\mu}
+=\mathfrak l_i\sum_\mu p_{i1}p_{1\mu}.
+\]
+したがって
+\[
+S\Omega=\mathfrak l_ip_{i1}\sum_\mu p_{1\mu}
+=\mathfrak l_1\sum_\mu p_{1\mu}
+=\Omega.
+\]
+ゆえに \(\Omega=\mathfrak l_\Gamma\) であり、\emph{ここで \(\mathfrak l\) は階数 \(n\) の \(\mathfrak K_r\)-イデアルである。}
+
+\textbf{定理 3.} \emph{群 \(\mathscr K\) の各元 \(\{\mathfrak K\}\) は有限位数 \(\lambda\) をもち、それは \(\mathfrak K\) の絶対成分数 \(t\) の約数である。}
+
+\emph{第一証明（Brauer）.} \(\mathfrak K_{r\Gamma}\) の共役な左イデアルへの二つの分解
+\[
+\mathfrak K_{r\Gamma}=\mathfrak l_1+\cdots+\mathfrak l_n
+=\mathfrak z_1+\cdots+\mathfrak z_n,\qquad
+\mathfrak l_i=\mathfrak K_{r\Gamma}e_i,\quad
+\mathfrak z_i=\mathfrak K_{r\Gamma}e_i^*
+\]
+を取る。\(a_i\mapsto a_ir_{ik}\)、特に \(e_i\mapsto r_{ik}\) によって、\(\mathfrak l_i\) から \(\mathfrak z_k\) への作用素同型が与えられるとする。その逆写像で \(e_k^*\) は \(\mathfrak l_i\) の元 \(s_{ki}\) へ移り、\(s_{ki}\cdot r_{ik}=e_k^*\) となる。\(r_{ik}\) を共役に選び、
+\[
+S(r_{ik})=r_{\nu\mu}\quad\text{もし}\quad S(i,k)=(\nu,\mu)
+\]
+とすれば、\(s_{ik}\) も共役である。実際、
+\[
+S(s_{ki})S(r_{ik})=S(s_{ki}r_{ik})=S(e_k^*)=e_\mu^*
+=s_{\mu\nu}r_{\nu\mu}=s_{\mu\nu}S(r_{ik}),
+\]
+したがって \(S(s_{ki})=s_{\mu\nu}\) である。\(e_i\mapsto e_ir_{ij}s_{jk}\) によって \(\mathfrak l_i\) から \(\mathfrak l_k\) への作用素同型が与えられるから、
+\[
+r_{ij}s_{jk}=p_{ik}\xi_{ik}^{(j)},\qquad
+\xi_{ik}^{(j)}\ne0\in\Gamma
+\]
+でなければならない。
+
+\(r\)、\(s\)、\(p\) が共役であるから、\(\xi\) も共役である。\(S(i,j,k)=(\nu,\tau,\mu)\) ならば
+\[
+S(\xi_{ik}^{(j)})=\xi_{\nu\mu}^{\tau}.
+\]
+
+\[
+r_{i\lambda}s_{\lambda j}r_{j\lambda}s_{\lambda k}
+=r_{i\lambda}e_\lambda^*s_{\lambda k}
+=r_{i\lambda}s_{\lambda k}
+\]
+から
+\[
+p_{ij}\xi_{ij}^{(\lambda)}\cdot p_{jk}\xi_{jk}^{(\lambda)}
+=p_{ik}\xi_{ik}^{(\lambda)}
+\]
+が従う。あるいは \(p_{ij}p_{jk}=p_{ik}\alpha_{ik}^{(j)}\) であるから、
+\[
+\alpha_{ik}^{(j)}
+=\frac{\xi_{ik}^{(\lambda)}}{\xi_{ij}^{(\lambda)}\xi_{jk}^{(\lambda)}}.
+\]
+\(\delta_{\nu\mu}=\prod_\lambda\xi_{\nu\mu}^{(\lambda)}\) と置けば、\(\delta_{\nu\mu}\) は \(\nu\) と \(\mu\) を固定するすべての \(S\) に対して不変であるから \(\{Z_\nu,Z_\mu\}\) に属し、さらに \(\xi_{\nu\mu}^{(j)}\) が共役であるため \(\delta_{\nu\mu}\) も共役である。いま
+\[
+\alpha_{ik}^{(j)n}
+=\frac{\prod_\lambda\xi_{ik}^{(\lambda)}}
+       {\prod_\lambda\xi_{ij}^{(\lambda)}\prod_\lambda\xi_{jk}^{(\lambda)}}
+=\frac{\delta_{ik}}{\delta_{ij}\delta_{jk}}
+\]
+であるから、同伴する因子系の公式（32 頁）により、\(\alpha_{ik}^{(j)n}\) は系 \(\beta_{ik}^{(j)}=1\) と同伴する。したがって \(\{\mathfrak K\}\) の位数は \(\{\alpha\}\) の位数に等しいので、\(\{\mathfrak K\}\) の位数は \(n\) の約数である。特に \(\mathfrak Z\) を \(\mathfrak K\) の極大可換部分体として選べば \(n=t\) であるから、\(\lambda\) は \(t\) の約数である。
+
+\emph{第二証明（Schur）.} この証明は、\(p_{ik}\) を \(\Gamma\) 上の正則な \(n\) 次行列 \(P_{ik}\) で表現することに基づく。この行列は \(p_{ik}\) と同じ共役性条件を満たす。\(P_{ik}\) は \(\{Z_i,Z_k\}\) に属し、\(p_{ik}\) に \(P_{ik}\) が対応するならば、\(S(p_{ik})\) には \(S(P_{ik})\) が対応する。この表現は準同型である。すなわち \(p_{ik}\) に \(P_{ik}\)、\(p_{kj}\) に \(P_{kj}\) が対応するならば、\(p_{ik}p_{kj}\) に \(P_{ik}P_{kj}\) が対応し、したがって
+\[
+P_{ik}P_{kj}=\alpha_{ij}^{(k)}P_{ij}
+\]
+となる（\(k_1\ne k_2\) に対して \(P_{ik_1}P_{k_2j}=0\) となることはありえない）。この \(p_{ik}\) の表現が得られれば、次のように結論する。行列式を取れば
+\[
+|P_{ik}|\cdot |P_{kj}|=\alpha_{ij}^{(k)n}\cdot |P_{ij}|.
+\]
+行列 \(P_{ik}\) は正則なので \(|P_{\nu\mu}|\ne0\) であり、
+\[
+\alpha_{ij}^{(k)n}=\frac{\delta_{ik}\delta_{kj}}{\delta_{ik}},
+\]
+ここで \(|P_{\nu\mu}|=\delta_{\nu\mu}\) と置いた。その後は Brauer の証明と同じである。
+
+\emph{行列 \(P_{ik}\) による \(p_{ik}\) の表現：}
+
+分解
+\[
+\mathfrak K_{r\Gamma}=\mathfrak l_1+\cdots+\mathfrak l_n
+\]
+のイデアル \(\mathfrak l_i\) は、\(\Gamma\) における \(\mathfrak K_r\) の相反表現加群である（32 頁の定理 2）。\(\mathfrak Z\) に関する \(\mathfrak K_r\) の固定した基底 \(k_1,\ldots,k_n\) を基礎とすれば、
+\[
+\mathfrak K_{r\Gamma}=k_1\mathfrak Z_r+\cdots+k_n\mathfrak Z_r,
+\]
+したがって
+\[
+\mathfrak l_i=\mathfrak K_{r\Gamma}e_i
+=k_1\mathfrak Z_r e_i+\cdots+k_n\mathfrak Z_r e_i
+=k_1e_i\Gamma+\cdots+k_ne_i\Gamma.
+\]
+これから
+\[
+\mathfrak l_k=\mathfrak l_i p_{ik}
+=k_1p_{ik}\Gamma+\cdots+k_np_{ik}\Gamma
+\]
+が従う。\(\mathfrak l_k\) の二基底 \((k_1e_i,\ldots,k_ne_i)\) と \((k_1p_{ik},\ldots,k_np_{ik})\) は、正則行列 \(P_{ik}\) を掛けることによって互いに移される：
+\[
+P_{ik}\cdot
+\begin{pmatrix}
+k_1e_i\\ \vdots\\ k_ne_i
+\end{pmatrix}
+=
+\begin{pmatrix}
+k_1p_{ik}\\ \vdots\\ k_np_{ik}
+\end{pmatrix},
+\qquad
+\text{略記すれば}\quad
+P_{ik}(k_\varrho e_i)=(k_\varrho p_{ik}).
+\]
+これから \(P_{ik}\) の共役性が従う：
+\[
+S(P_{ik})(k_\varrho S(e_k))=(k_\varrho S(p_{ik}))
+\quad\text{または}\quad
+S(P_{ik})(k_\varrho e_\mu)=(k_\varrho p_{\nu\mu})
+=P_{\nu\mu}(k_\varrho e_\mu).
+\]
+すなわち
+\[
+S(P_{ik})=P_{\nu\mu}\quad\text{もし}\quad S(i,k)=(\nu,\mu).
+\]
+これからさらに、\(P_{ik}\) が \(\{Z_i,Z_k\}\)、すなわち \(i\) と \(k\) を固定する \(S\) の不変体に属することが従う。準同性も容易にわかる：
+\[
+\begin{split}
+P_{ik}P_{kj}(k_\varrho e_j)
+&=P_{ik}(k_\varrho p_{kj})
+=(k_\varrho p_{ik}p_{kj})\\
+&=\alpha_{ij}^{(k)}(k_\varrho p_{ij})
+=\alpha_{ij}P_{ij}(k_\varrho e_j),
+\quad\text{したがって}\\
+&\cdot\, P_{ik}P_{kj}=\alpha_{ij}^{(k)}P_{ij},
+\quad\text{証明終。}
+\end{split}
+\]
+
+定理 3 は次のように強められる。
+
+\textbf{定理 4.} \emph{\(p\) が \(\mathfrak K\) の絶対成分数 \(t\) の素因数ならば、\(p\) は \(\{\mathfrak K\}\) の位数 \(\lambda\) も割り切る。（Brauer）}
+
+\emph{証明.} \(p^\sigma\) を、分解体 \(Z\) の次数 \(n\) を割る \(p\) の最高冪とし、\(\mathfrak H\) を \(\mathfrak G\) の位数 \(p^\sigma\) の部分群（これは \emph{Sylow の定理}、Speiser 第 1 版、\S 19、42 頁、定理 43 により存在する）、\(T\) を \(\mathfrak H\) の不変体とする。
+
+このとき \([\Gamma:T]=p^\sigma\) であり、\([T:\mathsf P]=n/p^\sigma\) は \(p\) で割れず、まして \(t\) では割れない。したがって \(T\) は分解体ではなく、\(\mathfrak K_T=\mathfrak S_m\) の自己同型体 \(\mathfrak S\) は \(\mathsf P\) と異なる。しかし \(\mathfrak S\) は分解体 \(\Gamma\) をもち、その \(\mathfrak S\) の中心 \(T\) 上の次数は \(p^\sigma\) であるから、\(\mathfrak S\) の絶対成分数は \(p\) の冪 \(p^\beta>1\) である。したがって定理 3 により、\(\{\mathfrak S\}\) の位数は \(p\) の冪 \(p^\alpha>1\) である。
+\[
+\{\mathfrak K\}^{\lambda}=\{\mathsf P\},
+\qquad
+\{\mathfrak K_T\}^{\lambda}=\{T\}
+\]
+が従うので、\(\lambda\equiv0\pmod {p^\alpha}\) である。証明終。（\(\lambda=t\) である必要がないことについて、Brauer は例を与えた\srcfn{1}{Brauer: Untersuchungen über die arithmetischen Eigenschaften von Gruppen linearer Substitutionen II. Math. Zeitschr. 31, S. 733 \S 5, (1930).}。）
+
+\textbf{定理 5.} \emph{\(t\) を素因数分解して \(t=\prod_i p_i^{\varrho_i}\)、\(\varrho_i\ge1\)、\(i\ne j\) ならば \(p_i\ne p_j\) とする。このとき \(\mathfrak K=\mathfrak K^{(1)}\times\mathfrak K^{(2)}\times\cdots\) であり、\(\mathfrak K^{(i)}\) は絶対成分数 \(p_i^{\varrho_i}\) をもつ体である。}
+
+\emph{証明.} 定理 3 と 4 により、\(\{\mathfrak K\}\) の位数 \(\lambda\) は
+\[
+\lambda=\prod_i p_i^{\alpha_i},\qquad 1\le\alpha_i\le\varrho_i.
+\]
+\(\{\mathfrak K\}\) が生成する \(\mathscr K\) の巡回部分群 \(\mathfrak Z\) は、位数 \(p_i^{\alpha_i}\) の部分群 \(\mathfrak Z_i\) の直積である。したがって
+\[
+\{\mathfrak K\}=\prod_i\{\mathfrak K^{(i)}\}.
+\]
+これから、\(\mathfrak K\) の各分解体 \(Z\) は \(\mathfrak K^{(i)}\) の分解体でもあることがわかる。したがって \(\mathfrak K^{(i)}\) の絶対成分数 \(p_i^{\sigma_i}\) は \(t\) を割り、\(\sigma_i\le\varrho_i\) である。\(\prod_i\mathfrak K^{(i)}=\mathfrak K_m\) とすれば、
+\[
+\prod_i p_i^{\varrho_i}=\prod_i p_i^{\sigma_i}\cdot m,
+\qquad
+\sigma_i\ge\varrho_i,
+\]
+したがって
+\[
+\sigma_i=\varrho_i,\qquad m=1,\qquad
+\mathfrak K=\prod_i\mathfrak K^{(i)},
+\quad\text{証明終。}
+\]
+
+\subsection*{\S 25. ガロア的極大可換部分体をもつ \(\mathfrak K_r\) の正規表現\protect\footnotemark}
+\label{normaldarstellung-von-r_r-mit-galoisschem-maximalem-kommutativem-teilkoerper-1}
+\footnotetext{より簡単な根拠は \S 27 以降を参照。}
+
+\(\mathfrak K_r\) の極大可換部分体 \(\mathfrak Z\) がガロア的であるとする。\(\mathfrak Z/\mathsf P\) の \(n\) 個の自己同型 \(H_i\) は、25 頁の定理 7 により \(\mathfrak K_r\) の内部自己同型である。すなわち、元 \(u_i\) が存在して
+\[
+H_i z=u_i^{-1}zu_i\quad\text{すべての }z\in\mathfrak Z\text{ に対して}
+\]
+となる。各 \(u_i\) は、\(\mathfrak Z\) の零でない因子 \(y\) を除いて定まる。実際、すべての \(z\in\mathfrak Z\) に対して \(u^{-1}zu=u'^{-1}zu'\) ならば、すべての \(z\in\mathfrak Z\) に対して \((u^{-1}u')^{-1}z(u^{-1}u')=z\) が従う。したがって \(u^{-1}u'\) を \(\mathfrak Z\) に添加すると \(\mathfrak K_r\) の可換部分体が得られ、それは \(\mathfrak Z\) の極大性により \(\mathfrak Z\) と一致する。ゆえに \(u^{-1}u'\in\mathfrak Z\) である。
+
+次の定理を証明する：
+\[
+\mathfrak K_r=u_1\mathfrak Z+\cdots+u_n\mathfrak Z.
+\]
+そのためには、明らかに \(u_i\) が \(\mathfrak Z\) に関して線形独立であることだけが必要である。証明は \(u_i\) を直接与えることによって行う。いま
+\[
+\mathfrak Z_Z=e_1Z+\cdots+e_nZ,\qquad
+\mathfrak K_{rZ}=\mathfrak l_1+\cdots+\mathfrak l_n,\quad
+\mathfrak l_i=\mathfrak K_{rZ}e_i
+\]
+とし、\(p_{ik}\) をこの分解に対する擬行列単位系とする。8 頁では、表現加群 \(e_iZ\) が与える \(\mathfrak Z\) から \(Z\) への同型を \(\Theta_i\) と表したので、
+\[
+S_i=\Theta_i\Theta_1^{-1}
+\]
+は \(Z\) の \(n\) 個の自己同型である（ただし \(Z\) 自身に作用させる限りにおいてのみであり、ここで常に基礎としている \(S_i\) の \(\mathfrak K_{rZ}\) 全体への作用についてではない！）。簡単のため、\(S_i=\Theta_i\Theta_1^{-1}\) における \(\Theta_i\) の代わりに \(\Theta_{S_i}\) と書き、さらに \(p_{ik}\) の添字 \(i,k\) も対応する自己同型 \(S\) で置き換える：
+\[
+p_{ik}=p_{S_iS_k}.
+\]
+
+\(\mathfrak Z\) の \(n\) 個の自己同型は（\(E\) は恒等置換）
+\[
+H=\Theta_E^{-1}\Theta
+\]
+である。ここで \(H\) の番号付けを
+\[
+H_S=\Theta_E^{-1}\Theta_{S^{-1}}
+\]
+となるように選ぶ。
+
+このもとで
+\[
+u_T=\sum_S p_{S,ST}=\sum_S S(p_{E,T})
+\]
+と置くことができる。実際、
+
+1. \(u_T^{-1}\) は存在する：
+\[
+u_T^{-1}=\sum_S p_{ST,S}
+\frac{1}{\alpha_{S,S}^{ST}\overline{\gamma}_{S,ST}\overline{\gamma}_{ST,S}}.
+\]
+（\(\bar\gamma\) の意味については 32 頁を参照。）
+
+2. \(u_T\) は \(\mathfrak G\)-不変であるから、\(\mathfrak K_r\) の元である：
+\[
+R(u_T)=\sum_S RS(p_{E,T})=\sum_{S'} S'(p_{E,T})=u_T.
+\]
+
+3. \(u_T\) は \(H_T\) を生成する。すなわち \(z\in\mathfrak Z\) ならば \(u_T^{-1}zu_T=H_T(z)\)、または
+\[
+z u_T=u_T H_T(z)
+\]
+である。
+
+実際、
+\[
+z=\sum_S\Theta_S(z)e_S,\qquad
+u_T=\sum_S S(e_Ep_{E,T})=\sum_S e_S S(p_{E,T})
+\]
+であるから、
+\[
+zu_T=\sum_{S,S'}\Theta_S(z)e_Se_{S'}S(p_{E,T})
+=\sum_S\Theta_S(z)S(p_{E,T}).
+\]
+他方、
+\[
+u_T=\sum_S S(p_{E,T}e_T)=\sum_S S(p_{E,T})e_{ST}
+\]
+であり、\(\mathfrak Z\) の元に作用させるときには次の等式が成り立つ：
+\[
+\Theta_S H_T=\Theta_S\Theta_E^{-1}\Theta_{T^{-1}}
+=S\Theta_{T^{-1}}=ST^{-1}\Theta_E=\Theta_{ST^{-1}}.
+\]
+したがって
+\[
+H_T(z)=\sum_S e_S\Theta_S H_T(z)=\sum_S e_S\Theta_{ST^{-1}}(z),
+\]
+すなわち
+\[
+\begin{aligned}
+u_TH_T(z)
+&=\sum_{S,S'} S(p_{E,T})e_{ST}\cdot e_{S'}\Theta_{S'T^{-1}}(z)\\
+&=\sum_S S(p_{E,T})\Theta_S(z).
+\end{aligned}
+\]
+ゆえに
+\[
+z\cdot u_T=u_T\cdot H_T(z).
+\]
+
+4. \(u_S\) は \(\mathfrak Z\) に関して線形独立である。
+
+\[
+\sum_T z_Tu_T=0
+\]
+ならば、\(z=\sum_S\Theta_S(z)e_S\) により
+\[
+\sum_{T,S,L}\Theta_S(z_T)e_Sp_{L,LT}
+=\sum_{S,T}\Theta_S(z_T)p_{S,ST},
+\quad\text{したがって}\quad
+\Theta_S(z_T)=0,
+\]
+ゆえに \(z_T=0\) である。
+
+以下では \(H_S(z)\) の代わりに \(z^S\) と書き、これを「記号的冪」と呼ぶ。\(u_S\) については次の形の関係式が成り立たなければならない：
+\[
+u_Ru_T=u_{RT}a_{R,T},\qquad a_{R,T}\ne0\quad\text{かつ}\quad a_{R,T}\in\mathfrak Z.
+\]
+なぜなら
+\[
+\begin{aligned}
+u_Ru_T
+&=\sum_{S,S'} S(p_{E,R})S'(p_{E,T})
+=\sum_S p_{S,SR}p_{SR,SRT}\\
+&=\sum_S p_{S,SRT}\alpha_{S,SRT}^{(SR)}
+=\sum_S p_{S,SRT}\alpha_{S,SRT}^{(SR)}e_{SRT}
+\end{aligned}
+\]
+であり、また
+\[
+a_{R,\,T}=\sum_S e_{SRT}\,\Theta_{SRT}\left(a_{R,\,T}\right),
+\]
+したがって
+\[
+u_{RT}a_{R,T}=\sum_S p_{S,SRT}\Theta_{SRT}(a_{R,T})
+\]
+であるから、
+\[
+\Theta_{SRT}(a_{R,\,T})=\alpha_{S,SRT}^{(SR)},
+\quad
+a_{R,\,T}=\sum_S e_{SRT}\alpha_{S,SRT}^{(SR)}
+=\sum_L e_L\alpha_{LT^{-1}R^{-1},L}^{(LT^{-1})}
+\]
+が従う。
+
+\(a_{R,T}\) の系を \(\mathfrak K_r\) の\emph{小因子系}と呼ぶことにする。大因子系 \(\alpha_{BC}^{(A)}\) と小因子系 \(a_{R,T}\) は互いに一意に定め合う。二つの大因子系の積 \(\varepsilon_{BC}^{(A)}=\alpha_{BC}^{(A)}\beta_{BC}^{(A)}\) に属するのは、\(\alpha_{BC}^{(A)}\)、\(\beta_{BC}^{(A)}\) に対応する小因子系 \(a_{R,T}\)、\(b_{R,T}\) の積 \(f_{R,T}=a_{R,T}b_{R,T}\) である。これは上の公式から直ちに従う。大単位因子系 \(\alpha_{BC}^{(A)}=1\) には小単位因子系 \(a_{R,T}=1\) が属し、逆もまた成り立つ。
+
+\(u_S\) を \(u_S'=u_Sr_S\) で置き換えることができる。ここで \(r_S\ne0\) は \(\mathfrak Z\) から任意に選ぶ。\(u_S'\) に属する小因子系を \(a_{R,T}'\) とし、
+\[
+\text{(1)}\qquad u_R'u_T'=u_{RT}'a_{R,T}'
+\]
+とする。\(a_{R,T}'\) は \(a_{R,T}\) と\emph{同伴する}という。いま
+\[
+u_R r_R u_T r_T=u_{RT}r_{RT}a'_{R,T}
+=u_Ru_T r_R^T r_T=u_{RT}a_{R,T}r_R^T r_T
+\]
+であるから、
+\[
+\text{(2)}\qquad a'_{R,T}=a_{R,T}\frac{r_R^T r_T}{r_{RT}}
+\]
+が従う。
+
+\(u_S'=u_Sr_S\) に属する擬行列単位系は
+\[
+p_{S,ST}'=p_{S,ST}r_T
+\]
+である。したがって小因子系 \(a'_{R,T}\) は、\(a_{R,T}\) に属する大因子系 \(\alpha_{BC}^{(A)}\) と同伴する大因子系 \(\alpha_{BC}^{(A)\prime}\) に属する。同伴する小因子系は同伴する大因子系に対応し、逆もまた成り立つ。同伴する大因子系の類 \(\{\alpha\}\) から、それに属する同伴小因子系の類 \(\{a\}\) への対応は群同型である。
+
+ここで \(u_S\) を \(\mathfrak Z\) 上の \(n\) 次行列で表すことに進む。この表現は、これまで考えた表現とは本質的に異なる。
+
+\(\mathfrak K_r\) の \(\mathfrak Z\)-基底
+\[
+\text{(I)}\qquad k_{S_1},\ldots,k_{S_n}
+\]
+に右から \(u_S\) を掛けると、
+\[
+\text{(II)}\qquad k_{S_1}u_S,\ldots,k_{S_n}u_S
+\]
+が得られる。(I) を (II) へ移す（正則）行列 \(A_S\)、すなわち
+\[
+\text{(III)}\qquad
+(k_{S_1}u_S,\ldots,k_{S_n}u_S)
+=(k_{S_1},\ldots,k_{S_n})A_S
+\]
+を、\(u_S\) を表す行列と呼ぶ。この表現は、\(u_S\) と同様に \(\mathfrak Z/\mathsf P\) の自己同型を生成するすべての \(\mathfrak K_r\)-元、すなわち \(r_S\ne0\) を \(\mathfrak Z\) から任意に取ったすべての元 \(u_Sr_S\) に及ぶものとする。これらの元はすべて一つの群 \(\mathfrak G^*\) をなし、その正規部分群として \(\mathfrak Z\) の乗法群 \(\mathfrak Z^*\) を含む。商群 \(\mathfrak G^*/\mathfrak Z^*\) は、\(\mathfrak G^*\) の各剰余類の各元がそれに対応する \(\mathfrak Z\) の自己同型を生成する、という仕方で \(\mathfrak Z/\mathsf P\) のガロア群 \(\mathfrak G\) と同型である。この群 \(\mathfrak G^*\) は、いま述べた仕方で
+\[
+u_S\mapsto A_S
+\]
+と表現される。しかしこの表現は準同型でも相反準同型でもない。\(u_S\mapsto A_S\)、\(u_T\mapsto A_T\) から \(u_Su_T\mapsto A_SA_T\) が従うのではなく、
+\[
+\begin{aligned}
+(k_{S_1},\ldots,k_{S_n})u_Su_T
+&=(k_{S_1},\ldots,k_{S_n})A_Su_T
+=(k_{S_1},\ldots,k_{S_n})u_TA_S^T\\
+&=(k_{S_1},\ldots,k_{S_n})A_TA_S^T:
+\quad u_Su_T\mapsto A_TA_S^T
+\end{aligned}
+\]
+となるからである。
+
+この \(\mathfrak G^*\) の表現を\emph{交叉表現}と呼ぶ。\(h_{S_1},\ldots,h_{S_n}\) が \(\mathfrak Z\) に関する \(\mathfrak K_r\) の別の基底で、
+\[
+\text{(IV)}\qquad
+(h_{S_1},\ldots,h_{S_n})=(k_{S_1},\ldots,k_{S_n})M
+\]
+ならば、(III) と (IV) から
+\[
+(h_{S_1},\ldots,h_{S_n})u_S
+=(h_{S_1},\ldots,h_{S_n})M^{-1}A_SM^S
+\]
+を得る。すなわち、\(u_S\) が \(k\)-基底に関して \(A_S\) で表されるならば、\(k\)-基底を \(h\)-基底へ変換する行列を \(M\) とすると、\(h\)-基底に関しては \(M^{-1}A_SM^S\) で表される。
+
+交叉表現を定義する公式 (III) は、交叉表現と環 \(\mathfrak K_r\) との関係が、通常の相反表現（ただし左からでなく右から書かれる）とその表現加群との関係に似ていることを示す。違いが生じるのは、相反表現加群における交換関係
+\[
+(m^*\tau^*)c=(m^*c)\tau^*
+\]
+（5 頁参照）の代わりに、ここでは
+\[
+(kz)u_S=(ku_S)z^S,\qquad
+k\in\mathfrak K_r,\quad z\in\mathfrak Z
+\]
+が現れるからである。
+
+\(\mathfrak K_r\) の右イデアル \(\mathfrak r\) の基底によっても、\(\mathfrak G^*\) の交叉表現を作ることができる。\(\mathfrak K_r\) の各右イデアルは、この仕方で同値な表現の一類を生成する。ここで表現 \(u_S\mapsto A_S\)、\(u_S\mapsto B_S\) が同値であるとは、\(B_S=M^{-1}A_SM^S\) となる行列 \(M\) が存在することをいう。
+
+ここで、\(\mathfrak K_r\) の右イデアルが生成する \(\mathfrak G^*\) から \(\mathfrak Z\) への表現だけに限らず、一般に \(\mathfrak G^*\) から \(\mathfrak Z\) への次数 \(m\) の交叉表現を次のように定義できる。
+\begin{enumerate}
+\item 各 \(u_S\) に \(m\) 次の \(\mathfrak Z\)-行列 \(A_S\) が対応する。
+\item \(u_S\mapsto A_S\)、\(u_T\mapsto A_T\) から \(u_Su_T\mapsto A_TA_S^T\) が従う。
+\end{enumerate}
+
+階数 \(m\) の \(\mathfrak Z\)-右加群
+\[
+\mathfrak M=x_1\mathfrak Z+\cdots+x_m\mathfrak Z
+\]
+を取り、
+\[
+(x_1u_S,\ldots,x_mu_S)=(x_1,\ldots,x_m)A_S
+\]
+によって、交換関係
+\[
+(mz)u_S=(mu_S)z^S
+\]
+をもつ \(\mathfrak G^*\)-右加群とする。これは 5 頁で、与えられた表現から表現加群を構成したのと全く同様である。さらに 20 頁と同じように、
+\[
+m\cdot zu_S=mz\cdot u_S=mu_S\cdot z^S,
+\]
+一般に
+\[
+m\cdot\sum z_Su_S=\sum mz_S\cdot u_S
+=\sum mu_S\cdot z_S^S
+\]
+と定めることによって、\(\mathfrak M\) が有限 \(\mathfrak K_r\)-右加群になることを示す。この定義には特定の基底を用いたので、20 頁の計算に相当するものは全く必要ない。
+
+しかし M.Z. \S 18 により、各有限単純 \(\mathfrak K_r\)-加群 \(\mathfrak M\) は \(\mathfrak K_r\) の単純右イデアルと作用素同型である。したがって 22 頁の定理 2 と同様に、\(\mathfrak G^*\) から \(\mathfrak Z\) への既約交叉表現の類は\emph{一つ}しかなく、それはまさに単純右イデアルに属する類である。
+
+この既約表現の次数は \(t\) である。ここで \(t\) は \(\mathfrak K\) の指数（絶対指数）である。これは単純な階数計算から得られる。実際、その次数は単純右イデアルの \(\mathfrak Z\)-階数 \((\mathfrak r:\mathfrak Z)\) に等しい。22 頁により
+\[
+(\mathfrak Z:\mathsf P)=n=rt;\qquad
+(\mathfrak K_r:\mathsf P)=n^2;\qquad
+(\mathfrak r:\mathsf P)=n\cdot t
+\]
+である。最後の等式は \(\mathfrak K_r=\mathfrak r_1+\cdots+\mathfrak r_r\) による。
+\[
+(\mathfrak r:\mathsf P)
+=(\mathfrak r:\mathfrak Z)\cdot(\mathfrak Z:\mathsf P)
+\]
+すなわち \(n\cdot t=(\mathfrak r:\mathfrak Z)\cdot n\) から、\((\mathfrak r:\mathfrak Z)=t\) が従う。
+
+\subsection*{\S 26. 交叉表現の乗法}\label{multiplikation-der-verschraenkten-darstellungen}
+
+これまでは交叉表現を常に \(\mathfrak G^*\) の表現とみなした。しかし、それを \(\mathfrak Z/\mathsf P\) のガロア群 \(\mathfrak G\) の表現と考えることもできる。すなわち、\(\mathfrak G\) の各元 \(S\) に、変換 \(u_S^{-1}zu_S=z^S\) によって自己同型 \(S\) を生成する \(\mathfrak K_r\) の元 \(u_S\) を表す行列 \(A_S\) を対応させる。
+
+このような表現 \(S\mapsto A_S\) を特徴づけるには\srcfn{1}{このような表現（超複素系とは独立に）
+\[
+S\mapsto A_S;\quad T\mapsto A_T;\quad
+ST\mapsto A_TA_S^T=A_{ST}\cdot a_{S,T}^{-1}
+\]
+（またはその転置）は、Speiser（Math. Zschr. 5）が因子系 \(a_{S,T}\) を定義する出発点であった。したがって、この因子系は、ここで別の基礎から導入した因子系と同一であることがわかる。}、それをどの \(\mathfrak K_r\) で取ったか、また \(\mathfrak Z\) 上の \(\mathfrak K\) のどの \(u_S\) とどの \(k_{S_1},\ldots,k_{S_n}\) を用いたかを述べなければならない。基底の変更は同値な表現を与え、\(u\) の変更は同伴する因子系 \(a_{S,T}\) を与える。したがって本質的なのは、表現が取られる \(\mathfrak K_r\)、すなわち同伴する因子系の類 \(\{a_{S,T}\}\) である。
+
+ここで、このような \(\mathfrak G\) の表現が二つ与えられたとする：
+\[
+\begin{array}{lll}
+S\mapsto u_S\mapsto A_S
+&\text{対応する小因子系}&a_{R,T},\\
+S\mapsto v_S\mapsto B_S
+&\text{対応する小因子系}&b_{R,T}.
+\end{array}
+\]
+
+二つの行列 \(A=(a_{ik})\)、\(B=(b_{\mu\nu})\) の Kronecker 積 \(A\times B\) とは、行列 \(A\times B=(a_{ik}b_{\mu\nu})\) をいう。
+
+\noindent\textbf{主張.} \emph{\(S\mapsto A_S\times B_S\) も \(\mathfrak G\) の交叉表現である。さらに \(A_S\) が \(\mathfrak K_r\) から、\(B_S\) が \(\mathfrak S_s\) から生じるならば、この表現は積 \(\mathfrak K_r\times\mathfrak S_s\) に属する。}
+
+\noindent\emph{証明.} 表現 \(S\mapsto A_S\times B_S\) は交叉表現である。実際、
+\[
+S\mapsto A_S\times B_S,\qquad
+T\mapsto A_T\times B_T
+\]
+であり、
+\[
+ST\mapsto A_{ST}\times B_{ST}
+=(A_TA_S^T\times B_TB_S^T)a_{S,T}^{-1}b_{S,T}^{-1}.
+\]
+したがって証明すべきことは
+\[
+(A_T\times B_T)(A_S\times B_S)^T a_{S,T}^{-1}b_{S,T}^{-1}
+=(A_TA_S^T\times B_TB_S^T)a_{S,T}^{-1}b_{S,T}^{-1}
+\]
+である。これは次の考察から従う。
+
+行列 \(A\) と \(B\) を行列単位 \(c_{ik}\) と \(d_{\mu\nu}\) で表す（これらは \(\mathfrak K_r\) や \(\mathfrak S_s\) の行列単位とは無関係である）：
+\[
+A=\sum c_{ik}\alpha_{ik};\qquad
+B=\sum d_{\mu\nu}\beta_{\mu\nu}.
+\]
+すると
+\[
+A\times B=B\times A
+=\sum c_{ik}d_{\mu\nu}\cdot\alpha_{ik}\cdot\beta_{\mu\nu},
+\]
+すなわち新しい行列単位 \(c_{ik}d_{\mu\nu}=d_{\mu\nu}c_{ik}\) による行列に等しい。したがって \(A\)-行列と \(B\)-行列の乗法は、二つの行列環の直積
+\[
+\sum c_{ik}\mathfrak Z\times\sum d_{\mu\nu}\mathfrak Z
+\]
+における元の乗法に一対一に対応する。ゆえに各 \(A\)-行列は各 \(B\)-行列と交換可能である（ただし \(A\)-行列同士または \(B\)-行列同士が交換可能なのではない）。そして、この各 \(A\)-行列と各 \(B\)-行列との交換可能性から、\(a_{S,T}^{-1}b_{S,T}^{-1}\) を掛ければ、まさに証明すべき関係式が得られる。

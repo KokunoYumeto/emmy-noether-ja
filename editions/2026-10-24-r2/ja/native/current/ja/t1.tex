@@ -1,0 +1,291 @@
+\section*{第 II 章　可換体のガロア理論}\label{kapitel-ii.-galoissche-theorie-kommutativer-koerper}
+
+ここまでに展開した表現論だけでガロア理論を基礎づけることができる。この基礎づけには、特別な生成元系や不定元の多項式に関する定理へ立ち戻る必要がないという、通常の基礎づけに対する利点がある。\srcfn{1}{以下については M. Z. §§ 15--20 を参照。M. Z. § 21 は、後のガロア理論に関する節の最初の諸定理を含む。超複素系の定義については M. Z. § 6 を参照。}
+
+\subsection*{§ 5. 超複素系の係数拡大}\label{koeffizientenerweiterung-hyperkomplexer-systeme}
+
+ほとんど自明なので証明を省く、次の一般定理を定式化する。$\mathfrak{o}=c_1\mathsf P+\cdots+c_n\mathsf P$ を可換体 $\mathsf P$ 上の超複素系とする。$\Omega$ を、その中心が $\mathsf P$ を含む $\mathsf P$ の拡大環とする。\emph{拡大系} $\mathfrak{o}_{\Omega}$ を、すべての形式和 $\sum c_i\omega_i$（$\omega_i\in\Omega$）の集合として定義する。まず規定
+
+\[
+\begin{array}{l}
+\sum c_i\omega_i=\sum c_i\omega_i' \quad\text{であるのは、すべての $i$ について $\omega_i=\omega_i'$ のとき、かつそのときに限る};\\
+\sum c_i\omega_i+\sum c_i\omega_i'=\sum c_i(\omega_i+\omega_i');\\
+\omega\sum c_i\omega_i=\sum c_i\omega\omega_i;\quad
+\sum c_i\omega_i\cdot\omega=\sum c_i\omega_i\omega;\\
+\sum c_i\omega_i=\sum \omega_i c_i
+\end{array}
+\]
+
+によってこれを $\Omega$ と可換的に結合した $\Omega$-加群とし、さらに規定
+
+\[
+\sum c_i\omega_i\cdot \sum c_i\omega_i
+=\sum_i\sum_j c_ic_j\omega_i\omega_j
+\]
+
+によって $\mathfrak{o}$ の拡大環とする。ここで $c_ic_j$ は $\mathfrak{o}$ の元としてすでに定義されている。$\mathfrak{o}_{\Omega}$ は $\Omega$ 上階数 $n$ であり、
+
+\[
+\mathfrak{o}_{\Omega}=c_1\Omega+\cdots+c_n\Omega
+\]
+
+と書ける。
+
+\emph{$\mathfrak{o}_{\Omega}$ は基底 $c_1,\ldots,c_n$ に依存せず定義される。$\Omega$ が可換体ならば、$\mathfrak{o}_{\Omega}$ は $\Omega$ 上の超複素系である。}
+
+\subsection*{§ 6. 可換系の既約表現}\label{die-irreduziblen-darstellungen-kommutativer-systeme}
+
+$\mathfrak Z=z_1\mathsf P+\cdots+z_n\mathsf P$ を $\mathsf P$ 上の可換系とする。$\mathsf P$ の代数閉拡大体 $\Omega$ における $\mathfrak Z$ の既約表現をすべて求めよう。$\mathfrak Z$ の $\Omega$ における各表現から $\mathfrak Z_\Omega=z_1\Omega+\cdots+z_n\Omega$ の表現が得られる。実際、すでに $\mathsf P$ に属する基底元の表現がわかれば表現全体を定めるのに十分である。逆に、$\mathfrak Z_\Omega$ の各表現は $\mathfrak Z$ の表現を含む。したがって、$\mathfrak Z_\Omega$ の表現を求めてもよい。M. Z. § 20 によれば、それらは $\mathfrak Z_\Omega$ の正則表現、すなわち $\mathfrak Z_\Omega$ 自身を表現加群として用いるときに生じる表現に含まれる。さらに、$\mathfrak C$ を $\mathfrak Z_\Omega$ の根基とすれば、表現加群を $\mathfrak Z_\Omega/\mathfrak C$ に限ってもよい（M. Z. § 19 参照）。
+
+ところが $\mathfrak Z_\Omega/\mathfrak C$ は完全可約系、したがって $\Omega$ 上有限次数の体の直和である。$\Omega$ は代数閉であるから、これらの直和因子は $\Omega$ と同型である：
+
+\[
+\mathfrak Z_\Omega/\mathfrak C=e_1\Omega+\cdots+e_t\Omega.
+\]
+
+$e_\nu$ は単位元の成分である。したがって次が成り立つ。
+
+\emph{$\mathfrak Z_\Omega$ は $\Omega$ においてちょうど $t$ 個の相異なる既約表現類をもち、それらはすべて一次である。ここで $t$ は $\mathfrak Z_\Omega/\mathfrak C$ の階数であり、したがって高々 $n$ である。}
+
+これらの表現類はいずれも一つの表現しか含まない。可換体における一次表現を変換しても表現は変わらないからである：$\pi^{-1}\cdot\alpha\cdot\pi=\alpha$。
+
+したがって、$\mathfrak Z_\Omega$ から $\Omega$ の部分環への相異なる準同型写像 $\Theta_1,\ldots,\Theta_t$ がちょうど $t$ 個存在する。
+
+\subsection*{§ 7. 一つの体の同型写像}\label{die-isomorphismen-eines-koerpers}
+
+ここで $\mathfrak Z$ を体とする。$\mathfrak Z_\Omega$ から $\Omega$ の部分環への各準同型 $\Theta_i$ は、$\mathfrak Z$ を $\Omega$ の部分体 $Z_i$ へ同型に写さなければならない。実際、$Z_i=0$ であるか、または $Z_i$ は $\mathfrak Z$ の同型像である。前者はここでは起こらない。$\mathfrak Z$ の単位元には $\Omega$ の単位元が対応するからである。ゆえに次を得る。
+
+\emph{$\mathfrak Z$ が $\mathsf P$ の $n$ 次有限体拡大ならば、$\Omega$ の中に $\mathfrak Z$ と同型な相異なる体 $Z_i$ が、$\mathfrak Z_\Omega/\mathfrak C$ の階数 $t$ と同じ個数だけ存在する。したがって $Z_i$ の個数は高々 $n$ である。}
+
+$Z_i$ の個数が $n$ に等しいとき $\mathfrak Z$ は $\mathsf P$ 上\emph{第一種}であるといい、その個数が $n$ より小さいとき\emph{第二種}であるという。
+
+\emph{$\mathfrak Z$ が $\mathsf P$ 上第一種であるのは、$\mathfrak Z_\Omega$ が完全可約であるとき、かつそのときに限る。}
+
+ここに、このガロア理論の基礎づけが通常のものより優れている点が見える。通常のガロア理論では、一つの $Z_i$ から他の $Z_i$ への同型写像を考えるが、ここではこの非対称性が避けられる。また、一つの体がその次数を超える数の共役体をもたないことを示すため、通常は原始元を用いる。ここでは、この事実は $\mathfrak Z_\Omega$ のすべての既約表現が正則表現に含まれることからただちに従う。
+
+\subsection*{§ 8. 分解体}\label{der-zerfaellungskoerper}
+
+$Z_i$ は $\mathfrak Z$ の $\Omega$ における既約表現である。したがって、$\mathsf P$ と $\Omega$ の中間体 $\Gamma$、$\mathsf P\subseteq\Gamma\subseteq\Omega$ がすべての $Z_i$ を含むならば、すでに $\mathfrak Z_\Gamma/\mathfrak C$ は $\Gamma$ 上一次の $t$ 個の体に分解しなければならない。逆に、$\mathfrak Z_\Gamma/\mathfrak C$ が $t$ 個の体へ分解するためには、それらは $\mathfrak Z_\Gamma$ の一次既約表現となるので、$Z_i$ が $\Gamma$ に含まれなければならない。$\mathfrak Z_\Gamma/\mathfrak C$ が $t$ 個の体の直和となる性質をもつ体 $\Gamma$ を $\mathfrak Z$ の分解体と呼べば、次を得る。
+
+\emph{$\mathfrak Z$ と同型な体 $Z_i$ のガロア体、すなわちそれらの合成体は、$\mathfrak Z$ の最小分解体である。}
+
+\subsection*{§ 9. $Z_1$ から各 $Z_i$ への同型写像}\label{die-isomorphismen-von-z1-auf-die-zi}
+
+$\Theta_i$ は、$\mathfrak Z$ に制限すれば、$\mathfrak Z$ から $Z_i$ への同型写像である。したがって $S_i=\Theta_i\Theta_1^{-1}$ は $Z_1$ から $Z_i$ への同型写像である。$\Theta_i$ は互いに異なるから、$S_i$ も互いに異なる。$S_i$ は、通常のガロア理論で考える、一つの体 $Z_1$ からその共役体への同型写像である。他の $\Theta_i$ が存在しないので、他の同型写像も存在しない。
+
+\subsection*{§ 10. ガロア群}\label{die-galoissche-gruppe}
+
+$\mathfrak Z$ がガロア体、すなわち $Z_i$ が元の集合として一致するならば、$S_i$ は $\mathsf P$ を固定する $Z$ の自己同型すべてからなる群をなす。実際、各積 $S_iS_j$ は $Z$ の自己同型であり、$S_i$ 以外にはないから、ある $S_k$ に等しい。したがって $S_i$ は、$\mathsf P$ を元ごとに固定する $Z$ の自己同型すべてからなる群、すなわち\emph{$\mathsf P$ に関する $Z$ のガロア群}をなす。
+
+\subsection*{§ 11. ガロア理論の基本定理}\label{der-hauptsatz-der-galoisschen-theorie}
+
+$\mathfrak Z$ を $\mathsf P$ の第一種ガロア拡大とする。ガロア理論の基本定理を証明する。
+
+\emph{$\mathsf P$ と $\mathfrak Z$ の中間体 $\Gamma$ と、$\mathsf P$ に関する $Z$ のガロア群 $\mathfrak G$ の部分群 $\mathfrak H$ との間には、次の性質をもつ一対一対応がある。体 $\Gamma$ に対応する群 $\mathfrak H$ は $\Gamma$ を元ごとに固定する $Z$ の自己同型すべてからなり、$\Gamma$ は $\mathfrak H$ に属するすべての自己同型によって固定される $Z$ の元すべてからなる。}
+
+簡潔には次のように述べられる。
+
+\begin{enumerate}
+\item \emph{$\mathfrak H$ が $\Gamma$ の不変群ならば、$\Gamma$ は $\mathfrak H$ の不変体である。}
+\item \emph{$\Gamma$ が $\mathfrak H$ の不変体ならば、$\mathfrak H$ は $\Gamma$ の不変群である。}
+\end{enumerate}
+
+\paragraph{1. は次の補題へ帰着される。}\label{laesst-sich-zurueckfuehren-auf-den-hilfssatz}
+
+\emph{$\mathsf P \subseteq \Sigma \subseteq \mathsf T \subseteq \mathsf Z$ であり、$\mathsf T$ が $\Sigma$ 上次数 $t$ であるとする。このとき、$\Sigma$ から一つの（必ず $\mathsf Z$ に含まれる）共役体への各同型写像は、$\mathsf T$ から共役体への相異なる同型写像へ $t$ 通りに延長できる。}
+
+$\mathfrak H$ が $\Sigma$ の不変群であり、$\mathsf T$ が $\mathfrak H$ の不変体であると仮定すれば、次のように論じられる。$\mathfrak H$ の元は、$\Sigma$ の恒等同型を $\mathsf Z$ 全体へ延長したものである。これらの延長を $\mathsf T$ にだけ適用すると、補題により、それらは $t$ 個の類に分かれる。同じ類の同型写像は $\mathsf T$ 上で一致し、異なる類の同型写像は $\mathsf T$ 上で異なる。しかし $\mathsf T$ は $\mathfrak H$ の不変体であるから、$t=1$、$\mathsf T=\Sigma$ でなければならない。証明された。
+
+補題を証明するため、$\mathsf P$ と $\mathsf Z$ の中間体 $\mathfrak S,\mathfrak T$ であって、$\Theta_1$ によりそれぞれ $\Sigma,\mathsf T$ に対応するものへ戻る。示すべきことは次である。
+
+\emph{$\mathfrak S$ から一つの $\Sigma_i$ への各同型写像 $H_i$ は、$\mathfrak T$ から $\mathsf Z$ の部分体 $\mathsf T_i$ への同型写像へ、ちょうど $t$ 通りに延長できる。}
+
+$\mathfrak Z$ が $\mathsf P$ 上第一種であるという仮定により、$\mathfrak Z_\Omega/\mathfrak C$ は $\mathfrak Z_\Omega$ と一致する。したがって $\mathfrak S_\Omega$ は、その次数 $s$ と同じ個数の体に分解する：
+\[
+\mathfrak S_\Omega = E_1\Omega+\cdots+E_s\Omega .
+\]
+$E_\nu\Omega$ は表現加群として、$\mathfrak S$ から $s$ 個の部分体 $\Sigma_1,\ldots,\Sigma_s$ への $s$ 個の同型写像を生成する。$\mathfrak T$ の同型写像を求めるには $\mathfrak T_\Omega$ を考えればよい。$E_\nu\Omega$ は $\mathfrak S_\Omega$ のイデアルであるから、$E_\nu\Omega=\mathfrak S_\Omega E_\nu$ である。また明らかに
+\[
+\mathfrak T_\Omega=\mathfrak T\cdot\Omega=\mathfrak T\cdot\mathfrak S_\Omega .
+\]
+したがって
+\[
+\mathfrak T_\Omega
+=E_1\mathfrak S_\Omega\cdot\mathfrak T+\cdots+E_s\mathfrak S_\Omega\cdot\mathfrak T
+=E_1\mathfrak T_\Omega+\cdots+E_s\mathfrak T_\Omega .
+\]
+これは $\mathfrak T_\Omega$ のイデアルへの分解である。$E_\nu\cdot\mathfrak T_\Omega$ は $t$ 個の単純イデアルへ分解する。実際、次数の関係
+\[
+[\mathfrak T_\Omega\cdot E_\nu:\mathfrak S_\Omega E_\nu]
+\leqq [\mathfrak T_\Omega:\mathfrak S_\Omega]=[\mathfrak T:\mathfrak S]=t
+\]
+が成り立つ。$\mathfrak S_\Omega E_\nu=\Omega E_\nu\simeq\Omega$ だから、
+\[
+[\mathfrak T_\Omega\cdot E_\nu:\Omega]
+=[\mathfrak T_\Omega E_\nu:\mathfrak S_\Omega E_\nu]\leqq t.
+\]
+そして、すべての次数 $[\mathfrak T_\Omega E_\nu:\Omega]$ の和は $s\cdot t$ でなければならないから、
+\[
+[\mathfrak T_\Omega\cdot E_\nu:\Omega]=t,\qquad
+E_\nu\mathfrak T_\Omega=e_\nu^{(1)}\cdot\Omega+\cdots+e_\nu^{(t)}\Omega .
+\]
+各 $e_\nu^{(i)}\Omega$ は $\mathfrak T_\Omega$ の既約表現を与える。これらの表現を $\mathfrak S_\Omega$ に制限すると、$E_\nu\cdot\Omega$ が生成する表現と一致することを\emph{さらに示せば}証明は終わる。しかしこれは明らかである。なぜなら
+\[
+s\cdot E_\nu=E_\nu\sigma_\nu\quad
+(s\in\mathfrak S_\Omega\text{ は $\sigma_\nu$ で表現される})
+\]
+から
+\[
+\sum s\cdot e_\nu^{(i)}=\sum e_\nu^{(i)}\sigma_\nu
+\]
+が従い、和の表示の一意性により
+\[
+s\cdot e_\nu^{(i)}=e_\nu^{(i)}\sigma_\nu
+\]
+となるからである。したがって新しい表現も元 $s$ に元 $\sigma_\nu$ を対応させる。
+
+\paragraph{2. $\mathsf T$ を $\mathfrak H$ の不変体とする。}
+$\mathfrak H$ が $\mathsf T$ の不変群であることを示したい。そのためには、$\mathfrak H$ に属さない各自己同型によって固定されない $\mathsf T$ の元を一つ示せば\emph{十分}である。
+
+$\mathsf Z$ のガロア群 $\mathfrak G$ の元 $S_i$ は、$\mathsf P$ を固定する $\mathsf Z$ の自己同型である。規定
+\[
+S_i z=z,\quad \text{$z$ が $\mathfrak Z$ に属するとき}
+\]
+によって、これを $\mathfrak Z_{\mathsf Z}$ の自己同型にする。$S_i$ を
+\[
+\mathfrak Z_{\mathsf Z}=e_1\mathsf Z+\cdots+e_n\mathsf Z
+\]
+へ適用すると、一意に定まる直和因子 $e_\nu\mathsf Z$ を置換しなければならない。特に
+\[
+S_i e_\nu=e_{\nu'},\qquad\text{かつ}\qquad S_i e_\nu\ne S_k e_\nu
+\quad\text{$i\ne k$ のとき}
+\]
+である。$S_1,\ldots,S_h$ を $\mathfrak H$ の元とする。任意の $e_\nu$、たとえば $e'$ を一つ選び、$S_i$（$i\leqq h$）によってそこから生じる $e_\nu$ をすべて考える：
+\[
+e_1=S_1e',\ldots,e_h=S_he'.
+\]
+$i\leqq h,j\leqq h$ ならば
+\[
+S_i e_j=S_iS_j e'=S_ke'=e_k \quad \text{ただし}\quad k\leqq h
+\]
+であるから、$\mathfrak H$ の各 $S_i$ は $e_1,\ldots,e_h$ を互いに置換する。したがって
+\[
+E_1=e_1+\cdots+e_h
+\]
+は、すべての $S_i\in\mathfrak H$ に対して不変な $\mathfrak Z$ の元である。$\mathfrak Z$ の一つの基底によって $E_1$ を表すと、その係数は $\mathfrak H$ に対して不変な $\mathsf Z$ の元でなければならず、したがって $\mathsf T$ に属する。
+
+$E_1$ は $\mathfrak H$ に属さないどの $S_i$ に対しても不変ではない。実際、そのような $S_i$ に対して
+\[
+S_i E_1=e_i+\cdots
+\]
+は $e_1,\ldots,e_h$ の中に現れない成分 $e_i$ を含むが、$E_1$ の和表示は一意だからである。
+
+\subsection*{§ 12. 成分 $e_i$ の形式的意味}\label{die-formale-bedeutung-der-komponenten-ei}
+
+$\mathfrak Z$ の一つの固定した基底 $z_1,\ldots,z_n$ を取る：
+\[
+\mathfrak Z=z_1\mathsf P+\cdots+z_n\mathsf P.
+\]
+（ここでは $\mathfrak Z$ が第一種であることだけを仮定する。）同型写像 $\Theta_i$ は、関係式
+\[
+z_\nu e_i=e_i\zeta_\nu^{(i)}
+\]
+によって、系 $z_1,\ldots,z_n$ を $\mathsf Z_i$ の基底 $\zeta_1^{(i)},\ldots,\zeta_n^{(i)}$ へ写す。
+
+逆に、単位元の成分 $e_j$ は $\mathsf Z$ の係数を用いて $z_\nu$ によって表されなければならない：
+\[
+e_j=\sum_\nu \varrho_\nu^{(j)}z_\nu .
+\]
+したがって
+\[
+e_j=e_j^2=\sum \varrho_\nu^{(j)}z_\nu e_j
+=\sum \varrho_\nu^{(j)}\cdot\zeta_\nu^{(j)}\cdot e_j
+\]
+および
+\[
+0=e_je_k=\sum \varrho_\nu^{(j)}\cdot z_\nu\cdot e_k
+=\sum \varrho_\nu^{(j)}\cdot\zeta_\nu^{(k)}\cdot e_k
+\]
+を得る。ゆえに
+\[
+\sum_\nu \varrho_\nu^{(j)}\cdot\zeta_\nu^{(j)}=1;
+\qquad
+\sum_\nu \varrho_\nu^{(j)}\cdot\zeta_\nu^{(k)}=0,\quad
+\text{$j\ne k$ のとき}.
+\]
+これは、行列
+\[
+\begin{pmatrix}
+\zeta_1^{(1)} & \cdots & \zeta_n^{(1)}\\
+\cdots & \cdots & \cdots\\
+\cdots & \cdots & \cdots\\
+\cdots & \cdots & \cdots\\
+\zeta_1^{(n)} & \cdots & \zeta_n^{(n)}
+\end{pmatrix}
+\quad\text{と}\quad
+\begin{pmatrix}
+\varrho_1^{(1)} & \cdots & \varrho_1^{(n)}\\
+\cdots & \cdots & \cdots\\
+\cdots & \cdots & \cdots\\
+\cdots & \cdots & \cdots\\
+\varrho_n^{(1)} & \cdots & \varrho_n^{(n)}
+\end{pmatrix}
+\]
+が互いに逆であることを意味する。別の言い方をすれば、$\varrho_1^{(i)},\ldots,\varrho_n^{(i)}$ は $\zeta_1^{(i)},\ldots,\zeta_n^{(i)}$ の相補基底である。この基底は数体の差積の理論で役割を果たす。
+
+\subsection*{§ 13. 一般延長定理}\label{der-allgemeine-fortsetzungssatz}
+
+10 頁で証明した $H_i$ の延長に関する定理は一般化できる。
+
+$\mathfrak Z=z_1\mathsf P+\cdots+z_n\mathsf P$ を可換な完全可約超複素系とする。$\mathfrak S$ と $\mathfrak T$ を、この状況では必然的にやはり完全可約となる $\mathfrak Z$ の部分系とし、
+\[
+\mathsf P\subseteq\mathfrak S\subseteq\mathfrak T\subseteq\mathfrak Z
+\]
+とする。M. Z. § 13 により、三つの系はそれぞれ単位元をもつ。ただし、これら三つの単位元は必ずしも一致しない（$\mathfrak S$ と $\mathfrak T$ が $\mathfrak Z$ 自身とは異なる $\mathfrak Z$ のイデアルならば、確実に一致しない）。$E$ を $\mathfrak S$ の単位元とする。系 $\mathfrak T\cdot E$ は有限階数の $\mathfrak S$-加群である：
+\[
+E\mathfrak T=a_1\mathfrak S+\cdots+a_t\mathfrak S
+\]
+（一般には $\mathfrak T$ 自身はそうではない）。
+
+\emph{証明。} $\mathfrak S$ は体の直和である：$\mathfrak S=\mathfrak K_1+\cdots+\mathfrak K_r$。これに対応して $\mathfrak T E$ も直和に分解する。$\mathfrak T E$ の各直和因子は体 $\mathfrak K_i$ のいずれかを含まなければならない。そうでなければ $E$ によって零化されてしまうが、$E$ は $\mathfrak T E$ の単位元だからである。したがって $\mathfrak T E$ は $\mathfrak K_i$ の拡大環の直和、すなわち
+\[
+\mathfrak T E=a_{11}\mathfrak K_1+\cdots+a_{1p_1}\mathfrak K_1+\cdots+a_{rp_r}\mathfrak K_r
+\]
+という形の直和である。したがって $E\mathfrak T=a_{11}\mathfrak S+\cdots+a_{rp_r}\mathfrak S$ となる。証明された。
+
+\begin{center}
+一般延長定理。
+\end{center}
+
+\emph{準同型 $H_i$ によって与えられる $\mathfrak S$ の $\Omega$ における各既約表現は、$\mathfrak T$ の表現へちょうど $t$ 通りに拡張できる。}
+
+証明は 10--11 頁の証明と同様である。すなわち
+\[
+\mathfrak S_\Omega=E_1\Omega+\cdots+E_s\Omega,\qquad
+E_\nu\Omega=\mathfrak S_\Omega E_\nu,
+\]
+\[
+\mathfrak T_\Omega\cdot E=\mathfrak T\cdot E\Omega
+=\mathfrak T\mathfrak S\Omega=\mathfrak T\mathfrak S_\Omega,
+\]
+\[
+\mathfrak T_\Omega\cdot E
+=\mathfrak T(E_1\mathfrak S_\Omega+\cdots+E_s\mathfrak S_\Omega)
+=E_1\mathfrak T_\Omega+\cdots+E_s\mathfrak T_\Omega,
+\]
+\[
+[\mathfrak T_\Omega E_\nu:\Omega]
+=[\mathfrak T_\Omega E_\nu:\Omega E_\nu]
+=[\mathfrak T_\Omega E_\nu:E_\nu\mathfrak S_\Omega]
+\leqq[\mathfrak T_\Omega\cdot E:\mathfrak S_\Omega]
+=[\mathfrak T\cdot E:\mathfrak S]=t,
+\]
+\[
+\sum[\mathfrak T_\Omega\cdot E_\nu:\Omega]=st
+\]
+であり、したがって
+\[
+[\mathfrak T_\Omega E_\nu:\Omega]=t.
+\]
+$\mathfrak T_\Omega E_\nu$ はそれゆえ $t$ 個のイデアルへ分解する。その各々は $\mathfrak T_\Omega E$ の、したがって $\mathfrak T_\Omega$ の直和因子なので、$\mathfrak T_\Omega$ の一つの表現を与え、10--11 頁と同様に、それが $H_\nu$ により与えられる表現の延長であることがわかる。$\mathfrak T_\Omega$ の残りの既約表現、すなわち $\mathfrak T_\Omega\cdot E_\nu$ に含まれない $\mathfrak T_\Omega$ の直和因子から生成される表現は、$H_\nu$ が生成する $\mathfrak S_\Omega$ の表現の延長ではありえない。これらのイデアルは $\mathfrak T_\Omega\cdot E_\nu$ によって、したがってなおさら $\mathfrak S_\Omega$ によって零化されるからである。
+

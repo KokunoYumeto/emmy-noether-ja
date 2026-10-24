@@ -1,0 +1,232 @@
+\section*{第 III 章　アーベル群}\label{kapitel-iii.-abelsche-gruppen}
+
+\subsection*{§ 14. 群環}\label{der-gruppenring}
+
+$\mathfrak G$ を元 $a_1,\ldots,a_h$ からなる有限群、$\mathsf P$ を可換体とする。群の乗法を乗法として超複素系
+\[
+\mathfrak o[\mathfrak G]=a_1\mathsf P+\cdots+a_h\mathsf P
+\]
+を作り、これを\emph{$\mathsf P$ における $\mathfrak G$ の群環}という（M. Z. § 6、Speiser, \emph{Theorie d. Gruppen end. Ord.} § 48）。
+
+$\mathfrak o[\mathfrak G]$ の $\mathsf P$ における表現、または $\mathsf P$ の代数閉拡大体 $\Omega$ における表現を求める。すでに述べたように、既約表現は $\mathfrak o[\mathfrak G]/\mathfrak C$ の単純左イデアルによって生成される。したがって、ガロア理論の場合と同じく、$\mathfrak o[\mathfrak G]$ がいつ根基をもつかが問題となる。これについて次の一般定理が成り立つ。
+
+\begin{center}
+\emph{$\mathfrak o[\mathfrak G]$ が完全可約であるのは、$\mathfrak G$ の位数 $h$ が $\mathsf P$ の標数 $p$ で割り切れないとき、かつそのときに限る。}
+\end{center}
+
+まず次を証明する：
+\[
+\text{$h\equiv0(p)$ ならば $\mathfrak C\ne 0$ である。}
+\]
+\[
+\mathfrak a=\mathsf P(a_1+\cdots+a_h)
+\]
+は $\mathfrak o$ の両側イデアルである。実際、
+\[
+\mathsf P\cdot(a_1+\cdots+a_h)a
+=\mathsf P\cdot(a_1a+\cdots+a_ha)
+=\mathsf P(a_1+\cdots+a_h)=\mathfrak a
+\]
+および
+\[
+a\cdot\mathsf P(a_1+\cdots+a_h)
+=\mathsf P(aa_1+\cdots+aa_h)
+=\mathsf P(a_1+\cdots+a_h)=\mathfrak a
+\]
+が、$a_i$ の群の性質により成り立つ。$\mathfrak a$ はもちろん零ではないが、冪零である：
+\[
+\left(\sum_i a_i\right)^2=\sum_i\sum_j a_i a_j
+=h\sum_j a_j=0.
+\]
+
+逆、すなわち
+\[
+\text{$h\not\equiv0(p)$ ならば $\mathfrak C=0$ である}
+\]
+ことは、ここではアーベル群についてだけ証明する（M. Z. § 26 では定理のこの部分が一般に証明されている）。
+
+\subsection*{§ 15. アーベル群の群環}\label{die-gruppenringe-abelscher-gruppen}
+
+$\mathfrak A=\{a_1,\ldots,a_h\}$ をアーベル群とする。このとき $\mathfrak o$ は可換なので、可換超複素系に関する一般定理を適用できる。
+
+\emph{$h$ が $\mathsf P$ の標数 $p$ で割り切れないならば、$\mathfrak o[\mathfrak A]$ は $\Omega$ においてちょうど $h$ 個の相異なる既約表現をもつ（$\mathfrak o$ は可換なので、それらは一次である）。}
+
+ここから $\mathfrak o[\mathfrak A]/\mathfrak C$ が $\mathfrak o$ と同じ階数をもち、したがって $\mathfrak C=0$ であることが従う。これは先ほど証明を保留した定理の第二の部分を、アーベル群について与える。
+
+\emph{証明。} $\mathfrak A$ は、位数 $h_i$ の巡回群 $\mathfrak Z_i$ の直積である：
+\[
+\mathfrak A=\mathfrak Z_1\times\cdots\times\mathfrak Z_t,\qquad
+h=h_1h_2\cdots h_t .
+\]
+$z_i$ を $\mathfrak Z_i$ の生成元とすると、一次既約表現においてそれに対応する元は $h_i$ 乗根 $\varepsilon_\nu^{(h_i)}$ でなければならない。逆に、各 $z_i$ に一つの $h_i$ 乗根 $\varepsilon_\nu^{(h_i)}$ を対応させれば、$\mathfrak o$ の $\Omega$ における既約表現が得られる。いま $h\not\equiv0(p)$、したがってなおさら $h_i\not\equiv0(p)$ であるから、$\mathfrak o$ にはちょうど $h_1h_2\cdots h_t=h$ 個の相異なる表現がある。証明された。
+
+（$h=0(p)$、したがって少なくとも一つの $h_i$ について $h_i=0(p)$ ならば、相異なる $\varepsilon_\nu^{(h_i)}$ は高々 $h_i/p$ 個であり、したがって表現は $h$ 個より少ないことも容易にわかる。ゆえに $\mathfrak o_\Omega$ は零でない根基を含まなければならない。ただし、これだけから $\mathfrak o$ の根基について直ちに何かが従うわけではない。）
+
+$\mathfrak o_\Omega$ から $\Omega$ の部分環への $h$ 個の相異なる準同型写像を $\Theta_1,\ldots,\Theta_h$ と書く。各 $\Theta_i$ には、表現加群として $\mathfrak o_\Omega$ の直和因子 $e_i\Omega$ が属する。$\Theta_i$ を $\mathfrak A$ にだけ適用して、$\mathfrak A$ の表現と呼ぶこともある。$\mathfrak A$ から単位根の群へのこれらの写像を、\emph{$\mathfrak A$ の $h$ 個の指標}という。特別な指標として、$\mathfrak A$ の各元に $1$ を対応させる\emph{主指標}がある。これに属する $\Theta_i$ を $\Theta_1$ とする。
+
+主指標による表現は、アーベル群に限らず、どの群についても可能である。この表現はすでに $\mathsf P$ にあるから、$\mathfrak o$ が完全可約である場合には、$\mathfrak o$ はこの表現を与える単純直和因子 $E\cdot\mathfrak o$ を分離しなければならない。$E$ は容易に計算できる。$E=\sum x_i a_i$ でなければならない。第一に
+\[
+aE=E\cdot 1\quad\text{すなわち}\quad \sum x_i a a_i=\sum x_i a_i
+\]
+である。$a=a_j a_i^{-1}$ とすれば
+\[
+x_1a_ja_i^{-1}a_1+\cdots+x_i a_j+\cdots+x_ha_ja_i^{-1}a_h
+=x_1a_1+\cdots+x_ha_h
+\]
+となり、したがって
+\[
+x_i=x_j
+\]
+が従う。
+
+第二に
+\[
+E=E^2=x^2\left(\sum a_i\right)^2=x^2h\sum a_i=xhE.
+\]
+$h=0(p)$ の場合には $E=0$ が従う。すなわち $\mathfrak o$ は主指標の表現加群を含まず、したがって完全可約ではありえない。これで 13 頁の定理の一方向が改めて証明された。
+
+一方、$h\not\equiv0(p)$、したがって $\mathfrak o$ が完全可約ならば、直ちに
+\[
+x=\frac{1}{h},\qquad E=\frac{1}{h}(a_1+\cdots+a_h)
+\]
+が従う。
+
+\subsection*{§ 16. 指標関係式}\label{die-charakterenrelationen}
+
+$E=(1/h)\cdot\sum a_i$ が主指標を与えることから、指標関係式が直ちに得られる。すなわち
+\[a \cdot e_i = e_i \cdot \Theta_i a\]
+でなければならず、したがって
+\[e_i \cdot \Theta_i e_j = \begin{cases} e_i & i = j \\ 0 & i \neq j \end{cases}\]
+または
+\[\Theta_i e_j = \begin{cases} 1 & i = j \\ 0 & i \neq j \end{cases}\]
+である。特に
+\[\Theta_i e_1 = \begin{cases} 1 & i = 1 \\ 0 & i \neq 1 \end{cases}\]
+である。$e_1=(1/h)\sum a_i$ だから、
+\[
+\sum_\nu \Theta_i a_\nu=\begin{cases} h & i=1,\\ 0 & i\ne 1. \end{cases}
+\]
+これが周知の指標関係式である。
+
+\emph{一つの指標をすべての群元にわたって足した和は、主指標を除けば零であり、主指標については $h$ である。}
+
+\subsection*{§ 17. アーベル群のガロア理論}\label{die-galoissche-theorie-abelscher-gruppen}
+
+アーベル群の群環について、可換体のガロア理論で証明したものと類似の定理を述べることができる。ガロア理論では $\Theta_i\Theta_1^{-1}$ が群 $\mathfrak G$ をなした。基本定理は、ある不変性に基づいて $\mathfrak G$ の部分群と $Z$ の部分体との間に一対一対応があることを表していた。
+
+$\mathfrak{o}[\mathfrak{A}]$ の準同型 $\Theta_i$ は一つの群 $\mathsf A$ にまとめられ、その部分群は $\mathfrak A$ の部分群と類似の関係をもつ。
+
+\emph{積 $\Theta_i \Theta_k=\Theta$ を}
+\[
+\Theta a = \Theta_i a \cdot \Theta_k a
+\]
+\emph{によって定めると、$\Theta_i$ 全体は $\mathfrak A$ と同型な群 $\mathsf A$ をなす。}
+
+\emph{証明。} $\Theta=\Theta_i\cdot\Theta_k$ は、
+\[\begin{aligned}
+\Theta a \cdot \Theta b &= \Theta_i a \cdot \Theta_k a \cdot \Theta_i b \cdot \Theta_k b \\
+&= \Theta_i a \cdot \Theta_i b \cdot \Theta_k a \cdot \Theta_k b \\
+&= \Theta_i a b \cdot \Theta_k a b = \Theta a b
+\end{aligned}\]
+により $\mathfrak A$ から $\mathsf A$ への準同型である。$\mathfrak A$ の準同型には $\Theta_i$ 以外のものがないから、$\Theta$ はある $\Theta_j$ に等しい。したがって $\Theta_i$ は実際に $h$ 元からなる群をなす。
+
+$\varepsilon_{h_\nu}$ を原始 $h_\nu$ 乗根とする。$\Theta_i$ は $\mathfrak A$ の巡回因子 $\mathfrak Z_\nu$ の生成元 $z_\nu$ を $\varepsilon_{h_\nu}$ のある冪へ写す：
+\[
+\Theta_i z_\nu=\varepsilon_{h_\nu}^{\varrho_\nu^{(i)}}.
+\]
+$\Theta_i$ に $\mathfrak A$ の元 $\prod_\nu z_\nu^{\varrho_\nu^{(i)}}$ を対応させる。これは $\mathsf A$ から $\mathfrak A$ への一対一写像である。実際、$\Theta_i$ は $\varrho_\nu^{(i)}$ によって定まるので、異なる $\Theta_i$ には異なる $\prod_\nu z_\nu^{\varrho_\nu^{(i)}}$ が属する。この写像は同型である。一方では
+\[
+\Theta_i\Theta_j z_\nu=\Theta_i z_\nu\cdot \Theta_j z_\nu
+=\varepsilon_{h_\nu}^{\varrho_\nu^{(i)}+\varrho_\nu^{(j)}}
+\]
+であり、他方では
+\[
+\prod_\nu z_\nu^{\varrho_\nu^{(i)}}\cdot
+\prod_\nu z_\nu^{\varrho_\nu^{(j)}}=
+\prod_\nu z_\nu^{\varrho_\nu^{(i)}+\varrho_\nu^{(j)}}.
+\quad\text{証明された。}
+\]
+
+ここで次を定義する。
+
+\emph{$\mathsf A$ の部分群 $\mathsf B$ の不変領域：}
+
+$\mathsf B$ の各 $\Theta$ によって $1$ へ写される $\mathfrak A$ の元からなる部分群 $\mathfrak B$。
+
+\emph{$\mathfrak A$ の部分群 $\mathfrak B$ の不変群：}
+
+$\mathfrak B$ の各 $a$ を $1$ へ写す $\mathsf A$ の元からなる部分群 $\mathsf B$。
+
+そして基本定理を次のように述べる。
+
+\emph{$\mathfrak A$ の部分群 $\mathfrak B$ と $\mathsf A$ の部分群 $\mathsf B$ との間には一対一対応があり、$\mathfrak B$ と $\mathsf B$ が対応するとき、$\mathsf B$ は $\mathfrak B$ の不変群、$\mathfrak B$ は $\mathsf B$ の不変領域である。}
+
+したがって、次を示さなければならない。
+\begin{enumerate}
+\item \emph{$\mathsf B$ が $\mathfrak B$ の不変群ならば、$\mathfrak B$ は $\mathsf B$ の不変領域である。}
+\item \emph{$\mathfrak B$ が $\mathsf B$ の不変領域ならば、$\mathsf B$ は $\mathfrak B$ の不変群である。}
+\end{enumerate}
+
+\paragraph{1.}
+これは 10 頁と同様に一般延長定理から従う。$\mathsf B$ を $\mathfrak B$ の不変群、$\mathfrak B'$ を $\mathsf B$ の不変領域とする。$\mathfrak B'$ は $\mathfrak B$ を含む。$\mathsf B$ の元は、$\mathfrak B$ を $1$ へ写す一つの準同型を $\mathfrak A$ 全体へ延長したものである。これらの延長を $\mathfrak B'$ にだけ適用すると、一般延長定理により、それらは $t$ 個の類に分かれる。同じ類の準同型は $\mathfrak B'$ 上で一致し、異なる類の準同型は $\mathfrak B'$ 上で異なる。ここで $t$ は $\mathfrak o[\mathfrak B']$ の $\mathfrak o[\mathfrak B]$ 上の次数、すなわち $\mathfrak B'$ における $\mathfrak B$ の指数である。$\mathfrak o[\mathfrak B]$ と $\mathfrak o[\mathfrak B']$ は同じ単位元、すなわち $\mathfrak A$ 全体の単位元をもつからである。ところが $\mathfrak B'$ は $\mathsf B$ の不変領域なので、$t=1$、したがって $\mathfrak B'=\mathfrak B$ でなければならない。証明された。
+
+\textbf{2.} を 1. へ帰着させる。
+
+$\mathfrak A$ の元 $a$ を $\mathsf A$ の準同型とみなす。すなわち $a\Theta$ を単位根 $\Theta a$ に等しいと置き、簡潔に $a\Theta=\Theta a$ と書く。これによって $a$ は実際に $\mathsf A$ の準同型となる。なぜなら
+\[
+a\Theta\cdot a\Theta'=\Theta a\cdot\Theta' a=\Theta\Theta' a=a\Theta\Theta'
+\]
+だからである。
+
+二つの準同型 $a,b$ の積は通常の群の積である：
+\[
+\begin{array}{cccccc}
+ab\Theta&=&a\Theta\cdot b\Theta&=&\Theta a\cdot\Theta b=\Theta ab&=ab\Theta\\
+&&\text{準同型の積}&&\text{群の積}&
+\end{array}
+\]
+
+群元として異なる $a,b$ は、準同型としても異なる。すべての $\Theta$ について $a\Theta=b\Theta$ ならば、すべての $\Theta$ について $\Theta a=\Theta b$、すなわち $\Theta ab^{-1}=1$ となる。したがって $\Theta$ は、$ab^{-1}$ が生成する $\mathfrak A$ の巡回部分群 $\mathfrak Z$ の恒等準同型を $\mathfrak A$ 全体へ延長したものである。延長定理により、$\mathfrak A$ における $\mathfrak Z$ の指数は $h$、すなわち $\mathfrak Z=e$ であり、$a=b$ となる。
+
+新しい見方で述べた次の命題
+\[
+\begin{array}{ll}
+\text{a)}& \mathfrak B\ \text{は }\mathsf B\text{ の不変群である。}\\
+\text{b)}& \mathsf B\ \text{は }\mathfrak B\text{ の不変領域である。}
+\end{array}
+\]
+を、もとの見方へ翻訳する。
+
+a) について、$\mathfrak B$ は、すべての $\Theta\in\mathsf B$ に対して $a\Theta=1$ となる $a\in\mathfrak A$ すべてからなる。すなわち、すべての $\Theta\in\mathsf B$ に対して $\Theta\cdot a=1$ となる $a\in\mathfrak A$ すべてからなる。したがって a) の翻訳は
+\[
+\text{a')} \quad \mathfrak B\ \text{は }\mathsf B\text{ の不変領域である。}
+\]
+である。
+
+同様に b) の翻訳は
+\[
+\text{b')} \quad \mathsf B\ \text{は }\mathfrak B\text{ の不変群である。}
+\]
+である。
+
+したがって、1. ですでに証明した命題
+
+$\mathfrak B$ が $\mathsf B$ の不変群ならば、$\mathsf B$ は $\mathfrak B$ の不変領域である
+
+を翻訳したものは、まさに証明すべき命題
+
+$\mathfrak B$ が $\mathsf B$ の不変領域ならば、$\mathsf B$ は $\mathfrak B$ の不変群である
+
+となる。
+
+15 頁の指標関係式を $\mathfrak A$ の代わりに $\mathsf A$ について書けば、
+\[
+\sum_{i=1}^{h} \Theta_i a_\nu =
+\begin{cases}
+h & \nu=1,\\
+0 & \nu\ne 1
+\end{cases}
+\]
+を得る。
+
+すべての指標を一つの群元について足した和は、単位元を除けば零であり、単位元については $h$ である。
+
