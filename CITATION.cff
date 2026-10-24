@@ -1,12 +1,18 @@
 cff-version: 1.2.0
-message: "エミー・ネーター — 数学著作集・日本語版"
-title: "エミー・ネーター — 数学著作集・日本語版"
-type: book
+message: "この日本語版はGitHub公開URLで引用してください。来歴欄のDOIは底本を識別します。"
+title: "エミー・ネーター数学論文集 — 日本語訳"
+type: dataset
+version: "2026-10-24"
+date-released: 2026-10-24
 authors:
   - family-names: Noether
     given-names: Emmy
-version: "2026-10-24-sources"
-repository-code: "https://github.com/KokunoYumeto/emmy-noether-ja"
-url: "https://github.com/KokunoYumeto/emmy-noether-ja"
-languages:
-  - jpn
+url: "https://github.com/KokunoYumeto/emmy-noether-ja/releases/tag/noether-ja-2026-10-24"
+abstract: "論文1–43、M. Deuring筆録の1929/30年講義、KapfererとNoetherによる論文・補遺、文献目録。基礎本文422頁と校訂本文427頁、全文LaTeXと組版用ソース。AIによる日本語訳、初版の正確なモデルは未確定。本版のAIによる訂正・組版：OpenAI Codex — GPT-6 Astra、Ultra。権利は各権利者に帰属する。"
+references:
+  - type: dataset
+    title: "日本語版2026-08-13 r10 — Manuscript Typesetting Project / OpenAI Codex"
+    doi: 10.5281/zenodo.21921485
+  - type: dataset
+    title: "ドイツ語版ED0014/v051"
+    doi: 10.5281/zenodo.21908301

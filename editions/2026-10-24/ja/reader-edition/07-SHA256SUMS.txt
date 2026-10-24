@@ -1,0 +1,6 @@
+0338774749f5822ac2545139dc381327f27dae531e597a8188641b97a2982bc0  01-noether-ja-base.pdf
+abe7b041322b5bc1c852396f0f114962cb4b30cad1acbf8d973fd41550e4bc0f  02-noether-ja-base.tex
+d89364ec227af3782ef8f262a8c23a0c3db947166bf4f345420e7a74c6dcae2a  03-noether-ja-base-sources.zip
+eb3d2e3bf7a4af37e9c7fa00e8f4e8f95b167ae9fd6dc629ded187fbd056625a  04-noether-ja-emendations.pdf
+014340dc0df7d37225d4888c6c4f25e4947305c3c8bfe31e8bcdc609d5b9f6eb  05-noether-ja-emendations.tex
+45e8e047e87048555f709ba7957d54c90a64da81186222948477c82c3aeb261f  06-noether-ja-emendations-sources.zip
