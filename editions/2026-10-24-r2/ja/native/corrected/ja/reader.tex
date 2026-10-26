@@ -320,7 +320,7 @@ KapfererとNoetherによる論文・補遺、文献目録\par
 原著者はEmmy Noetherおよび各論文に記された共著者である。
 1929/30年の講義録はM. Deuringの筆録による。
 日本語訳はAIによる翻訳である。初版の制作主体はManuscript Typesetting Project / OpenAI Codexであり、当時の正確なモデルは現存する来歴資料からは確定していない。
-本版のAIによる訂正・組版：OpenAI Codex — GPT-6 Astra、Ultra。AIによる訂正・組版：2026年10月23–24日。刊行日：2026年10月24日。
+本版のAIによる訂正・組版：OpenAI Codex — GPT-6 Astra、Ultra。AIによる訂正・組版：2026年10月23–24日；Claude Opus 5.5（Anthropic）、2026年10月26日。刊行日：2026年10月26日。
 発行者による人間の翻訳または学術的査読を示すものではない。
 \medskip
 \textbf{底本と来歴}\par
@@ -711,9 +711,9 @@ s_x^m t_x^{n-\lambda}t_y^\lambda u_\sigma^\mu u_\tau^{\nu-\kappa}v_\tau^\kappa
 \frac{\binom{m}{r}\binom{\lambda}{r}}{\binom{m+n}{r}}\,
 (st\widehat{xy})^r s_x^{m-r}t_x^{n-\lambda}t_y^{\lambda-r},
 \]
-同様に、$u_\sigma^\mu u_\tau^\nu:[u_\sigma^\mu u_\tau^\nu]_{v^\kappa}$ の $\kappa$ 番目の極形式について、
+同様に、$u_\sigma^\mu u_\tau^\nu:[u_\sigma^\mu u_\tau^\nu]^{v^\kappa}$ の $\kappa$ 番目の極形式について、
 \[
-\bigl[u_\sigma^\mu u_\tau^\nu\bigr]_{v^\kappa}
+\bigl[u_\sigma^\mu u_\tau^\nu\bigr]^{v^\kappa}
 =\sum_\varrho (-1)^\varrho\,
 \frac{\binom{\mu}{\varrho}\binom{\kappa}{\varrho}}{\binom{\mu+\nu}{\varrho}}\,
 (\sigma\tau\widehat{uv})^\varrho u_\sigma^{\mu-\varrho}u_\tau^{\nu-\kappa}v_\tau^{\kappa-\varrho}.
@@ -725,7 +725,7 @@ s_x^m t_x^{n-\lambda}t_y^\lambda u_\sigma^\mu u_\tau^{\nu-\kappa}v_\tau^\kappa
 \bigl[s_x^m t_x^n(stu)^\mu u_\tau^\nu\bigr]_{\widehat{uv}^{\lambda}}^{v^\kappa}
 ={}&
 \sum_{r,\varrho}c_{r\varrho}\,
-(st\widehat{uv})^r(st\widehat{uv})^\varrho
+(stx\widehat{uv})^r(\widehat{st}\tau\widehat{uv})^\varrho
 s_x^{m-r}t_x^{n-\lambda}(tuv)^{\lambda-r}(stu)^{\mu-\varrho}
 u_\tau^{\nu-\kappa}v_\tau^{\kappa-\varrho},
 \end{aligned}
@@ -804,7 +804,7 @@ b) 形式が、不変式を因子にもつ形式、または「より高い形�
 \[
 \theta_\nu(\vartheta\nu x)\theta_x^3u_\vartheta u_\nu^2
 =
-a_\nu^2(abu)-a_\nu b_\nu(aba),
+a_\nu^2(abu)-\underbrace{a_\nu b_\nu(aba)}_{0},
 \]
 の還元が従う。なぜなら $\theta_\nu^4=a_\nu^2b_\nu^2(abu)^2$ は項 $a_\nu^2(abu)$ から折り畳みによって生じているからである。Gordan, loc. cit. p. 231 では、これに対して形式
 \[
@@ -996,20 +996,20 @@ $(abc)a_x^3b_y^3c_z^3$ に対する方程式系は次の通りである：
 1)\quad
 \sum_3 a_\nu(\nu yz)^3a_x^3
 &=6(abc)a_x^3b_y^3c_z^3
--6\sum_3(abc)a_x^3b_y^2b_zc_z^2c_y^{*},\\[0.4em]
+-6\sum_3(abc)a_x^3b_y^2b_zc_z^2c_y\srcfnmark{*)},\\[0.4em]
 2)\quad
 3(abc)^2a_x^2b_y^2c_z^2\cdot(xyz)
--\frac12\sum_3 a_\nu^2(\nu yz)^2\nu_x^2(xyz)
+-\frac12\sum_3 a_\nu^2(\nu yz)^2a_x^2\cdot(xyz)
 &=2\sum_3(abc)a_x^3b_y^2b_zc_z^2c_y\\
-&\quad-4\sum_3(abc)a_xa_ya_zb_y^2b_zc_z^2c_x,\\[0.4em]
+&\quad-4\sum_3(abc)a_xa_ya_zb_y^2b_xc_z^2c_x,\\[0.4em]
 3)\quad
 a_\nu(\nu xy)(\nu yz)(\nu zx)a_xa_ya_z
-&=2\sum_3(abc)a_xa_ya_zb_y^2b_zc_z^2c_x,\\[0.4em]
+&=2\sum_3(abc)a_xa_ya_zb_y^2b_xc_z^2c_x,\\[0.4em]
 4)\quad
-\sum_3 a_\nu(\nu yz)^3u_x^3
--\frac32\sum_3 a_\nu^2(\nu yz)^2\nu_x^2(xyz)
+\sum_3 a_\nu(\nu yz)^3a_x^3
+-\frac32\sum_3 a_\nu^2(\nu yz)^2a_x^2\cdot(xyz)
 +\frac16 i\cdot(xyz)^3
-&=6\sum_3(abc)a_xa_ya_zb_y^2b_zc_z^2c_x.
+&=6\sum_3(abc)a_xa_ya_zb_y^2b_xc_z^2c_x.
 \end{aligned}
 \]
 \endgroup
@@ -1020,8 +1020,8 @@ a_\nu(\nu xy)(\nu yz)(\nu zx)a_xa_ya_z
 \]
 について、また同様の計算により
 \[
-(abc)a_x^2b_y^2c_z^2a_zb_xc_x,\qquad
-(abc)a_xb_yc_za_z^2b_x^2c_x^2:
+(abc)a_x^2b_y^2c_z^2a_xb_xc_x,\qquad
+(abc)a_xb_yc_za_x^2b_x^2c_x^2:
 \]
 について、次を得る：
 \[
@@ -1031,18 +1031,18 @@ a_\nu(\nu xy)(\nu yz)(\nu zx)a_xa_ya_z
 +\frac32 a_\nu(\nu xy)(\nu yz)(\nu zx)a_xa_ya_z\\
 &\quad-\frac1{12}i\cdot(xyz)^3,\\[0.4em]
 (\text{IV.})\quad
-(abc)a_x^2b_y^2c_z^2a_zb_xc_x
-&=\frac23(abc)^2a_x^2b_y^2c_z^2c_x\cdot(xyz)\\
+(abc)a_x^2b_y^2c_z^2a_xb_xc_x
+&=\frac23(abc)^2a_x^2b_yb_xc_zc_x\cdot(xyz)\\
 &\quad+\frac13a_\nu(\nu xy)(\nu yz)(\nu zx)a_x^3
 -\frac16 a_\nu^2(\nu xy)(\nu zx)a_x^2\cdot(xyz),\\[0.4em]
-(abc)a_xb_yc_za_z^2b_x^2c_x^2
-&=\frac16(abc)^2a_x^2b_z^2c_z^2\cdot(xyz).
+(abc)a_xb_yc_za_x^2b_x^2c_x^2
+&=\frac16(abc)^2a_x^2b_x^2c_x^2\cdot(xyz).
 \end{aligned}
 \]
 
 こうして、四つの形式 $f,\theta,K,j$ から成る、法 $(\A,\nu)$ に関する相対的完全系が得られた。したがって、二元領域から移されたものではない $f$ の $\theta$ 上のすべてのトランスヴェクション、および二元の場合に $(ab)^4$ へ還元可能なトランスヴェクション $(a\theta u)^2$ は、記号 $\A$ と $\nu$ によって表すことができる。\footnote{$\sum_3$ は、初期項から変数の循環置換によって得られる三項の和を指す。各方程式はその和の各項について別々にも成り立つ。}
 
-以下で基本となる還元公式は、展開 IV の特殊化、またはより短く直接計算（記号の置換）によって得られる。すなわち、$a_\vartheta(a\theta u)^2$, $a_\vartheta^2((a\theta u)^2$, $(a\theta u)^2$ について、次の仮定から出発する：
+以下で基本となる還元公式は、展開 IV の特殊化、またはより短く直接計算（記号の置換）によって得られる。すなわち、$a_\vartheta(a\theta u)^2$, $a_\vartheta^2(a\theta u)^2$, $(a\theta u)^2$ について、次の仮定から出発する：
 \[
 \begin{aligned}
 a_\vartheta(a\theta u)^2
@@ -1104,10 +1104,10 @@ a_\vartheta &\text{は}& \text{記号 }\A\text{ と }\nu\text{ へ導く},\\[0.2
 \[
 \begin{aligned}
 (a\theta u)^2a_y^2\theta_x^2&=\frac13(jyx)^2\pmod{\nu},&
-(a\theta u)^2u_y\theta_y&=-\frac16(jyx)^2\pmod{\nu},\\
-(a\theta u)^2\nu_y^2&=\frac13(\A u\nu)^2\pmod{\nu},&
-(a\theta u)(a\theta\nu)u_\vartheta\nu_\vartheta&=-\frac16(\A u\nu)^2\pmod{\nu},\\
-(a\theta u)^2u_\nu^2\vartheta_\nu^2&=\frac13(\A u\nu)^2\A_\nu\pmod{\nu}.
+(a\theta u)^2a_y\theta_y&=-\frac16(jyx)^2\modu{\nu},\\[0.4em]
+(a\theta u)^2v_\vartheta^2&=\frac13(\Delta uv)^2\modu{\nu},&
+(a\theta u)(a\theta v)u_\vartheta v_\vartheta&=-\frac16(\Delta uv)^2\modu{\nu},\\[0.4em]
+(a\theta u)^2a_yv_\vartheta^2&=\frac13(\Delta uv)^2\Delta_y\modu{\nu}.
 \end{aligned}
 \]
 
@@ -1136,15 +1136,15 @@ a_\vartheta(a\theta u)b_\vartheta(b\theta u)^3
 \text{a)}\quad (a\A u)^2
 &=\frac12(\vartheta\nu x)^2-\frac25 f\cdot a_\nu^2
 -\frac45u_x\cdot\theta_\nu(\vartheta\nu x)^2 \notag\\
-&\quad+u_x^2\left\{\frac16 i\cdot f-\frac1{40}S\right\},\notag\\
+&\quad+u_x^2\left\{\frac16 i\cdot f-\frac1{40}s\right\},\notag\\
 \text{b)}\quad (a\A u)^3
 &=-\frac3{10}\theta_\nu(\vartheta\nu x),\tag{3}\\
 \text{c)}\quad (a\A u)^4
-&=\frac{21}{10}\theta_\nu^2-\frac3{10}\Pi
--\frac65u_x\cdot\theta_\nu^3+\frac1{10}u_x^2\cdot\theta .\notag
+&=\frac{21}{10}\theta_\nu^2-\frac3{10}H
+-\frac65u_x\cdot\theta_\nu^3+\frac1{10}u_x^2\cdot\varrho .\notag
 \end{align}
 
-（同じ結果は、$a_\vartheta^2(b\theta u)^2$, $a_\vartheta^2(b\theta u)^3$, $a_\vartheta^2((a\theta u)^2(b\theta u)^2$ および $a_\vartheta^2((a\theta u)(b\theta u))^3$ を二重還元し、$a_\vartheta^2$ を消去することによっても得られる。）
+（同じ結果は、$a_\vartheta^2(b\theta u)^2$, $a_\vartheta^2(b\theta u)^3$, $a_\vartheta^2(a\theta u)^2(b\theta u)^2$ および $a_\vartheta^2(a\theta u)(b\theta u)^3$ を二重還元し、$a_\vartheta^2$ を消去することによっても得られる。）
 
 式 (3.) から、$(a\A u)^2$ は法 $\nu$ に関する還元子である。これより次が従う。
 
@@ -1176,37 +1176,37 @@ f,\ \theta,\ K,\ j,\ \A,\ N
 § 2 の級数展開の例として、式 (3.)a の導出を詳しく与える。以後の計算では、最終公式 III を直接記すことにする。（零形式の極形式は計算中すでに省かれている。第一行は展開 II に従って記入した値を与え、第二行は方程式系の最後の式から始めて再帰的に求めた最終値を与える。）展開 II から次が従う：
 
 \begin{align*}
-\text{1)}\quad&m=3,\quad n=4,\quad \lambda=2,\quad \mu=0,\quad \nu=\chi=1,\\
+\text{1)}\quad&m=3,\quad n=4,\quad \lambda=2,\quad \mu=0,\quad \nu=\varkappa=1,\\
 a_\vartheta b_\vartheta(b\theta u)^2
 &=[a_\vartheta]_{\widehat{ub^2}}b+\frac67\{a_\vartheta b_\vartheta(a\theta u)(b\theta u)-u_xa_\vartheta b_\vartheta(a\theta b)(b\theta u)\}\\
 &\quad-\frac17\{a_\vartheta(a\theta u)^2b_\vartheta-2u_xa_\vartheta(a\theta u)(a\theta b)b_\vartheta+u_x^2a_\vartheta(a\theta b)^2b_\vartheta\}\\
 &=\frac23(a\Delta u)^2+\frac15[a_\vartheta(a\theta u)^2]b+\frac1{30}f[a_\vartheta^2(a\theta u)^2]-\frac25u_x[a_\vartheta(a\theta u)^2]b^2\\
 &\quad-\frac1{15}u_x[a_\vartheta^2(a\theta u)^2]b+\frac15u_x^2[a_\vartheta(a\theta u)^2]b^3+\frac1{30}u_x^2[a_\vartheta^2(a\theta u)^2]b^2;\\[.6em]
-\text{2)}\quad&m=2,\quad n=3,\quad \lambda=1,\quad \mu=1,\quad \nu=\chi=1,\\
+\text{2)}\quad&m=2,\quad n=3,\quad \lambda=1,\quad \mu=1,\quad \nu=\varkappa=1,\\
 a_\vartheta(a\theta u)b_\vartheta(b\theta u)
 &=\frac25\{a_\vartheta(a\theta u)^2b_\vartheta-u_xa_\vartheta(a\theta u)(a\theta b)b_\vartheta\}+\frac12a_\vartheta^2(b\theta u)^2\\
 &\quad-\frac15\{a_\vartheta^2(b\theta u)(a\theta u)-u_xa_\vartheta^2(a\theta b)(b\theta u)\}\\
 &=\frac12(a\Delta u)^2+\frac25[a_\vartheta(a\theta u)^2]b+\frac1{15}[a_\vartheta^2(a\theta u)^2]f\\
 &\quad-\frac25u_x[a_\vartheta(a\theta u)^2]b^2-\frac1{10}u_x[a_\vartheta^2(a\theta u)^2]b+\frac1{30}u_x^2[a_\vartheta^2(a\theta u)^2]b^2;\\[.6em]
-\text{3)}\quad&m=2,\quad n=3,\quad \lambda=1,\quad \mu=1,\quad \nu=1,\quad \chi=2,\\
+\text{3)}\quad&m=2,\quad n=3,\quad \lambda=1,\quad \mu=1,\quad \nu=1,\quad \varkappa=2,\\
 a_\vartheta(a\theta b)b_\vartheta(b\theta u)
 &=\frac25\{a_\vartheta(a\theta b)(a\theta u)b_\vartheta-u_xa_\vartheta(a\theta b)^2b_\vartheta\}\\
 &=\frac25[a_\vartheta(a\theta u)^2]b^2+\frac1{30}[a_\vartheta^2(a\theta u)^2]b-\frac25u_x[a_\vartheta(a\theta u)^2]b^3-\frac1{30}u_x[a_\vartheta^2(a\theta u)^2]b^2;\\[.6em]
-\text{4)}\quad&m=1,\quad n=2,\quad \lambda=0,\quad \mu=2,\quad \nu=\chi=1,\\
+\text{4)}\quad&m=1,\quad n=2,\quad \lambda=0,\quad \mu=2,\quad \nu=\varkappa=1,\\
 a_\vartheta(a\theta u)^2b_\vartheta
 &=[a_\vartheta(a\theta u)^2]b+\frac23a_\vartheta^2(a\theta u)(b\theta u)\\
 &=[a_\vartheta(a\theta u)^2]b+\frac16[a_\vartheta^2(a\theta u)^2]f-\frac16u_x[a_\vartheta^2(a\theta u)^2]b;\\[.6em]
-\text{5)}\quad&m=1,\quad n=2,\quad \lambda=0,\quad \mu=2,\quad \nu=1,\quad \chi=2,\\
+\text{5)}\quad&m=1,\quad n=2,\quad \lambda=0,\quad \mu=2,\quad \nu=1,\quad \varkappa=2\quad(\varkappa>\nu),\\
 a_\vartheta(a\theta u)(a\theta b)b_\vartheta
 &=[a_\vartheta(a\theta u)^2]b^2+\frac13a_\vartheta^2(a\theta b)(b\theta u)\\
 &=[a_\vartheta(a\theta u)^2]b^2+\frac1{12}[a_\vartheta^2(a\theta u)^2]b-\frac1{12}u_x[a_\vartheta^2(a\theta u)^2]b^2;\\[.6em]
-\text{6)}\quad&m=1,\quad n=2,\quad \lambda=0,\quad \mu=2,\quad \nu=1,\quad \chi=3,\\
+\text{6)}\quad&m=1,\quad n=2,\quad \lambda=0,\quad \mu=2,\quad \nu=1,\quad \varkappa=3,\\
 a_\vartheta(a\theta b)^2b_\vartheta&=[a_\vartheta(a\theta u)^2]b^3;\\[.6em]
-\text{7)}\quad&m=2,\quad n=4,\quad \lambda=2,\quad \mu=\nu=\chi=0,\quad (\text{展開 I による}),\\
+\text{7)}\quad&m=2,\quad n=4,\quad \lambda=2,\quad \mu=\nu=\varkappa=0,\quad (\text{展開 I による}),\\
 a_\vartheta^2(b\theta u)^2&=[a_\vartheta^2]_{\widehat{ub^2}}+\frac1{10}\{[a_\vartheta^2(a\theta u)^2]f-2u_x[a_\vartheta^2(a\theta u)^2]b+u_x^2[a_\vartheta^2(a\theta u)^2]b^2\};\\[.6em]
-\text{8)}\quad&m=1,\quad n=3,\quad \lambda=1,\quad \mu=1,\quad \nu=\chi=0,\quad (\text{展開 I}),\\
+\text{8)}\quad&m=1,\quad n=3,\quad \lambda=1,\quad \mu=1,\quad \nu=\varkappa=0,\quad (\text{展開 I}),\\
 a_\vartheta^2(a\theta u)(b\theta u)&=\frac14[a_\vartheta^2(a\theta u)^2]f-\frac14u_x[a_\vartheta^2(a\theta u)^2]b;\\[.6em]
-\text{9)}\quad&m=1,\quad n=3,\quad \lambda=1,\quad \mu=\chi=1,\quad \nu=0,\quad (\text{展開 I}),\\
+\text{9)}\quad&m=1,\quad n=3,\quad \lambda=1,\quad \mu=\varkappa=1,\quad \nu=0,\quad (\text{展開 I}),\\
 a_\vartheta^2(a\theta b)(b\theta u)&=\frac14[a_\vartheta^2(a\theta u)^2]b-\frac14u_x[a_\vartheta^2(a\theta u)^2]b^2.
 \end{align*}
 
@@ -1247,7 +1247,7 @@ a_j^4&=\frac35\varrho.
 \[
 (\theta\theta'u)^2=\frac13\,j\cdot f\pmod{\nu}.\footnotemark
 \]
-形式列 $(\theta\theta'u)^2$ の他の形式および形式 $\theta'_\nu$ は、記号 $\nu$ に還元可能である。したがって、次の置換が可能である：
+形式列 $(\theta\theta'u)^2$ の他の形式および形式 $\theta'_\vartheta$ は、記号 $\nu$ に還元可能である。したがって、次の置換が可能である：
 \[
 \bmod\ \nu:\quad \text{ } f\cdot j\text{ との折り畳みを}
 \text{ }(\theta\theta'u)^2\text{ との対応する折り畳みで置き換える}.
@@ -1419,9 +1419,9 @@ a_\nu^3=\frac13 i u_x\qquad\text{(式 (2)).}
 \noindent\emph{既約形式：}
 \[
 \begin{array}{cccc}
-(\theta\nu x)&\theta_\nu&\cdot&\cdot\\
-(\theta\nu x)^2&\theta_\nu(\theta\nu x)&\theta_\nu^2&\cdot\\
-\cdot&\theta_\nu(\theta\nu x)^2&\cdot&\theta_\nu^3.
+(\vartheta\nu x)&\theta_\nu&\cdot&\cdot\\
+(\vartheta\nu x)^2&\theta_\nu(\vartheta\nu x)&\theta_\nu^2&\cdot\\
+\cdot&\theta_\nu(\vartheta\nu x)^2&\cdot&\theta_\nu^3.
 \end{array}
 \]
 
@@ -1443,15 +1443,15 @@ a_\nu^3=\frac13 i u_x\qquad\text{(式 (2)).}
 \[
 \tag{9}
 \begin{array}{c|c|c}
-\theta_\nu^2(\theta\nu x)=0
-& \theta_\nu^3(\theta\nu x)=0
+\underline{\theta_\nu^2(\vartheta\nu x)}=0
+& \underline{\theta_\nu^3(\vartheta\nu x)}=0
 & \theta_\nu^4u_x^2=u_\varrho^2=\varrho\quad(\text{付加された法, \S\ 7}),\\[0.6em]
-\theta_\nu^2(\theta\nu x)^2=\dfrac49 i f-\dfrac16s
+\underline{\theta_\nu^2(\vartheta\nu x)^2}=\dfrac49 i f-\dfrac16s
 & &
 \end{array}
 \]
 
-\noindent\emph{帰結：} 1) $\theta_\nu^2(\theta\nu x)^2$ は還元子である。2) $\nu$ は、反傾形式 $(g)$ との積においてのみ、$\theta$ との折り畳みに入る。
+\noindent\emph{帰結：} 1) $\theta_\nu^2(\vartheta\nu x)^2$ は還元子である。2) $\nu$ は、反傾形式 $(g)$ との積においてのみ、$\theta$ との折り畳みに入る。
 
 \begin{center}
 \textbf{\S\ 10.\quad 五次の形式（系 III）。}
@@ -1646,15 +1646,15 @@ a_\eta^3&=-a_\R+\dfrac35u_xa_\R^2+\dfrac15u_xt,
 \noindent A) $(\vartheta^2\nu x)^4$ は式 (3)a に従って分解する：
 \[
 (a\A\vartheta x)^4=\frac12(\vartheta^2\nu x)^4-\frac35 f\cdot a_\nu^2(\nu\vartheta x)^2
-=\frac13\A^2+f\A_\vartheta^2.
+=\frac13\A^2+f\cdot\A_\vartheta^2.
 \]
 
 \noindent B) $a_\nu(j\nu x)^2$ は式 (9)a に従って分解する。ここでは \S\ 6 の末尾に従い $f\cdot j$ を $(\theta\theta'u)^2$ で置き換え、$\theta_\vartheta'$ の還元可能性に注意する：
 \[
 \frac13a_\nu(j\nu x)^2=(\theta\theta'\nu x)^2\theta_\nu
-=\theta_\nu^3\theta-\theta_\nu^2\theta_\nu'
-=\theta_\nu^3\theta+\theta_\nu^2(\widehat{j}\nu\theta'u)
-=\theta_\nu^3\theta-\frac23\theta_\nu^3\theta.
+=\theta_\nu^3\cdot\theta-\theta_\nu^2\theta_\nu'
+=\theta_\nu^3\cdot\theta+\theta_\nu^2(\widehat{j}\nu\theta'u)
+=\theta_\nu^3\cdot\theta-\frac23\theta_\nu^3\cdot\theta.
 \]
 形式 $a_\nu(j\nu x)^3$ および $a_\nu^2(j\nu x)^2$：還元子 $a_j$ および $(j\nu x)^4$：
 \[
@@ -1870,7 +1870,7 @@ s_\vartheta^2(\theta su)=\frac45\theta_\R(\vartheta\R x)+\frac25(atu).
 \begin{aligned}
 \text{a) によって}\quad
 \theta_\eta^2H_\vartheta^2&=[a_\eta^2(aHu)^2]b^2+\frac13[a_\eta^4]_{bu^2}-\frac13H_\nu^2(\nu\eta x)^2\\
-&=\frac49ia_\nu^2-\frac16s_\vartheta^2(\theta su)^2-\frac5{18}s_\nu^2+\frac13(atu)^2+\frac1{54}Ju_x^2.
+&=\frac49i\cdot a_\nu^2-\frac16s_\vartheta^2(\theta su)^2-\frac5{18}s_\nu^2+\frac13(atu)^2+\frac1{54}Ju_x^2.
 \end{aligned}
 \]
 \[
@@ -1878,7 +1878,7 @@ s_\vartheta^2(\theta su)=\frac45\theta_\R(\vartheta\R x)+\frac25(atu).
 \theta_\nu^2(\vartheta\nu x)^2\text{ によって}:
 \quad\theta_\eta^2H_\vartheta^2
 &=[\theta_\nu^2(\vartheta\nu x)^2]_{\nu_1}+\frac13[\theta_\nu^4]_{\nu_1}\hat\nu_1x^2-\frac13s_\vartheta^2(\theta su)^2\\
-&=\frac49ia_\nu^2-\frac16s_\nu^2-\frac13s_\vartheta^2(\theta su)^2+\frac13(\nu\R x)^2.
+&=\frac49i\cdot a_\nu^2-\frac16s_\nu^2-\frac13s_\vartheta^2(\theta su)^2+\frac13(\nu\R x)^2.
 \end{aligned}
 \]
 \[
@@ -1886,7 +1886,7 @@ s_\vartheta^2(\theta su)=\frac45\theta_\R(\vartheta\R x)+\frac25(atu).
 \text{a) によって}\quad
 \theta_\eta^3H_\vartheta&=-[a_\eta^2(aHu)]_{bu}b^2-\frac12[a_\eta^2(aHu)^2]b^2-\frac13[a_\eta^3]b+\frac1{12}[a_\eta^4]_{bu^2}\\
 &\quad+\frac12u_x[a_\eta^2(aHu)^2]b^3\\
-&=-\frac29ia_\nu^2+\frac1{12}s_\nu^2+\frac4{15}\theta_\R^2-\frac7{90}(\nu\R x)^2+\frac1{30}(atu)^2+\frac2{27}i^2u_x^2-\frac1{36}Ju_x^2.
+&=-\frac29ia_\nu^2+\frac1{12}s_\nu^2+\frac4{15}\theta_\R^2-\frac7{90}(\nu\R x)^2+\frac1{30}(atu)^2+\frac2{27}i^2\cdot u_x^2-\frac1{36}Ju_x^2.
 \end{aligned}
 \]
 \[
@@ -1903,8 +1903,8 @@ s_\vartheta^2(\theta su)=\frac45\theta_\R(\vartheta\R x)+\frac25(atu).
 従って
 \[
 \begin{aligned}
-\theta_\eta^3H_\vartheta&=-\frac23ia_\nu^2+\frac5{12}s_\nu^2+\frac12(\nu\R x)^2-\frac12(atu)^2\\
-&\quad+\frac4{27}i^2u_x^2-\frac1{12}Ju_x^2.
+\theta_\eta^3H_\vartheta&=-\frac23i\cdot a_\nu^2+\frac5{12}s_\nu^2+\frac12(\nu\R x)^2-\frac12(atu)^2\\
+&\quad+\frac4{27}i^2\cdot u_x^2-\frac1{12}Ju_x^2.
 \end{aligned}
 \]
 c) によって
@@ -2009,7 +2009,7 @@ K_\nu^2=\theta_\nu^2(a\theta u)\equiv a_\nu^2(a\theta u)\modu{\nu^2}
 $K_\nu^2$ の二重表示に対応して、分解可能形式の間の関係がある。すなわち
 \[
 H_k(KHu)=2K_\nu(\nu\nu_1k)=2\theta_{\nu_1}(\nu\nu_1a\theta)
-=2\theta_\nu^2a_\nu-a_\nu^2\theta_\nu+f\theta_\eta(\theta Hu)^2-f\nu\theta_\vartheta^3
+=2\theta_\nu^2\cdot a_\nu-a_\nu^2\cdot\theta_\nu+f\cdot\theta_\eta(\theta Hu)^2-f\cdot \nu\cdot\theta_\nu^3
 \modu{\nu^3},
 \]
 \[
@@ -2034,7 +2034,7 @@ H_k=H_\vartheta(a\theta u)\sim [H_\vartheta]_{ua}-fH_\vartheta(\theta Hu)
 \]
 である（2)a の特殊化 $y=uv$）。
 \[
-H_k(k\eta x)=H_\vartheta a_\eta-H_\vartheta\theta_\eta f,
+H_k(k\eta x)=H_\vartheta a_\eta-H_\vartheta\theta_\eta\cdot f,
 \qquad
 H_\vartheta a_\eta=\frac54[H_\vartheta]a-\frac14H_\vartheta a_\vartheta
 \quad(\S\ 3. 2)b),
@@ -2042,7 +2042,7 @@ H_\vartheta a_\eta=\frac54[H_\vartheta]a-\frac14H_\vartheta a_\vartheta
 \[
 H_\vartheta^2(a\theta u)=[H_\vartheta^2]_{ua},
 \qquad
-H_\vartheta^2a_\eta=[H_\vartheta^2]a=H_k^2(k\eta x)+H_\vartheta^2\theta_\eta f.
+H_\vartheta^2a_\eta=[H_\vartheta^2]a=H_k^2(k\eta x)+H_\vartheta^2\theta_\eta\cdot f.
 \]
 
 \noindent C) 形式列 $(j\eta x)^3$：B) による形式列 $K_\eta^3$ の二重還元によって還元可能である。次の Ansatz による：
@@ -2069,7 +2069,7 @@ H_\vartheta^2a_\eta=[H_\vartheta^2]a=H_k^2(k\eta x)+H_\vartheta^2\theta_\eta f.
 \]
 これは次の Ansatz による：
 \[
-H_\vartheta^2(a\theta u)^2-\frac13(\A Hu)^2
+H_\vartheta^2(a\theta u)^2=\frac13(\A Hu)^2
 =2\theta_\eta^2(a\theta u)(aHu)+\theta_\nu^2a_{\nu_1}^2
 =(a\theta u)(aHu)\{a_\eta-(a\theta\eta x)^2\}+\theta_\nu^2a_{\nu_1}^2,
 \]
@@ -2169,13 +2169,13 @@ $\A_\nu(j\nu x)^2$ は、\S\ 3. 2)b により分解可能形式 $a_\nu(j\nu x)^2
 \[
 \frac3{10}\A_\nu(j\nu x)^2+\frac35a_\nu(j\nu x)a_\vartheta(j\nu x)
 +\frac1{10}a_\nu(j\nu x)^2
-=\frac35\theta_\nu^3\theta_{\vartheta j}+\frac25\theta_\nu^3\theta_{\vartheta j}\theta_{\vartheta j},
+=\frac35\theta_\nu^3\cdot\theta_{\vartheta\nu}^{\prime2}+\frac25\theta_\nu^3\theta_{\vartheta\nu}\theta_{\vartheta\nu}'.
 \]
 （還元子 $a_j$ および $\theta_{\vartheta j}$）。
 
 \noindent B) 形式 $H_\vartheta(\vartheta'\eta x)^2$, $H_\vartheta^2(\vartheta'\eta x)$, $H_\vartheta^2(\vartheta'\eta x)^2$ は、\S\ 3. 2)b) および関係式
 \[
-H_\vartheta(\vartheta'\eta x)^2=2H_\vartheta a_\eta^2f-2H_\vartheta a_\eta b_\eta
+H_\vartheta(\vartheta'\eta x)^2=2H_\vartheta a_\eta^2\cdot f-2H_\vartheta a_\eta b_\eta
 \]
 により、分解可能形式 $H_\vartheta$ と $H_\vartheta^2$、それぞれ $H_\vartheta a_\eta$ と $H_\vartheta^2a_\eta$ との逐次的な一回の折り畳みによって生じるものとして分解する。
 
@@ -2189,18 +2189,18 @@ H_\vartheta(\vartheta'\eta x)^2=2H_\vartheta a_\eta^2f-2H_\vartheta a_\eta b_\et
 
 $a_\nu(j\nu x)^2$ から：
 \[
-0=\theta_\nu'\theta_\nu+2a_\eta H_j\modu{(s,\R,t,i,J)}.
+0=\theta_\nu^3\cdot\theta_\nu+2a_\eta H_j\modu{(s,\R,t,i,J)}.
 \]
 $(j\eta x)^2$ から：
 \[
-0=\theta_\nu'\theta_\nu-\frac32a_\eta H_j\modu{(s,\R,t,i,J)}
+0=\theta_\nu^3\cdot\theta_\nu-\frac32a_\eta H_j\modu{(s,\R,t,i,J)}
 \]
 （反変式との積は省略する）。これは次の Ansatz による：
 \[
 0=\frac12a_\nu(abu)^2\theta_\nu^3
 +\frac12u_x(ubu)\theta_{\nu_1}^3(\theta bu)
 -\frac34(\widehat{j}\eta bu)^2+\frac34H_j(\widehat{j}\eta bu)
--\frac18fH_j^2
+-\frac18f\cdot H_j^2
 \]
 および $a_\nu(ubu)(\theta bu)\theta_{\nu_1}^3$ における記号の交換による。
 
@@ -2366,7 +2366,7 @@ f\text{ と }H\cdot L.
 \text{B)}&(KH^2u)^4,
 \ K_\eta(KH^2u)^4,\\[0.8em]
 \text{C)}&(\nu\sigma j),&
-\text{D)}&(a_\eta H\cdot L,u)^4.
+\text{D)}&(a,H\cdot L,u)^4.
 \end{array}
 \]
 
@@ -2406,7 +2406,7 @@ K\text{ と }H^3\text{ の折り畳み。}
 
 \noindent\emph{還元：}
 
-形式 $H_j^2$, $H_j^2$ は、次の関係式から還元子 $L_j^3$ をもつ：
+形式 $H_{j^3}^2$, $H_{j^4}^2$ は、次の関係式から還元子 $L_j^3$ をもつ：
 \[
 (\nu lx)L_x^3=-\frac12H^2\modu{(\sigma,s)}.
 \]
@@ -2543,11 +2543,11 @@ g_\nu^2&=\frac45ia_\eta^2-\frac25i(asu)^2+\frac13J\cdot\theta,
 &g_\nu^4&=0.
 \end{aligned}
 \]
-\srcfntext{*)}{記法を短くするため、完全な折り畳み $[(\theta Hu)^2]_{\widehat{s}u}s$ の代わりに、その折り畳みの項を系の形式として採用する。公式を立てる際には、すべての折り畳みをその初項で置き換える。たとえば $(\theta_\eta(\theta Hu),s,u)^2$ を $\theta_\eta(\theta Hu)(\theta su)^2$ で置き換える。}
+\srcfntext{*)}{記法を短くするため、完全な折り畳み $[(\theta Hu)^2]_{\widehat{su}}s$ の代わりに、その折り畳みの項を系の形式として採用する。公式を立てる際には、すべての折り畳みをその初項で置き換える。たとえば $(\theta_\eta(\theta Hu),s,u)^2$ を $\theta_\eta(\theta Hu)(\theta su)^2$ で置き換える。}
 
 \noindent\emph{帰結：}
 \[
- s_\nu^3,
+ s_\nu^2,
 \quad s_\vartheta^2(\theta su),
 \quad s_\vartheta^2s_\nu,
 \quad s_\vartheta^2\theta_\nu
@@ -3132,7 +3132,7 @@ $(a_\eta(aHu)H_j,s,u)^2$ の分解：分解された形式 $[\theta_\nu\theta_{\
 \begin{align*}
 0&\equiv[\theta_{\nu_1}^3\theta_\nu]_{su^3}
 \equiv-\frac34\theta_\nu(\theta su)^2(\theta\theta'u)\theta_{\nu_1}^3\\
-&\equiv-\frac98(\theta\theta'\eta su)(\theta\theta'u)(\theta Hu)(\theta'Hu)\theta_\nu'(\theta su)
+&\equiv-\frac98(\widehat{\theta\theta'}\widehat{\eta su})(\theta\theta'u)(\theta Hu)(\theta'Hu)\theta_\nu'(\theta su)
 \equiv-\frac38a_\eta(aHu)H_j(asu)^2.
 \end{align*}
 
@@ -3226,9 +3226,9 @@ K_\nu(k\nu x)^2s_k,
 
 B) および D)。$(a_\nu^2H,s,u)^4$ と $(\theta_\nu^2H,s,u)^4$ は、$(gHu)^2=-\frac13s\sigma$ を考慮して、式 (27.)c) と (29.)c) により分解する：
 \[
-(a_\nu^2H,s,u)^4=\frac13(asu)^4\sigma,
+(a_\nu^2H,s,u)^4\equiv\frac13(asu)^4\sigma,
 \qquad
-(\theta_\nu^2H,s,u)^4=-\frac16(\theta su)^4\sigma;
+(\theta_\nu^2H,s,u)^4\equiv-\frac16(\theta su)^4\sigma;
 \]
 従って $(a_\eta(aHu)H,s,u)^4$、$(\theta_\eta(\theta Hu)H,s,u)^4$ が分解する。
 
@@ -3274,7 +3274,7 @@ A) $f$ が二次、記号 $\nu$ は任意の位数。\S\ 11、式 (12.) およ�
 8)\quad 0&=a_\nu(bLu)^3+\frac34(\theta Hu)^2H,\\
 9)\quad 0&=(aHu)^2(bHu)^2+2(\theta Hu)^2H,\qquad\text{（7) から）}\\
 10)\quad 0&=a_\eta(aHu)^2b_\eta(bHu)^2,\qquad\text{（5) と 6) から）}\\
-11)\quad 0&\equiv [a_\nu^2b_\eta(bHu)]_{\widehat{su^4}}.\qquad\text{（式 (30.)b から）}
+11)\quad 0&\equiv [a_\nu^2\cdot b_\eta(bHu)]_{\widehat{su^4}}.\qquad\text{（式 (30.)b から）}
 \end{align*}
 \[
 (H_\vartheta su)^4,
@@ -11670,7 +11670,7 @@ Erlangen, 1921 年 8 月。
 %
 \section*{21. 形式的変分法と微分不変式}
 \begin{center}
-Encyklopädie d. math. Wiss. II, 3 (1922), S. 68--71
+Encyklopädie d. math. Wiss. III, 3 (1922), S. 68--71
 （R. Weitzenböck, Differentialinvarianten 所収）
 \end{center}
 
@@ -11683,7 +11683,7 @@ Encyklopädie d. math. Wiss. II, 3 (1922), S. 68--71
 
 %
 %
-斉次形式 $f'(dx)$ に属する変分問題から出発する。ただし
+斉次形式 $f(dx)$ に属する変分問題から出発する。ただし
 \[
 \left|\frac{\partial^2 f}{\partial dx_i\,\partial dx_k}\right|\ne0
 \]
@@ -11699,7 +11699,7 @@ Encyklopädie d. math. Wiss. II, 3 (1922), S. 68--71
 \]
 へ導かれる。ここでラグランジ\nolinebreak[4]ュ式 $\psi_i$（ここでの規格化では、対応する変分問題のラグランジ\nolinebreak[4]ュ方程式の左辺の二分の一）は、$dx$ に対して反傾の変換則に従う。これは、$\psi_i$ を、部分積分に対応する積分を含まない形式的恒等式（歴史的名称ではラグランジ\nolinebreak[4]ュの中心方程式\footnote{特殊な $f$ について、この名称は Heun による。彼の論文 IV, 1 II, p. 447 を参照。}）
 \[
-\delta f'-df_\delta=-2\sum\psi_i(d,d)\,\delta x_i,
+\delta f-df_\delta=-2\sum\psi_i(d,d)\,\delta x_i,
 \qquad
 \left(f_\delta=\sum\frac{\partial f}{\partial dx_i}\,\delta x_i\right),
 \]
@@ -12485,7 +12485,7 @@ $C^{(i)}$ が存在することから、(8) と同様に、$\xi$ に適切な番
 \renewcommand{\thefootnote}{\arabic{footnote})}
 \setcounter{footnote}{13}
 
-特に、§~3 で係数領域として基礎に置いた体 $P$ の標数が零であるとする。すなわち、$P$ に\mbox{含まれ}、\mbox{単位から生成される}素体が有理数型であるとする。このとき不定元 $u_{\mu\nu}$ を $P$ の元 $\bar u_{\mu\nu}$ に\mbox{特殊化して}、$i=1\ldots n$ のそれぞれについて $C^{(i)}$ が $x_i$ に関して正則であり続けるようにできる。上の議論は、\mbox{この特殊化}のもとでも定理 VII が保たれることを示す\footnote{Hentzelt は、任意の $P$ の代わりに全複素数体だけを取り、主として後者の場合を扱っている。不定元を基礎に置くのは、本来の\mbox{消去理論において}だけである。さらに Hentzelt は、ここで与えた推論と本質的に同じ推論によって、終結式形式を作るには、各 $\Mmod_{i-1}$ において、\mbox{固定された限界}を超える何らかの有限次数まで $x$ について進めば十分であることを示している。ただし、定理 VII で与えた $\Gmod_{i-1}\mid\Mmod_{i-1}$ と $\Gmod^*_{i-1}\mid\Mmod^*_{i-1}$ との同型が欠けており、この同型こそが次数の値からの独立性の理由を明らかにする。（E. N.）}。しかし、この場合、基本加群と\mbox{単因子}が、\mbox{一般の場合}から\mbox{特殊化} $u_{\mu\nu}=\bar u_{\mu\nu}$ によって必ず生じるとは限らない\footnote{$\mideal=(x^2,ux+y)$ に対して $\gideal_0=(1)$、$\gideal_1=(1)$ となる。$C^{(1)}=x^2$ を選べば、$\Gmod_1^*=(1,x)$、$\Mmod_1^*=(ux+y,xy)$ である。ここで $\Mmod_1^*$ は\mbox{単因子} $y^2$ と $1$ をもち、$C^{(2)}=y^2$ を選べる。$u=0$ とすると、$C^{(1)}$ と $C^{(2)}$ はそれぞれ $x$ と $y$ に関して正則であり続けるが、$\Mmod_1^*=(y,xy)$ は\mbox{単因子} $y,y$ をもつ。したがって $\Gmod_1\mid\Mmod_1$ はなお、有限個の不定元に関する加群の剰余類系と同型であるが、$\Gmod_1\mid\Mmod_1$ とは同型でない。\mbox{これに対して} $C^{(1)}=ux+y$ を選び、$C^{(1)}$ が正則であり続けるように\mbox{特殊化}したならば、同型も保たれたであろう。（E. N.）}。
+特に、§~3 で係数領域として基礎に置いた体 $P$ の標数が零であるとする。すなわち、$P$ に\mbox{含まれ}、\mbox{単位から生成される}素体が有理数型であるとする。このとき不定元 $u_{\mu\nu}$ を $P$ の元 $\bar u_{\mu\nu}$ に\mbox{特殊化して}、$i=1\ldots n$ のそれぞれについて $C^{(i)}$ が $x_i$ に関して正則であり続けるようにできる。上の議論は、\mbox{この特殊化}のもとでも定理 VII が保たれることを示す\footnote{Hentzelt は、任意の $P$ の代わりに全複素数体だけを取り、主として後者の場合を扱っている。不定元を基礎に置くのは、本来の\mbox{消去理論において}だけである。さらに Hentzelt は、ここで与えた推論と本質的に同じ推論によって、終結式形式を作るには、各 $\Mmod_{i-1}$ において、\mbox{固定された限界}を超える何らかの有限次数まで $x$ について進めば十分であることを示している。ただし、定理 VII で与えた $\Gmod_{i-1}\mid\Mmod_{i-1}$ と $\Gmod^*_{i-1}\mid\Mmod^*_{i-1}$ との同型が欠けており、この同型こそが次数の値からの独立性の理由を明らかにする。（E. N.）}。しかし、この場合、基本加群と\mbox{単因子}が、\mbox{一般の場合}から\mbox{特殊化} $u_{\mu\nu}=\bar u_{\mu\nu}$ によって必ず生じるとは限らない\footnote{$\mideal=(x^2,ux+y)$ に対して $\gideal_0=(1)$、$\gideal_1=(1)$ となる。$C^{(1)}=x^2$ を選べば、$\Gmod_1^*=(1,x)$、$\Mmod_1^*=(ux+y,xy)$ である。ここで $\Mmod_1^*$ は\mbox{単因子} $y^2$ と $1$ をもち、$C^{(2)}=y^2$ を選べる。$u=0$ とすると、$C^{(1)}$ と $C^{(2)}$ はそれぞれ $x$ と $y$ に関して正則であり続けるが、$\Mmod_1^*=(y,xy)$ は\mbox{単因子} $y,y$ をもつ。したがって $\widetilde{\Gmod}_1\mid\widetilde{\Mmod}_1$ はなお、有限個の不定元に関する加群の剰余類系と同型であるが、$\Gmod_1\mid\Mmod_1$ とは同型でない。\mbox{これに対して} $C^{(1)}=ux+y$ を選び、$C^{(1)}$ が正則であり続けるように\mbox{特殊化}したならば、同型も保たれたであろう。（E. N.）}。
 
 \endgroup
 %
@@ -13247,7 +13247,7 @@ $x_{i+1},\ldots,x_n$ に現れる不定元 $t_{\sigma\tau}$ だけを添加す�
  Q_\lambda^{(i)}(u,v)=\prod (z-v_1\bar x_{1\nu}-\cdots-v_i\bar x_{i\nu})^{\delta_\lambda\rho_\lambda}.
 \]
 
-$P_\lambda^{(i)}$ は定理 X により $\frakp_\lambda$ の単因子形式として認識されているので、これは実際には定理 IV の分解の代入にすぎない。次数に関する注記は、§ 1, 5 および 7 で述べられたことの別の定式化にすぎない。\footnote{同様に、H.-N. の注 2 で述べられた重複度の定式化も、定理 X の直ちに出る帰結である。すなわち $x_{i+1},\ldots,x_n$ を添加した後、剰余類系 $\frakg_{i-1}\mid\frakr_\lambda$ は $\frakt_\lambda\mid\frakr_\lambda$ と同型である。ここで $\frakt_\lambda=[\frakg_{i-1},\frakr_1,\ldots,\frakr_{\lambda-1},\frakr_{\lambda+1},\ldots,\frakr_a]$ とおく。このことは、因子 $Q_\mu^{(i)}$ の相対素性を考慮して、線型形式の加群へ戻ること（H.-N., 定理 V）から従う。直接には、$\frakt_\lambda\mid\frakr_\lambda$ が $\frakt_\lambda\mid\frakq_\lambda$ と同型であることが示される。ここで $\frakt_\lambda$ は、$x_{i+1},\ldots,x_n$ を添加した後の $\frakq_\lambda$ の補集合から生じる。}
+$P_\lambda^{(i)}$ は定理 X により $\frakp_\lambda$ の単因子形式として認識されているので、これは実際には定理 IV の分解の代入にすぎない。次数に関する注記は、§ 1, 5 および 7 で述べられたことの別の定式化にすぎない。\footnote{同様に、H.-N. の注 2 で述べられた重複度の定式化も、定理 X の直ちに出る帰結である。すなわち $x_{i+1},\ldots,x_n$ を添加した後、剰余類系 $\frakg_{i-1}\mid\frakr_\lambda$ は $\frakt_\lambda\mid\frakr_\lambda$ と同型である。ここで $\frakt_\lambda=[\frakg_{i-1},\frakr_1,\ldots,\frakr_{\lambda-1},\frakr_{\lambda+1},\ldots,\frakr_\alpha]$ とおく。このことは、因子 $Q_\mu^{(i)}$ の相対素性を考慮して、線型形式の加群へ戻ること（H.-N., 定理 V）から従う。直接には、$\frakt_\lambda\mid\frakr_\lambda$ が $\frakt_\lambda\mid\frakq_\lambda$ と同型であることが示される。ここで $\frakt_\lambda$ は、$x_{i+1},\ldots,x_n$ を添加した後の $\frakq_\lambda$ の補集合から生じる。}
 
 \subsection*{§ 6. 単因子形式とノルムによる素イデアルおよび真の準素イデアルの特徴づけ}
 
@@ -14798,7 +14798,7 @@ $\gamma$ を $\mathfrak R$ の指数 $f\geq 1$ の第二種の元とし、
 \]
 を表す。さらに、零行列が対応するのは $\gamma\mathfrak a$ が零イデアルとなる元 $\gamma$ のすべてであり、かつそれらに限るので、上に述べた同型が得られる。
 
-\emph{$\mathfrak a$ の基底 $\bar a$ は、$R_{\mathfrak a}$ と同型で、しかも同値な行列環 $R_{\bar{\mathfrak a}}=P^{-1}R_{\mathfrak a}P$ を生成する。} 実際、$\bar a_1,\ldots,\bar a_s$ を別の線型独立な $\Sigma$-加群基底とすれば、
+\emph{$\mathfrak a$ の基底 $\bar a$ は、$R_{\mathfrak a}$ と同型で、しかも同値な行列環 $R_{\bar a}=P^{-1}R_{\mathfrak a}P$ を生成する。} 実際、$\bar a_1,\ldots,\bar a_s$ を別の線型独立な $\Sigma$-加群基底とすれば、
 \[
 (\bar a_1,\ldots,\bar a_s)=(a_1,\ldots,a_s)P,
 \]
@@ -14810,7 +14810,7 @@ $\gamma$ を $\mathfrak R$ の指数 $f\geq 1$ の第二種の元とし、
 \]
 すなわち
 \[
-R_{\bar{\mathfrak a}}=P^{-1}R_{\mathfrak a}P.
+R_{\bar a}=P^{-1}R_{\mathfrak a}P.
 \]
 
 \endgroup
@@ -14822,9 +14822,9 @@ R_{\bar{\mathfrak a}}=P^{-1}R_{\mathfrak a}P.
 
 \textbf{2. イデアル類と表現類。} $\mathfrak R$ の二つのイデアル $\mathfrak a$ と $\mathfrak b$ は、$\mathfrak R$-加群とみなして同型であるとき、同じイデアル類に属する。すなわち、それらの元の間に、差と $\mathfrak R$ の同じ元による乗法とが対応するような一対一対応があり、任意の $\gamma\in\mathfrak R$ に対して $a\simeq\beta$ から常に $\gamma a\simeq\gamma\beta$ が従うときである。
 
-1. の行列表現によって生成される二つの環 $R_{\mathfrak a}$ と $R_{\overline{\mathfrak a}}$ は、同値であるとき、同じ表現類に属する。すなわち、
+1. の行列表現によって生成される二つの環 $R_{\mathfrak a}$ と $R_{\bar a}$ は、同値であるとき、同じ表現類に属する。すなわち、
 \[
-R_{\overline{\mathfrak a}}=P^{-1}R_{\mathfrak a}P
+R_{\bar a}=P^{-1}R_{\mathfrak a}P
 \]
 となるような（ユニモジュラー）行列 $P$ が存在するときである。\footnote[2]{特殊な場合には解決されている次の問題、すなわち、すべての $\mathfrak R$ の準同型像である行列環が、必要なら線型従属な基底も許すことによって、1. に従い $\mathfrak R$ のあるイデアルから生成されるかどうかという問題には、ここでは立ち入らない。定義上、表現類を構成するのは、1. に従い $\mathfrak R$ のイデアルから生成される行列環だけである。}
 
@@ -14833,7 +14833,7 @@ R_{\overline{\mathfrak a}}=P^{-1}R_{\mathfrak a}P
 %
 %
 
-\emph{イデアル類と表現類は一対一に対応する。} 1. では、同一のイデアルの異なる加群基底から生成される環 $R_{\mathfrak a}$ と $R_{\overline{\mathfrak a}}$ が、同じ表現類に属することを示した。しかしさらに、同じイデアル類に属する異なるイデアル $\mathfrak a$ と $\mathfrak b$ からも、同じ表現類に属する環が生成される。実際、$\mathfrak a$ の基底 $a_1,\ldots,a_s$ に同型によって対応する $\mathfrak b$ の基底を $\beta_1,\ldots,\beta_s$ とする。このとき $\gamma a_i$ と $\gamma\beta_i$ が互いに対応し、同様に
+\emph{イデアル類と表現類は一対一に対応する。} 1. では、同一のイデアルの異なる加群基底から生成される環 $R_{\mathfrak a}$ と $R_{\bar a}$ が、同じ表現類に属することを示した。しかしさらに、同じイデアル類に属する異なるイデアル $\mathfrak a$ と $\mathfrak b$ からも、同じ表現類に属する環が生成される。実際、$\mathfrak a$ の基底 $a_1,\ldots,a_s$ に同型によって対応する $\mathfrak b$ の基底を $\beta_1,\ldots,\beta_s$ とする。このとき $\gamma a_i$ と $\gamma\beta_i$ が互いに対応し、同様に
 \[
 c_{1i}a_1+\cdots+c_{si}a_s
 \quad\text{と}\quad
@@ -14866,7 +14866,7 @@ R_{\beta}=P R_{\overline{\beta}}P^{-1}=R_{\mathfrak a}
 
 \textbf{3. 類に関する元のトレース。}
 
-$C$ を、$R_{\mathfrak a}$ において $\mathfrak R$ の元 $\gamma$ に対応する行列とする。$R_{\mathfrak a}$ から $R_{\overline{\mathfrak a}}$ への移行により、行列式 $|C|$、さらに一般に、$t$ を不定元とするときの $|tE-C|$ は表現類の不変量であることが分かる。したがって 2 により、これは同時にイデアル類の不変量、すなわち、略していう \emph{類不変量} である。ゆえに $|tE-C|$ における $t$ の各係数は類不変量となる。特に、$(-t^{s-1})$ の係数を \emph{類に関する $\gamma$ のトレース} と呼ぶことにする。記号で書けば
+$C$ を、$R_{\mathfrak a}$ において $\mathfrak R$ の元 $\gamma$ に対応する行列とする。$R_{\mathfrak a}$ から $R_{\bar a}$ への移行により、行列式 $|C|$、さらに一般に、$t$ を不定元とするときの $|tE-C|$ は表現類の不変量であることが分かる。したがって 2 により、これは同時にイデアル類の不変量、すなわち、略していう \emph{類不変量} である。ゆえに $|tE-C|$ における $t$ の各係数は類不変量となる。特に、$(-t^{s-1})$ の係数を \emph{類に関する $\gamma$ のトレース} と呼ぶことにする。記号で書けば
 \[
 S_{(\mathfrak a)}(\gamma)=c_{11}+c_{22}+\cdots+c_{ss}
 \]
@@ -14945,7 +14945,7 @@ S_{(\mathfrak a)}(c\beta)=cS_{(\mathfrak a)}(\beta)
 %
 %
 
-ある表現類に属する環 $R_{\mathfrak a}$ が、$R_{\mathfrak a}$ のイデアルでもある部分環の直和であるとする。同型により、このことはその表現類に属する任意の環 $R_{\overline{\mathfrak a}}$ についても成り立ち、対応する成分はそれぞれ同値な環となる。したがって、\emph{表現類の直和} およびその \emph{成分類} について語ることができる。
+ある表現類に属する環 $R_{\mathfrak a}$ が、$R_{\mathfrak a}$ のイデアルでもある部分環の直和であるとする。同型により、このことはその表現類に属する任意の環 $R_{\bar a}$ についても成り立ち、対応する成分はそれぞれ同値な環となる。したがって、\emph{表現類の直和} およびその \emph{成分類} について語ることができる。
 %
 %
 %
