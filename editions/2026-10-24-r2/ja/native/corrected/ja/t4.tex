@@ -130,13 +130,13 @@ S(\mathfrak l_j)=\mathfrak l_i
 
 表現加群 \(e_i\Gamma\) によって、\(\mathfrak Z\) は \(\Gamma\) の部分体 \(Z_i\) へ写される。\(\mathfrak Z\) の表現 \(Z_i\) はすでに \(Z_i\) に含まれるので、\(\mathfrak Z_{Z_i}\) は表現加群 \(e_iZ_i\) を分離しなければならず、したがって \(e_i\) はすでに \(\mathfrak Z_{Z_i}\) に属する。\(\{Z_i,Z_k\}\) を \(Z_i\) と \(Z_k\) の合成体とする。\(\mathfrak K_{r\{Z_i,Z_k\}}\) は二つの左イデアル
 \[
-\bar{\mathfrak l}_i=\mathfrak K_{r\{Z_i,Z_k\}}e_i,\qquad
-\bar{\mathfrak l}_k=\mathfrak K_{r\{Z_i,Z_k\}}e_k
+\bar{\mathfrak l}_i=\mathfrak K_{r\{\mathsf{Z}_i,\mathsf{Z}_k\}}e_i,\qquad
+\bar{\mathfrak l}_k=\mathfrak K_{r\{\mathsf{Z}_i,\mathsf{Z}_k\}}e_k
 \]
 を分離し、これらは \(\mathfrak l_i=\mathfrak K_{r\Gamma}\bar{\mathfrak l}_i\) であるため単純である。したがって
 \[
-\bar{\mathfrak l}_i=\sum_{\lambda=1}^m\{Z_i,Z_k\}c_{\lambda i}^{(ik)},\qquad
-\bar{\mathfrak l}_k=\sum_{\lambda}\{Z_i,Z_k\}c_{\lambda k}^{(ik)}.
+\bar{\mathfrak l}_i=\sum_{\lambda=1}^m\{\mathsf{Z}_i,\mathsf{Z}_k\}c_{\lambda i}^{(ik)},\qquad
+\bar{\mathfrak l}_k=\sum_{\lambda}\{\mathsf{Z}_i,\mathsf{Z}_k\}c_{\lambda k}^{(ik)}.
 \]
 ここで \(c_{\lambda\rho}^{(ik)}\) は \(\mathfrak K_{r\{Z_i,Z_k\}}\) の行列単位系である。
 
@@ -149,7 +149,7 @@ p_{ik}=c_{ik}^{(ik)}\gamma_{ik},\qquad
 
 \(S\) の添字 \(i\) への作用を
 \[
-S(i)=k,\qquad\text{ただし}\qquad S(Z_i)=Z_k
+S(i)=k,\qquad\text{ただし}\qquad S(\mathsf{Z}_i)=\mathsf{Z}_k
 \]
 によって定める。各添字対 \((\nu,\mu)\) には、\(S(\nu,\mu)=(1,k)\) という形の共役な対が少なくとも一つ存在する。共役な添字対の各類から固定した対 \((1,k)\) を一つ選び、この \((1,k)\) に対して
 \[
@@ -183,7 +183,7 @@ p_{\nu\mu}=c_{\nu\mu}\bar\gamma_{\nu\mu}
 \]
 とも書けることは明らかである。したがって関係式
 \[
-c_{ij}c_{1k}=0,\quad\text{もし }j\ne1,
+c_{ij}c_{1k}=0,\quad\text{もし }\quad j\ne1,
 \qquad
 c_{ij}c_{jk}=c_{ik}
 \]
@@ -259,7 +259,7 @@ p'_{ik}=\lambda^{-1}p_{ik}\lambda
 \]
 と \(\mathfrak K_r\) の内部自己同型によって結ばれている：
 \[
-A=\tau^{-1}\mathfrak K_r\tau\cdot\tau^{-1}\mathfrak z_1\tau
+\mathsf{A}=\tau^{-1}\mathfrak K_r\tau\cdot\tau^{-1}\mathfrak z_1\tau
 =\mathfrak K'_r\cdot\mathfrak z'_1.
 \]
 
@@ -273,7 +273,7 @@ S(\tau^{-1}\mathfrak l_i\tau\cdot\mathfrak z'_1)
 であるから、
 \[
 \tag{1}
-A_\Gamma=\mathfrak l'_1\mathfrak z'_1+\cdots+\mathfrak l'_n\mathfrak z'_1
+\mathsf{A}_\Gamma=\mathfrak l'_1\mathfrak z'_1+\cdots+\mathfrak l'_n\mathfrak z'_1
 \]
 は \(A_\Gamma\) の共役な左イデアルへの分解である。\(\tau^{-1}e_i\tau=e'_i\) と置き、\(E'\) を \(\mathfrak z'_1\) の単位元とすれば、
 \[
@@ -284,7 +284,7 @@ A_\Gamma=\mathfrak l'_1\mathfrak z'_1+\cdots+\mathfrak l'_n\mathfrak z'_1
 共役な左イデアルへの任意の別の分解
 \[
 \tag{2}
-A_\Gamma=\mathfrak q_1+\cdots+\mathfrak q_n,\qquad
+\mathsf{A}_\Gamma=\mathfrak q_1+\cdots+\mathfrak q_n,\qquad
 S\mathfrak q_i=\mathfrak q_k\quad\text{もし}\quad
 S\mathfrak l'_i\mathfrak z'_1=\mathfrak l'_k\mathfrak z'_1
 \]
@@ -300,7 +300,7 @@ e_i^*=\lambda^{-1}e'_iE'\lambda.
 
 \textbf{補題.} \emph{\(A\) を \(\mathfrak K_n\) の左イデアルとし、}
 \[
-A=\mathfrak l_1+\cdots+\mathfrak l_n
+\mathsf{A}=\mathfrak l_1+\cdots+\mathfrak l_n
 =\mathfrak K_{n\Gamma}e_1+\cdots+\mathfrak K_{n\Gamma}e_n
 \]
 \emph{を、仮定により存在する共役な左イデアルへの分解とする。この際、一般性を失うことなく \(\mathfrak l_i\) を共役と仮定してよい。}
@@ -346,7 +346,7 @@ ts=e_1^*+\cdots+e_n^*=\xi^*
 \]
 を得る。ここで \(\xi\) と \(\xi^*\) は \(\mathfrak K_n\) に属し、
 \[
-A\xi=A,\qquad \mathfrak z\xi^*=\mathfrak z
+\mathsf{A}\xi=\mathsf{A},\qquad \mathfrak z\xi^*=\mathfrak z\quad
 \quad\text{（}\mathfrak l_i\xi=\mathfrak l_i\mathfrak l_i=\mathfrak l_i\text{ であるため）},
 \]
 \[
@@ -354,7 +354,7 @@ A\xi=A,\qquad \mathfrak z\xi^*=\mathfrak z
 \]
 となる。いま \(e=\overline E+E=\overline E^*+E^*\) と置き、したがって
 \[
-\mathfrak K_n=\overline A+A
+\mathfrak K_n=\overline{\mathsf A}+\mathsf{A}
 =\mathfrak K_n\overline\xi+\mathfrak K_n\xi
 =\overline{\mathfrak z}+\mathfrak z
 =\mathfrak K_n\overline\xi^*+\mathfrak K_n\xi^*
@@ -375,8 +375,8 @@ A\xi=A,\qquad \mathfrak z\xi^*=\mathfrak z
 \mathfrak l_i\lambda=\mathfrak q_i,\qquad
 \lambda^{-1}\mathfrak q_i=\mathfrak q_i
 \quad
-(\lambda^{-1}\mathfrak q_i\subseteq\mathfrak q_i
-=\lambda\cdot\lambda^{-1}\mathfrak q_i\subseteq\lambda^{-1}\mathfrak q_i)
+(\lambda^{-1}\mathfrak q_i\subseteqq\mathfrak q_i
+=\lambda\cdot\lambda^{-1}\mathfrak q_i\subseteqq\lambda^{-1}\mathfrak q_i)
 \]
 となり、したがって
 \[
@@ -385,7 +385,7 @@ A\xi=A,\qquad \mathfrak z\xi^*=\mathfrak z
 
 分解 (1) に対して、再び元
 \[
-r_{ik}=c_{ik}^{\prime(ik)}\gamma_{ik},\qquad \gamma_{ik}\in\{Z_i,Z_k\}
+r_{ik}=c_{ik}^{\prime(ik)}\gamma_{ik},\qquad \gamma_{ik}\in\{\mathsf{Z}_i,\mathsf{Z}_k\}
 \]
 を定めることができる。これらは \(e'_iE'\mapsto r_{ik}\) によってイデアル \(\mathfrak l'_i\mathfrak z'_1\) と \(\mathfrak l'_k\mathfrak z'_1\) の間の作用素同型を与え、また \(S(i,k)=(\nu,\mu)\) のとき共役性条件 \(S(r_{ik})=r_{\nu\mu}\) を満たす。これらは
 \[
@@ -401,7 +401,7 @@ r_{ik}=\tau^{-1}p_{ik}\tau\cdot E'
 
 \textbf{定理.} \emph{\(A_\Gamma\) の共役な左イデアルへの任意の分解}
 \[
-A_\Gamma=\mathfrak q_1+\cdots+\mathfrak q_n
+\mathsf{A}_\Gamma=\mathfrak q_1+\cdots+\mathfrak q_n
 \]
 \emph{を用いて作られる \(A_\Gamma\) の因子系は、\(\mathfrak K_r\) の因子系と同じである。}
 
@@ -427,11 +427,11 @@ A_\Gamma=\mathfrak q_1+\cdots+\mathfrak q_n
 \]
 は、零でない \(n^2\) 個、したがって単純なイデアルへの分解である。それゆえ
 \[
-A_1=\mathfrak l_1\mathfrak m_1+\mathfrak l_2\mathfrak m_2+\cdots+\mathfrak l_n\mathfrak m_n
+\mathsf{A}_1=\mathfrak l_1\mathfrak m_1+\mathfrak l_2\mathfrak m_2+\cdots+\mathfrak l_n\mathfrak m_n
 \]
 は絶対長 \(n\) のイデアルである。\(\mathfrak m_i\) は \(\mathfrak l_i\) と同じように変換されるので、\(A_1\) はすべての \(S\) に対して不変である。したがって
 \[
-A_1=A_\Gamma
+\mathsf{A}_1=\mathsf{A}_\Gamma
 \]
 となる \(\mathfrak K_r\times\mathfrak S_s\) のイデアル \(A\) が存在する（18 頁の補題）。
 
@@ -440,7 +440,7 @@ A_1=A_\Gamma
 ところで、定義に用いる \(A_\Gamma\) の共役なイデアルへの分解は
 \[
 \tag{3}
-A_\Gamma=\mathfrak l_1\mathfrak m_1+\mathfrak l_2\mathfrak m_2+\cdots+\mathfrak l_n\mathfrak m_n
+\mathsf{A}_\Gamma=\mathfrak l_1\mathfrak m_1+\mathfrak l_2\mathfrak m_2+\cdots+\mathfrak l_n\mathfrak m_n
 \]
 である。\(\alpha_{ik}^{(j)}\)、\(\beta_{ik}^{(j)}\) がそれぞれ \(\mathfrak K\)、\(\mathfrak S\) の擬行列単位 \(p_{ik}\)、\(q_{ik}\) に属するならば、\(r_{ik}=p_{ik}q_{ik}\) は明らかに、分解 (3) に対する \(A_\Gamma\) の擬行列単位系である。これに属する因子系 \(\varepsilon_{ik}^{(j)}=\alpha_{ik}^{(j)}\beta_{ik}^{(j)}\) は、したがって \(\mathfrak M\) の因子系でもある。
 
@@ -452,20 +452,20 @@ A_\Gamma=\mathfrak l_1\mathfrak m_1+\mathfrak l_2\mathfrak m_2+\cdots+\mathfrak 
 
 \(\mathfrak K_{r\Gamma}\)-イデアル
 \[
-\Omega=\mathfrak l_1(p_{11}+\cdots+p_{1n})
+\mathfrak L=\mathfrak l_1(p_{11}+\cdots+p_{1n})
 \]
 は零でなく（\(e_1\sum_i p_{1i}\ne0\)）、単純であり、したがって階数 \(n\) である。\(\Omega\) は \(\mathfrak G\)-不変である。実際、\(\alpha_{ik}^{(j)}=1\) であるから、
 \[
-S\Omega
-=\mathfrak l_i\sum_\nu S p_{1\nu}
+S\mathfrak L
+=S\mathfrak l_1\sum_\nu S p_{1\nu}
 =\mathfrak l_i\sum_\mu p_{i\mu}
 =\mathfrak l_i\sum_\mu p_{i1}p_{1\mu}.
 \]
 したがって
 \[
-S\Omega=\mathfrak l_ip_{i1}\sum_\mu p_{1\mu}
+S\mathfrak L=\mathfrak l_ip_{i1}\sum_\mu p_{1\mu}
 =\mathfrak l_1\sum_\mu p_{1\mu}
-=\Omega.
+=\mathfrak L.
 \]
 ゆえに \(\Omega=\mathfrak l_\Gamma\) であり、\emph{ここで \(\mathfrak l\) は階数 \(n\) の \(\mathfrak K_r\)-イデアルである。}
 
@@ -533,7 +533,7 @@ P_{ik}P_{kj}=\alpha_{ij}^{(k)}P_{ij}
 \]
 行列 \(P_{ik}\) は正則なので \(|P_{\nu\mu}|\ne0\) であり、
 \[
-\alpha_{ij}^{(k)n}=\frac{\delta_{ik}\delta_{kj}}{\delta_{ik}},
+\alpha_{ij}^{(k)n}=\frac{\delta_{ik}\delta_{kj}}{\delta_{ij}},
 \]
 ここで \(|P_{\nu\mu}|=\delta_{\nu\mu}\) と置いた。その後は Brauer の証明と同じである。
 
@@ -545,12 +545,12 @@ P_{ik}P_{kj}=\alpha_{ij}^{(k)}P_{ij}
 \]
 のイデアル \(\mathfrak l_i\) は、\(\Gamma\) における \(\mathfrak K_r\) の相反表現加群である（32 頁の定理 2）。\(\mathfrak Z\) に関する \(\mathfrak K_r\) の固定した基底 \(k_1,\ldots,k_n\) を基礎とすれば、
 \[
-\mathfrak K_{r\Gamma}=k_1\mathfrak Z_r+\cdots+k_n\mathfrak Z_r,
+\mathfrak K_{r\Gamma}=k_1\mathfrak Z_\Gamma+\cdots+k_n\mathfrak Z_\Gamma,
 \]
 したがって
 \[
 \mathfrak l_i=\mathfrak K_{r\Gamma}e_i
-=k_1\mathfrak Z_r e_i+\cdots+k_n\mathfrak Z_r e_i
+=k_1\mathfrak Z_\Gamma e_i+\cdots+k_n\mathfrak Z_\Gamma e_i
 =k_1e_i\Gamma+\cdots+k_ne_i\Gamma.
 \]
 これから
@@ -607,7 +607,7 @@ P_{ik}P_{kj}(k_\varrho e_j)
 \[
 \{\mathfrak K\}^{\lambda}=\{\mathsf P\},
 \qquad
-\{\mathfrak K_T\}^{\lambda}=\{T\}
+\{\mathfrak K_{\mathsf{T}}\}^{\lambda}=\{\mathsf{T}\}
 \]
 が従うので、\(\lambda\equiv0\pmod {p^\alpha}\) である。証明終。（\(\lambda=t\) である必要がないことについて、Brauer は例を与えた\srcfn{1}{Brauer: Untersuchungen über die arithmetischen Eigenschaften von Gruppen linearer Substitutionen II. Math. Zeitschr. 31, S. 733 \S 5, (1930).}。）
 
@@ -615,7 +615,7 @@ P_{ik}P_{kj}(k_\varrho e_j)
 
 \emph{証明.} 定理 3 と 4 により、\(\{\mathfrak K\}\) の位数 \(\lambda\) は
 \[
-\lambda=\prod_i p_i^{\alpha_i},\qquad 1\le\alpha_i\le\varrho_i.
+\lambda=\prod_i p_i^{\alpha_i},\qquad 1\leqq\alpha_i\leqq\varrho_i.
 \]
 \(\{\mathfrak K\}\) が生成する \(\mathscr K\) の巡回部分群 \(\mathfrak Z\) は、位数 \(p_i^{\alpha_i}\) の部分群 \(\mathfrak Z_i\) の直積である。したがって
 \[
@@ -623,14 +623,14 @@ P_{ik}P_{kj}(k_\varrho e_j)
 \]
 これから、\(\mathfrak K\) の各分解体 \(Z\) は \(\mathfrak K^{(i)}\) の分解体でもあることがわかる。したがって \(\mathfrak K^{(i)}\) の絶対成分数 \(p_i^{\sigma_i}\) は \(t\) を割り、\(\sigma_i\le\varrho_i\) である。\(\prod_i\mathfrak K^{(i)}=\mathfrak K_m\) とすれば、
 \[
-\prod_i p_i^{\varrho_i}=\prod_i p_i^{\sigma_i}\cdot m,
+\prod p_i^{\varrho_i}=\prod p_i^{\sigma_i}\cdot m,
 \qquad
-\sigma_i\ge\varrho_i,
+\sigma_i\geqq\varrho_i,
 \]
 したがって
 \[
 \sigma_i=\varrho_i,\qquad m=1,\qquad
-\mathfrak K=\prod_i\mathfrak K^{(i)},
+\mathfrak K=\prod \mathfrak K^{(i)},
 \quad\text{証明終。}
 \]
 
@@ -640,7 +640,7 @@ P_{ik}P_{kj}(k_\varrho e_j)
 
 \(\mathfrak K_r\) の極大可換部分体 \(\mathfrak Z\) がガロア的であるとする。\(\mathfrak Z/\mathsf P\) の \(n\) 個の自己同型 \(H_i\) は、25 頁の定理 7 により \(\mathfrak K_r\) の内部自己同型である。すなわち、元 \(u_i\) が存在して
 \[
-H_i z=u_i^{-1}zu_i\quad\text{すべての }z\in\mathfrak Z\text{ に対して}
+\mathsf{H}_i z=u_i^{-1}zu_i\quad\text{すべての }z\text{ に対して}\mathfrak Z
 \]
 となる。各 \(u_i\) は、\(\mathfrak Z\) の零でない因子 \(y\) を除いて定まる。実際、すべての \(z\in\mathfrak Z\) に対して \(u^{-1}zu=u'^{-1}zu'\) ならば、すべての \(z\in\mathfrak Z\) に対して \((u^{-1}u')^{-1}z(u^{-1}u')=z\) が従う。したがって \(u^{-1}u'\) を \(\mathfrak Z\) に添加すると \(\mathfrak K_r\) の可換部分体が得られ、それは \(\mathfrak Z\) の極大性により \(\mathfrak Z\) と一致する。ゆえに \(u^{-1}u'\in\mathfrak Z\) である。
 
@@ -650,9 +650,9 @@ H_i z=u_i^{-1}zu_i\quad\text{すべての }z\in\mathfrak Z\text{ に対して}
 \]
 そのためには、明らかに \(u_i\) が \(\mathfrak Z\) に関して線形独立であることだけが必要である。証明は \(u_i\) を直接与えることによって行う。いま
 \[
-\mathfrak Z_Z=e_1Z+\cdots+e_nZ,\qquad
-\mathfrak K_{rZ}=\mathfrak l_1+\cdots+\mathfrak l_n,\quad
-\mathfrak l_i=\mathfrak K_{rZ}e_i
+\mathfrak Z_{\mathsf{Z}}=e_1\mathsf{Z}+\cdots+e_n\mathsf{Z},\qquad
+\mathfrak K_{r\mathsf{Z}}=\mathfrak l_1+\cdots+\mathfrak l_n,\quad
+\mathfrak l_i=\mathfrak K_{r\mathsf{Z}}e_i
 \]
 とし、\(p_{ik}\) をこの分解に対する擬行列単位系とする。8 頁では、表現加群 \(e_iZ\) が与える \(\mathfrak Z\) から \(Z\) への同型を \(\Theta_i\) と表したので、
 \[
@@ -665,11 +665,11 @@ p_{ik}=p_{S_iS_k}.
 
 \(\mathfrak Z\) の \(n\) 個の自己同型は（\(E\) は恒等置換）
 \[
-H=\Theta_E^{-1}\Theta
+\mathsf{H}=\Theta_E^{-1}\Theta
 \]
 である。ここで \(H\) の番号付けを
 \[
-H_S=\Theta_E^{-1}\Theta_{S^{-1}}
+\mathsf{H}_S=\Theta_E^{-1}\Theta_{S^{-1}}
 \]
 となるように選ぶ。
 
@@ -693,7 +693,7 @@ R(u_T)=\sum_S RS(p_{E,T})=\sum_{S'} S'(p_{E,T})=u_T.
 
 3. \(u_T\) は \(H_T\) を生成する。すなわち \(z\in\mathfrak Z\) ならば \(u_T^{-1}zu_T=H_T(z)\)、または
 \[
-z u_T=u_T H_T(z)
+z u_T=u_T \mathsf{H}_T(z)
 \]
 である。
 
@@ -713,24 +713,24 @@ u_T=\sum_S S(p_{E,T}e_T)=\sum_S S(p_{E,T})e_{ST}
 \]
 であり、\(\mathfrak Z\) の元に作用させるときには次の等式が成り立つ：
 \[
-\Theta_S H_T=\Theta_S\Theta_E^{-1}\Theta_{T^{-1}}
+\Theta_S \mathsf{H}_T=\Theta_S\Theta_E^{-1}\Theta_{T^{-1}}
 =S\Theta_{T^{-1}}=ST^{-1}\Theta_E=\Theta_{ST^{-1}}.
 \]
 したがって
 \[
-H_T(z)=\sum_S e_S\Theta_S H_T(z)=\sum_S e_S\Theta_{ST^{-1}}(z),
+\mathsf{H}_T(z)=\sum_S e_S\Theta_S \mathsf{H}_T(z)=\sum_S e_S\Theta_{ST^{-1}}(z),
 \]
 すなわち
 \[
 \begin{aligned}
-u_TH_T(z)
+u_T\mathsf{H}_T(z)
 &=\sum_{S,S'} S(p_{E,T})e_{ST}\cdot e_{S'}\Theta_{S'T^{-1}}(z)\\
 &=\sum_S S(p_{E,T})\Theta_S(z).
 \end{aligned}
 \]
 ゆえに
 \[
-z\cdot u_T=u_T\cdot H_T(z).
+z\cdot u_T=u_T\cdot \mathsf{H}_T(z).
 \]
 
 4. \(u_S\) は \(\mathfrak Z\) に関して線形独立である。
@@ -749,7 +749,7 @@ z\cdot u_T=u_T\cdot H_T(z).
 
 以下では \(H_S(z)\) の代わりに \(z^S\) と書き、これを「記号的冪」と呼ぶ。\(u_S\) については次の形の関係式が成り立たなければならない：
 \[
-u_Ru_T=u_{RT}a_{R,T},\qquad a_{R,T}\ne0\quad\text{かつ}\quad a_{R,T}\in\mathfrak Z.
+u_Ru_T=u_{RT}a_{R,T},\qquad a_{R,T}\ne0\quad\text{かつ}\mathfrak Z.
 \]
 なぜなら
 \[

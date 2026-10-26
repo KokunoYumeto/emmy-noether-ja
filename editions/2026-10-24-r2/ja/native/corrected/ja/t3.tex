@@ -55,7 +55,7 @@ $\mathfrak c\subseteq\mathfrak c_{\mathsf K}\cap\mathfrak M$ は明らかであ�
 \]
 $\mathfrak c_{\mathsf K}\cap\mathfrak M$ の各元 $c$ は、$\mathfrak c_{\mathsf K}$ の元としての基底表示
 \[
-c=\sum_{i=1}^{r}y_i\chi_i
+c=\sum_{i=1}^{r}y_i\varkappa_i
 \]
 と、$\mathfrak M$ の元としての基底表示
 \[
@@ -83,8 +83,8 @@ $\mathfrak C$ の任意の基底 $y_1,\ldots,y_r$ を取り、$\mathfrak M$ の�
 \]
 ここから、$\mathfrak M$ の基底の最初の $r$ 元 $x_1,\ldots,x_r$ について
 \[
-x_i=z_i-\sum_{j=r+1}^{n}x_j\chi_j^{(i)},\qquad
-z_i\in\mathfrak C,\quad \chi_j^{(i)}\in\mathsf K
+x_i=z_i-\sum_{j=r+1}^{n}x_j\varkappa_j^{(i)},\qquad
+z_i\in\mathfrak C,\quad \varkappa_j^{(i)}\in\mathsf K
 \]
 が得られる。$z_i$ は $x_{r+1},\ldots,x_n$ とともに明らかに $\mathfrak M_{\mathsf K}$ の基底をなすので線型独立であり、$z_1,\ldots,z_r$ は $\mathfrak C$ の基底である。この基底が求める形であること、すなわち $z_i\in\mathfrak M$ を示す。
 
@@ -92,8 +92,8 @@ $\gamma$ を $\mathfrak G$ の元とする。一方では
 \[
 \begin{array}{rcl}
 (1)\qquad \gamma z_i
-&=&\gamma x_i+\displaystyle\sum_{j=r+1}^{n}\gamma x_j\cdot \gamma\chi_j^{(i)}
-=x_i+\displaystyle\sum_{j=r+1}^{n}x_j\gamma\chi_j^{(i)}.
+&=&\gamma x_i+\displaystyle\sum_{j=r+1}^{n}\gamma x_j\cdot \gamma\varkappa_j^{(i)}
+=x_i+\displaystyle\sum_{j=r+1}^{n}x_j\gamma\varkappa_j^{(i)}.
 \end{array}
 \]
 他方では、$\mathfrak C$ がすべての $\gamma\in\mathfrak G$ を許すから、
@@ -108,7 +108,7 @@ $\gamma$ を $\mathfrak G$ の元とする。一方では
 \begin{array}{rcl}
 (3)\qquad \gamma z_i
 &=&\displaystyle\sum_{\mu=1}^{r}x_\mu\sigma_\mu^{(i)}
-+\displaystyle\sum_{j=r+1}^{n}x_j\sum_{\mu=1}^{r}\chi_j^{(\mu)}\sigma_\mu^{(i)}
++\displaystyle\sum_{j=r+1}^{n}x_j\sum_{\mu=1}^{r}\varkappa_j^{(\mu)}\sigma_\mu^{(i)}
 \end{array}
 \]
 と書ける。(1) と (3) の係数を比較すると
@@ -139,11 +139,11 @@ $\gamma$ を $\mathfrak G$ の元とする。一方では
 
 \textbf{2.} 直前の補題により、$\mathfrak S_{\mathsf K}$ の両側イデアル $\mathfrak a$ は $\mathfrak S$ の部分加群 $\mathfrak A$ の拡大イデアル、$\mathfrak a=\mathfrak A_{\mathsf K}$ でなければならない。$\mathfrak A=\mathfrak S\cap\mathfrak a$ であるから、
 \[
-\mathfrak S\mathfrak A\subseteq\mathfrak S\mathfrak S\cap\mathfrak S\mathfrak a\subseteq\mathfrak S\cap\mathfrak a=\mathfrak A
+\mathfrak S\mathfrak A\subseteqq\mathfrak S\mathfrak S\cap\mathfrak S\mathfrak a\subseteqq\mathfrak S\cap\mathfrak a=\mathfrak A
 \]
 および
 \[
-\mathfrak A\mathfrak S\subseteq\mathfrak S\mathfrak S\cap\mathfrak a\mathfrak S\subseteq\mathfrak S\cap\mathfrak a=\mathfrak A
+\mathfrak A\mathfrak S\subseteqq\mathfrak S\mathfrak S\cap\mathfrak a\mathfrak S\subseteqq\mathfrak S\cap\mathfrak a=\mathfrak A
 \]
 となり、$\mathfrak A$ は $\mathfrak S$ の両側イデアルである。ところが $\mathfrak S$ の両側イデアルは $0$ と $\mathfrak S$ だけなので、$\mathfrak S_{\mathsf K}$ の両側イデアルも $0$ と $\mathfrak S_{\mathsf K}$ だけである。証明された。
 
@@ -155,29 +155,29 @@ $\mathfrak M$ を $\mathfrak S$ の $\mathsf K$ における相反表現加群�
 \]
 で、交換則
 \[
-s(xm)=x(sm)
+s(\varkappa m)=\varkappa (sm)
 \]
 を満たすものとする。
 
 $\mathfrak M$ が $\mathfrak S_{\mathsf K}$-左加群ともみなせることを示す。まず $\mathfrak S_{\mathsf K}$ の元と $\mathfrak M$ の元との積を定めなければならない。$s\in\mathfrak S$、$x\in\mathsf K$、$m\in\mathfrak M$ に対して
 \[
-sx\cdot m=s\cdot(x\cdot m)
+s\varkappa \cdot m=s\cdot(\varkappa \cdot m)
 \]
 と置き、一般の $\mathfrak S_{\mathsf K}$ の元 $\sum s_ix_i$ には
 \[
-\sum s_ix_i\cdot m=\sum s_i\cdot(x_i\cdot m)
+\sum s_i\varkappa _i\cdot m=\sum s_i\cdot(\varkappa _i\cdot m)
 \]
 と定める。
 
 この定義は一意であり、$\mathfrak S_{\mathsf K}$ の元を積 $s_ix_i$ の和として表す仕方に依存しない。すなわち
 \[
 \begin{array}{rcl}
-(1)\qquad \displaystyle\sum_{i=1}^{p}s_ix_i&=&0
+(1)\qquad \displaystyle\sum_{i=1}^{p}s_i\varkappa _i&=&0
 \end{array}
 \]
 から
 \[
-\sum_{i=1}^{p}s_i(x_i m)=0
+\sum_{i=1}^{p}s_i(\varkappa _i m)=0
 \]
 が従うことを示せばよい。$s_1,\ldots,s_q$ が線型独立で、$s_{q+1},\ldots,s_p$ が
 \[
@@ -185,59 +185,59 @@ s_j=\sum_{i=1}^{q}s_i\varrho_i^{(j)},\qquad j=q+1,\ldots,p
 \]
 と表されるとする。表示は一意で、しかもすでに $\mathfrak S$ の中で可能だから、係数は $\mathsf P$ に属する。(1) から
 \[
-x_i+\sum_{j=q+1}^{p}\varrho_i^{(j)}x_j=0,\qquad i=1,\ldots,q
+\varkappa _i+\sum_{j=q+1}^{p}\varrho_i^{(j)}\varkappa _j=0,\qquad i=1,\ldots,q
 \]
 を得る。したがって
 \[
 \begin{aligned}
-\sum_{i=1}^{p}s_i(x_i m)
-&=s_1(x_1m)+\cdots+s_q(x_qm)
-  +\left(\sum_i s_i\varrho_i^{(q+1)}\right)(x_{q+1}m)\\
-&\quad+\cdots+\left(\sum_i s_i\varrho_i^{(p)}\right)(x_pm)\\
-&=s_1(x_1m)+\cdots+s_q(x_qm)\\
-&\quad+s_1\varrho_1^{(q+1)}(x_{q+1}m)+\cdots+s_q\varrho_q^{(q+1)}(x_{q+1}m)
+\sum_{i=1}^{p}s_i(\varkappa _i m)
+&=s_1(\varkappa _1m)+\cdots+s_q(\varkappa _qm)
+  +\left(\sum_i s_i\varrho_i^{(q+1)}\right)(\varkappa _{q+1}m)\\
+&\quad+\cdots+\left(\sum_i s_i\varrho_i^{(p)}\right)(\varkappa _pm)\\
+&=s_1(\varkappa _1m)+\cdots+s_q(\varkappa _qm)\\
+&\quad+s_1\varrho_1^{(q+1)}(\varkappa _{q+1}m)+\cdots+s_q\varrho_q^{(q+1)}(\varkappa _{q+1}m)
   \qquad\text{加群の性質により}\\
 &\quad+\cdots\\
 &\quad\cdots\\
-&\quad+s_1\varrho_1^{(p)}(x_pm)+\cdots+s_q\varrho_q^{(p)}(x_pm)\\
-&=s_1(x_1m)+\cdots+s_q(x_qm)\\
-&\quad+s_1(\varrho_1^{(q+1)}x_{q+1}m)+\cdots+s_q(\varrho_q^{(q+1)}x_{q+1}m)\\
+&\quad+s_1\varrho_1^{(p)}(\varkappa _pm)+\cdots+s_q\varrho_q^{(p)}(\varkappa _pm)\\
+&=s_1(\varkappa _1m)+\cdots+s_q(\varkappa _qm)\\
+&\quad+s_1(\varrho_1^{(q+1)}\varkappa _{q+1}m)+\cdots+s_q(\varrho_q^{(q+1)}\varkappa _{q+1}m)\\
 &\quad+\cdots\\
 &\quad\cdots\\
-&\quad+s_1(\varrho_1^{(p)}x_pm)+\cdots+s_q(\varrho_q^{(p)}x_pm)
-  \qquad\begin{gathered}\text{結合則 }s'(sm)=s's\cdot m\text{ および}\\ x'(xm)=x'x\cdot m\text{ により}\end{gathered}\\
-&=s_1\left(x_1m+\varrho_1^{(q+1)}x_{q+1}\cdot m+\cdots+\varrho_1^{(p)}x_p\cdot m\right)+\cdots\\
-&=s_1\left(\left(x_1+\varrho_1^{(q+1)}x_{q+1}+\cdots+\varrho_1^{(p)}x_p\right)m\right)+\cdots\\
+&\quad+s_1(\varrho_1^{(p)}\varkappa _pm)+\cdots+s_q(\varrho_q^{(p)}\varkappa _pm)
+  \qquad\begin{gathered}\text{結合則 }s'(sm)=s's\cdot m\text{ および}\\ \varkappa'(\varkappa m)=\varkappa'\varkappa\cdot m\text{ により}\end{gathered}\\
+&=s_1\left(\varkappa _1m+\sum\varrho_1^{(q+1)}\varkappa _{q+1}\cdot m\right)+\cdots\\
+&=s_1\left(\left(\varkappa _1+\sum\varrho_1^{(q+1)}\varkappa _{q+1}\right)m\right)+\cdots\\
 &=0.
 \end{aligned}
 \]
 
 $\mathfrak M$ の $\mathfrak S_{\mathsf K}$-加群としての分配則 $(S+S')m=Sm+S'm$、$S(m+m')=Sm+Sm'$ は明らかである。注意を要するのは結合則 $S(S'm)=SS'\cdot m$ である。分配則が成り立つので、
 \[
-sx\cdot(s'x' m)=sx(s'x'\cdot m)
+s\varkappa \cdot(s'\varkappa ' m)=s\varkappa (s'\varkappa '\cdot m)
 \]
 の場合だけを考えればよい。一方、$sx\cdot m$ の定義により
 \[
-sx\cdot(s'x'\cdot m)=s\cdot(x\cdot(s'\cdot(x'\cdot m)))
+s\varkappa \cdot(s'\varkappa '\cdot m)=s\cdot(\varkappa \cdot(s'\cdot(\varkappa '\cdot m)))
 \]
 である。他方、
 \[
-sx s'x'\cdot m=ss'xx'\cdot m=ss'\cdot(xx'\cdot m)
-=s\cdot(s'\cdot(x\cdot(x'\cdot m)))
+s\varkappa  s'\varkappa '\cdot m=ss'\varkappa \varkappa '\cdot m=ss'\cdot(\varkappa \varkappa '\cdot m)
+=s\cdot(s'\cdot(\varkappa \cdot(\varkappa '\cdot m)))
 \]
 は、二つの交換関係
 \[
-x\cdot s'=s'\cdot x
+\varkappa \cdot s'=s'\cdot \varkappa
 \]
 および
 \[
-s'\cdot(x\cdot m)=x\cdot(s'\cdot m)
+s'\cdot(\varkappa \cdot m)=\varkappa \cdot(s'\cdot m)
 \]
 により $s\cdot(x\cdot(s'\cdot(x'\cdot m)))$ に等しい。
 
 したがって $\mathfrak M$ は実際に有限 $\mathfrak S_{\mathsf K}$-左加群である。逆に、各有限 $\mathfrak S_{\mathsf K}$-左加群は $\mathfrak S$ の $\mathsf K$ における相反表現加群である。実際、明らかに有限 $\mathsf K$-加群であり、
 \[
-s(x\cdot m)=sx\cdot m=xs\cdot m=x(s\cdot m)
+s(\varkappa \cdot m)=s\varkappa \cdot m=\varkappa s\cdot m=\varkappa (s\cdot m)
 \]
 により交換条件も満たす（§ 24 のより簡単な証明も参照）。
 
@@ -271,11 +271,11 @@ n=rt.
 
 $Z=\xi_1\mathsf P+\cdots+\xi_n\mathsf P$ を $\mathsf P$ 上の超複素系とすると、二つの拡大系 $\mathfrak K_Z$ と $Z_{\mathfrak K}$ は一致する。実際、
 \[
-\mathfrak K_Z=y_1\xi_1\mathsf P+\cdots+y_m\xi_n\mathsf P
+\mathfrak K_{\mathsf{Z}}=y_1\xi_1\mathsf P+\cdots+y_m\xi_n\mathsf P
 \]
 および
 \[
-Z_{\mathfrak K}=\xi_1y_1\mathsf P+\cdots+\xi_ny_m\mathsf P
+\mathsf{Z}_{\mathfrak K}=\xi_1y_1\mathsf P+\cdots+\xi_ny_m\mathsf P
 \]
 と書け、$y_i\xi_j=\xi_jy_i$ により両者は一致する。
 
@@ -309,7 +309,7 @@ $\mathfrak K_\Omega$ が $t$ 個の単純イデアルへ分解するという $\
 
 \emph{証明。} 1. $Z$ を分解体、$\mathfrak T$ を $\mathfrak K_Z$ の右イデアルの自己同型体とする。すなわち
 \[
-\mathfrak K_Z=\sum\mathfrak T c_{ik}.
+\mathfrak K_{\mathsf{Z}}=\sum\mathfrak T c_{ik}.
 \]
 ここから
 \[
@@ -319,7 +319,7 @@ $\mathfrak K_\Omega$ が $t$ 個の単純イデアルへ分解するという $\
 
 \textbf{2.} $Z$ が $\mathfrak K_Z$ の単純イデアルの自己同型体ならば
 \[
-\mathfrak K_Z=\sum Zc_{ik},
+\mathfrak K_{\mathsf{Z}}=\sum\mathsf Zc_{ik},
 \]
 したがって
 \[
@@ -338,7 +338,7 @@ n\leq n^*=r^*t\leq rt=n \qquad\text{より}\qquad n^*=n.
 
 2. $\mathsf P$ の可換拡大体 $Z$ の $\mathfrak K$ における $r$ 次既約表現 $\mathfrak Z$ が、$\mathfrak K_r$ の極大可換部分体であるとする。$\mathfrak K_Z$ の単純イデアルの自己同型体を $\mathfrak T$ とし、
 \[
-\mathfrak K_Z=\sum_{1}^{t'}\mathfrak T c_{ik}
+\mathfrak K_{\mathsf{Z}}=\sum_{1}^{t'}\mathfrak T c_{ik}
 \]
 とする。$\mathfrak T$ は $Z$ を含む。$\mathfrak T=Z$ を示さなければならない。$\mathfrak K_r$ の単純右イデアル $\mathfrak r$ は、$Z$ の $\mathfrak K$ における表現加群であるだけでなく、$\mathfrak T$ の表現加群でもある。実際、
 \[
@@ -381,7 +381,7 @@ j^{*-1}ij^*=-i
 
 $j^*$ は $\mathfrak Z_1$ に属しえないので、$\mathfrak Z_1$ 上の $\mathfrak Z_1(j^*)$ の階数は少なくとも $2$ である。したがって $\mathfrak Z_1(j^*)$ は $R$ 上階数 $4$ で、$\mathfrak K$ に等しく、
 \[
-\mathfrak K=R+Ri+Rj^*+Rij^*
+\mathfrak K=\mathsf R+\mathsf Ri+\mathsf Rj^*+\mathsf Rij^*
 \]
 と書ける。
 
@@ -428,39 +428,39 @@ $\mathfrak K$ と相反同型な体 $K$ を作り、その中心を $\mathsf P$ 
 
 可換の場合に用いた延長定理に類似する補題を再び証明する。$\mathfrak S,\mathfrak T$ を $\mathsf P$ と $\mathfrak K$ の中間体とし、
 \[
-\mathsf P \subseteq \mathfrak S \subseteq \mathfrak T \subseteq \mathfrak K
+\mathsf P \subseteqq \mathfrak S \subseteqq \mathfrak T \subseteqq \mathfrak K
 \]
 とする。$\mathfrak S$ から $K$ の部分体への各相反同型（$\mathfrak S$ の $K$ における一次相反表現）は、$\mathfrak S$ 上の $\mathfrak T$ の次数 $s$ と少なくとも同じ数の仕方で、$\mathfrak T$ の相反同型へ延長できると主張する。
 
 体 $\mathsf P,\mathfrak S,\mathfrak T,\mathfrak K$ を $K$ によって拡大する：
 \[
-K\subseteq \mathfrak S_K\subseteq \mathfrak T_K\subseteq \mathfrak K_K.
+\mathsf{K}\subseteqq \mathfrak S_{\mathsf{K}}\subseteqq \mathfrak T_{\mathsf{K}}\subseteqq \mathfrak K_{\mathsf{K}}.
 \]
 20 頁の定理 1 により、各 $\mathfrak S_K$ は両側単純かつ完全可約であり、互いに作用素同型な単純左イデアルは、$\mathfrak S$ の $K$ におけるただ一つの既約表現類の表現加群である。この表現類は一次である。$K$ の構成により、$K$ の中には $\mathfrak S$ と相反同型な体が存在するからである。したがって単純左イデアルはすべて階数一であり、$\mathfrak S_K$ はその $\mathsf P$ 上の次数と同じ個数の左イデアルの和となる：
 \[
-\mathfrak S_K=K E_1+\cdots+K E_p,\qquad K E_\nu=\mathfrak S_K E_\nu.
+\mathfrak S_{\mathsf{K}}=\mathsf K E_1+\cdots+\mathsf K E_p,\qquad \mathsf K E_\nu=\mathfrak S_{\mathsf{K}} E_\nu.
 \]
 すると
 \[
 \begin{aligned}
-\mathfrak T_K&=\mathfrak T\cdot K=\mathfrak T\cdot \mathfrak S_K,\\
-\mathfrak T_K&=\mathfrak T\mathfrak S_K E_1+\cdots+\mathfrak T\mathfrak S_K E_p
-              =\mathfrak T_K E_1+\cdots+\mathfrak T_K E_p
+\mathfrak T_{\mathsf{K}}&=\mathfrak T\cdot \mathsf{K}=\mathfrak T\cdot \mathfrak S_{\mathsf{K}},\\
+\mathfrak T_{\mathsf{K}}&=\mathfrak T\mathfrak S_{\mathsf{K}} E_1+\cdots+\mathfrak T\mathfrak S_{\mathsf{K}} E_p
+              =\mathfrak T_{\mathsf{K}} E_1+\cdots+\mathfrak T_{\mathsf{K}} E_p
 \end{aligned}
 \]
 である。各イデアル $\mathfrak T_K\cdot E_\nu$ は $s$ 個の単純イデアルへ分解する。実際、
 \[
-[\mathfrak T_K E_\nu:K]=[\mathfrak T_K E_\nu:K E_\nu]=[\mathfrak T_K E_\nu:\mathfrak S_K E_\nu]\leqq[\mathfrak T_K:\mathfrak S_K]=[\mathfrak T:\mathfrak S]=s
+[\mathfrak T_{\mathsf{K}} E_\nu:\mathsf{K}]=[\mathfrak T_{\mathsf{K}} E_\nu:\mathsf K E_\nu]=[\mathfrak T_{\mathsf{K}} E_\nu:\mathfrak S_{\mathsf{K}} E_\nu]\leqq[\mathfrak T_{\mathsf{K}}:\mathfrak S_{\mathsf{K}}]=[\mathfrak T:\mathfrak S]=s
 \]
 であり、
 \[
-\sum [\mathfrak T_K E_\nu:K]=sp
+\sum [\mathfrak T_{\mathsf{K}} E_\nu:\mathsf{K}]=sp
 \]
 だから、
 \[
-[\mathfrak T_K E_\nu:K]=s,
+[\mathfrak T_{\mathsf{K}} E_\nu:\mathsf{K}]=s,
 \qquad
-\mathfrak T_K E_\nu=K e_1^{(\nu)}+\cdots+K e_s^{(\nu)}.
+\mathfrak T_{\mathsf{K}} E_\nu=\mathsf K e_1^{(\nu)}+\cdots+\mathsf K e_s^{(\nu)}.
 \]
 
 $K e_i^{(\nu)}$ が与える $\mathfrak T$ の表現は、$K E_\nu$ が与える $\mathfrak S$ の表現の延長である。実際、$\alpha\in\mathfrak S$ ならば

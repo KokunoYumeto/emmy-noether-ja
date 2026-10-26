@@ -36,7 +36,7 @@ K=\lambda\cdot\varphi+\mu\cdot\psi
 \]
 \emph{が同時に満たされることである。このとき}
 \[
-(g_1)+(g_2)+\cdots+(g_t)=\mu,
+(g_1)+(g_2)+\ldots+(g_t)=\mu,
 \]
 \emph{ここで \(\mu\) は \(q\) に対応し、終結式によって定義される交点重複度である。}
 
@@ -61,12 +61,12 @@ f_r\cdot g_r(0,y):y^{(g_r)}-g_r\cdot f_r(0,y):y^{(g_r)}&=x\cdot h_r.
 
 実際、終結式の積定理を考慮すると、点 \(x=0, y=0\) における \(f_r=0, g_r=0\) の交点重複度は
 \[
-\mu-(g_1)-(g_2)-\cdots-(g_r)
+\mu-(g_1)-(g_2)-\ldots-(g_r)
 \]
 に等しい。このことから、\emph{遅くとも \(\mu\) 段階で停止する}ことが従う。同時に
 \begin{equation}
 \tag{2}
-\mu=(g_1)+(g_2)+\cdots+(g_t)
+\mu=(g_1)+(g_2)+\ldots+(g_t)
 \end{equation}
 を得る。この公式は、該当する零点が既知ならば、交点重複度を定めるための一般的で有理的、かつ実際にも容易に実行できる方法を与える点で注目に値する。
 
@@ -74,8 +74,8 @@ f_r\cdot g_r(0,y):y^{(g_r)}-g_r\cdot f_r(0,y):y^{(g_r)}&=x\cdot h_r.
 \begin{equation}
 \tag{3}
 \begin{aligned}
-K_1\cdot g_1(0,y):y^{(g_1)}-g_1\cdot K_1(0,y):y^{(g_1)}&=x\cdot K_2,\\
-K_2\cdot g_2(0,y):y^{(g_2)}-g_2\cdot K_2(0,y):y^{(g_2)}&=x\cdot K_3,\\
+K_1\cdot g_1(0,y):y^{(g_1)} - g_1\cdot K_1(0,y):y^{(g_1)} &= x\cdot K_1,\\
+K_2\cdot g_2(0,y):y^{(g_2)} - g_2\cdot K_2(0,y):y^{(g_2)} &= x\cdot K_2,\\
 &\vdots \qquad\qquad\vdots\qquad\qquad\vdots\\
 K_r\cdot g_r(0,y):y^{(g_r)}-g_r\cdot K_r(0,y):y^{(g_r)}&=x\cdot K_{r+1}.
 \end{aligned}
@@ -89,11 +89,11 @@ K_r\cdot g_r(0,y):y^{(g_r)}-g_r\cdot K_r(0,y):y^{(g_r)}&=x\cdot K_{r+1}.
 
 合同式
 \[
-K_i\equiv0(q^{(i)})
+K_i\equiv0(\mathfrak{q}^{(i)})
 \]
 のための\emph{必要十分条件は、次の二条件が同時に満たされることである：}
 \[
-(K_i)\geq(g_i)\quad\text{かつ}\quad K_{i+1}\equiv0(q^{(i+1)}).
+(K_i)\geqq(g_i)\quad \text{かつ}\quad K_{i+1}\equiv0(\mathfrak{q}^{(i+1)}).
 \]
 
 補題の証明\srcfn{8)}{「補遺」の注意 I における証明も参照。}は、方程式系 (1) と (3) を組み合わせることによって得られる。補題 I により \(g_{t+1}\) は原点でもはや消えず、したがって加群 \(q^{(t+1)}\) は\emph{すべて}の多項式からなり（単位イデアルであり）、ゆえに \(K_{t+1}\equiv0(q^{(t+1)})\) は自明となる。これを考慮すれば、補題 II を \(t\) 回適用することで主定理が証明される。
@@ -106,7 +106,7 @@ K_i\equiv0(q^{(i)})
 
 \textbf{補足 I.} 主定理の数 \(t\) は、
 \[
-x^\nu\equiv0(q)
+x^v\equiv0(\mathfrak{q})
 \]
 となる最小の正数 \(\nu\) と一致する\srcfn{9)}{ここでは、Frl. Grete Hermann［``Die Frage der endlich vielen Schritte in der Theorie der Polynomideale''（K. Hentzelt の遺稿定理を利用）、Math. Annalen 95 (1926)］による評価とは対照的に、\emph{正確な}指数が得られる。そこでは、問題設定ははるかに一般的であるものの、上界だけが与えられている。}。
 
@@ -199,7 +199,7 @@ h_ix=(g_i(0,y):y^{(g_i)})\cdot f_i
 これから
 \[
 \bar f_i(xA-F(y)H)\equiv0(\bar g_i);\qquad
-H=G(x,y)\cdot g_i(0,y):y^{(g_i)}\not\equiv0(p)
+H=G(x,y)\cdot g_i(0,y):y^{(g_i)}\not\equiv0(\mathfrak{p})
 \]
 を得る。
 
@@ -217,8 +217,8 @@ F(y)H\equiv0(\bar g_i,x)
 \textbf{注意 I.} 関係式 (4)、(5) および補題 II は、イデアル商の間で互いに相反する関係式\srcfn{15)}{商 \(\mathfrak a:\mathfrak b\) とは、\(\mathfrak b c\equiv0(\mathfrak a)\) となるような多項式 \(c(x,y)\) 全体をいうことは周知である。}として書ける。ここで第二関係式の証明は、同時に補題 II の証明を与える：
 \begin{equation}
 \tag{6}
-q^{(i)}:q^{(i+1)}=(q^{(i)},x)=(y^{(g_i)},x);\qquad
-q^{(i)}:(q^{(i)},x)=q^{(i+1)}.\srcfnmark{16)}
+\mathfrak{q}^{(i)}:\mathfrak{q}^{(i+1)}=(\mathfrak{q}^{(i)},x)=(y^{(g_i)},x);\qquad
+\mathfrak{q}^{(i)}:(\mathfrak{q}^{(i)},x)=\mathfrak{q}^{(i+1)}.\srcfnmark{16)}
 \end{equation}
 \srcfntext{16)}{互いに相反するこの二関係式のうち一方は、既約イデアルの一般理論により他方を含意する。Macaulay, Modular Systems, Nr. 72 und 73. Cambridge Tracts 19 (1916) を参照。}
 
@@ -233,7 +233,7 @@ xMG\cdot g_i(0,y):y^{(g_i)}\equiv0(xh_i,g_i)
 \[
 M\cdot(G\cdot g_i(0,y):y^{(g_i)})
 \equiv0(h_i,g_i)\equiv0(q^{(i+1)}),
-\quad\text{したがって}\quad M\equiv0(q^{(i+1)})
+\quad\text{したがって}\quad M\equiv0(\mathfrak{q}^{(i+1)})
 \]
 を得る。
 
@@ -241,14 +241,14 @@ M\cdot(G\cdot g_i(0,y):y^{(g_i)})
 \[
 xK_{i+1}\equiv0(q^{(i)});\quad
 \text{したがって――(6) の第二関係式により――}\quad
-K_{i+1}\equiv0(q^{(i+1)}).
+K_{i+1}\equiv0(\mathfrak{q}^{(i+1)}).
 \]
 
 条件が十分であることは直ちに読み取れる。補題 II を有限回適用すれば主定理が得られる。同様に、(6) の第二関係式を反復すれば補足 I、すなわち \(q:x^t=q^{(t+1)}\)、したがって単位イデアルに等しいことが得られる。しかも \(q:x^{t-1}=q^{(t)}\) であるため、\(t\) はこの性質をもつ最低の冪である。
 
 \textbf{注意 II.} \(q\) で割り切れない多項式 \(K\) について、さらに次がいえる。\(K\equiv0(q^{(i+1)})\)、\(K\not\equiv0(q^{(i)})\) ならば、\((K,q^{(i)})=(h_iy^{(K)},q^{(i)})\) となる。実際、定理 IV により、\(c(y)\not\equiv0(y)\) として \(K\equiv h_iy^\lambda c(y)\pmod {q^{(i)}}\) であり、したがって
 \[
-(K,q^{(i)})=(h_iy^\lambda,q^{(i)}).
+(K,\mathfrak{q}^{(i)})=(h_iy^\lambda,\mathfrak{q}^{(i)}).
 \]
 
 このとき \(y^{(g_i)-\lambda}K\equiv0(q^{(i)})\) であり、(5) により、これはその性質をもつ最低の冪である。一方、補題 II により \((g_i)-(K)\) がその最低の冪であるから、\(\lambda=(K)\) となる。

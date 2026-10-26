@@ -16,7 +16,7 @@
 \[
 \mathfrak G\cong\mathfrak G^*/\mathfrak T^*
 \quad\text{ただし}\quad
-\mathfrak T^*\supseteq\mathfrak Z^*.
+\mathfrak T^*\supseteqq\mathfrak Z^*.
 \]
 （\(\mathfrak T^*=\mathfrak Z^*\) であることは後で示す。\(\mathfrak Z\) が極大可換部分環でもあることはまだ証明されていない。これは独立にも証明できる。）
 
@@ -41,7 +41,7 @@ zt=zz_0+\cdots+zz_{n-1}u_T
 であり、また
 \[
 tz=z_0z+\cdots+z_{n-1}u_Tz
-=z_0z+z^{S^{-1}}z_1u_S+\cdots+z^{T^{-1}}z_{n-1}u_T.
+=zz_0+z^{S^{-1}}z_1u_S+\cdots+z^{T^{-1}}z_{n-1}u_T.
 \]
 したがって直和性により
 \[
@@ -174,7 +174,7 @@ u_Ra_{S,T}u_{ST}
 \noindent\emph{証明.} \(c_{11}\) は \(\mathfrak K_r\) の各元と交換し、\(\mathfrak K_r\) のいかなる元も零化しない。なぜなら \(c_{11}\) は \(\mathfrak K_r\times\mathsf P_s\) の生成冪等元であり、
 \[
 c_{11}\cdot\mathfrak K_r\times\mathsf P_s\cdot c_{11}
-=\mathfrak K_r\times c_{11}\mathsf P_sc_{11}
+=\mathfrak K_r\times c_{11}\mathsf Pc_{11}
 =\mathfrak K_rc_{11}
 \]
 だからである。
@@ -183,12 +183,12 @@ c_{11}\cdot\mathfrak K_r\times\mathsf P_s\cdot c_{11}
 
 \noindent\textbf{2. \(\mathfrak K_r\times\overline{\mathfrak K}_r\) の決定と、絶対長 \(n\) の左イデアルへの分解.} 定義により
 \[
-\mathfrak A_f=\mathfrak K_r\times\overline{\mathfrak K}_r
+\mathfrak A_j=\mathfrak K_r\times\overline{\mathfrak K}_r
 =\mathfrak Z\cdot\mathfrak G\times\overline{\mathfrak Z}\cdot\overline{\mathfrak G},
 \]
 ここで無標のものと上線付きのものとは各元ごとに交換可能である。したがって
 \[
-\mathfrak A_f
+\mathfrak A_j
 =(\mathfrak G\times\overline{\mathfrak G})\cdot
 (\mathfrak Z\times\overline{\mathfrak Z})
 =\mathfrak G\times\overline{\mathfrak G}\cdot
@@ -232,7 +232,7 @@ ze_1\cdot e_1u_S\bar u_Se_1
 =zu_S\bar u_Se_1\quad(\text{補題 1})
 =u_Sz^S\bar u_Se_1
 =u_S\bar u_Se_1\cdot z^Se_1
-=b=e_1b
+\equiv b=e_1b
 \]
 である（\(z\) は \(\bar u\) および \(e_1\) と交換可能である）。\(u'=u_S\bar u_Se_1\) とする。補題 2 は、\(u'\) が \(\mathfrak Ze_1\) の置換を指示することを述べており、したがって定理に示した交叉表現が成り立つ。
 
@@ -337,7 +337,7 @@ u^\nu\cdot u^\mu=au^\varrho
 v=uc,\qquad v^2=u^2\cdot c^S\cdot c,
 \]
 \[
-v^r=u^r c^{S^{r-1}}c^{S^{r-2}}\cdots c;\qquad
+v^r=u^r c^{S^{r-1}}c^{S^{r-2}}\ldots c
 v^n=u^nN(c)
 \]
 を得る。したがって \(u^n=a\) から \(v^n=aN(c)\) が従う。ゆえに、一つの正規化類は、\(c\) が \(\mathfrak Z\) の零でないすべての元を動くときの因子系 \([1,\ldots,aN(c),aN(c),\ldots]\) からなる。これで補題の第二の部分も証明された。
