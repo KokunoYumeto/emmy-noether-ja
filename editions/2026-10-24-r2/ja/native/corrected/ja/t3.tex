@@ -45,7 +45,7 @@ $\tau\ne0$ を $\mathsf K$ の任意の元とすると、$\mathsf K$ の元 $\al
 \]
 だからである。
 
-$\mathfrak c\subseteq\mathfrak c_{\mathsf K}\cap\mathfrak M$ は明らかである。逆の包含を示すため、$\mathfrak c$ の基底 $y_1,\ldots,y_r$ を取り、
+$\mathfrak c\subseteqq\mathfrak c_{\mathsf K}\cap\mathfrak M$ は明らかである。逆の包含を示すため、$\mathfrak c$ の基底 $y_1,\ldots,y_r$ を取り、
 \[
 \mathfrak c=y_1\mathsf P+\cdots+y_r\mathsf P
 \]
@@ -61,7 +61,7 @@ c=\sum_{i=1}^{r}y_i\varkappa_i
 \[
 c=\sum_{i=1}^{r}y_i\varrho_i+\sum_{j=r+1}^{n}y_j\varrho_j
 \]
-をもつ。ここで $y_{r+1},\ldots,y_n$ は、$y_1,\ldots,y_r$ を $\mathfrak M$ の基底に補う $\mathfrak M$ の元である（M. Z. § 6）。両方の表示を $\mathfrak M_{\mathsf K}$ における基底表示とみなせるので、それらは一致し、$\chi_i=\varrho_i$（$i=1,\ldots,r$）、$\varrho_j=0$（$j=r+1,\ldots,n$）である。したがって
+をもつ。ここで $y_{r+1},\ldots,y_n$ は、$y_1,\ldots,y_r$ を $\mathfrak M$ の基底に補う $\mathfrak M$ の元である（M. Z. § 6）。両方の表示を $\mathfrak M_{\mathsf K}$ における基底表示とみなせるので、それらは一致し、$\varkappa_i=\varrho_i$（$i=1,\ldots,r$）、$\varrho_j=0$（$j=r+1,\ldots,n$）である。したがって
 \[
 c=\sum_{i=1}^{r}y_i\varrho_i,
 \qquad\text{証明された。}
@@ -135,7 +135,7 @@ $\gamma$ を $\mathfrak G$ の元とする。一方では
 
 \textbf{定理 1.} \emph{$\mathfrak S_{\mathsf K}$ は両側単純である（したがって完全可約でもある）。}
 
-\emph{証明。} 1. $\mathfrak S_{\mathsf K}$ の各両側イデアル $\mathfrak a$ は、$\mathsf K$ の内部自己同型群 $\mathfrak G$ に関して不変である。実際、零でない $\mathsf K$ の元 $\chi$ に対して $\chi^{-1}\mathfrak a\chi=\bar{\mathfrak a}$ と置けば、$\mathfrak a$ のイデアル性により $\bar{\mathfrak a}\subseteq\mathfrak a$ である。しかし $\bar{\mathfrak a}$ は $\mathsf K$-加群として $\mathfrak a$ と同じ $\mathsf K$-階数をもつので、$\bar{\mathfrak a}=\mathfrak a$ でなければならない。
+\emph{証明。} 1. $\mathfrak S_{\mathsf K}$ の各両側イデアル $\mathfrak a$ は、$\mathsf K$ の内部自己同型群 $\mathfrak G$ に関して不変である。実際、零でない $\mathsf K$ の元 $\varkappa$ に対して $\varkappa^{-1}\mathfrak a\varkappa=\bar{\mathfrak a}$ と置けば、$\mathfrak a$ のイデアル性により $\bar{\mathfrak a}\subseteqq\mathfrak a$ である。しかし $\bar{\mathfrak a}$ は $\mathsf K$-加群として $\mathfrak a$ と同じ $\mathsf K$-階数をもつので、$\bar{\mathfrak a}=\mathfrak a$ でなければならない。
 
 \textbf{2.} 直前の補題により、$\mathfrak S_{\mathsf K}$ の両側イデアル $\mathfrak a$ は $\mathfrak S$ の部分加群 $\mathfrak A$ の拡大イデアル、$\mathfrak a=\mathfrak A_{\mathsf K}$ でなければならない。$\mathfrak A=\mathfrak S\cap\mathfrak a$ であるから、
 \[
@@ -163,13 +163,13 @@ $\mathfrak M$ が $\mathfrak S_{\mathsf K}$-左加群ともみなせることを
 \[
 s\varkappa \cdot m=s\cdot(\varkappa \cdot m)
 \]
-と置き、一般の $\mathfrak S_{\mathsf K}$ の元 $\sum s_ix_i$ には
+と置き、一般の $\mathfrak S_{\mathsf K}$ の元 $\sum s_i\varkappa _i$ には
 \[
 \sum s_i\varkappa _i\cdot m=\sum s_i\cdot(\varkappa _i\cdot m)
 \]
 と定める。
 
-この定義は一意であり、$\mathfrak S_{\mathsf K}$ の元を積 $s_ix_i$ の和として表す仕方に依存しない。すなわち
+この定義は一意であり、$\mathfrak S_{\mathsf K}$ の元を積 $s_i\varkappa _i$ の和として表す仕方に依存しない。すなわち
 \[
 \begin{array}{rcl}
 (1)\qquad \displaystyle\sum_{i=1}^{p}s_i\varkappa _i&=&0
@@ -216,7 +216,7 @@ $\mathfrak M$ の $\mathfrak S_{\mathsf K}$-加群としての分配則 $(S+S')m
 \[
 s\varkappa \cdot(s'\varkappa ' m)=s\varkappa (s'\varkappa '\cdot m)
 \]
-の場合だけを考えればよい。一方、$sx\cdot m$ の定義により
+の場合だけを考えればよい。一方、$s\varkappa \cdot m$ の定義により
 \[
 s\varkappa \cdot(s'\varkappa '\cdot m)=s\cdot(\varkappa \cdot(s'\cdot(\varkappa '\cdot m)))
 \]
@@ -269,7 +269,7 @@ n=rt.
 \]
 を、中心が $\mathsf P$ である非可換体とする。$\mathfrak K$ について、可換な有限代数体拡大の理論における諸定理と類似する一連の定理を展開する。
 
-$Z=\xi_1\mathsf P+\cdots+\xi_n\mathsf P$ を $\mathsf P$ 上の超複素系とすると、二つの拡大系 $\mathfrak K_Z$ と $Z_{\mathfrak K}$ は一致する。実際、
+$\mathsf{Z}=\xi_1\mathsf P+\cdots+\xi_n\mathsf P$ を $\mathsf P$ 上の超複素系とすると、二つの拡大系 $\mathfrak K_{\mathsf{Z}}$ と $\mathsf{Z}_{\mathfrak K}$ は一致する。実際、
 \[
 \mathfrak K_{\mathsf{Z}}=y_1\xi_1\mathsf P+\cdots+y_m\xi_n\mathsf P
 \]
@@ -279,17 +279,17 @@ $Z=\xi_1\mathsf P+\cdots+\xi_n\mathsf P$ を $\mathsf P$ 上の超複素系と�
 \]
 と書け、$y_i\xi_j=\xi_jy_i$ により両者は一致する。
 
-以下では $Z$ を常に可換体とするので、§ 19 の定理を適用できる。§ 19 の定理 1 により $\mathfrak K_Z$ は常に両側単純である。
+以下では $\mathsf{Z}$ を常に可換体とするので、§ 19 の定理を適用できる。§ 19 の定理 1 により $\mathfrak K_{\mathsf{Z}}$ は常に両側単純である。
 
 \textbf{定理 1.} \emph{$\Omega$ を $\mathsf P$ の代数閉拡大体とする。このとき $\mathfrak K_\Omega$ の中心は $\Omega$ に等しい。}
 
-\emph{証明。} § 19 の定理 3 を用いる。$\Omega$ が $\mathfrak K_\Omega$ の中心に含まれることは明らかである。$\alpha$ を $\mathfrak K_\Omega$ の中心の任意の元とすると、その係数は $\mathsf P$ のある有限代数拡大体 $Z$（係数が生成する体）に属する。$\alpha$ はもちろん $\mathfrak K_Z$ の中心にも属する。ところがその中心は $Z$ なので、$\alpha\in Z$、したがって $\alpha\in\Omega$ である。証明された。
+\emph{証明。} § 19 の定理 3 を用いる。$\Omega$ が $\mathfrak K_\Omega$ の中心に含まれることは明らかである。$\alpha$ を $\mathfrak K_\Omega$ の中心の任意の元とすると、その係数は $\mathsf P$ のある有限代数拡大体 $Z$（係数が生成する体）に属する。$\alpha$ はもちろん $\mathfrak K_{\mathsf{Z}}$ の中心にも属する。ところがその中心は $\mathsf{Z}$ なので、$\alpha\in Z$、したがって $\alpha\in\Omega$ である。証明された。
 
 全く同様に次を証明する。
 
 \textbf{定理 2.} \emph{$\mathfrak K_\Omega$ は両側単純である。}
 
-\emph{証明。} $\mathfrak a=z_1\Omega+\cdots+z_r\Omega$ を両側イデアルとする。$z_1,\ldots,z_r$ の係数は $\mathsf P$ のある有限拡大体 $Z$ に属する。$\mathfrak K_Z$ の中で $\mathfrak a'=z_1Z+\cdots+z_rZ$ は両側イデアルである。$\mathfrak K_Z$ は両側単純なので、$\mathfrak a'$ は零または $\mathfrak K_Z$ に等しい。したがって $\mathfrak a$ は零または $\mathfrak K_\Omega$ に等しく、$\mathfrak K_\Omega$ は両側単純である。
+\emph{証明。} $\mathfrak a=z_1\Omega+\cdots+z_r\Omega$ を両側イデアルとする。$z_1,\ldots,z_r$ の係数は $\mathsf P$ のある有限拡大体 $\mathsf{Z}$ に属する。$\mathfrak K_{\mathsf{Z}}$ の中で $\mathfrak a'=z_1\mathsf{Z}+\cdots+z_r\mathsf{Z}$ は両側イデアルである。$\mathfrak K_{\mathsf{Z}}$ は両側単純なので、$\mathfrak a'$ は零または $\mathfrak K_{\mathsf{Z}}$ に等しい。したがって $\mathfrak a$ は零または $\mathfrak K_\Omega$ に等しく、$\mathfrak K_\Omega$ は両側単純である。
 
 この定理により、$\mathfrak K_\Omega$ はその中心 $\Omega$ のある拡大体上の行列環である。この体は $\mathfrak K_\Omega$ の部分環として $\Omega$ 上有限次数でなければならず、したがって $\Omega$ 自身に等しい。
 
@@ -301,13 +301,13 @@ $Z=\xi_1\mathsf P+\cdots+\xi_n\mathsf P$ を $\mathsf P$ 上の超複素系と�
 
 $\mathfrak K_\Omega$ が分解する単純右（または左）イデアルの個数 $t$ を、$\mathfrak K$ の絶対成分数と呼ぶ。
 
-$\mathfrak K_\Omega$ が $t$ 個の単純イデアルへ分解するという $\Omega$ の性質は、$\mathsf P$ のある有限拡大 $Z$ によってすでに得られる。たとえば $c_{ik}$ の係数を $\mathsf P$ に添加して得られる $Z$ がそうである。次にこれらの分解体を調べる。
+$\mathfrak K_\Omega$ が $t$ 個の単純イデアルへ分解するという $\Omega$ の性質は、$\mathsf P$ のある有限拡大 $\mathsf{Z}$ によってすでに得られる。たとえば $c_{ik}$ の係数を $\mathsf P$ に添加して得られる $\mathsf{Z}$ がそうである。次にこれらの分解体を調べる。
 
-\textbf{定義。} $\mathsf P$ の有限代数拡大体 $Z$ を $\mathfrak K$ の\emph{分解体}というのは、$\mathfrak K_Z$ が分解する単純右イデアルの個数がすでに絶対成分数 $t$ に等しいときである。\srcfn{1}{9 頁の分解体の概念と比較せよ。}
+\textbf{定義。} $\mathsf P$ の有限代数拡大体 $Z$ を $\mathfrak K$ の\emph{分解体}というのは、$\mathfrak K_{\mathsf{Z}}$ が分解する単純右イデアルの個数がすでに絶対成分数 $t$ に等しいときである。\srcfn{1}{9 頁の分解体の概念と比較せよ。}
 
-\textbf{定理 4.} \emph{$Z$ が $\mathfrak K$ の分解体ならば、$Z$ は $\mathfrak K_Z$ の右イデアルの自己同型体である。逆に、$\mathfrak K_Z$ の右イデアルの自己同型体が $Z$ ならば、$Z$ は分解体である。}
+\textbf{定理 4.} \emph{$\mathsf{Z}$ が $\mathfrak K$ の分解体ならば、$\mathsf{Z}$ は $\mathfrak K_{\mathsf{Z}}$ の右イデアルの自己同型体である。逆に、$\mathfrak K_{\mathsf{Z}}$ の右イデアルの自己同型体が $\mathsf{Z}$ ならば、$\mathsf{Z}$ は分解体である。}
 
-\emph{証明。} 1. $Z$ を分解体、$\mathfrak T$ を $\mathfrak K_Z$ の右イデアルの自己同型体とする。すなわち
+\emph{証明。} 1. $\mathsf{Z}$ を分解体、$\mathfrak T$ を $\mathfrak K_{\mathsf{Z}}$ の右イデアルの自己同型体とする。すなわち
 \[
 \mathfrak K_{\mathsf{Z}}=\sum\mathfrak T c_{ik}.
 \]
@@ -315,9 +315,9 @@ $\mathfrak K_\Omega$ が $t$ 個の単純イデアルへ分解するという $\
 \[
 \mathfrak K_\Omega=\sum\mathfrak T_\Omega c_{ik}
 \]
-が従う。したがって $\Omega$ 上の $\mathfrak K_\Omega$ の階数は $t^2$ と $\mathfrak T_\Omega$ の階数との積である。他方、その階数は $t^2$ に等しいから、$\mathfrak T_\Omega$、したがって $\mathfrak T$ の階数は $1$ であり、$\mathfrak T=Z$ である。
+が従う。したがって $\Omega$ 上の $\mathfrak K_\Omega$ の階数は $t^2$ と $\mathfrak T_\Omega$ の階数との積である。他方、その階数は $t^2$ に等しいから、$\mathfrak T_\Omega$、したがって $\mathfrak T$ の階数は $1$ であり、$\mathfrak T=\mathsf{Z}$ である。
 
-\textbf{2.} $Z$ が $\mathfrak K_Z$ の単純イデアルの自己同型体ならば
+\textbf{2.} $\mathsf{Z}$ が $\mathfrak K_{\mathsf{Z}}$ の単純イデアルの自己同型体ならば
 \[
 \mathfrak K_{\mathsf{Z}}=\sum\mathsf Zc_{ik},
 \]
@@ -327,26 +327,26 @@ $\mathfrak K_\Omega$ が $t$ 個の単純イデアルへ分解するという $\
 \]
 ゆえに $c_{ik}$ の個数は $t^2$ でなければならない。証明された。
 
-\textbf{定理 5.} \emph{$\mathfrak K$ の分解体 $Z$ の $\mathfrak K$ における既約表現 $\mathfrak Z$ は、行列環 $\mathfrak K_r$ の極大可換部分体である（22 頁の定理 2 により既約表現類は一つだけであり、$r$ は $Z$ の既約表現の次数である）。}
+\textbf{定理 5.} \emph{$\mathfrak K$ の分解体 $Z$ の $\mathfrak K$ における既約表現 $\mathfrak Z$ は、行列環 $\mathfrak K_r$ の極大可換部分体である（22 頁の定理 2 により既約表現類は一つだけであり、$r$ は $\mathsf{Z}$ の既約表現の次数である）。}
 
 \emph{逆に、$\mathsf P$ の可換拡大体 $Z$ の既約表現 $\mathfrak Z$ が $\mathfrak K_r$ の極大可換部分体ならば、$Z$ は分解体である。}
 
-\emph{証明。} 1. $\mathsf P$ 上の分解体 $Z$ の次数を $n$ とすると、$Z$ の既約表現 $\mathfrak Z$ の次数 $r$ は $n/t$ である（22 頁）。$\mathfrak Z\subseteq\mathfrak Z^*\subseteq\mathfrak K_r$ とし、$\mathfrak Z^*$ を $\mathsf P$ 上次数 $n^*\geq n$ の極大可換体とする。$\mathfrak Z^*=\mathfrak Z$ を示せばよいが、その代わりに $n^*=n$ を示せば十分である。$Z$ の拡大体で $\mathfrak Z^*$ と同型な $Z^*$ の既約表現の次数を $r^*$ とすると、再び $n^*=r^*t$ である。他方、$\mathfrak Z^*$ の中には $Z^*$ の $r$ 次表現があるので、$r$ は $r^*$ で割り切れ、$r^*\leq r$ である。したがって
+\emph{証明。} 1. $\mathsf P$ 上の分解体 $\mathsf{Z}$ の次数を $n$ とすると、$\mathsf{Z}$ の既約表現 $\mathfrak Z$ の次数 $r$ は $n/t$ である（22 頁）。$\mathfrak Z\subseteqq\mathfrak Z^*\subseteqq\mathfrak K_r$ とし、$\mathfrak Z^*$ を $\mathsf P$ 上次数 $n^*\geqq n$ の極大可換体とする。$\mathfrak Z^*=\mathfrak Z$ を示せばよいが、その代わりに $n^*=n$ を示せば十分である。$Z$ の拡大体で $\mathfrak Z^*$ と同型な $\mathsf{Z}^*$ の既約表現の次数を $r^*$ とすると、再び $n^*=r^*t$ である。他方、$\mathfrak Z^*$ の中には $\mathsf{Z}^*$ の $r$ 次表現があるので、$r$ は $r^*$ で割り切れ、$r^*\leqq r$ である。したがって
 \[
-n\leq n^*=r^*t\leq rt=n \qquad\text{より}\qquad n^*=n.
+n\leqq n^*=r^*t\leqq rt=n \qquad\text{より}\qquad n^*=n.
 \]
 
-2. $\mathsf P$ の可換拡大体 $Z$ の $\mathfrak K$ における $r$ 次既約表現 $\mathfrak Z$ が、$\mathfrak K_r$ の極大可換部分体であるとする。$\mathfrak K_Z$ の単純イデアルの自己同型体を $\mathfrak T$ とし、
+2. $\mathsf P$ の可換拡大体 $\mathsf{Z}$ の $\mathfrak K$ における $r$ 次既約表現 $\mathfrak Z$ が、$\mathfrak K_r$ の極大可換部分体であるとする。$\mathfrak K_{\mathsf{Z}}$ の単純イデアルの自己同型体を $\mathfrak T$ とし、
 \[
 \mathfrak K_{\mathsf{Z}}=\sum_{1}^{t'}\mathfrak T c_{ik}
 \]
-とする。$\mathfrak T$ は $Z$ を含む。$\mathfrak T=Z$ を示さなければならない。$\mathfrak K_r$ の単純右イデアル $\mathfrak r$ は、$Z$ の $\mathfrak K$ における表現加群であるだけでなく、$\mathfrak T$ の表現加群でもある。実際、
+とする。$\mathfrak T$ は $\mathsf{Z}$ を含む。$\mathfrak T=\mathsf{Z}$ を示さなければならない。$\mathfrak K_r$ の単純右イデアル $\mathfrak r$ は、$\mathsf{Z}$ の $\mathfrak K$ における表現加群であるだけでなく、$\mathfrak T$ の表現加群でもある。実際、
 \[
 \mathfrak r=\mathfrak T c_{i1}+\cdots+\mathfrak T c_{ik}
 \]
 であるから、$\mathfrak T\mathfrak r=\mathfrak r$ であり、$\mathfrak r$ は $\mathfrak T$-左加群かつ $\mathfrak K$-右加群である。
 
-したがって $\mathfrak K_r$ には $\mathfrak T$ と同型で $\mathfrak Z$ を含む部分体 $\overline{\mathfrak T}$ がある。$\mathfrak T$ が $Z$ と異なり、したがって $\overline{\mathfrak T}$ が $\mathfrak Z$ と異なるならば、$\mathfrak Z$ に属さない $\overline{\mathfrak T}$ の元 $\alpha$ を $\mathfrak Z$ に添加すると、$\mathfrak K_r$ 内で $\mathfrak Z$ の真の可換拡大体が得られる。これは $\mathfrak Z$ の極大性に反する。証明された。
+したがって $\mathfrak K_r$ には $\mathfrak T$ と同型で $\mathfrak Z$ を含む部分体 $\overline{\mathfrak T}$ がある。$\mathfrak T$ が $\mathsf{Z}$ と異なり、したがって $\overline{\mathfrak T}$ が $\mathfrak Z$ と異なるならば、$\mathfrak Z$ に属さない $\overline{\mathfrak T}$ の元 $\alpha$ を $\mathfrak Z$ に添加すると、$\mathfrak K_r$ 内で $\mathfrak Z$ の真の可換拡大体が得られる。これは $\mathfrak Z$ の極大性に反する。証明された。
 
 定理 5 から直ちに次が従う。
 
@@ -371,15 +371,15 @@ n\leq n^*=r^*t\leq rt=n \qquad\text{より}\qquad n^*=n.
 
 次の二定理は、ここまでに展開した一般理論が個別の問題に有用であることを示す。
 
-\textbf{定理 9.} \emph{中心が実数体 $R$ である有限次数の非可換体は、四元数体だけである。}
+\textbf{定理 9.} \emph{中心が実数体 $\mathsf{R}$ である有限次数の非可換体は、四元数体だけである。}
 
-\emph{証明。} $\mathfrak K$ を中心 $R$ の非可換体（$R$ 上有限階数）とする。定理 6 により、$R$ 上の $\mathfrak K$ の次数は、$\mathfrak K$ の極大可換部分体の次数 $t$ の平方である。この部分体は複素数体と同型な体しかありえないから、$t=2$ であり、$\mathfrak K$ は $R$ 上次数 $4$ である。$\mathfrak Z_1$ を $\mathfrak K$ の極大可換部分体とし、$i^2=-1$ として $\mathfrak Z_1=R(i)$ と置ける。$\mathfrak Z_2=R(-i)$ も $\mathfrak Z_1$ と同型であり、集合としては $\mathfrak Z_1$ と一致する体で、その同型は $i\mapsto-i$ で与えられる。したがって定理 7 により、
+\emph{証明。} $\mathfrak K$ を中心 $\mathsf{R}$ の非可換体（$\mathsf{R}$ 上有限階数）とする。定理 6 により、$R$ 上の $\mathfrak K$ の次数は、$\mathfrak K$ の極大可換部分体の次数 $t$ の平方である。この部分体は複素数体と同型な体しかありえないから、$t=2$ であり、$\mathfrak K$ は $\mathsf{R}$ 上次数 $4$ である。$\mathfrak Z_1$ を $\mathfrak K$ の極大可換部分体とし、$i^2=-1$ として $\mathfrak Z_1=\mathsf{R}(i)$ と置ける。$\mathfrak Z_2=\mathsf{R}(-i)$ も $\mathfrak Z_1$ と同型であり、集合としては $\mathfrak Z_1$ と一致する体で、その同型は $i\mapsto-i$ で与えられる。したがって定理 7 により、
 \[
 j^{*-1}ij^*=-i
 \]
 を満たす $j^*\in\mathfrak K$ が存在する。
 
-$j^*$ は $\mathfrak Z_1$ に属しえないので、$\mathfrak Z_1$ 上の $\mathfrak Z_1(j^*)$ の階数は少なくとも $2$ である。したがって $\mathfrak Z_1(j^*)$ は $R$ 上階数 $4$ で、$\mathfrak K$ に等しく、
+$j^*$ は $\mathfrak Z_1$ に属しえないので、$\mathfrak Z_1$ 上の $\mathfrak Z_1(j^*)$ の階数は少なくとも $2$ である。したがって $\mathfrak Z_1(j^*)$ は $\mathsf{R}$ 上階数 $4$ で、$\mathfrak K$ に等しく、
 \[
 \mathfrak K=\mathsf R+\mathsf Ri+\mathsf Rj^*+\mathsf Rij^*
 \]
@@ -387,15 +387,15 @@ $j^*$ は $\mathfrak Z_1$ に属しえないので、$\mathfrak Z_1$ 上の $\ma
 
 \[
 \begin{aligned}
-j^{*-2}1j^{*2}&=1,\\
-j^{*-2}ij^{*2}&=i,\\
-j^{*-2}j^*j^{*2}&=j^*,\\
+j^{*-2}1j^{*2}&=1\\
+j^{*-2}ij^{*2}&=i\\
+j^{*-2}j^*j^{*2}&=j^*\\
 j^{*-2}ij^*j^{*2}&=ij^*
 \end{aligned}
 \]
-であるから、$j^{*2}$ は $\mathfrak K$ のすべての元と可換で、中心 $R$ に属し、実数 $r$ である。$r$ は正ではありえない。正ならば、可換体 $R(j^*)$ の多項式 $x^2-r$ が $+\sqrt r,-\sqrt r,+j^*,-j^*$ という四つの根をもつことになるからである。したがって $j^{*2}=-m^2$、$m\in R$ である。$j=j^*m^{-1}$ と置けば $j^2=-1$ となり、$1,i,j,k=ij$ は四元数単位である。証明された。
+であるから、$j^{*2}$ は $\mathfrak K$ のすべての元と可換で、中心 $\mathsf{R}$ に属し、実数 $r$ である。$r$ は正ではありえない。正ならば、可換体 $\mathsf{R}(j^*)$ の多項式 $x^2-r$ が $+\sqrt r,-\sqrt r,+j^*,-j^*$ という四つの根をもつことになるからである。したがって $j^{*2}=-m^2$、$m\in R$ である。$j=j^*m^{-1}$ と置けば $j^2=-1$ となり、$1,i,j,k=ij$ は四元数単位である。証明された。
 
-この証明は、$R$ の代わりに任意の代数的実閉体について明らかに成り立つ。
+この証明は、$\mathsf{R}$ の代わりに任意の代数的実閉体について明らかに成り立つ。
 
 \textbf{定理 10（Wedderburn の定理）。} \emph{有限個の元からなる体はすべて可換である。}
 
@@ -403,40 +403,40 @@ j^{*-2}ij^*j^{*2}&=ij^*
 
 \subsection*{§ 21. 非可換体のガロア理論}\label{die-galoissche-theorie-der-nichtkommutativen-koerper}
 
-$G$ を中心 $\mathsf P$ に関する $\mathfrak K$ のガロア群とする。定理 8 により $G$ は $\overline G=\mathfrak K^*/\mathsf P^*$ と同型であり、この同型を固定する。$G$ の部分群 $H$ を\emph{閉}と呼ぶのは、同型 $G\simeq\mathfrak K^*/\mathsf P^*$ によって対応する $\mathfrak K^*$ の部分群 $\mathfrak H^*$ に\emph{零}を加えたものが体となるときである。
+$\mathsf{G}$ を中心 $\mathsf P$ に関する $\mathfrak K$ のガロア群とする。定理 8 により $G$ は $\overline{\mathsf G}=\mathfrak K^*/\mathsf P^*$ と同型であり、この同型を固定する。$G$ の部分群 $H$ を\emph{閉}と呼ぶのは、同型 $\mathsf{G}\cong\mathfrak K^*/\mathsf P^*$ によって対応する $\mathfrak K^*$ の部分群 $\mathfrak H^*$ に\emph{零}を加えたものが体となるときである。
 
-\textbf{定理 11　ガロア理論の基本定理。} \emph{$G$ の閉部分群 $H$ と $\mathsf P$ と $\mathfrak K$ の中間体 $\mathfrak S$ との間には一対一対応がある。$H$ と $\mathfrak S$ が対応するとき、$H$ は $\mathfrak S$ の不変群であり、$\mathfrak S$ は $H$ の不変体である。}
+\textbf{定理 11　ガロア理論の基本定理。} \emph{$G$ の閉部分群 $H$ と $\mathsf P$ と $\mathfrak K$ の中間体 $\mathfrak S$ との間には一対一対応がある。$\mathsf{H}$ と $\mathfrak S$ が対応するとき、$\mathsf{H}$ は $\mathfrak S$ の不変群であり、$\mathfrak S$ は $\mathsf{H}$ の不変体である。}
 
 \emph{証明。} 定理を三つの部分命題に分ける。
 \begin{enumerate}
 \item 体 $\mathfrak S$ の不変群 $H$ は閉である。
-\item $\mathfrak S$ の不変群が $H$ ならば、$\mathfrak S$ は $H$ の不変体である。
-\item $H$ の不変体が $\mathfrak S$ ならば、$H$ は $\mathfrak S$ の不変群である。
+\item $\mathfrak S$ の不変群が $\mathsf{H}$ ならば、$\mathfrak S$ は $\mathsf{H}$ の不変体である。
+\item $\mathsf{H}$ の不変体が $\mathfrak S$ ならば、$\mathsf{H}$ は $\mathfrak S$ の不変群である。
 \end{enumerate}
 
 \begin{enumerate}
-\item 同型 $G\simeq\mathfrak K^*/\mathsf P^*$ により、体 $\mathfrak S$ の不変群 $H$ には、$\mathfrak S$ のすべての元と可換な零でない $\mathfrak K$ の元全体 $\mathfrak H^*$ が対応する。これらに $0$ を加えれば明らかに体となる。したがって $H$ は閉である。
+\item 同型 $\mathsf{G}\cong \mathfrak K^*/\mathsf P^*$ により、体 $\mathfrak S$ の不変群 $\mathsf{H}$ には、$\mathfrak S$ のすべての元と可換な零でない $\mathfrak K$ の元全体 $\mathfrak H^*$ が対応する。これらに $0$ を加えれば明らかに体となる。したがって $H$ は閉である。
 
-\item 第三の部分命題を第二へ帰着させる。体 $\mathfrak S$ には $G$ の部分群 $S$、すなわち $\mathfrak S^*/\mathsf P^*$ に対応する部分群が属する。同様に群 $H$ には $\mathfrak K$ の部分体 $\mathfrak H$ が属し、$H\simeq\mathfrak H^*/\mathsf P^*$ である。$\mathfrak S$ が $H$ の不変体ならば、$\mathfrak S$ は $\mathfrak H$ の各元と可換な $\mathfrak K$ の元すべてからなる。したがって、$S$ は $\mathfrak H$ の不変群であるともいえる。同様に、$H$ が $\mathfrak S$ の不変群ならば、$\mathfrak H$ は $S$ の不変体である。ゆえに第三の部分命題は次のようにも述べられる。
+\item 第三の部分命題を第二へ帰着させる。体 $\mathfrak S$ には $G$ の部分群 $S$、すなわち $\mathfrak S^*/\mathsf P^*$ に対応する部分群が属する。同様に群 $H$ には $\mathfrak K$ の部分体 $\mathfrak H$ が属し、$\mathsf{H}\cong \mathfrak H^*/\mathsf P^*$ である。$\mathfrak S$ が $\mathsf{H}$ の不変体ならば、$\mathfrak S$ は $\mathfrak H$ の各元と可換な $\mathfrak K$ の元すべてからなる。したがって、$\mathsf{S}$ は $\mathfrak H$ の不変群であるともいえる。同様に、$\mathsf{H}$ が $\mathfrak S$ の不変群ならば、$\mathfrak H$ は $\mathsf{S}$ の不変体である。ゆえに第三の部分命題は次のようにも述べられる。
 
-\item[$(3')$.] $\mathfrak H$ の不変群が $S$ ならば、$\mathfrak H$ は $S$ の不変体である。これはまさに、なお証明すべき第二の部分命題である。
+\item[$3'$.] $\mathfrak H$ の不変群が $\mathsf{S}$ ならば、$\mathfrak H$ は $\mathsf{S}$ の不変体である。これはまさに、なお証明すべき第二の部分命題である。
 
 \item[3.] この証明は若干の小さな相違を除いて可換の場合と同様に進む。
 \end{enumerate}
 
-$\mathfrak K$ と相反同型な体 $K$ を作り、その中心を $\mathsf P$ と同一視する。$\mathfrak K$ の自己同型の代わりに、$\mathfrak S$ から $K$ への相反同型を考えられる。
+$\mathfrak K$ と相反同型な体 $\mathsf{K}$ を作り、その中心を $\mathsf P$ と同一視する。$\mathfrak K$ の自己同型の代わりに、$\mathfrak S$ から $\mathsf{K}$ への相反同型を考えられる。
 
 可換の場合に用いた延長定理に類似する補題を再び証明する。$\mathfrak S,\mathfrak T$ を $\mathsf P$ と $\mathfrak K$ の中間体とし、
 \[
 \mathsf P \subseteqq \mathfrak S \subseteqq \mathfrak T \subseteqq \mathfrak K
 \]
-とする。$\mathfrak S$ から $K$ の部分体への各相反同型（$\mathfrak S$ の $K$ における一次相反表現）は、$\mathfrak S$ 上の $\mathfrak T$ の次数 $s$ と少なくとも同じ数の仕方で、$\mathfrak T$ の相反同型へ延長できると主張する。
+とする。$\mathfrak S$ から $\mathsf{K}$ の部分体への各相反同型（$\mathfrak S$ の $\mathsf{K}$ における一次相反表現）は、$\mathfrak S$ 上の $\mathfrak T$ の次数 $s$ と少なくとも同じ数の仕方で、$\mathfrak T$ の相反同型へ延長できると主張する。
 
-体 $\mathsf P,\mathfrak S,\mathfrak T,\mathfrak K$ を $K$ によって拡大する：
+体 $\mathsf P,\mathfrak S,\mathfrak T,\mathfrak K$ を $\mathsf{K}$ によって拡大する：
 \[
 \mathsf{K}\subseteqq \mathfrak S_{\mathsf{K}}\subseteqq \mathfrak T_{\mathsf{K}}\subseteqq \mathfrak K_{\mathsf{K}}.
 \]
-20 頁の定理 1 により、各 $\mathfrak S_K$ は両側単純かつ完全可約であり、互いに作用素同型な単純左イデアルは、$\mathfrak S$ の $K$ におけるただ一つの既約表現類の表現加群である。この表現類は一次である。$K$ の構成により、$K$ の中には $\mathfrak S$ と相反同型な体が存在するからである。したがって単純左イデアルはすべて階数一であり、$\mathfrak S_K$ はその $\mathsf P$ 上の次数と同じ個数の左イデアルの和となる：
+20 頁の定理 1 により、各 $\mathfrak S_{\mathsf{K}}$ は両側単純かつ完全可約であり、互いに作用素同型な単純左イデアルは、$\mathfrak S$ の $\mathsf{K}$ におけるただ一つの既約表現類の表現加群である。この表現類は一次である。$\mathsf{K}$ の構成により、$\mathsf{K}$ の中には $\mathfrak S$ と相反同型な体が存在するからである。したがって単純左イデアルはすべて階数一であり、$\mathfrak S_{\mathsf{K}}$ はその $\mathsf P$ 上の次数と同じ個数の左イデアルの和となる：
 \[
 \mathfrak S_{\mathsf{K}}=\mathsf K E_1+\cdots+\mathsf K E_p,\qquad \mathsf K E_\nu=\mathfrak S_{\mathsf{K}} E_\nu.
 \]
@@ -445,10 +445,10 @@ $\mathfrak K$ と相反同型な体 $K$ を作り、その中心を $\mathsf P$ 
 \begin{aligned}
 \mathfrak T_{\mathsf{K}}&=\mathfrak T\cdot \mathsf{K}=\mathfrak T\cdot \mathfrak S_{\mathsf{K}},\\
 \mathfrak T_{\mathsf{K}}&=\mathfrak T\mathfrak S_{\mathsf{K}} E_1+\cdots+\mathfrak T\mathfrak S_{\mathsf{K}} E_p
-              =\mathfrak T_{\mathsf{K}} E_1+\cdots+\mathfrak T_{\mathsf{K}} E_p
+              =\mathfrak T_{\mathsf{K}} E_1+\cdots+\mathfrak T_{\mathsf{K}} E_p.
 \end{aligned}
 \]
-である。各イデアル $\mathfrak T_K\cdot E_\nu$ は $s$ 個の単純イデアルへ分解する。実際、
+である。各イデアル $\mathfrak T_{\mathsf{K}}\cdot E_\nu$ は $s$ 個の単純イデアルへ分解する。実際、
 \[
 [\mathfrak T_{\mathsf{K}} E_\nu:\mathsf{K}]=[\mathfrak T_{\mathsf{K}} E_\nu:\mathsf K E_\nu]=[\mathfrak T_{\mathsf{K}} E_\nu:\mathfrak S_{\mathsf{K}} E_\nu]\leqq[\mathfrak T_{\mathsf{K}}:\mathfrak S_{\mathsf{K}}]=[\mathfrak T:\mathfrak S]=s
 \]
@@ -463,14 +463,14 @@ $\mathfrak K$ と相反同型な体 $K$ を作り、その中心を $\mathsf P$ 
 \mathfrak T_{\mathsf{K}} E_\nu=\mathsf K e_1^{(\nu)}+\cdots+\mathsf K e_s^{(\nu)}.
 \]
 
-$K e_i^{(\nu)}$ が与える $\mathfrak T$ の表現は、$K E_\nu$ が与える $\mathfrak S$ の表現の延長である。実際、$\alpha\in\mathfrak S$ ならば
+$\mathsf K e_i^{(\nu)}$ が与える $\mathfrak T$ の表現は、$\mathsf K E_\nu$ が与える $\mathfrak S$ の表現の延長である。実際、$\alpha\in\mathfrak S$ ならば
 \[
 \alpha E_\nu=\sigma E_\nu,\qquad
 \sum \alpha e_i^{(\nu)}=\sigma\sum e_i^{(\nu)},\qquad
 \alpha e_i^{(\nu)}=\sigma e_i^{(\nu)}.
 \]
 
-残るのは、$K e_i^{(\nu)}$ が与える表現がすべて相異なることの証明だけである。可換の場合には、それらが異なる表現類に属したので明らかであった。ここでは逆にすべて同じ表現類に属するため、表現そのものを調べなければならない。$K e_i^{(\nu)}$ が与える $\mathfrak T_K$ 全体の $K$-準同型写像を考える。それらは $\mathfrak T$ の表現がわかれば完全に定まる。写像全体を構成するには、基底元がどのように表現されるかを知れば十分だからである。したがって、$K e_i^{(\nu)}$ が与える $\mathfrak T_K$ の写像がすべて異なることを示せばよい。$e_i^{(\nu)}$ を一度は表現加群 $K e_i^{(\nu)}$ により、別には $K e_j^{(\nu)}$ により表現すると、
+残るのは、$\mathsf K e_i^{(\nu)}$ が与える表現がすべて相異なることの証明だけである。可換の場合には、それらが異なる表現類に属したので明らかであった。ここでは逆にすべて同じ表現類に属するため、表現そのものを調べなければならない。$\mathsf K e_i^{(\nu)}$ が与える $\mathfrak T_{\mathsf{K}}$ 全体の $\mathsf{K}$-準同型写像を考える。それらは $\mathfrak T$ の表現がわかれば完全に定まる。写像全体を構成するには、基底元がどのように表現されるかを知れば十分だからである。したがって、$\mathsf K e_i^{(\nu)}$ が与える $\mathfrak T_{\mathsf{K}}$ の写像がすべて異なることを示せばよい。$e_i^{(\nu)}$ を一度は表現加群 $\mathsf K e_i^{(\nu)}$ により、別には $\mathsf K e_j^{(\nu)}$ により表現すると、
 \[
 e_i^{(\nu)2}=e_i^{(\nu)}
 \]
@@ -480,5 +480,5 @@ e_i^{(\nu)}e_j^{(\nu)}=0
 \]
 により後者では $0$ が、$e_i^{(\nu)}$ を表す元となる。したがって二つの表現は実際に異なる（全く同じ議論は可換の場合にも使えるが、そこでは不要である）。
 
-ここからは 10 頁および 16 頁と全く同じように論じる。$H$ を $\mathfrak S$ の不変群、$\mathfrak T$ を $H$ の不変体とする。$H$ の元は、$\mathfrak S$ の恒等自己同型を $\mathfrak K$ 全体へ延長したものすべてである。直前の補題により、その中には $\mathfrak T$ 上で相異なるものが少なくとも $s$ 個あるから、$s=1$、$\mathfrak T=\mathfrak S$ でなければならない。証明された。
+ここからは 10 頁および 16 頁と全く同じように論じる。$\mathsf{H}$ を $\mathfrak S$ の不変群、$\mathfrak T$ を $\mathsf{H}$ の不変体とする。$\mathsf{H}$ の元は、$\mathfrak S$ の恒等自己同型を $\mathfrak K$ 全体へ延長したものすべてである。直前の補題により、その中には $\mathfrak T$ 上で相異なるものが少なくとも $s$ 個あるから、$s=1$、$\mathfrak T=\mathfrak S$ でなければならない。証明された。
 

@@ -58,9 +58,9 @@ $\mathfrak A=\{a_1,\ldots,a_h\}$ をアーベル群とする。このとき $\ma
 \mathfrak A=\mathfrak Z_1\times\cdots\times\mathfrak Z_t,\qquad
 h=h_1h_2\ldots h_t .
 \]
-$z_i$ を $\mathfrak Z_i$ の生成元とすると、一次既約表現においてそれに対応する元は $h_i$ 乗根 $\varepsilon_\nu^{(h_i)}$ でなければならない。逆に、各 $z_i$ に一つの $h_i$ 乗根 $\varepsilon_\nu^{(h_i)}$ を対応させれば、$\mathfrak o$ の $\Omega$ における既約表現が得られる。いま $h\not\equiv0(p)$、したがってなおさら $h_i\not\equiv0(p)$ であるから、$\mathfrak o$ にはちょうど $h_1h_2\cdots h_t=h$ 個の相異なる表現がある。証明された。
+$z_i$ を $\mathfrak Z_i$ の生成元とすると、一次既約表現においてそれに対応する元は $h_i$ 乗根 $\varepsilon_\nu^{(h_i)}$ でなければならない。逆に、各 $z_i$ に一つの $h_i$ 乗根 $\varepsilon_\nu^{(h_i)}$ を対応させれば、$\mathfrak o$ の $\Omega$ における既約表現が得られる。いま $h\not\equiv0(p)$、したがってなおさら $h_i\not\equiv0(p)$ であるから、$\mathfrak o$ にはちょうど $h_1h_2\ldots h_t=h$ 個の相異なる表現がある。証明された。
 
-（$h=0(p)$、したがって少なくとも一つの $h_i$ について $h_i=0(p)$ ならば、相異なる $\varepsilon_\nu^{(h_i)}$ は高々 $h_i/p$ 個であり、したがって表現は $h$ 個より少ないことも容易にわかる。ゆえに $\mathfrak o_\Omega$ は零でない根基を含まなければならない。ただし、これだけから $\mathfrak o$ の根基について直ちに何かが従うわけではない。）
+（$h\equiv0(p)$、したがって少なくとも一つの $h_i$ について $h_i\equiv0(p)$ ならば、相異なる $\varepsilon_\nu^{(h_i)}$ は高々 $h_i/p$ 個であり、したがって表現は $h$ 個より少ないことも容易にわかる。ゆえに $\mathfrak o_\Omega$ は零でない根基を含まなければならない。ただし、これだけから $\mathfrak o$ の根基について直ちに何かが従うわけではない。）
 
 $\mathfrak o_\Omega$ から $\Omega$ の部分環への $h$ 個の相異なる準同型写像を $\Theta_1,\ldots,\Theta_h$ と書く。各 $\Theta_i$ には、表現加群として $\mathfrak o_\Omega$ の直和因子 $e_i\Omega$ が属する。$\Theta_i$ を $\mathfrak A$ にだけ適用して、$\mathfrak A$ の表現と呼ぶこともある。$\mathfrak A$ から単位根の群へのこれらの写像を、\emph{$\mathfrak A$ の $h$ 個の指標}という。特別な指標として、$\mathfrak A$ の各元に $1$ を対応させる\emph{主指標}がある。これに属する $\Theta_i$ を $\Theta_1$ とする。
 
@@ -83,7 +83,7 @@ x_i=x_j
 \[
 E=E^2=x^2\left(\sum a_i\right)^2=x^2h\sum a_i=xhE.
 \]
-$h=0(p)$ の場合には $E=0$ が従う。すなわち $\mathfrak o$ は主指標の表現加群を含まず、したがって完全可約ではありえない。これで 13 頁の定理の一方向が改めて証明された。
+$h\equiv0(p)$ の場合には $E=0$ が従う。すなわち $\mathfrak o$ は主指標の表現加群を含まず、したがって完全可約ではありえない。これで 13 頁の定理の一方向が改めて証明された。
 
 一方、$h\not\equiv0(p)$、したがって $\mathfrak o$ が完全可約ならば、直ちに
 \[
@@ -103,7 +103,7 @@ $E=(1/h)\cdot\sum a_i$ が主指標を与えることから、指標関係式が
 \[\Theta_i e_1 = \begin{cases} 1 & i = 1 \\ 0 & i \neq 1 \end{cases}\]
 である。$e_1=(1/h)\sum a_i$ だから、
 \[
-\sum_\nu \Theta_i a_\nu=\begin{cases} h & i=1,\\ 0 & i\ne 1. \end{cases}
+\sum_\nu \Theta_i a_\nu=\begin{cases} h & i=1\\ 0 & i\ne 1 \end{cases}
 \]
 これが周知の指標関係式である。
 
@@ -111,7 +111,7 @@ $E=(1/h)\cdot\sum a_i$ が主指標を与えることから、指標関係式が
 
 \subsection*{§ 17. アーベル群のガロア理論}\label{die-galoissche-theorie-abelscher-gruppen}
 
-アーベル群の群環について、可換体のガロア理論で証明したものと類似の定理を述べることができる。ガロア理論では $\Theta_i\Theta_1^{-1}$ が群 $\mathfrak G$ をなした。基本定理は、ある不変性に基づいて $\mathfrak G$ の部分群と $Z$ の部分体との間に一対一対応があることを表していた。
+アーベル群の群環について、可換体のガロア理論で証明したものと類似の定理を述べることができる。ガロア理論では $\Theta_i\Theta_1^{-1}$ が群 $\mathfrak G$ をなした。基本定理は、ある不変性に基づいて $\mathfrak G$ の部分群と $\mathsf{Z}$ の部分体との間に一対一対応があることを表していた。
 
 $\mathfrak{o}[\mathfrak{A}]$ の準同型 $\Theta_i$ は一つの群 $\mathsf A$ にまとめられ、その部分群は $\mathfrak A$ の部分群と類似の関係をもつ。
 
@@ -222,8 +222,8 @@ $\mathfrak B$ が $\mathsf B$ の不変領域ならば、$\mathsf B$ は $\mathf
 \[
 \sum_{i=1}^{h} \Theta_i a_\nu =
 \begin{cases}
-h & \nu=1,\\
-0 & \nu\ne 1
+h & \nu=1\\
+0 & \nu\ne 1.
 \end{cases}
 \]
 を得る。

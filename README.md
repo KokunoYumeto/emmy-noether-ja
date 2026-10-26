@@ -4,15 +4,15 @@
 
 ## 底本の本文
 
-1. [PDF](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-26-r2/01-noether-ja-base.pdf)
-2. [編集可能なLaTeXソース](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-26-r2/02-noether-ja-base.tex)
-3. [ソース一式](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-26-r2/03-noether-ja-base-sources.zip)
+1. [PDF](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-26-r3/01-noether-ja-base.pdf)
+2. [編集可能なLaTeXソース](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-26-r3/02-noether-ja-base.tex)
+3. [ソース一式](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-26-r3/03-noether-ja-base-sources.zip)
 
 ## 校訂を含む本文
 
-1. [PDF](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-26-r2/04-noether-ja-emendations.pdf)
-2. [編集可能なLaTeXソース](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-26-r2/05-noether-ja-emendations.tex)
-3. [ソース一式](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-26-r2/06-noether-ja-emendations-sources.zip)
+1. [PDF](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-26-r3/04-noether-ja-emendations.pdf)
+2. [編集可能なLaTeXソース](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-26-r3/05-noether-ja-emendations.tex)
+3. [ソース一式](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-10-26-r3/06-noether-ja-emendations-sources.zip)
 
 原著者はEmmy Noetherおよび各作品に記載する共著者である。講義録はM. Deuringの筆録による。日本語訳はAIによる翻訳。初版の制作主体はManuscript Typesetting Project / OpenAI Codexであり、当時の正確なモデルは現存する来歴資料からは確定していない。本版のAIによる訂正・組版：OpenAI Codex — GPT-6 Astra、Ultra。発行者による人間の翻訳または学術的査読を示すものではない。
 

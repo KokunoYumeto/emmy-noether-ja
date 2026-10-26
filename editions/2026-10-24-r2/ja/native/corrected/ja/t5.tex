@@ -54,7 +54,7 @@ tz=z_0z+\cdots+z_{n-1}u_Tz
 (z-z^{T^{-1}})z_{n-1}=0,
 \qquad\text{すべての }z\text{ に対して}
 \]
-を得る（あるいは階数が \(n\) に等しいことによる）。しかし \(S,\ldots\) など（いずれも \(E\) と異なる）について、定義により \(z-z^{S^{-1}}\ne0\) となる \(z\) が少なくとも一つあり、また \(\bar z-\bar z^{T^{-1}}\ne0\) となる \(\bar z\) がある。ゆえに \(z_i=0\)、\(i=1,\ldots,n-1\) であり、したがって \(t=z_0\in\mathfrak Z^*\) である。証明終。
+を得る（あるいは階数が \(n\) に等しいことによる）。しかし \(S,\ldots\) など（いずれも \(E\) と異なる）について、定義により \(z-z^{S^{-1}}\ne0\) となる \(z\) が少なくとも一つあり、また \(\bar z-\bar z^{S^{-1}}\ne0\) となる \(\bar z\) がある。ゆえに \(z_i=0\)、\(i=1,\ldots,n-1\) であり、したがって \(t=z_0\in\mathfrak Z^*\) である。証明終。
 
 \noindent\textbf{3.} \(u\) は乗法則 \(u_Su_T=a_{S,T}u_{ST}\) を満たし、\(a_{S,T}\) は接合結合則
 \[
@@ -111,7 +111,7 @@ u_Ra_{S,T}u_{ST}
 
 \noindent\emph{2 の証明.} \(\mathfrak A\) は左加群として \(\mathfrak Zu_S\) と同型である。したがって \(u_S\mapsto a\in\mathfrak A\) ならば \(\mathfrak Zu_S\mapsto\mathfrak Za\)、ゆえに \(\mathfrak A=\mathfrak Za\) である。双同型性から (1) \(za=az^S\) が従い（\(u_Sz\mapsto az\) による）、これから \(\mathfrak A=\mathfrak Zu_S\) を得る。実際、\(a=u_Su_S^{-1}a=u_Sw\) と置けば、\(za=zu_Sw=u_Sz^Sw\) である一方、(1) により \(za=u_Swz^S\) である。したがって（\(u_S\) を掛けて）すべての \(z\in\mathfrak Z\) に対して \(z^Sw=wz^S\) となる。\(z^S\) も \(\mathfrak Z\) 全体を動くから、\(w\) は \(\mathfrak Z\) の各元と交換し、1 により \(w\in\mathfrak Z\) である。
 
-\noindent\textbf{補題 3.} \emph{\(\mathfrak Z\cdot\mathfrak G\) の各 \(\mathfrak Z\)-双加群は \(\mathfrak Zu_{S_1}+\cdots+\mathfrak Zu_{S_k}\) という形である。ここで \(u_{S_1}\) は \(u_S,\ldots,u_T\) のうち相異なる任意の \(k\) 個を表す。}
+\noindent\textbf{補題 3.} \emph{\(\mathfrak Z\cdot\mathfrak G\) の各 \(\mathfrak Z\)-双加群は \(\mathfrak Zu_{S_1}+\cdots+\mathfrak Zu_{S_k}\) という形である。ここで \(u_{S_i}\) は \(u_S,\ldots,u_T\) のうち相異なる任意の \(k\) 個を表す。}
 
 \noindent\emph{証明.} 各直和因子 \(\mathfrak Zu_S\) は階数 1 なので、接合積 \(\mathfrak Z\cdot\mathfrak G\) は \(\mathfrak Z\)-双加群として完全可約である。さらに双加群として、すべての直和因子は異なる類に属し、したがって互いに双同型ではない。ゆえに各 \(\mathfrak Z\)-双加群 \(\mathfrak M\) は、完全可約性によって直和因子であり、それ自身完全可約である。\(\mathfrak M=\sum\mathfrak A_{S_i}\) で、\(\mathfrak A_{S_i}\) は \(\mathfrak Zu_{S_i}\) と同型である。したがって 2 により、それは \(\mathfrak Zu_{S_i}\) と同一である（すべての \(\mathfrak A_{S_i}\) は異なる類に属する）。
 
@@ -125,7 +125,7 @@ u_Ra_{S,T}u_{ST}
 
 \noindent\emph{注意 1.} この証明は、\(\mathfrak Z\) が \(\mathsf P\) 上の無限代数的ガロア体である場合にも定理が成り立つことを示す。実際、完全可約性に関する定理は保たれる（Krull, Zahlringe, Math. Ann. 99）。この場合、\(\mathfrak Z\cdot\mathfrak G\) はすべての有限和 \(\sum_{S_\lambda}u_{S_\lambda}\cdot c_{S_\lambda}\) の系である。
 
-ただし 4 では、\(\mathfrak o=\mathfrak Z\cdot\mathfrak H\) を \(\mathfrak o\) について仮定しなければならない。これは全積 \(\mathfrak Z\cdot\mathfrak G\) については成り立つが、\(\mathfrak o\) が \(\mathfrak Z\) 上無限ならば、\(u_{S_i}u_{S_k}\) が属することから、その系が群であることをもはや結論できないからである。
+ただし 4 では、\(\mathfrak o=\mathfrak Z\cdot\mathfrak H\) を \(\mathfrak o\) について仮定しなければならない。これは全積 \(\mathfrak Z\cdot\mathfrak G\) については成り立つが、\(\mathfrak o\) が \(\mathfrak Z\) 上無限ならば、\(u_{S_i}u_{S_j}\) が属することから、その系が群であることをもはや結論できないからである。
 
 \noindent\emph{注意 2.} ここで直接に基礎づける場合には、\S\S 25/26 で展開した交叉行列表現の理論を接続すべきである。以下、\S 28 の末尾では、既約交叉表現の次数が \(t\)、すなわち \(\mathfrak K\) の絶対成分数（指数）であることを用いる。この表現論によって、ここで乗法定数として導入した因子系が文献で通常用いられる概念と同一になることを、もう一度指摘しておく。
 
@@ -194,13 +194,13 @@ c_{11}\cdot\mathfrak K_r\times\mathsf P_s\cdot c_{11}
 =\mathfrak G\times\overline{\mathfrak G}\cdot
 (\mathfrak Ze_1+\cdots+\mathfrak Ze_n)
 \]
-であり、\(\mathfrak Ze_i=\overline{\mathfrak Z}e_i\) である（ガロア体とそれ自身との積）。すべての直和因子は \(\mathfrak Z\) に関して同じ階数をもち、したがって同じ絶対長をもつ。一方、\(\mathfrak A_f\) の絶対長は \(n^2\) であるから、各直和因子の絶対長は \(n\) である。以下では
+であり、\(\mathfrak Ze_i=\overline{\mathfrak Z}e_i\) である（ガロア体とそれ自身との積）。すべての直和因子は \(\mathfrak Z\) に関して同じ階数をもち、したがって同じ絶対長をもつ。一方、\(\mathfrak A_j\) の絶対長は \(=n^2\) であるから、各直和因子の絶対長は \(n\) である。以下では
 \[
 \mathfrak l=(\mathfrak G\times\overline{\mathfrak G})\mathfrak Ze_1
 \]
 を基礎とし、\(ze_1=e_1\bar z\) によって \(\mathfrak Z\) と \(\overline{\mathfrak Z}\) の間の特定の同型を固定する。
 
-\noindent\textbf{3. \(e_1\mathfrak A_fe_1\) の交叉表現、したがって積定理の証明.} 1 と 2 により、積 \(\mathfrak K_r\times\overline{\mathfrak K}_r\) の因子系は、\(e_1\mathfrak A_fe_1=\mathfrak A\) の交叉表現の因子系と同型である。
+\noindent\textbf{3. \(e_1\mathfrak A_je_1\) の交叉表現、したがって積定理の証明.} 1 と 2 により、積 \(\mathfrak K_r\times\overline{\mathfrak K}_r\) の因子系は、\(e_1\mathfrak A_je_1\equiv\mathfrak A\) の交叉表現の因子系と同型である。
 
 \noindent\textbf{定理 2.} \emph{\(\mathfrak A=\widetilde{\mathfrak Z}\cdot\widetilde{\mathfrak G}\) であり、ここで \(\widetilde{\mathfrak Z}=\mathfrak Ze_1=\overline{\mathfrak Z}e_1\)、\(\widetilde{\mathfrak G}=\{\ldots,e_1u_S\bar u_Se_1,\ldots\}\) である。しかも}
 \[
@@ -211,9 +211,9 @@ e_1u_S\bar u_Se_1\cdot e_1u_T\bar u_Te_1
 
 \noindent\emph{証明.} \(e_1\) は環の単位元となる。したがって \(\tilde z=ze_1\) と共役な元は \(\tilde z^Se_1\) で与えられる。元 \(u_S\bar u_Se_1\) がこれらの置換を誘導することを示せばよく、それによって交叉表現が証明される。
 
-\noindent\textbf{補題 1.} \(e_1u_S\bar u_S=u_S\bar u_Se_1\)、したがってこれは \(e_1u_S\bar u_Se_1\) に等しい。
+\noindent\textbf{補題 1.} \(e_1u_S\bar u_S=u_S\bar u_Se_1\)、したがってこれは \(=e_1u_S\bar u_Se_1\) に等しい。
 
-\noindent\emph{証明.} \(u_S^{-1}e_1u_S=e^S\)\srcfn{1}{この規約により \(e_1=e^E\) となる。}、または \(e_1u_S=u_Se^S\) と置く。このとき \(e^S\) は共役な \(e_1,e_2,\ldots,e_n\) 全体を動く。すると (1)\srcfn{2}{\(\sum a_i\bar A_i\bar u_R=\sum a_i\bar u_R\bar A_i^R=\bar u_R\sum(a_i^R)^{R^{-1}}\bar A_i^{-R}\) による。}
+\noindent\emph{証明.} \(u_S^{-1}e_1u_S=e^S\)\srcfn{1}{この規約により \(e_1u_S=u_Se^S\) となる。}、または \(e_1=e^E\) と置く。このとき \(e^S\) は共役な \(e_1,e_2,\ldots,e_n\) 全体を動く。すると (1)\srcfn{2}{\(e_1\bar u_R=\bar u_Re^{R^{-1}}\) による。}
 \[
 e_1\bar u_R=\bar u_Re^{R^{-1}}
 \]
@@ -270,9 +270,9 @@ u\bar ue_1=vc\cdot\bar v\bar de_1
 
 \subsection*{\S 29. 最小における主種定理}\label{hauptgeschlechtssatz-im-minimalen}
 
-\(\mathfrak K_r=\mathfrak Z\cdot\mathfrak G\) を接合積とし、\(\mathfrak G^*\) を、内部自己同型によって \(\mathfrak Z\) 全体をそれ自身へ移す元すべての群とする（剰余類で書けば \(\mathfrak Z^*u_E,\mathfrak Z^*u_S,\ldots\)）。
+\(\mathfrak K_r=\mathfrak Z\cdot\mathfrak G\) を接合積とし、\(\mathfrak G^*\) を、内部自己同型によって \(\mathfrak Z\) 全体をそれ自身へ移す元すべての群とする（剰余類で書けば \(\mathfrak Z^*u_E,\mathfrak Z^*u_S\)）。
 
-\noindent\textbf{定義.} 「\emph{最小における主種}」\(\mathscr H\) は、\(\mathfrak Z^*\) 上の恒等写像の延長である \(\mathfrak G^*\) の群自己同型すべてからなる。この名称の理由は、巡回体への特殊化から明らかになる。\S 30 を参照。
+\noindent\textbf{定義.} 「\emph{最小における主種}」\(\mathscr S\) は、\(\mathfrak Z^*\) 上の恒等写像の延長である \(\mathfrak G^*\) の群自己同型すべてからなる。この名称の理由は、巡回体への特殊化から明らかになる。\S 30 を参照。
 
 \noindent\textbf{定理.} \emph{主種の各自己同型は \(u_S\mapsto u_S\cdot b^Sb^{-1}=u_Sb^{S-1}\) という形である。ここで \(b\in\mathfrak Z\) である。逆に、このような対応はすべて主種の自己同型を生成する。}
 
@@ -321,7 +321,7 @@ v_S=bu_Sb^{-1}=u_Sb^Sb^{-1}
 u^\nu\cdot u^\mu=u^{\nu+\mu}\quad(\nu+\mu<n),
 \qquad
 u^\nu\cdot u^\mu=au^\varrho
-\quad(\nu+\mu=n+\varrho, 0\leq\varrho\leq n-2).
+\quad(\nu+\mu=n+\varrho, 0\leqq\varrho\leqq n-2).
 \]
 対応
 \[
@@ -385,7 +385,7 @@ v^n=u^nN(c)
 
 \noindent\emph{証明.} \(\mathsf P\) は中心でなければならない。なぜなら \(\mathsf P\) の可換拡大は複素数体 \(\mathfrak Z\) しかなく、\(\mathfrak Z\) は代数的閉体なので、それを中心とする非可換体拡大は存在しないからである。同時に、分解体として考えられるのも \(\mathfrak Z\) だけである。そして \(\mathfrak Z\) は \(\mathsf P\) 上巡回的である。さらに各正数はノルムなので、群 \(\mathsf P^*/N\mathfrak Z^*\) の次数は 2 である。したがって \(\{\mathsf P\}\) のほかには類 \(\{\mathfrak K\}\) が一つしかなく、それが四元数体である。さらに同伴する類の正規化因子系として \(-1\) を取れば、同時に正規形も得られる。実際、\(\mathfrak K=\mathfrak Z+\mathfrak Zu\)、\(u^2=-1\) となる。したがって \(i^2=-1\)、\(u^2=-1\) として \(\mathfrak K=\mathsf P+\mathsf Pi+(\mathsf P+\mathsf Pi)u\) である。
 
-\noindent\textbf{1 への注意.} 周知の事実 2 の証明も、\S 30 の末尾に基づいて次のように行える。\(\mathscr H=\mathfrak Z^{*S-1}\cong\mathfrak Z^*/\mathsf P^*\) となる。なぜなら、\(\mathsf P^*\) の元だけが、かつそのすべてが主種の恒等自己同型を生成し、あるいは \(S-1\) を作用させると単位元へ移るからである。したがって有限な \(\mathfrak Z\) では、\(\mathscr H\) の元の個数は \(\mathfrak Z^*\) における \(\mathsf P^*\) の指数に等しい。それゆえ \(\mathfrak Z^*/\mathscr H\) の元の個数は \(\mathsf P^*\) の元の個数に等しく、したがって \(N(\mathfrak Z^*)=\mathfrak Z^*/\mathscr H\) についても同じである。ゆえに \(\mathsf P^*=N(\mathfrak Z^*)\) である。（種の数＝両義類の数を参照。ただし、この数論的な言い方には常に「最小における」を付け加えなければならない。）
+\noindent\textbf{1 への注意.} 周知の事実 2 の証明も、\S 30 の末尾に基づいて次のように行える。\(\mathscr H=\mathfrak Z^{*S-1}\cong\mathfrak Z^*/\mathsf P^*\) となる。なぜなら、\(\mathsf P^*\) の元だけが、かつそのすべてが主種の恒等自己同型を生成し、あるいは \(S-1\) を作用させると単位元へ移るからである。したがって有限な \(\mathfrak Z\) では、\(\mathscr S\) の元の個数は \(\mathfrak Z^*\) における \(\mathsf P^*\) の指数に等しい。それゆえ \(\mathfrak Z^*/\mathscr S\) の元の個数は \(\mathsf P^*\) の元の個数に等しく、したがって \(N(\mathfrak Z^*)=\mathfrak Z^*/\mathscr S\) についても同じである。ゆえに \(\mathsf P^*=N(\mathfrak Z^*)\) である。（種の数＝両義類の数を参照。ただし、この数論的な言い方には常に「最小における」を付け加えなければならない。）
 
 \noindent\textbf{3.} \emph{\(\mathsf P\) が \(p\)-進基礎体であり、\(\mathfrak Z\) が \(\mathsf P\) 上次数 \(n\) の巡回体ならば、\(\mathfrak Z\) に属する \(\{\mathfrak K\}\) の群 \(\mathscr K_{\mathfrak Z}\) は \(\mathfrak Z\) のガロア群と同型である。}
 
