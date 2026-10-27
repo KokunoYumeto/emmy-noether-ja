@@ -1569,7 +1569,7 @@ a_\vartheta a_\nu^3,
 \begin{aligned}
 \text{b')}\quad
  a_\vartheta\theta_\nu^4
-&=a_\R=a_\vartheta\theta_\nu\{a_\nu-(a\theta\nu x)\}^3\\
+&=a_\R=a_\vartheta\theta_\nu\{a_\nu-(a\theta\widehat{\nu x})\}^3\\
 &=-\frac32[a_\vartheta]_{\nu^3}+\frac35[a_\vartheta(a\theta u)^2]_{\nu^2}\,\widehat{\nu}x^2
 -\frac{37}{120}[a_\vartheta^2(a\theta u)^2]_{\nu}\,\widehat{\nu x}^2\\
 &\quad+\frac32u_x\cdot[a_\vartheta^2]_{\nu^4}
@@ -1713,10 +1713,10 @@ a_\nu\cdot b_{\nu_1}^2
 &=\nu\cdot a_\nu b_\nu^2-(aHu)(bHu)b_\eta
 \sim \nu\cdot a_\nu b_\nu^2-f\cdot a_\eta(aHu)^2-(abu)(aHu)b_\eta+(abu)^2b_\eta,\\
 a_\nu^2\cdot b_{\nu_1}^2
-&=b_\nu^2\{a_\nu u_\nu-(a\nu\nu_1u)\}^2
+&=b_\nu^2\{a_\nu u_\nu-(a\widehat{\nu\nu_1}u)\}^2
 \sim \nu\{a_\nu^2b_\nu^2-2a_\eta b_\eta(aHu)(bHu)
 -\frac16(asu)^2(bsu)^2\}\\
-&\sim \nu\cdot a_\nu^2b_\nu^2-2a^2(aHu)(abu)-\frac16(asu)^2(bsu)^2+(\vartheta\eta x)^2(\theta Hu)^2
+&\sim \nu\cdot a_\nu^2b_\nu^2-2a_\eta^2(aHu)(abu)-\frac16(asu)^2(bsu)^2+(\vartheta\eta x)^2(\theta Hu)^2
 \end{aligned}
 \]
 において、$\theta_\eta H_\vartheta$ の値を代入すると、次の公式が生じる：
@@ -3137,9 +3137,9 @@ $(a_\eta(aHu)H_j,s,u)^2$ の分解：分解された形式 $[\theta_\nu\cdot\the
 
 C) 公式 (31.) から、分解された形式
 \[
- [L_\vartheta(\theta Lu)]_{su^3}\quad\hbox{および}\quad [\theta_l(\theta Lu)]_{s^2u^3}
+ [L_\vartheta(\theta Lu)]_{\widehat{su}^3}\quad\hbox{および}\quad [\theta_l(\theta Lu)]_{\widehat{su}^3}
 \]
-の還元、すなわち積 $[\theta_\nu^2\cdot H]_{su^3}$ と $[a_\nu^2\cdot(bHu)^2]_{su^3}$ の還元が従う：
+の還元、すなわち積 $[\theta_\nu^2\cdot H]_{su^3}$ と $[a_\nu^2\cdot(bHu)^2]_{\widehat{su}^3}$ の還元が従う：
 \begin{equation}
 \tag{32}
 \begin{aligned}
@@ -4706,7 +4706,7 @@ $\Ssys_{n\rho}$ は代数的階数 $\rho$ をもつので、$\Ssys_{n\rho}$ か�
 \[
 \begin{aligned}
  [f(x)]_{(x_n=a_n)}&=f^{(n-1)}(x),\qquad
- [f^{(n-1)}(x)]_{x_{n-1}=a_{n-1}}=f^{(n-2)}(x);\ldots,\\
+ [f^{(n-1)}(x)]_{(x_{n-1}=a_{n-1})}=f^{(n-2)}(x),\\
  [f^{(\rho+1)}(x)]_{(x_{\rho+1}=a_{\rho+1})}&=f^*(x_1,\ldots,x_\rho)
 \end{aligned}
 \]
@@ -4992,7 +4992,7 @@ $\Phi^*(z,u)$ の一次因子への分解は、拡大体において
 をもつ。(7) により、したがって $\Phi^*(z,u;x)$ も零点 $z=u(\xi)$ をもつ。すなわち $\xi$ は量の行 (5) に属する。$\xi$ が共役な量の行に関する方程式系
 \[
   F^*(x^{(k)})H^*(\xi)-H^*(x^{(k)})F^*(\xi)=0;
-  \qquad H^*(\xi)\ne0
+  \qquad H(\xi)\ne0
 \]
 を満たす場合にも、(6) により対応する主張が成り立つ。
 
@@ -5780,9 +5780,9 @@ Emmy Noether（Erlangen）
 \end{aligned}
 \qquad
 \left(\begin{array}{c}
-\alpha+\alpha_1+
+(\alpha+\alpha_1+
 \cdots+
-\alpha_n=h\\
+\alpha_n=h)\\
 \alpha\ne h
 \end{array}\right),
 \]
@@ -6713,9 +6713,9 @@ G_\sigma:a_0+a_1(\eta)+\cdots+a_{\sigma-1}(\eta)+\mathfrak M_\sigma(\eta).
 
 前節までの展開は、領域 $\mathfrak G$ については、領域 $\mathfrak G$ の定義性質 III と IV に代数的数を含めないなら、全複素数の全体が体をなすという事実だけに依拠していた。\footnote{§ 7 でのみ、有理数の「素体」が無限個の元を含むという仮定をさらに用いた。しかし有限個の元だけをもつ素体の場合、この段落は、これから見るように、単に消える。} 領域 $\mathfrak H$ については、さらにこの体が代数的閉であるという事実に依拠していた。したがって得られた結果は、Weber および E. Steinitz\footnote{loc. cit., 序論。} に従って「二つの演算、加法と乗法をもつ元の系であり、それらが結合律と交換律に従い、分配律で結びつき、逆演算を無制限かつ一意に許すもの」\footnote{零による除法だけは除かなければならない。}として抽象的に定義される\emph{最も一般の体}へ直接一般化できる。
 
-そのような体はすべて単位元を含み、したがって単位元から加法、乗法およびその逆演算によって導かれる「素体」を含む。この素体は、有理数の型（標数 $0$）であるか、または素数 $p$ の剰余類系の型（標数 $p$）である。\footnote{Steinitz, § 4.} そのとき\emph{素体の整な量}は、単位元から加法および減法によって生じる量としてよく定義される。標数 $p$ の素体では、整な量はすでに素体を尽くし、素体の分数的量は存在しない。任意の代数的閉体は「絶対代数体」を含む。これは素体に、素体上代数的なすべての元を添加して得られる。したがって標数 $0$ の体では、これは全代数的数の体の型である。すると\emph{絶対代数体の代数的に整な量}は、素体の整な量（または同じことだが単位元）上代数的に整なすべての量としてよく定義される。標数 $p$ の体では、したがって絶対代数体の代数的に分数的な量も存在しない。これらの準備的注意の後、「整」量および「代数的に整」量の定義を任意の体、あるいは代数的閉体に移すことができる。\emph{体 $\mathfrak R$ の整な量とは、$\mathfrak R$ の量から成る整域 $\mathfrak G$ で、その商体\footnote{すなわち、$\mathfrak G$ の量の対の商すべてから成る体。}が $\mathfrak R$ を尽くし、単位元を含むが素体の分数的量を含まないものとして定義される。}
+そのような体はすべて単位元を含み、したがって単位元から加法、乗法およびその逆演算によって導かれる「素体」を含む。この素体は、有理数の型（標数 $0$）であるか、または素数 $p$ の剰余類系の型（標数 $p$）である。\footnote{Steinitz, § 4.} そのとき\emph{素体の整な量}は、単位元から加法および減法によって生じる量としてよく定義される。標数 $p$ の素体では、整な量はすでに素体を尽くし、素体の分数的量は存在しない。任意の代数的閉体は「絶対代数体」を含む。これは素体に、素体上代数的なすべての元を添加して得られる。したがって標数 $0$ の体では、これは全代数的数の体の型である。すると\emph{絶対代数体の代数的に整な量}は、素体の整な量（または同じことだが単位元）上代数的に整なすべての量としてよく定義される。標数 $p$ の体では、したがって絶対代数体の代数的に分数的な量も存在しない。これらの準備的注意の後、「整」量および「代数的に整」量の定義を任意の体、あるいは代数的閉体に移すことができる。\emph{体 $\mathfrak K$ の整な量とは、$\mathfrak K$ の量から成る整域 $\mathfrak G$ で、その商体\footnote{すなわち、$\mathfrak G$ の量の対の商すべてから成る体。}が $\mathfrak K$ を尽くし、単位元を含むが素体の分数的量を含まないものとして定義される。}
 
-\emph{代数的閉体 $\mathfrak R$ の代数的に整な量とは、$\mathfrak R$ の量から成る代数的整閉な整域 $\mathfrak H$ で、その商体が $\mathfrak R$ を尽くし、単位元を含むが絶対代数体の代数的に分数的な量を含まないものとして定義される。}
+\emph{代数的閉体 $\mathfrak L$ の代数的に整な量とは、$\mathfrak L$ の量から成る代数的整閉な整域 $\mathfrak H$ で、その商体が $\mathfrak L$ を尽くし、単位元を含むが絶対代数体の代数的に分数的な量を含まないものとして定義される。}
 
 標数零の体については、前節までで得られた結果がそのまま適用される。ただし「代数的数」を、素体、あるいは絶対代数体の量で置き換えるだけでよい。標数 $p$ の体については、素体が分数的量を含まないため、結果はさらに単純化する。すなわち有理基底および添加される系に対する付帯条件が単に消える。\footnote{この段落の第一の注を参照。} したがって結果は次の通りである。\emph{抽象的定義は、標数 $p$ の体の整な量として、任意の有理基底から導かれるすべての整域、体自身、およびこれらの領域と体との間にある任意の整域を許す。対応して、素標数の代数的閉体の代数的に整な量としては、代数的基底から導かれる領域と体自身との間にある任意の代数的整閉な整域、二つの境界領域を含むものが得られる。} したがって素標数の最も一般の体では、対応する素体の場合と同様に、整と分数との区別は消える。
 
@@ -6922,17 +6922,17 @@ c_3(X-x)+c_4(Y\mp y)=0
 \[
 (Y\mp y)=c\cdot(X-x)
 \]
-の形に書ける。ここで $c$ は実数で、零でなく有限である。これは、$y=\pm cx$ に対して $Y=c\cdot X$ も成り立つことを意味する。したがって関数方程式を考慮すると、任意の実数 $r$ について
+の形に書ける。ここで $c$ は実数で、零でなく有限である。これは、$y=\pm cx$ に対して $Y=c\cdot X$ も成り立つことを意味する。したがって関数方程式を考慮すると、任意の実数 $\mathfrak{x}$ について
 \[
-f\{r\cdot(1\pm ic)\}=X(1+ic)=f(r)\cdot(1+i f(c))
+f\{\mathfrak{x}\cdot(1\pm ic)\}=X(1+ic)=f(\mathfrak{x})\cdot(1+i f(c))
 \]
-が成り立つ。ここで $X$ は再び実数である。しかし第1項により、$f(r)$ の因子が恒等的に消えることはできないので、割り算によって
+が成り立つ。ここで $X$ は再び実数である。しかし第1項により、$f(\mathfrak{x})$ の因子が恒等的に消えることはできないので、割り算によって
 \[
-f(r)=X(\sigma+i\tau)
+f(\mathfrak{x})=X(\sigma+i\tau)
 \]
-を得る。ここで $\sigma$ と $\tau$ は実数で、$r$ と $X$ には依存しない。
+を得る。ここで $\sigma$ と $\tau$ は実数で、$\mathfrak{x}$ と $X$ には依存しない。
 
-特に $r=1$ に対しても実数 $\mathfrak{X}_0$ が属するので、条件 $1=\mathfrak{X}_0(\sigma+i\tau)$ は必然的に $\tau=0$ を示す。したがって $f(r)=\sigma\cdot X$ である。ゆえに各実数 $z$ にも実数 $f(z)$ が対応する。すなわち $y=0$ から必然的に $Y=0$ が従う。これにより、実数 $z$ に対する線形関係は $X-x=0$ に移る。\footnote{ここでは $c\ne0$、したがって $c_3$ も $c_4$ も消えないという事実を用いている。これに対し上では $c_4\ne0$ だけを用いた。そのため、二つのうち一つが消える場合を先に扱っておく必要があった。} 各実値は自分自身に対応する。したがって再び $f(z)=z$ または $\overline z$ のみであり、実際には階数二である。こうして階数三はすべての場合に排除された。一方、最初の各項の研究が示すように、不連続解は実際に存在し、それらはしたがって必然的に階数四でなければならない。ゆえに 1) により次の定理が成り立つ。\emph{「関数方程式 (1) から (4) のすべての解} $f(z)$ \emph{は、連続解} $f(z)=z$ \emph{および} $\overline z$ \emph{を除いて、実数上および複素数上で極端に不連続である。」}\footnote{Lebesgue は前掲箇所で、$f(z)$ の実部および虚部がともに $x,y$ の「非可測」関数であることを示している。しかし第4項の初めの例 $\varphi(z)=\varphi(x)+i(y+\varphi(x))$ が示すように、そこから複素領域での極端な不連続性はまだ従わない。}
+特に $\mathfrak{x}=1$ に対しても実数 $\mathfrak{X}_0$ が属するので、条件 $1=\mathfrak{X}_0(\sigma+i\tau)$ は必然的に $\tau=0$ を示す。したがって $f(\mathfrak{x})=\sigma\cdot X$ である。ゆえに各実数 $z$ にも実数 $f(z)$ が対応する。すなわち $y=0$ から必然的に $Y=0$ が従う。これにより、実数 $z$ に対する線形関係は $X-x=0$ に移る。\footnote{ここでは $c\ne0$、したがって $c_3$ も $c_4$ も消えないという事実を用いている。これに対し上では $c_4\ne0$ だけを用いた。そのため、二つのうち一つが消える場合を先に扱っておく必要があった。} 各実値は自分自身に対応する。したがって再び $f(z)=z$ または $\overline z$ のみであり、実際には階数二である。こうして階数三はすべての場合に排除された。一方、最初の各項の研究が示すように、不連続解は実際に存在し、それらはしたがって必然的に階数四でなければならない。ゆえに 1) により次の定理が成り立つ。\emph{「関数方程式 (1) から (4) のすべての解} $f(z)$ \emph{は、連続解} $f(z)=z$ \emph{および} $\overline z$ \emph{を除いて、実数上および複素数上で極端に不連続である。」}\footnote{Lebesgue は前掲箇所で、$f(z)$ の実部および虚部がともに $x,y$ の「非可測」関数であることを示している。しかし第4項の初めの例 $\varphi(z)=\varphi(x)+i(y+\varphi(x))$ が示すように、そこから複素領域での極端な不連続性はまだ従わない。}
 
 \medskip
 \noindent Erlangen, 1915年10月30日。
@@ -7281,7 +7281,7 @@ f_{\delta^\sigma}=
 \end{gathered}
 \tag{3}
 \end{equation}
-関係 (2) と (3) から、(1) によって \(f(x,dx)\) の導函数の変換法則を読み取ることができるが、以下ではこれは用いない。不変量 (3) から、線形結合によって「\(\varrho\) 次変分の正規形」を得ることができる。これは \(\varrho=1\) では Lagrange に、\(\varrho=2\) では Riemann に見られるもので、\((\varrho+1)\) 次の混合微分、すなわち \(d^\varrho\delta,d^{\varrho-1}\delta^2,\ldots\) が消去されていることによって特徴づけられる。その形は次である：
+関係 (2) と (3) から、(1) によって \(f(x,dx)\) の導函数の変換法則を読み取ることができるが、以下ではこれは用いない。不変量 (3) から、線形結合によって「\(\varrho\) 次変分の正規形」を得ることができる。これは \(\varrho=1\) では Lagrange に、\(\varrho=2\) では Riemann に見られるもので、\((\varrho+1)\) 次の混合微分、すなわち \(d^\varrho\delta,d^{\varrho-1}\delta^2\ldots\) が消去されていることによって特徴づけられる。その形は次である：
 \begin{equation}
 \begin{gathered}
 \varOmega_1=\delta f(dx)-d f_\delta(dx),\\
@@ -8515,7 +8515,7 @@ Hilbert は、とくに代数関数と代数的数における超越的問題の
 \]
 ならば
 \[
-        F(\xi_{ik})\equiv0\pmod{\frM}\quad \text{\(\xi_{ik}\) に関して恒等的に},
+        F(\xi_{ik})\equiv0 \bmod \frM\quad [\text{\(\xi_{ik}\) に関して恒等的に}],
 \]
 かつその逆も成り立つ。
 
@@ -8663,7 +8663,7 @@ Hilbert は、とくに代数関数と代数的数における超越的問題の
 \end{equation}
 が従う。\(\alpha_4=\alpha_3,\;\beta_4=\beta_3\) と特殊化すると、(6) と (7) は
 \[
-        K((ik))\equiv0\pmod p\quad \text{\(\alpha,\beta\) に関して恒等的に}
+        K(ik)\equiv0\pmod p\quad [\text{\(\alpha,\beta\) に関して恒等的に}]
 \]
 を与える。したがって a) で証明した結果により、
 \[
@@ -8759,8 +8759,8 @@ Hilbert は、とくに代数関数と代数的数における超越的問題の
 \]
 が成り立つ。したがって \(P_0^*\) から \(Q_0,R_0\) に移ると、この差の和は減少している。この和は必ず \(\ge \sigma\) であるから、この手続きは各冪積 \(P_0^*\) について有限回で停止しなければならない。ゆえに
 \[
-        F(\xi_{ik})=\sum \xi_{i_1n}\cdots\xi_{i_\sigma n\cdot}P^{(\nu)}
-        \equiv\sum \xi_{j_1n}\cdots\xi_{j_\sigma n\cdot}S_0^{(\nu)}
+        F(\xi_{ik})=\sum \xi_{i_1n}\cdots\xi_{i_\sigma n\cdot}\cdot P^{(\nu)}
+        \equiv\sum \xi_{j_1n}\cdots\xi_{j_\sigma n\cdot}\cdot S_0^{(\nu)}
         =F_0(\xi_{ik})\pmod{\frN},
 \]
 ここで整係数多項式 \(F_0(\xi_{ik})\) は必ず正規化されている。そうでなければ差の和をさらに下げられるからである。これで (10) が証明された。\((n-1)\) 個の指数についての誘導仮定により、各々の別々に同次な \(F\) は別々に同次な正規化 \(F_0\) をもつので、いまの手続きはそれが \(n\) 個の指数についても成り立つことを示す。したがって以下では、別々に同次な多項式だけを考えればよい。
@@ -8788,7 +8788,7 @@ b) と同様に、
         \xi_{\varkappa_1,n-1}\cdots\xi_{\varkappa_\varrho,n-1}
         \xi_{\varkappa_{\varrho+1},n}\cdots\xi_{\varkappa_{\varrho+\sigma},n}\cdot P(\xi_{ik}),
 \]
-の形である。ここで \(P(\xi_{ik})\) はもはや指数 \(n\) と \((n-1)\) を含まない。\(n\) と \((n-1)\) を入れ替えると、\(i\ne j\) に対して因子 \(\xi_{in}\xi_{j,n-1}\)（\(i<j\)）が生じる。すると \(j,n-1\) は \(i\) と \(n\) の間にあり、その項は正規化されていない。したがって、固定された \(\chi_1,\chi_2,\ldots,\chi_{\varrho+\sigma}\) と固定された \(P\) に対して、\(G\) は一つの冪積しか含まない。これにより、\(G\) の異なる冪積は \(K\) で異なる積に対応することが証明された。したがって
+の形である。ここで \(P(\xi_{ik})\) はもはや指数 \(n\) と \((n-1)\) を含まない。\(n\) と \((n-1)\) を入れ替えると、\(i\ne j\) に対して因子 \(\xi_{in}\xi_{j,n-1}\)（\(i<j\)）が生じる。すると \(j,n-1\) は \(i\) と \(n\) の間にあり、その項は正規化されていない。したがって、固定された \(\varkappa_1,\varkappa_\varrho,\ldots,\varkappa_{r+\sigma}\) と固定された \(P\) に対して、\(G\) は一つの冪積しか含まない。これにより、\(G\) の異なる冪積は \(K\) で異なる積に対応することが証明された。したがって
 \begin{equation}
         K(\xi_{ik})\equiv0\pmod p\quad\Longrightarrow\quad
         G(\xi_{ik})\equiv0\pmod p.
@@ -10458,7 +10458,7 @@ $f$ が $\ideal M$ の元であることを、通常どおり $f\equiv0(\ideal M
  \ideal M=[\ideal B_1,\ideal C_1]=[\ideal B_1,\ideal B_2,\ideal C_2]=\cdots=[\ideal B_1,\ldots,\ideal B_n,\ideal C_n]=\cdots
 \tag{1}
 \end{equation}
-が得られる。鎖 $\ideal C_1,\ideal C_2,\ldots,\ideal C_\nu,\ldots$ において、各 $\ideal C_i$ は直前のものの真の約数であり、したがって鎖は有限段階で終わる。すなわち、ある添字 $n$ があって $\ideal C_n$ は既約となる。さらに補題 I により表示 $\ideal M=[\ideal B_1\cdots\ideal B_n\ideal C_n]$ は既約である。したがって $\ideal C_n$ は補元 $\ideal A_n$ に入らず、表示 $\ideal M=[\ideal A_n,\ideal C_n]$ において $\ideal U_n$ を真の約数で置き換えることもできない。必要ならば $\ideal A_n$ を真の約数で置き換えて\footnote{実際には、この表示は $\ideal A_n$ に関しても既約であることが、\S~3（補題 IV）で補題 I の逆として示される。}表示を既約にすれば、すべての可約イデアルが、既約イデアルとそれに補完するイデアルとの最小公倍数として既約表示をもつことが示される。したがって列 (1) では、一般性を失わずにすべての $\ideal B_i$ を既約と仮定できる。上の議論を繰り返せば、既約な $\ideal C_n$ の存在が得られ、定理 II が証明される。
+が得られる。鎖 $\ideal C_1,\ideal C_2,\ldots,\ideal C_\nu,\ldots$ において、各 $\ideal C_i$ は直前のものの真の約数であり、したがって鎖は有限段階で終わる。すなわち、ある添字 $n$ があって $\ideal C_n$ は既約となる。さらに補題 I により表示 $\ideal M=[\ideal B_1\cdots\ideal B_n\ideal C_n]$ は既約である。したがって $\ideal C_n$ は補元 $\ideal A_n$ に入らず、表示 $\ideal M=[\ideal A_n,\ideal C_n]$ において $\ideal C_n$ を真の約数で置き換えることもできない。必要ならば $\ideal A_n$ を真の約数で置き換えて\footnote{実際には、この表示は $\ideal A_n$ に関しても既約であることが、\S~3（補題 IV）で補題 I の逆として示される。}表示を既約にすれば、すべての可約イデアルが、既約イデアルとそれに補完するイデアルとの最小公倍数として既約表示をもつことが示される。したがって列 (1) では、一般性を失わずにすべての $\ideal B_i$ を既約と仮定できる。上の議論を繰り返せば、既約な $\ideal C_n$ の存在が得られ、定理 II が証明される。
 
 \subsection*{\S~3. 既約イデアルへの二つの異なる分解における成分数の一致。}
 
@@ -10497,8 +10497,8 @@ $\ideal C=[\ideal C_1,\ideal C_2]$ とし、$\ideal C_1,\ideal C_2$ が $\ideal 
 \]
 は $\ideal C$ と $\ideal A$ の両方で割り切れ、ゆえに $\ideal M$ で割り切れる。さらに $n_1=n_2+m$ であるから、$n_1$（同様に $n_2$）は $\ideal N_1$ と $\ideal N_2$ の両方で割り切れ、したがって $\ideal M$ で割り切れる。よって
 \[
- f=c+m,
- \qquad f\equiv0(\ideal C),
+ f=c+m;
+ \qquad f\equiv0(\ideal C);
  \qquad \ideal C^*=\ideal C.
 \]
 ここで $\ideal C_1$ と $\ideal C_2$ は $\ideal C$ の真の約数である。もし $\ideal C_i=(\ideal C,\ideal N_i)=\ideal C$ であれば、$\ideal N_i$ は $\ideal C$ で割り切れ、さらに $\ideal U$ でも割り切れるから $\ideal M$ に等しくなり、仮定に反する。したがって $\ideal C=[\ideal C_1,\ideal C_2]$ は可約であることが分かった。定理 III が証明された。
@@ -11314,11 +11314,11 @@ $\ideal P_1$ が素イデアルであることは、領域の任意の多項式�
 
 この領域の素イデアルは $\ideal P_0=\ideal O=(2)$ および $\ideal P=(2p)$ である。ただし $p$ は奇素数を表す。したがって任意の素イデアルは $\ideal P_0$ で割り切れるが、それ以外の素イデアルでは割り切れない。準素イデアルは
 \[
- \ideal Q_0=(2\cdot2^{\varrho_0})
+ \ideal Q_{\varrho_0}=(2\cdot2^{\varrho_0})
  \qquad\text{および}\qquad
  \ideal Q_\varrho=(2p^\varrho)
 \]
-である。それらは同時に既約イデアルであり、素イデアルについて述べたことにより、異なる奇素数に属する二つのイデアルは互いに相対的に素であるが、どの $\ideal Q$ もどの $\ideal Q_0$ に対しても相対的に素ではない。\footnote{実際、奇素数 $p_1\ne p_2$ に対して $2b\cdot2p_1^{\varrho_1}\eqzero{2p_2^{\varrho_2}}$ からは常に $2b\eqzero{2p_2^{\varrho_2}}$ が得られる。しかし $2b\cdot2p^\varrho\eqzero{2\cdot2^{\varrho_0}}$ からは $2b=2\cdot2^{\varrho_0-1}\pmod{2\cdot2^{\varrho_0}}$ だけが得られる。} したがって $\ideal Q_0$ は唯一の非孤立準素イデアルである。$a$ の素数冪への一意分解は、イデアル $(2a)$ の極大準素で同時に既約なイデアルによる一意表示
+である。それらは同時に既約イデアルであり、素イデアルについて述べたことにより、異なる奇素数に属する二つのイデアルは互いに相対的に素であるが、どの $\ideal Q$ もどの $\ideal Q_{\varrho_0}$ に対しても相対的に素ではない。\footnote{実際、奇素数 $p_1\ne p_2$ に対して $2b\cdot2p_1^{\varrho_1}\eqzero{2p_2^{\varrho_2}}$ からは常に $2b\eqzero{2p_2^{\varrho_2}}$ が得られる。しかし $2b\cdot2p^\varrho\eqzero{2\cdot2^{\varrho_0}}$ からは $2b=2\cdot2^{\varrho_0-1}\pmod{2\cdot2^{\varrho_0}}$ だけが得られる。} したがって $\ideal Q_0$ は唯一の非孤立準素イデアルである。$a$ の素数冪への一意分解は、イデアル $(2a)$ の極大準素で同時に既約なイデアルによる一意表示
 \[
  (2a)=[(2\cdot2^{e_0}),(2p_1^{e_1}),
 \ldots,(2p_\mu^{e_\mu})]
@@ -14797,7 +14797,7 @@ $\gamma$ を $\mathfrak R$ の指数 $f\geqq 1$ の第二種の元とし、
 \]
 を表す。さらに、零行列が対応するのは $\gamma\mathfrak a$ が零イデアルとなる元 $\gamma$ のすべてであり、かつそれらに限るので、上に述べた同型が得られる。
 
-\emph{$\mathfrak a$ の基底 $\bar\alpha$ は、$R_{\mathfrak a}$ と同型で、しかも同値な行列環 $R_{\bar a}=P^{-1}R_{\mathfrak a}P$ を生成する。} 実際、$\bar\alpha_1,\ldots,\bar\alpha_s$ を別の線型独立な $\Sigma$-加群基底とすれば、
+\emph{$\mathfrak a$ の基底 $\bar\alpha$ は、$R_{\mathfrak a}$ と同型で、しかも同値な行列環 $R_{\bar\alpha}=P^{-1}R_\alpha P$ を生成する。} 実際、$\bar\alpha_1,\ldots,\bar\alpha_s$ を別の線型独立な $\Sigma$-加群基底とすれば、
 \[
 (\bar a_1,\ldots,\bar a_s)=(a_1,\ldots,a_s)P,
 \]
@@ -14856,7 +14856,7 @@ R_{\overline{\beta}}=P^{-1}R_{\mathfrak a}P
 \[
 R_{\beta}=P R_{\overline{\beta}}P^{-1}=R_{\mathfrak a}
 \]
-となる。そこで、$\mathfrak a$ の各元 $\alpha=c_1\alpha_1+\cdots+c_s\alpha_s$ に $\mathfrak b$ の元 $\beta=c_1\beta_1+\cdots+c_s\beta_s$ を対応させる。この対応は一対一であり、和と差も互いに対応する。さらに $R_{\mathfrak a}=R_{\beta}$ から、$\gamma\alpha_i$ と $\gamma\beta_i$ も互いに対応することが従う。なぜなら、それらはそれぞれ $\alpha_i$ と $\beta_i$ の同じ線型形式によって表されるからである。したがって一般に $\gamma\alpha$ と $\gamma\beta$ が対応し、イデアル $\mathfrak a$ と $\mathfrak b$ は同じイデアル類に属する。
+となる。そこで、$\mathfrak a$ の各元 $\alpha=c_1\alpha_1+\cdots+c_s\alpha_s$ に $\mathfrak b$ の元 $\beta=c_1\beta_1+\cdots+c_s\beta_s$ を対応させる。この対応は一対一であり、和と差も互いに対応する。さらに $R_\alpha=R_{\beta}$ から、$\gamma\alpha_i$ と $\gamma\beta_i$ も互いに対応することが従う。なぜなら、それらはそれぞれ $\alpha_i$ と $\beta_i$ の同じ線型形式によって表されるからである。したがって一般に $\gamma\alpha$ と $\gamma\beta$ が対応し、イデアル $\mathfrak a$ と $\mathfrak b$ は同じイデアル類に属する。
 
 単位イデアルの類を \emph{主類} と呼ぶ。したがって、$\mathfrak R$ の任意の基底は、表現類として主類を与える。
 %
@@ -15078,7 +15078,7 @@ $\mathfrak a$ と $\mathfrak r$ を $\mathfrak R$ のイデアルとし、$\over
 %
 %
 
-第一種の完全可約性は、\S 3, 2. の定理により、拡大環 $\overline{\mathfrak R}=\mathfrak R[\overline P]$ が完全可約であること、すなわち、その直和分解不能な成分が $\overline{\mathsf{P}}$ と同型な体となることと同じである。\S 5, 3. により、$\mathfrak R$ と $\overline{\mathfrak R}$ の判別イデアルは、同時に零イデアルとなるか、または同時に単位イデアルとなる。また、\S 5, 2. により、$\overline{\mathfrak R}$ の判別イデアルは、各成分自身に関して取った各成分の判別イデアルの積となる。ただし、これら個々の判別イデアルは、2. で考察したもの---そこでは各成分は、それ自体で考察される環として現れ、$\overline{\mathfrak R}$ のイデアルとしては現れない---から、それぞれ $\overline{\mathsf{P}}$ と同型な体 $\overline P_i=\overline P\bar\varepsilon_i$ を $\overline{\mathsf{P}}$ 自身で置き換えることによって得られる。したがって、$\overline{\mathfrak R}$ が完全可約であるとき、その判別イデアルは単位イデアルの積としてそれ自身単位イデアルとなる。これに対して、$\overline{\mathfrak R}$ が完全可約でないとき、少なくとも一つの成分について判別イデアルが零イデアルに等しくなるので、$\overline{\mathfrak R}$ の判別イデアルも零イデアルとなる。これで定理が証明された。
+第一種の完全可約性は、\S 3, 2. の定理により、拡大環 $\overline{\mathfrak R}=\mathfrak R[\overline P]$ が完全可約であること、すなわち、その直和分解不能な成分が $\overline{\mathsf{P}}$ と同型な体となることと同じである。\S 5, 3. により、$\mathfrak R$ と $\overline{\mathfrak R}$ の判別イデアルは、同時に零イデアルとなるか、または同時に単位イデアルとなる。また、\S 5, 2. により、$\overline{\mathfrak R}$ の判別イデアルは、各成分自身に関して取った各成分の判別イデアルの積となる。ただし、これら個々の判別イデアルは、2. で考察したもの---そこでは各成分は、それ自体で考察される環として現れ、$\overline{\mathfrak R}$ のイデアルとしては現れない---から、それぞれ $\overline{\mathsf{P}}$ と同型な体 $\overline{\mathsf{P}}_i=\overline{\mathsf{P}}\bar\varepsilon_i$ を $\overline{\mathsf{P}}$ 自身で置き換えることによって得られる。したがって、$\overline{\mathfrak R}$ が完全可約であるとき、その判別イデアルは単位イデアルの積としてそれ自身単位イデアルとなる。これに対して、$\overline{\mathfrak R}$ が完全可約でないとき、少なくとも一つの成分について判別イデアルが零イデアルに等しくなるので、$\overline{\mathfrak R}$ の判別イデアルも零イデアルとなる。これで定理が証明された。
 %
 %
 %
@@ -15134,7 +15134,7 @@ $\bar\varepsilon_1,\ldots,\bar\varepsilon_n$ を加群基底として採ると�
 %
 %
 
-$\mathfrak H$ を、零因子をもたず単位元をもつ\emph{主イデアル環}（有理整数の環、ある体を係数とする一つの不定元の多項式領域、汎関数領域）とし、$\mathfrak R'$ をその\emph{商体}とする。$\mathfrak L$ を $\mathfrak R'$ の\emph{第一種有限拡大}とし、$\mathfrak S$ を $\mathfrak L$ に属する\emph{$\mathfrak H$ に関して整なすべての元からなる環}\footnote[3]{環に関して整な元の定義については、\emph{Idealtheorie}, \S 1, 3. を参照。}とする。\emph{$\mathfrak S$ の部分環で $\mathfrak H$ を含むものをすべてオーダーと呼び、$\mathfrak S$ 自身を主オーダーと呼ぶ。}
+$\mathfrak H$ を、零因子をもたず単位元をもつ\emph{主イデアル環}（有理整数の環、ある体を係数とする一つの不定元の多項式領域、汎関数領域）とし、$\mathfrak{K}'$ をその\emph{商体}とする。$\mathfrak L$ を $\mathfrak R'$ の\emph{第一種有限拡大}とし、$\mathfrak S$ を $\mathfrak L$ に属する\emph{$\mathfrak H$ に関して整なすべての元からなる環}\footnote[3]{環に関して整な元の定義については、\emph{Idealtheorie}, \S 1, 3. を参照。}とする。\emph{$\mathfrak S$ の部分環で $\mathfrak H$ を含むものをすべてオーダーと呼び、$\mathfrak S$ 自身を主オーダーと呼ぶ。}
 %
 %
 %
@@ -17120,7 +17120,7 @@ $\mo\Omega$、したがって $\mo$ も根基をもたない系であるなら�
 \[
         \mZ\simeq P[x_1,\ldots,x_r]/(x_1^{h_1}-1,\ldots,x_r^{h_r}-1).
 \]
-拡大体 $\Omega$ では、多項式 $x_i^{h_i}-1$ は相異なる因子 $x_i-\xi_i$ に分解する。したがって定義イデアルは、相異なる極大イデアル
+拡大体 $\Omega$ では、多項式 $x_i^{h_i}-1$ は相異なる因子 $x_i-\varepsilon_i$ に分解する。したがって定義イデアルは、相異なる極大イデアル
 \[
         (x_1-\xi_1^{(\alpha_1)},\ldots,x_r-\xi_r^{(\alpha_r)})
 \]
@@ -17535,7 +17535,7 @@ $\bar P$ を法 $p$ の剰余類体とし、$f_1(x),\ldots,f_t(x)$ を、$F_1(x)
 
 $\mathfrak{Q}$ を $\mathfrak{I}$ の商体とし、$\mathfrak{Z}$ を $\mathfrak{I}$ と $\mathfrak{Q}$ の間にある整域とする。導入部と同様に、$M$ が $\mathfrak{Z}$ において\emph{極大}であるとは、$a\ne0$ が整数で $g(x)$ が $\mathfrak{Z}$ に属するとき、$a\cdot g(x)$ の所属から常に $g(x)$ の所属が従うことをいう。$\mathfrak{I}$ に対しては、$\mathfrak{Z}$ 内で $\mathfrak{I}$ によって生成される極大領域 $M(\mathfrak{I})$ が一意的に存在する。これは $\mathfrak{Z}$ 内の $\mathfrak{I}$ を含むすべての極大領域の共通部分として得られる。なぜなら $\mathfrak{Z}$ 自身がそのような領域であり、任意個のそのような領域の共通部分も極大で、かつ $\mathfrak{I}$ を含むからである。$M(\mathfrak{I})$ は、ある $a\ne0$ について $a\cdot g(x)$ が $\mathfrak{I}$ に属するような $\mathfrak{Z}$ のすべての関数 $g(x)$ から成る。
 
-実際、これらの $g(x)$ は、$\mathfrak{I}$ を含む $\mathfrak{Z}$ 内の極大領域 $N$ をなす。というのも、$b\cdot h(x)$ が $N$ に属し、$b\ne0$、$h(x)\in\mathfrak{Z}$ なら、ある $a\ne0$ に対して $ab\cdot h(x)$ が $\mathfrak{I}$ に属し、$ab\ne0$ であるから、$h(x)$ は $N$ に属する。しかも $\mathfrak{I}$ を含む任意の極大領域 $M$ は $N$ を含む。なぜなら $a\cdot g(x)$ が $\mathfrak{I}$ に属すれば、それは $M$ にも属し、したがって $g(x)$ も $M$ に属するからである。
+実際、これらの $g(x)$ は、$\mathfrak{I}$ を含む $\mathfrak{Z}$ 内の極大領域 $N$ をなす。というのも、$b\cdot h(x)$ が $\mathfrak{N}$ に属し、$b\ne0$、$h(x)\in\mathfrak{Z}$ なら、ある $a\ne0$ に対して $ab\cdot h(x)$ が $\mathfrak{I}$ に属し、$ab\ne0$ であるから、$h(x)$ は $N$ に属する。しかも $\mathfrak{I}$ を含む任意の極大領域 $M$ は $N$ を含む。なぜなら $a\cdot g(x)$ が $\mathfrak{I}$ に属すれば、それは $M$ にも属し、したがって $g(x)$ も $M$ に属するからである。
 
 \medskip\noindent\textbf{2.}
 いま $\mathfrak{I}$ を、単位元をもつ有限な整域と仮定し、$f_1(x),\ldots,f_s(x)$ をその整基底とする。すなわち $\mathfrak{I}$ は $f_i(x)$ のすべての整係数多項式から成る。さらに $\mathfrak{Z}$ は、$x$ の整係数多項式または冪級数、あるいは有限個の $f_i(x)$ に現れる分母以外の分母を含まない商から成るものとする。ただし当然、それらの分母は任意の冪で現れてよい。
@@ -18766,7 +18766,7 @@ R. Brauer は分解体の理論を、可換の場合のこの表現論と非有�
 \paragraph{仮定。}
 \(\mathsf{P}\) 上の単純系 \(Z\) は有限分離拡大体であり、\(\Omega\) は \(\mathsf{P}\) 上有限または無限の分解体、\(\mathsf{Z}'=\mathsf{Z}^{(1)}\) は \(Z\) に同型な部分体、\(\Gamma\) は対応するガロア体を表す。1 により直和分解
 \[
-        Z_\Omega=r^{(1)}+\ldots+r^{(n)}
+        Z_\Omega=\mathfrak r^{(1)}+\ldots+\mathfrak r^{(n)}
         =e^{(1)}Z_\Omega+\ldots+e^{(n)}Z_\Omega
         =e^{(1)}\Omega+\ldots+e^{(n)}\Omega 
 \]
@@ -19269,12 +19269,12 @@ u^f=\alpha=e_{E,E}e_{R,R^{f-1}}\ldots e_{R,R}
         \bar\Gg=\Hh\mathrm{S}_1+\ldots+\Hh\mathrm{S}_n
               =\mathrm{S}_1^{-1}\Hh+\ldots+\mathrm{S}_n^{-1}\Hh,
         \qquad
-        E_\Hh=\frac1h\sum_{H\in\Hh}\bar u_H,
+        \mathrm{E}_{\mathfrak h}=\frac1h\sum\bar u_{\mathfrak h},
 \]
 および
 \[
-        E_\Gg=\frac1h E_{\bar\Gg}
-              =\sum_i u_{S_i},\qquad
+        \mathrm{E}_{\mathfrak g}=\frac1h \mathrm{E}_{\bar{\mathfrak g}}
+              =\sum_i u_{s_i},\qquad
         u_{s_i}=\mathrm{E}_{\mathfrak h}\bar u_{s_i}.
 \]
 すると、とくに冪等元 \(\mathrm{E}_{\mathfrak h}\) は \(\Hh\) の単位表現を生成し、\(\mathrm{E}_{\mathfrak g}\) も \(\mathrm{E}_{\bar{\mathfrak g}}\) と同様に \(\bar\Gg\) の単位表現を生成する。このように定義された \(\mathrm{E}_{\mathfrak g}\) と \(u_{S_i}\) に対して、関係 (1) は一方の側について、関係 (2) は完全に成り立つ。ここで \(z\) は \(k\) のすべての元を走り、従って \(z^s\) は共役体 \(k^s\) のすべての元を走る。\(k^s\) は \(\bar k\) の部分体として \(\bar{\mathrm K}\) の部分体でもある。まず
@@ -19313,7 +19313,7 @@ u^f=\alpha=e_{E,E}e_{R,R^{f-1}}\ldots e_{R,R}
 \]
 \subsection*{§II. 分裂接合積の極大オーダーとその領域への分類}
 
-以後、\(\Omega\) は有限代数的数体\footnote{本節の考察は、\(\Omega\) が一不定元の関数体である場合にも保たれる。}、\(\mathrm{K}\) は \(\Omega\) 上次数 \(n\) の分裂代数、\(k\) はガロアまたは非ガロアの極大可換部分体で、\(\mathrm{K}=k\mathrm{E}_{\mathfrak g}k\) とする。\(a,\bar a\) を \(k\) における有限な相補的 \(\oo\)-加群の対とする。ここで \(o\) は \(\Omega\) の主オーダー、\(\oo\) は \(k\) の主オーダーである。\(k\) に関する \(K\) の極大オーダーの構造は、次の定理によって記述される。
+以後、\(\Omega\) は有限代数的数体\footnote{本節の考察は、\(\Omega\) が一不定元の関数体である場合にも保たれる。}、\(\mathrm{K}\) は \(\Omega\) 上次数 \(n\) の分裂代数、\(k\) はガロアまたは非ガロアの極大可換部分体で、\(\mathrm{K}=k\mathrm{E}_{\mathfrak g}k\) とする。\(\mathfrak a,\widetilde{\mathfrak a}\) を \(k\) における有限な相補的 \(\oo\)-加群の対とする。ここで \(o\) は \(\Omega\) の主オーダー、\(\oo\) は \(k\) の主オーダーである。\(k\) に関する \(K\) の極大オーダーの構造は、次の定理によって記述される。
 
 \paragraph{定理 1.}
 加群積
@@ -19362,7 +19362,7 @@ u^f=\alpha=e_{E,E}e_{R,R^{f-1}}\ldots e_{R,R}
 \]
 というイデアルによって行われる。ここで \(\mathfrak a\) と \(\mathfrak b\) は \(k\) のイデアルである。言い換えれば、\(\mathfrak L\) が主領域の極大オーダーの左イデアルであり、\(\mathfrak L\) の右オーダーに \(o\) が含まれているならば、\(\mathfrak L\) は \(\mathfrak o\)-イデアルの拡大である。
 
-証明は個々の素点への移行に基づく。\(p\) が \(\Omega\) のすべての素イデアルを走るとして、各場合に \(p\) に関する商環へ移れば十分である。\(\mathcal C\) を \(K\) の任意の \(\oo\)-加群とするとき、その成分 \(\mathcal C_p\) として拡大加群 \(\mathcal Co_p\) を表すことにする。すると次が成り立つ。
+証明は個々の素点への移行に基づく。\(p\) が \(\Omega\) のすべての素イデアルを走るとして、各場合に \(p\) に関する商環へ移れば十分である。\(\mathcal C\) を \(K\) の任意の \(o\)-加群とするとき、その成分 \(\mathcal C_p\) として拡大加群 \(\mathcal Co_p\) を表すことにする。すると次が成り立つ。
 
 \paragraph{補題。}
 \(\mathcal C\) はすべての拡大加群 \(\mathcal C_p\) の交わりである。実際、\(w\) が \(\mathcal C_p\) に属するならば、\(p\) で割れない \(\sigma\in\oo\) があって \(\sigma w\in\mathcal C\) となる。\(w\) がすべての \(\mathcal C_p\) の交わりに属し、\(g\) を \(\sigma w\in\mathcal C\) を満たすすべての \(\sigma\in\oo\) からなるイデアルとすれば、いま示したように \(g\) はどの \(p\) でも割れない。従って \(g=o\) である。\footnote{素点を \(p\)-進拡大によって定義するならば、対応する補題は「すべての \(p\)-進成分 \(\mathcal C^{(p)}\) と \(K\) との交わりは \(\mathcal C\) に等しい」となる。これは \([\mathcal C^{(p)},\mathrm{K}]=\mathcal C_p\) から従う。この等式は、\(\mathcal C_p\) の \(o_p\)-基底であって同時に \(\mathcal C^{(p)}\) の基底となるものを用いれば分かる。H, Satz 66 では、この補題は（最大階数の）イデアルについてのみ述べられている。} この補題は加群が最大階数をもつことを仮定しない。
@@ -19379,11 +19379,11 @@ u^f=\alpha=e_{E,E}e_{R,R^{f-1}}\ldots e_{R,R}
         \subseteq \bar aE_\Gg a=\mathfrak O_a.
 \end{aligned}
 \]
-ここで \(\Sp(\mathfrak c)\) は一般に、\(\mathfrak c\) の全要素のトレースからなる \(o\) のイデアルを意味する。極大性を示すには、上の系により、各成分の極大性を示せば十分である。\(o_p\) は主イデアル環であるから、\(\mathfrak a_p\) と \(\bar a_p\) は互いに相補的な基底 \(a_1,\ldots,a_n\) と \(\bar a_1,\ldots,\bar a_n\) をもつ。§1 により、積 \(\bar a_i\mathrm{E}_{\mathfrak g} a_k\) は行列単位をなす。従って
+ここで \(\Sp(\mathfrak c)\) は一般に、\(\mathfrak c\) の全要素のトレースからなる \(o\) のイデアルを意味する。極大性を示すには、上の系により、各成分の極大性を示せば十分である。\(o_p\) は主イデアル環であるから、\(\mathfrak a_p\) と \(\widetilde{\mathfrak a}_p\) は互いに相補的な基底 \(a_1,\ldots,a_n\) と \(\widetilde a_1,\ldots,\widetilde a_n\) をもつ。§1 により、積 \(\widetilde a_i\mathrm{E}_{\mathfrak g} a_k\) は行列単位をなす。従って
 \[
         \mathfrak O_{a,p}=\sum_{i,k}(\bar a_iE_\Gg a_k)\oo_p
 \]
-は極大である。\(\mathfrak O_{\mathfrak a}\) が極大であるから、\(\Sp(\bar a a)=\oo\) も従う。
+は極大である。\(\mathfrak O_{\mathfrak a}\) が極大であるから、\(\Sp(\widetilde{\mathfrak a}\mathfrak a)=o\) も従う。
 \paragraph{定理 2 の証明。}
 トレース規則から次を得る。
 \[
@@ -19400,7 +19400,7 @@ u^f=\alpha=e_{E,E}e_{R,R^{f-1}}\ldots e_{R,R}
         \mathfrak L=\bar oE_\Gg\mathfrak L
         =(\bar oE_\Gg l_1,\ldots,\bar oE_\Gg l_t)
 \]
-である。ただし \(l_1,\ldots,l_t\) は、たとえば \(\mathfrak L\) の \(o\)-基底である。\(l_\mu=\sum_i u_{s_i}z_{\mu,i}\)、\(z_{\mu,i}\in k\) とおくと、\footnote{\(k\) が非ガロアならば、\(z\) を \(\bar z\mathrm{E}_{\mathfrak h}\) で、従って \(a\) を \(\bar a\mathrm{E}_{\mathfrak h}\) で置き換えなければならない。このとき \(a\in k\) に対して
+である。ただし \(l_1,\ldots,l_t\) は、たとえば \(\mathfrak L\) の \(o\)-基底である。\(l_\mu=\sum\limits_i u_{s_i}z_{\mu,i}\)、\(z_{\mu,i}\in k\) とおくと、\footnote{\(k\) が非ガロアならば、\(z\) を \(\bar z\mathrm{E}_{\mathfrak h}\) で、従って \(a\) を \(\bar a\mathrm{E}_{\mathfrak h}\) で置き換えなければならない。このとき \(a\in k\) に対して
 \[
 \mathrm{E}_{\mathfrak g}l=\mathrm{E}_{\mathfrak g}\bar a\mathrm{E}_{\mathfrak h}=\mathrm{E}_{\mathfrak g}a
 \]
@@ -19973,7 +19973,7 @@ $\mathfrak C_\Gamma$ が $\mathfrak A_\Gamma$ に等しいことを示そう。�
 \mathfrak K_{\mathsf{K}^{(i)}}
 &=\mathfrak A_{\mathsf{K}^{(i)}}+\mathfrak P_{\mathsf{K}^{(i)}}^{(i)}
 =\mathsf{K}^{(i)}e^{(i)}+\mathfrak P_{\mathsf{K}^{(i)}}^{(i)};
-&0&=[\mathfrak A_{K^{(i)}}^{(i)},\mathfrak P_{K^{(i)}}^{(i)}].\notag
+&0&=[\mathfrak A_{\mathsf{K}^{(i)}},\mathfrak P_{\mathsf{K}^{(i)}}^{(i)}].\notag
 \end{align}
 これで定理のすべての部分が証明された。なお、ここで現れる構成 $\mathfrak K_{\mathsf{K}}$、$\mathfrak K_\Gamma$、$\mathfrak P_{\mathsf{K}}$、$\mathfrak A_{\mathsf{K}}$ はすべて基底によらず定義されているので、これは\emph{完全に不変な構造定理}である。\srcfn{18)}{ここで可能な、定義方程式と対応する多項式の一次因子への分解による定式化は不変ではない。}
 
@@ -20071,8 +20071,8 @@ C_\lambda=\operatorname{Sp}(cT_\lambda),
 を意味する。実際
 \[
 c=\gamma^{(1)}e^{(1)}+\cdots+\gamma^{(n)}e^{(n)}
-=\sum_\lambda\gamma^{(1)}A_\lambda^{(1)}t_\lambda+
-\cdots+\sum_\lambda\gamma^{(n)}A_\lambda^{(n)}t_\lambda,
+=\sum\limits_\lambda\gamma^{(1)}\mathsf{A}_\lambda^{(1)}t_\lambda+
+\cdots+\sum\limits_\lambda\gamma^{(n)}\mathsf{A}_\lambda^{(n)}t_\lambda,
 \]
 であるから、係数を比較すれば $C_\lambda=\operatorname{Sp}(cT_\lambda)$ を得る。第二の関係は $t$ と $T$ を交換して同様に従う。\srcfn{19)}{この項の考察は、不変な構造定理が非不変な基底定理より本質的に簡単であることを示す。後者は既知の事柄との関係を示すためだけに必要であった。実際、ガロア拡大環の分解と単位元成分の導入は、補基底（次節の補加群）が果たすことをすべて果たす。次節で共役差積と補加群との関係を与えるのも、分類上の位置を示すためにすぎない。5 におけるラグランジュ補間公式の考察についても同様である。}
 
