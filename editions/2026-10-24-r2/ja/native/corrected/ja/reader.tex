@@ -1810,8 +1810,8 @@ a_\eta^2(aHu)(abu)&\sim [a_\eta^2(aHu)]_{bu}+\frac12 f\cdot[a_\eta^2(aHu)^2]
 \]
 上と対応する計算により、次が従う：
 \[
-((a\A\nu x)^4)=[(a\A u)^4]_{\nu x^4}
-=\frac{21}{10}\theta_\eta^2(\vartheta\eta x)^2+\frac7{10}s_\vartheta^2-\frac3{10}g
+((a\A\widehat{\nu x})^4)=[(a\A u)^4]\widehat{\nu x}^4
+=\frac{21}{10}\theta_\eta^2(\vartheta\eta x)^2+\frac7{10}s_\vartheta^2-\frac3{10}g,
 \quad(\text{式 (3)c による}),
 \]
 \[
@@ -2799,7 +2799,7 @@ $((\vartheta\nu x),s,u)s_\nu$ は、\S\ 3 により関数行列式に関する�
 (\widehat{\vartheta \nu}su)s_\nu(\theta su)=s_\nu s_\vartheta(\theta su)=-\frac12(\widehat{\vartheta \nu}su)^2(\theta su),
 \]
 \[
-\theta_\nu(\widehat\vartheta\nu su)s_\nu=\theta_\nu s_\nu s_\vartheta=-\frac12\theta_\nu(\widehat\vartheta\nu su)^2.
+\theta_\nu(\widehat{\vartheta \nu}su)s_\nu=\theta_\nu s_\nu s_\vartheta=-\frac12\theta_\nu(\widehat{\vartheta \nu}su)^2.\qquad\text{（積定理）}
 \]
 形式列 $\theta_\nu s_\nu(\theta su)$：次の式の二重還元による還元子 $a_\nu s_\nu(asu)^2$：
 \[
@@ -3067,7 +3067,7 @@ $s$ と七次の形式（系 III）との折り畳み（\S\ 12）。
 \quad (H_jsu),
 \quad ((j\eta x),s,u)^3,\\[0.3em]
 \text{C)}& (\D_\eta su),\\[0.3em]
-\text{D)}& (aLu)^2s_\eta,
+\text{D)}& (aLu)^2s_l,
 \quad (a_\eta su)^2,
 \quad ((aLu)^2,s,u)^2,
 \quad ((aLu)^3,s,u)^2,
@@ -3140,12 +3140,12 @@ C) 公式 (31.) から、分解された形式
 \[
  [L_\vartheta(\theta Lu)]_{\widehat{su}^3}\quad\hbox{および}\quad [\theta_l(\theta Lu)]_{\widehat{su}^3}
 \]
-の還元、すなわち積 $[\theta_\nu^2\cdot H]_{su^3}$ と $[a_\nu^2\cdot(bHu)^2]_{\widehat{su}^3}$ の還元が従う：
+の還元、すなわち積 $[\theta_\nu^2\cdot H]_{\widehat{su}^3}$ と $[a_\nu^2\cdot(bHu)^2]_{\widehat{su}^3}$ の還元が従う：
 \begin{equation}
 \tag{32}
 \begin{aligned}
 0&\equiv\theta_\nu^2(\theta su)^2(Hsu),\\
-0&\equiv [L_\vartheta(\theta Lu)]_{su^4}-7[\theta_l(\theta Lu)]_{su^4},\\
+0&\equiv [L_\vartheta(\theta Lu)]_{\widehat{su}^4}-7[\theta_l(\theta Lu)]_{\widehat{su}^4},\\
 0&\equiv a_\nu^2(asu)^2(bHu)^2(bsu)\\
 &\quad+6\theta_l(\theta Lu)^2(\theta su)(Lsu),\\
 0&\equiv\theta_\nu^3(\theta su)(Hsu)^2\\
@@ -4848,7 +4848,7 @@ $\Ssys_{n\rho}$ の関数
 \]
 に関して代数的元であることをいう。したがって、$x_1,\ldots,x_\rho$ を添加して得られる体
 \[
-  \Omega\bigl(g_1^*,\ldots,g_\rho^*,x_1,
+  \Omega\bigl(g_1^*,\ldots,g_\rho^*;\ x_1,
   \ldots,x_\rho\bigr)=\Omega(x_1,
   \ldots,x_\rho)
 \]
@@ -4948,7 +4948,7 @@ $\Phi^*(z,u)$ の一次因子への分解は、拡大体において
 \begin{array}{cccc}
   x_1 & x_2 & \cdots & x_\rho\\
   x_1^{(1)} & x_2^{(1)} & \cdots & x_\rho^{(1)}\\
-  \vdots & \vdots & & \vdots\\
+  \vdots & & & \\
   x_1^{(i-1)} & x_2^{(i-1)} & \cdots & x_\rho^{(i-1)}
 \end{array}
 \tag{5}
@@ -5110,7 +5110,7 @@ $\Kfield_{n\rho}$ を $\Ssys_{n\rho}$ を含む最小の体とし、$\Kfield_{n\
 \end{aligned}
 \tag{2}
 \end{equation}
-が存在する。ただし $\gamma_1,\ldots,r_\sigma$ はその引数の有理関数であり、
+が存在する。ただし $\gamma_1,\ldots,\gamma_\sigma$ はその引数の有理関数であり、
 \begin{equation}
   g_1(x),\ldots,g_\lambda(x),\ldots,
   g_\mu(x),\ldots,g_\nu(x)
@@ -5522,7 +5522,7 @@ $\Gdom_{n\rho}$ は、$\Jdom_{n\rho}$ に加えて、$\Jdom_{n\rho}$ の二つ�
 \end{equation}
 へ移る。ここで $H^*(x)$ が $L^*(x)$ の最高次元項を表すならば、関係
 \begin{equation}
-  H^*(x)\equiv M^*(x)\pmod{x_0}
+  H^*(x)\equiv M^*(x)\ \text{mod.}\ x_0
 \tag{9}
 \end{equation}
 が成り立つ。
@@ -6699,7 +6699,7 @@ a_1(\eta)\cdot\chi_\nu(\eta)\equiv c_1^{(\nu)}(\eta)\pmod{\mathfrak M_2};\qquad
 \]
 \[
  \hphantom{\zeta^\tau:[f(\eta)]^\tau}\equiv [a_1(\eta)]^\tau
- \pmod{\mathfrak M_{\tau+1}}\quad\text{$a_0=0$ のとき}
+ \;\mathrm{mod.}\;\mathfrak M_{\tau+1}\quad\text{$a_0=0$ のとき}
 \]
 とする。いま $\zeta^\tau$ は $\mathfrak M_\tau$ に属するが、$[f(\eta)]^\tau$ は 0 次または $\tau$ 次の消えない項から始まり、$\tau<\sigma$ であるため $\mathfrak M_\sigma$ に属し得ない。これは上で導いた $\mathfrak M_\sigma$ と $\mathfrak M_\tau$ の対応に反する。$\tau>\sigma$ の場合は $\eta$ と $\xi$ を入れ替えれば同時に扱われる。したがって、領域 $\mathfrak G_\sigma$ と $\mathfrak G_\tau$ は\emph{同型でない、すなわち本質的に異なる}ことが示された。ゆえに\emph{領域 $\mathfrak G_i$ $(i=1,2,\cdots\text{ in inf.})$ は、領域 $\mathfrak G$ の可算無限個の類の例を与える。}
 
@@ -7162,7 +7162,7 @@ y=\frac{x a_2}{a_3}
 である。これにより $f(x)$ は、因子を除いて、
 \[
 g(y)=y^n+\frac{a_2^3}{a_3^2}y^{n-2}+\frac{a_2^3}{a_3^2}y^{n-3}
-+\frac{a_4a_2^4}{a_3^4}y^{n-4}+\cdots+a_n\frac{a_2^n}{a_3^n}=0
++\frac{a_4a_2^4}{a_3^4}y^{n-4}+\cdots+a_n\cdot\frac{a_2^n}{a_3^n}=0
 \]
 に移る。すなわち、ただ $n-2$ 個のパラメータだけを含む方程式
 \[
@@ -7444,7 +7444,7 @@ F_\varrho(\delta u,du)=\frac1{\varrho!}\sum
 
 「変換群」とは、通常どおり、各変換に対してその逆変換が同じ系に含まれ、かつその系の任意の二つの変換の合成がふたたびその系に属するような変換の系をいう。群は、その変換が、\(\varrho\) 個の本質的なパラメータ \(\eps\) に解析的に依存する最も一般の変換に含まれているとき、有限連続群 \(\G_\varrho\) と呼ばれる（すなわち、これら \(\varrho\) 個のパラメータは、より少数のパラメータの \(\varrho\) 個の関数として表されてはならない）。これに対応して、無限連続群 \(\G_{\infty\varrho}\) とは、その最も一般の変換が \(\varrho\) 個の本質的な任意関数 \(p(x)\) とそれらの導関数に、解析的に、または少なくとも連続かつ有限回連続微分可能な仕方で依存する群をいう。両者の中間に、任意関数には依存しないが無限個のパラメータに依存する群がある。最後に、任意関数にもパラメータにも依存する群を混合群と呼ぶ。\footnote{Lie は \emph{Grundlagen für die Theorie der unendlichen kontinuierlichen Transformationsgruppen}（Berichte der Königl. Sächs. Gesellschaft der Wissenschaften, 1891）で、無限連続群を、変換が偏微分方程式系の最も一般の解で与えられ、かつそれらの解が有限個のパラメータだけに依存しないような変換群として定義している。これにより、上に挙げた型のうち、有限群とは異なる一つの型が得られる。しかし逆に、無限個のパラメータという極限の場合が、必ずしも微分方程式系を満たす必要はない。}
 
-\(x_1,\ldots,x_n\) を独立変数、\(u_1(x),\ldots,u_\mu(x)\) をそれらに依存する関数とする。\(x\) と \(u\) をある群の変換に従わせるとき、変換が可逆であるという仮定により、変換された量の中には再びちょうど \(n\) 個の独立なもの \(y_1,\ldots,y_n\) が含まれていなければならない。これらに依存する残りの量を \(v_1(y),\ldots,v_\mu(y)\) と書く。変換には、\(x\) に関する \(u\) の導関数、すなわち \(\frac{\p u}{\p x},\ \frac{\p^2u}{\p x^2},\ \cdots\) も現れてよい。\footnote{添字は、和においても可能なかぎり省略する。したがって、例えば \(\frac{\p^2u}{\p x^2}\) は \(\p^2u_\nu/\p x_i\p x_k\) などを表す。} ある関数が群の不変量であるとは、関係式
+\(x_1,\ldots,x_n\) を独立変数、\(u_1(x),\ldots,u_\mu(x)\) をそれらに依存する関数とする。\(x\) と \(u\) をある群の変換に従わせるとき、変換が可逆であるという仮定により、変換された量の中には再びちょうど \(n\) 個の独立なもの \(y_1,\ldots,y_n\) が含まれていなければならない。これらに依存する残りの量を \(v_1(y),\ldots,v_\mu(y)\) と書く。変換には、\(x\) に関する \(u\) の導関数、すなわち \(\frac{\p u}{\p x},\ \frac{\p^2u}{\p x^2},\ \cdots\) も現れてよい。\footnote{添字は、和においても可能なかぎり省略する。したがって、例えば \(\frac{\p^2u}{\p x^2}\) は \(\frac{\p^2u_\nu}{\p x_i\p x_k}\) などを表す。} ある関数が群の不変量であるとは、関係式
 \[
 P\!\left(x,u,\frac{\p u}{\p x},\frac{\p^2u}{\p x^2},\cdots\right)
  =
@@ -7508,7 +7508,7 @@ I&=\int\!\cdots\!\int f\!\left(x,u,\frac{\p u}{\p x},\frac{\p^2u}{\p x^2},\cdots
 +\binom{3}{2}\frac{\p f}{\p u_i^{(3)}}\delta u_i^{(1)}
 +\cdots+
 \binom{\varkappa}{2}\frac{\p f}{\p u_i^{(\varkappa)}}\delta u_i^{(\varkappa-2)}
-\right]\Bigg\}\\
+\right)\Bigg\}\\
 &+\cdots
 +(-1)^\varkappa\frac{d^\varkappa}{d x^\varkappa}
 \left\{\sum\binom{\varkappa}{\varkappa}
@@ -8782,7 +8782,7 @@ b) と同様に、
 
 再び \(G\) と \(K\) の間には一対一対応がある。\(G\) の異なる冪積が \(K\) で同じ積に対応することがあり得るのは、それらが単に指数 \(n\) と \((n-1)\) の入れ替えによって異なる場合だけである。たとえば、\(G\) が指数 \((n-1)\) に関して次数 \(\varrho\)、指数 \(n\) に関して次数 \(\sigma\) であり、
 \[
-        \chi_1\le\chi_2,\ldots,\le\chi_\varrho\le\chi_{\varrho+1},\ldots,\le\chi_{\varrho+\sigma}
+        \varkappa_1\leqq\varkappa_2\cdots\leqq\varkappa_\varrho\leqq\varkappa_{\varrho+1}\cdots\leqq\varkappa_{\varrho+\sigma}
 \]
 が \(G\) の冪積の中で \((n-1)\) と \(n\) に結びつく指数であるとする。(11) により不定元 \(\xi_{n-1,n}\) は \(G\) に現れないので、その個数は \(\varrho+\sigma\) でなければならない。正規化により、その冪積はしたがって
 \[
@@ -9467,7 +9467,7 @@ $\mG$ の剰余類 $\ma$ と $\mb$ は、単位 $\me$ と同じく、任意の�
 も含むからである。$\mM_2,\ldots,\mM_{k-1}$ についても対応する式が得られる。さらに、$\mM_1,
 \ldots,\mM_k$ は互いに素である。なぜなら (14) により
 \[
- \frac{1}{k-1}\Bigl((A_2+\cdots+A_k)+(A_1+A_3+\cdots+A_k)+\cdots+(A_1+\cdots+A_{k-1})\Bigr)\equiv1\pmod{\mM}
+ \frac{1}{k-1}\Bigl(A_2+\cdots+A_k+A_1+A_3+\cdots+A_k+\cdots+A_1+\cdots+A_{k-1}\Bigr)\equiv1\pmod{\mM}
 \]
 であるからである。さらにそれらは全体として互いに素な系をなす。すなわち、それらの任意の一部の最小公倍元は、残りの最小公倍元と互いに素である。\footnote{これは Loewy が導入した概念の一般化である。} これは式 (12) の和因子を二つの適当な群にまとめることから直ちに従う。
 
@@ -10430,7 +10430,7 @@ $f$ が $\ideal M$ の元であることを、通常どおり $f\equiv0(\ideal M
 \[
  \ideal B_i\supset \ideal B_i'\supset \ideal B_i''\supset\cdots\supset \ideal B_i^{(\nu)}\supset\cdots,
  \qquad
- \ideal M=[\ideal A_i,\ideal B_i]=[\ideal A_i,\ideal B_i']=\cdots=[\ideal A_i,\ideal B_i^{(\nu)}]=\cdots,
+ \ideal M=[\ideal A_i,\ideal B_i]=[\ideal A_i,\ideal B_i']=\cdots=[\ideal A_i,\ideal B_i^{(\nu)}],\ldots,
 \]
 であり、各 $\ideal B_i^{(\nu)}$ が直前のものの真の約数であるならば、その定理により鎖 $\ideal B_i,\ideal B_i',\ldots,\ideal B_i^{(\nu)},\ldots$ は有限段階で終わらなければならない。したがって表示 $\ideal M=[\ideal A_i,\ideal B_i^{(n)}]$ では、$\ideal B_i^{(\nu)}$ はもはや真の約数で置き換えられない。これは、$\ideal A_i$ を真の約数で置き換えた場合にはなおさら成り立つ。この手続きを各 $\ideal B_i$ に順に適用し、そのたびにすでに既約化された $\ideal B$ とともに補元を作れば、既約表示が得られる。\footnote{そのような表示が与えられた表示によって一意に定まるわけではないことは、前の例が示す。$(x^2,xy)=[(x),(x^2,xy,y^\lambda)]$、$\lambda\ge2$ に対して、$[(x),(x^2,y)]$ のほかに、任意の $u$ について $[(x),(x^2,\mu x+y)]$ も既約表示である。}
 
@@ -10628,7 +10628,7 @@ IIIa は $\ideal A=(a)$、$\ideal B=(b)$ という特殊な場合として定義
 \[
  \ideal Q\equiv0(\ideal P);\qquad \ideal P^\varrho\equiv0(\ideal Q);
  \qquad
- \ideal Q\equiv0(\ideal B),\qquad \ideal B^\sigma\equiv0(\ideal Q)
+ \ideal Q\equiv0(\ideal B);\qquad \ideal B^\sigma\equiv0(\ideal Q)
 \]
 から
 \[
@@ -11085,16 +11085,16 @@ $T$ は元 $\alpha,\beta,\gamma,\ldots$ の系であり、$\Sigma$ と関連し�
 \item 乗法の結合律：$a\cdot(b\cdot\gamma)=(a\times b)\cdot\gamma$。
 \item 分配律：
 \[
- (a+b)\cdot\gamma=a\cdot\gamma+b\cdot\gamma,
+ (a+b)\cdot\gamma=a\cdot\gamma+b\cdot\gamma;
  \qquad
  c\cdot(\alpha+\beta)=c\cdot\alpha+c\cdot\beta.
 \]
 \end{enumerate}
 これらの条件から、よく知られているように、零元の存在と、減法と乗法の組合せに対する分配律
 \[
- (a-b)\cdot\gamma=a\cdot\gamma-b\cdot\gamma,
+ (a\mathbin{\dot{-}}b)\cdot\gamma=a\cdot\gamma-b\cdot\gamma;
  \qquad
- c\cdot(\alpha-\beta)=c\cdot\alpha-c\cdot\beta
+ c\cdot(\alpha\mathbin{\underset{\cdot}{-}}\beta)=c\cdot\alpha-c\cdot\beta
 \]
 も従う。ただし $(\dot{-})$ は $\Sigma$ における減法を表す。$\Sigma$ が単位 $\varepsilon$ を含むならば、$T$ の任意の元 $\alpha$ に対して $\varepsilon\alpha=\alpha$ が成り立つべきものとする。
 
@@ -11105,7 +11105,7 @@ $(\Sigma,T)$ における加群 $M$ とは、$T$ の元の系であって次の�
 \end{enumerate}
 この定義により、$T$ 自身が $(\Sigma,T)$ における加群をなす。特に、領域 $T$ とそこで定められた結合が、領域 $\Sigma$ とそこで成り立つ結合と一致するならば、加群 $M$ は $\Sigma$ における右イデアル $M$ になる。さらに $\Sigma$ が可換であると仮定すれば、通常のイデアル概念が得られ、それは加群概念の特殊な場合である。\footnote{加群の最も簡単な例は整数係数線形形式の加群である。この場合、$\Sigma$ は有理整数全体から成り、$T$ は整数係数線形形式全体から成る。もう少し一般の加群は、$\Sigma$ と $T$ において有理整数の代わりに代数的整数、あるいは例えば偶整数全体を取れば得られる。線形形式の代わりに各係数複合体を一つの元と見なせば、$\Sigma$ と $T$ における結合は実際には異なる。非可換多項式環領域におけるイデアルは Noether--Schmeidler の共同論文の対象である。他の特殊な非可換領域におけるイデアルは、四元数の数論に関する Hurwitz の講義（Berlin, Springer 1919）およびそこに引用された Du Pasquier の諸論文で扱われている。}
 
-加群については、\S~1 のすべての定義がそのまま有効である。したがって、$\alpha\eqzero{M}$、または $N\eqzero{M}$ とは、$\alpha$、または $N$ のすべての元が $M$ の元であることを意味する。言い換えれば、$\alpha$、または $N$ が $M$ で割り切れるということである。$M$ が $N$ と異なる元を含むとき、$M$ は $N$ の真の約数である。$N\eqzero{M}$ かつ $M\eqzero{N}$ からは $M=N$ が従う。最大公約数と最小公倍数の定義も、文字どおり同じままである。特に、加群 $M$ が有限個の元 $\alpha_1,\ldots,\alpha_\rho$ を含み、
+加群については、\S~1 のすべての定義がそのまま有効である。したがって、$\alpha\eqzero{M}$、または $N\eqzero{M}$ とは、$\alpha$、または $N$ のすべての元が $M$ の元であることを意味する。言い換えれば、$\alpha$、または $N$ が $M$ で割り切れるということである。$M$ が $N$ と異なる元を含むとき、$M$ は $N$ の真の約数である。$N\eqzero{M}$ かつ $M\eqzero{N}$ からは $M=N$ が従う。最大公約数と最小公倍数の定義も、文字どおり同じままである。特に、加群 $M$ が有限個の元 $\alpha_1\ldots\alpha_\varrho$ を含み、
 \[
  M=(\alpha_1,\ldots,\alpha_\rho),
 \]
@@ -11321,8 +11321,8 @@ $\ideal P_1$ が素イデアルであることは、領域の任意の多項式�
 \]
 である。それらは同時に既約イデアルであり、素イデアルについて述べたことにより、異なる奇素数に属する二つのイデアルは互いに相対的に素であるが、どの $\ideal Q$ もどの $\ideal Q_{\varrho_0}$ に対しても相対的に素ではない。\footnote{実際、奇素数 $p_1\ne p_2$ に対して $2b\cdot2p_1^{\varrho_1}\eqzero{2p_2^{\varrho_2}}$ からは常に $2b\eqzero{2p_2^{\varrho_2}}$ が得られる。しかし $2b\cdot2p^\varrho\eqzero{2\cdot2^{\varrho_0}}$ からは $2b=2\cdot2^{\varrho_0-1}\pmod{2\cdot2^{\varrho_0}}$ だけが得られる。} したがって $\ideal Q_0$ は唯一の非孤立準素イデアルである。$a$ の素数冪への一意分解は、イデアル $(2a)$ の極大準素で同時に既約なイデアルによる一意表示
 \[
- (2a)=[(2\cdot2^{e_0}),(2p_1^{e_1}),
-\ldots,(2p_\mu^{e_\mu})]
+ (2a)=[(2\cdot2^{\varrho_0}),(2p_1^{\varrho_1}),
+\ldots,(2p_\mu^{\varrho_\mu})]
 \]
 に対応する。したがってここでは、多項式領域からの例と対照的に、非孤立な極大準素イデアルまで一意に定まる。$\varrho_0=0$ の場合、これは同時に互いに相対的に素なイデアルによる表示であり、$\varrho_0>0$ の場合にはこのイデアルは相対的に素な意味で既約である。
 
@@ -12616,7 +12616,7 @@ $\gideal_0\ldots\gideal_{n-1},\gideal_n=\mideal$ と $\hideal_0\ldots\hideal_{n-
 
 いま $\aideal=\aideal_1$ を変換多項式イデアルとし、$A^{(1)}(x)$ を $\aideal_1$ に属する、$x_1$ に関して正則な次数 $k_1$ の\mbox{多項式}\allowbreak\mbox{とする}。また $\mathfrak A_1$ を、$A^{(1)}(x)$ を法として $\aideal_1$ が移る、$1,x_1,\ldots,x_1^{k_1-1}$ の線型形式から成る加群とする。\mbox{その}\mbox{係数}は\mbox{多項式} $a^{(2)}(x)$ である。さらに $\aideal_2$ を、$\mathfrak A_1$ から得られるすべての $k_1$ 次行列式が生成する $x_2\ldots x_n$ の\mbox{イデアル}とする。定理 XI により、$\aideal_2$ が零イデアルであるための必要十分条件は、$\aideal_1$ に\mbox{属する}\mbox{多項式}が、\mbox{多項式}の意味で $x_1$ に関する次数 $p_1>0$ の共通因子をもつことである。$\aideal_2$ が\mbox{零イデアル}\allowbreak\mbox{でなければ}、$\aideal$ は\mbox{変換イデアル}であると仮定したので、$\aideal_2$ は $x_2$ に関して正則な次数 $k_2$ の多項式 $A^{(2)}(x)$ を\mbox{含む}。このことは、\mbox{特殊変換} (25) と (26) から変換 (12) を合成すれば直接に分かる。再び $\mathfrak A_2$ を、$A^{(2)}(x)$ を\mbox{法として} $\aideal_2$ が\mbox{移る}、$1,x_2,\ldots,x_2^{k_2-1}$ の線型形式から成る加群とし、$\aideal_3$ を、$\mathfrak A_2$ から得られるすべての $k_2$ 次\mbox{行列式}が生成する $x_3\ldots x_n$ のイデアルとする。このイデアルは $x_3$ に関して正則な多項式 $A^{(3)}(x)$ を\mbox{含まなければならない}。
 
-この仕方で、零イデアルに達するか、または $\aideal_{n+1}$ が単位イデアルとなるまで手続きを続ける。$\aideal_{n+1}$ は $x$ を含まないので、零イデアルまたは単位イデアルでしかありえない。イデアル $\aideal_1,\aideal_2,\ldots$ は、基礎に\mbox{選んだ}多項式 $A^{(\lambda)}(x)$ には依存せず、$\aideal$ によって一意に定まることが分かる。これは \mbox{$\aideal_1=\aideal$} \mbox{について}\mbox{明らかであるから}、$\aideal_1,\ldots,\aideal_i$ について成り立つと仮定する。$A^{(i)}(x)$ を法として $\aideal_i$ が\mbox{線型形式}\allowbreak\mbox{から成る}加群 $\mathfrak A_i$ へ移るとき、$\mathfrak A_i$ は、$x_i$ に関する次数が $k_i$ に達しない $\aideal_i$ の多項式全体\mbox{としても}\allowbreak\mbox{特徴づけられる}。\mbox{したがって} $\mathfrak A_i$ は $A^{(i)}(x)$ の次数 $k_i$ だけに依存する。いま $\bar A^{(i)}(x)$ を $\aideal_i$ に\mbox{属する}、$x_i$ に関して正則な次数 $\bar k_i>k_i$ の多項式とし、$\overline{\mathfrak A}_i$ を対応する線型形式\mbox{から成る}加群、$\bar\aideal_{i+1}$ を $\overline{\mathfrak A}_i$ \mbox{から}\allowbreak\mbox{得られる} $\bar k_i$ 次行列式が\mbox{生成するイデアル}とする。このとき加群等式
+この仕方で、零イデアルに達するか、または $\aideal_{n+1}$ が単位イデアルとなるまで手続きを続ける。$\aideal_{n+1}$ は $x$ を含まないので、零イデアルまたは単位イデアルでしかありえない。イデアル $\aideal_1,\aideal_2,\ldots$ は、基礎に\mbox{選んだ}多項式 $A^{(\lambda)}(x)$ には依存せず、$\aideal$ によって一意に定まることが分かる。これは \mbox{$\aideal_1=\aideal$} \mbox{について}\mbox{明らかであるから}、$\aideal_1,\ldots,\aideal_\lambda$ について成り立つと仮定する。$A^{(i)}(x)$ を法として $\aideal_\lambda$ が\mbox{線型形式}\allowbreak\mbox{から成る}加群 $\mathfrak A_\lambda$ へ移るとき、$\mathfrak A_\lambda$ は、$x_\lambda$ に関する次数が $k_\lambda$ に達しない $\aideal_i$ の多項式全体\mbox{としても}\allowbreak\mbox{特徴づけられる}。\mbox{したがって} $\mathfrak A_\lambda$ は $A^{(i)}(x)$ の次数 $k_\lambda$ だけに依存する。いま $\bar A^{(\lambda)}(x)$ を $\aideal_\lambda$ に\mbox{属する}、$x_\lambda$ に関して正則な次数 $\bar k_\lambda>k_\lambda$ の多項式とし、$\overline{\mathfrak A}_\lambda$ を対応する線型形式\mbox{から成る}加群、$\bar\aideal_{\lambda+1}$ を $\overline{\mathfrak A}_\lambda$ \mbox{から}\allowbreak\mbox{得られる} $\bar k_\lambda$ 次行列式が\mbox{生成するイデアル}とする。このとき加群等式
 \[
  \overline{\mathfrak A}_\lambda=(\mathfrak A_\lambda,A^{(\lambda)},x_\lambda A^{(\lambda)},\ldots,x_\lambda^{\bar k_\lambda-k_\lambda-1}A^{(\lambda)})
 \]
@@ -12956,7 +12956,7 @@ $u_{\mu\nu}$、また相互に有理的に表せるので同じことである $
 
 \textbf{11. 素イデアルと準素イデアル。} 積が $\frakp$ で割り切れることから少なくとも一つの因子が $\frakp$ で割り切れることが従うとき、イデアル $\frakp$ を素イデアルと呼ぶ。積が $\frakq$ で割り切れることから、一つの因子が割り切れるか、または各因子のある冪が割り切れることが従うとき、$\frakq$ を準素イデアル、または準素と呼ぶ。記号で書けば、
 \[
- a\not\equiv0\pmod{\frakp},\quad b\not\equiv0\pmod{\frakp}\quad\hbox{ならば}\quad ab\not\equiv0\pmod{\frakp};
+ \mathfrak{a}\not\equiv0\pmod{\mathfrak{p}},\quad \mathfrak{b}\not\equiv0\pmod{\mathfrak{p}}\quad\hbox{ならば}\quad \mathfrak{a}\mathfrak{b}\not\equiv0\pmod{\mathfrak{p}};
 \]
 \[
  a\not\equiv0\pmod{\frakq},\quad b^x\not\equiv0\pmod{\frakq}\ \hbox{すべての冪 }x\hbox{ について}\quad\hbox{ならば}\quad ab\not\equiv0\pmod{\frakq}.
@@ -16618,8 +16618,8 @@ $\mo$ の $\mathsf{K}$ に関する\emph{表現加群}とは、$\mo$ 上の左�
 \[
         cx_k=\sum x_i\gamma_{ik},
         \qquad
-        c\biggl(\sum_k x_k\alpha_k\biggr)
-        =\sum_i x_i\sum_k\gamma_{ik}\alpha_k
+        c\biggl(\sum x_k\alpha_k\biggr)
+        =\sum x_i\sum\gamma_{ik}\alpha_k
 \]
 と定める。準同型関係
 \[
@@ -17207,7 +17207,7 @@ $\mo$ の正則系行列から出発することもできるが、その場合�
 
 超複素系 $\mo$ の表現 $\mo\sim\mathfrak D$ において、元 $a$ に行列 $A$ が対応するとき、
 \[
-        \operatorname{Sp}_D(a)=\operatorname{Sp} A
+        \mathit{Sp}_D(a)=\mathit{Sp} A
 \]
 とおく。トレースは線形関数である：
 \[
@@ -17244,17 +17244,17 @@ $\mo$ が両側単純で、$\mathsf{P}$ が代数閉であり、したがって�
 \[
         \operatorname{Sp}_{\rm red}(a)=\sum_i\alpha_{ii},
         \qquad
-        \operatorname{Sp}_{\rm pr}(a)=n\cdot\operatorname{Sp}_{\rm red}(a)=n\cdot\sum_i\alpha_{ii}.
+        \mathit{Sp}_{\rm pr}(a)=n\cdot\mathit{Sp}_{\rm red}(a)=n\cdot\sum\alpha_{ii}.
 \]
 とくに
 \[
         \operatorname{Sp}_{\rm red}(c_{ik})=0\quad(i\ne k),\qquad
-        \operatorname{Sp}_{\rm red}(c_{ii})=e,
+        \mathit{Sp}_{\rm red}(c_{ii})=e,
 \]
 一方で
 \[
         \operatorname{Sp}_{\rm pr}(c_{ik})=0\quad(i\ne k),\qquad
-        \operatorname{Sp}_{\rm pr}(c_{ii})=n\cdot e.
+        \mathit{Sp}_{\rm pr}(c_{ii})=n\cdot e.
 \]
 $\mathsf{P}$ から代数閉体 $\Omega$ へ移っても主トレースは変わらない。同じ基底から計算できるからである。これは被約トレースについては成り立たない。
 
@@ -17288,7 +17288,7 @@ $\theta^{(\nu)}(z)$ の準同型性は
 
 証明。表現加群 $R$ は、各既約表現加群 $\mM_\nu$ がそこに直和因子として何回現れるかを知れば分かる。この数を $p_\nu$ とすると、表現における $e^{(\nu)}$ のトレースは $p_\nu n_\nu$ である。ただし $n_\nu$ は既約表現の次数である。したがって
 \[
-        \mu_\nu=\frac{\operatorname{Sp}(e^{(\nu)})}{n_\nu}.
+        \mu_\nu=\frac{\mathit{Sp}(e^{(\nu)})}{n_\nu}.
 \]
 
 \subsection*{§ 25. 判別式}
@@ -17296,7 +17296,7 @@ $\theta^{(\nu)}(z)$ の準同型性は
 \[
         \mo=a_1P+\cdots+a_hP
 \]
-を超複素系とする。\emph{判別行列}とは、成分が主トレース $\operatorname{Sp}(a_i a_j)$ である行列である。\emph{被約判別行列}とは、代数閉体の中で作られた、被約トレースに関する対応する行列である。この行列の行列式を、それぞれ判別式、被約判別式という。
+を超複素系とする。\emph{判別行列}とは、成分が主トレース $\mathit{Sp}(a_i a_j)$ である行列である。\emph{被約判別行列}とは、代数閉体の中で作られた、被約トレースに関する対応する行列である。この行列の行列式を、それぞれ判別式、被約判別式という。
 
 判別式は基礎体を拡大しても同じである。別の基底に移ると、変換行列式の平方が掛かる。
 
@@ -17306,19 +17306,19 @@ $\theta^{(\nu)}(z)$ の準同型性は
 \]
 とする。すると
 \[
-        \bigl(\operatorname{Sp}(a_i a_j)\bigr)=\bigl(\operatorname{Sp}(a_i b_j)\bigr)P.       \tag{1}
+        \bigl(\mathit{Sp}(a_i a_j)\bigr)=\bigl(\mathit{Sp}(a_i b_j)\bigr)P.       \tag{1}
 \]
 同様に、$P^t$ が転置行列を表すなら
 \[
-        \bigl(\operatorname{Sp}(a_i b_j)\bigr)=P^t\bigl(\operatorname{Sp}(b_i b_j)\bigr),      \tag{1a}
+        \bigl(\mathit{Sp}(a_i b_j)\bigr)=P^t\bigl(\mathit{Sp}(b_i b_j)\bigr),      \tag{1a}
 \]
 であり、(1) と (1a) から
 \[
-        \bigl(\operatorname{Sp}(a_i a_j)\bigr)=P^t\bigl(\operatorname{Sp}(b_i b_j)\bigr)P.
+        \bigl(\mathit{Sp}(a_i a_j)\bigr)=P^t\bigl(\mathit{Sp}(b_i b_j)\bigr)P.
 \]
 行列式に移れば主張を得る。
 
-したがって行列式は $P$ からの平方因子を除いてしか定まらないが、それが零であるか非零であるかは不変な性質である。(1) からはまた、非零因子を除けば、判別式を二つの異なる基底から、すなわち $|\operatorname{Sp}(a_i b_j)|$ として計算できることも従う。
+したがって行列式は $P$ からの平方因子を除いてしか定まらないが、それが零であるか非零であるかは不変な性質である。(1) からはまた、非零因子を除けば、判別式を二つの異なる基底から、すなわち $|\mathit{Sp}(a_i b_j)|$ として計算できることも従う。
 
 $\mo$ が冪零イデアル $\mc$ をもてば、判別式は零になる。
 
@@ -17329,8 +17329,8 @@ $\mo$ が冪零イデアル $\mc$ をもてば、判別式は零になる。
 の形に選び、$c_1,\ldots,c_r$ が $\mc$ の基底をなすようにする。すると判別行列は、行列式に必要な上ブロックの意味で
 \[
         \begin{pmatrix}
-        \operatorname{Sp}(c_i c_j)&\operatorname{Sp}(c_i d_j)\\
-        \operatorname{Sp}(d_i c_j)&\operatorname{Sp}(d_i d_j)
+        \mathit{Sp}(c_i c_j)&\mathit{Sp}(c_i d_j)\\
+        \mathit{Sp}(d_i c_j)&\mathit{Sp}(d_i d_j)
         \end{pmatrix}
         =
         \begin{pmatrix}
@@ -17441,7 +17441,7 @@ $a_1,\ldots,a_h$ を有限群の元とし、標数が $h$ を割らない体上�
 \[
         K_a=\sum s^{-1}as,\tag{1}
 \]
-をいう。ただし和は相異なる共役元 $s^{-1}as$ だけにわたる。類 $K_a$ は中心元である。すべての群元と可換だからである。これらは中心を生成する。実際、群環の元 $\sum_i \alpha_i a_i$ がすべての $s$ と可換であるなら
+をいう。ただし和は相異なる共役元 $s^{-1}as$ だけにわたる。類 $K_a$ は中心元である。すべての群元と可換だからである。これらは中心を生成する。実際、群環の元 $\sum \alpha_i a_i$ がすべての $s$ と可換であるなら
 \[
         \sum_i\alpha_i a_i=s^{-1}\biggl(\sum_i\alpha_i a_i\biggr)s
         =\sum_i\alpha_i(s^{-1}a_i s),
@@ -18409,7 +18409,7 @@ R. Brauer は分解体の理論を、可換の場合のこの表現論と非有�
 であり、したがって
 \[
         x_i\equiv x_{l+1}\alpha_{i,l+1}+\ldots+x_n\alpha_{i,n}
-        \pmod{\frL},\qquad i=1,\ldots,\ell.
+        \pmod{\frL},\qquad i=1,\ldots,l.
 \]
 従って対応する \(z_i\) は \(\frL\) に属し、\(\frL\) を尽くす。
 
@@ -18750,7 +18750,7 @@ R. Brauer は分解体の理論を、可換の場合のこの表現論と非有�
 \paragraph{1. 可換単純系の分解体と部分分解体。}
 可換系 \(Z\) を \(\mathsf{P}\) 上単純、従って体とし、\(\Omega\) を \(\mathsf{P}\) の代数的閉拡大体とする。\(Z_\Omega\) が根基を持たない系であり続けることは、\(Z\) が \(\mathsf{P}\) 上分離的、すなわち第一種拡大であることと同値であることが知られている。このときに限り、\(P\) 上の階数と同じだけの一次同型写像を \(\Omega\) へ持ち、従って同じだけの相異なる表現を持つ。この場合それらは表現類と一致する。
 
-\(Z_\Omega\) に根基が現れる可能性、従って絶対単純成分への直和分解が必ずしも起こらない可能性は、次の定義へ導く。\(P\) の拡大体 \(\Lambda\) は、\(Z_\Lambda\) が一次の組成因子へ分解する、言い換えればすべての絶対既約表現がすでに \(\Lambda\) にあるとき、分解体と呼ばれる。\(P\) の拡大体 \(T\) は、\(Z_{\mathsf{T}}\) が少なくとも一つの一次組成因子を分離する、言い換えれば \(Z\) の少なくとも一つの絶対既約表現が \(\mathsf{T}\) に存在するとき、部分分解体と呼ばれる。
+\(Z_\Omega\) に根基が現れる可能性、従って絶対単純成分への直和分解が必ずしも起こらない可能性は、次の定義へ導く。\(P\) の拡大体 \(\Lambda\) は、\(Z_\Lambda\) が一次の組成因子へ分解する、言い換えればすべての絶対既約表現がすでに \(\Lambda\) にあるとき、分解体と呼ばれる。\(P\) の拡大体 \(\mathsf{T}\) は、\(Z_{\mathsf{T}}\) が少なくとも一つの一次組成因子を分離する、言い換えれば \(Z\) の少なくとも一つの絶対既約表現が \(\mathsf{T}\) に存在するとき、部分分解体と呼ばれる。
 
 分解体と部分分解体は次の定理によって特徴づけられる。
 
@@ -18793,7 +18793,7 @@ R. Brauer は分解体の理論を、可換の場合のこの表現論と非有�
 ここから、\(Z\) がガロアである場合には、§6, 3 とまったく同じように、同型の逆と合成することによって自己同型群と通常の定式化へ移る。部分群についての対応する主張は、冪等元の考察から従う。この考察はそれ自体にも意義がある。
 
 \paragraph{3. \(Z_\Omega\) の冪等元。}
-\(S\) を、\(Z\) を個々の \(\mathsf{Z}^{(i)}\) へ送る \(n\) 個の置換とする。つまり、\(Z\to Z_1\) と \(Z\to\mathsf{Z}^{(i)}\) の同型の合成であり、前者は \(Z\to Z_1\) の相反である。体 \(Z\) はガロアである必要はない。\(a\in Z_Z\) に対し、置換 \(S\) は \(Z\) 上恒等的であると約束することにより作用素として定義される。したがって各 \(a\) について、\(Z_{\mathsf{Z}^{(i)}}\) に属する共役 \(a^S\) が定義される。この約束のもとで次の定理が成り立つ。
+\(S\) を、\(Z\) を個々の \(\mathsf{Z}^{(i)}\) へ送る \(n\) 個の置換とする。つまり、\(Z\to Z_1\) と \(Z\to\mathsf{Z}^{(i)}\) の同型の合成であり、前者は \(Z\to Z_1\) の相反である。体 \(Z\) はガロアである必要はない。\(a\in Z_{\mathsf{Z}}\) に対し、置換 \(S\) は \(Z\) 上恒等的であると約束することにより作用素として定義される。したがって各 \(a\) について、\(Z_{\mathsf{Z}^{(i)}}\) に属する共役 \(a^S\) が定義される。この約束のもとで次の定理が成り立つ。
 
 \paragraph{定理。}
 \(Z_\Omega\) の \(n\) 個の冪等元 \(e^{(i)}\) は共役である：
@@ -18880,7 +18880,7 @@ R. Brauer は分解体の理論を、可換の場合のこの表現論と非有�
 \[
         a_1\beta_1^S+\ldots+a_n\beta_n^S
 \]
-はすべて、\(Z/P\) の別の基底
+はすべて、\(\mathsf{Z}/\mathsf{P}\) の別の基底
 \[
         a_1',\ldots,a_n'
 \]
@@ -18906,7 +18906,7 @@ R. Brauer は分解体の理論を、可換の場合のこの表現論と非有�
 \]
 上の単純代数となる。置換 \(S\) は、\(A\) 上恒等的であると約束することにより、\(A_\Omega\) に対する作用素として定義される。
 
-実際、§8, 3 により冪等元は共役であるから、\(A\) に対する置換の定義により成分 \(e^S A_\Omega\) も共役である。\(A\) は両側単純なので、\(e^S A_\Omega\) は環として \(A\) に同型である。さらに \(e^SA_\Omega=e^S A_{Z^S}\) である。なぜなら \(e^S Z_\Omega=e^S Z\) だからである。従って中心は係数領域と一致し、成分は正規代数である。
+実際、§8, 3 により冪等元は共役であるから、\(A\) に対する置換の定義により成分 \(e^S A_\Omega\) も共役である。\(A\) は両側単純なので、\(e^S A_\Omega\) は環として \(A\) に同型である。さらに \(e^SA_\Omega=e^S A_{\mathsf{Z}^S}\) である。なぜなら \(e^S Z_\Omega=e^S Z\) だからである。従って中心は係数領域と一致し、成分は正規代数である。
 
 §7, 2 の結果からさらに次が従う。\(A\) が \(\mathsf{P}\) 上の単純系で、中心 \(Z\) が \(\mathsf{P}\) 上分離的なら、任意の有限または無限拡大体 \(\Omega\) に対して \(A_\Omega\) も根基を持たず、従って完全可約である。実際、§7, 2 により \(e^S A_\Omega\) は任意の係数拡大の後も単純であり、根基を持たない。従って直和についても同じである。この直和は \(A_\Omega\) であり、また \(\Omega\) が \(Z\) の分解体でないときには \(A_\Omega\) から係数拡大によって得られる。
 
@@ -19208,8 +19208,8 @@ u^f=\alpha=e_{E,E}e_{R,R^{f-1}}\ldots e_{R,R}
 
 この節では \(\Omega\) を任意の基礎体とする。\(k/\Omega\) は \(n\) 次のガロア分離拡大、\(\Gg\) は元 \(\mathrm{S},\mathrm{T},\ldots\) をもつガロア群とし、\(u_s,u_t,\ldots\) は対応する作用素とする。因子系一をもつ接合積、したがって分裂代数
 \[
-        K=\Gg\ast k=u_{S_1}k+\ldots+u_{S_n}k,\qquad
-        u_Su_T=u_{ST},
+        \mathrm{K}=\Gg\ast k=u_{s_1}k+\ldots+u_{s_n}k,\qquad
+        u_su_t=u_{st},
 \]
 を考える。ただし
 \[
