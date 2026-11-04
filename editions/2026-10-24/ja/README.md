@@ -24,7 +24,7 @@
 
 原著者はEmmy Noetherおよび各作品に記載する共著者である。講義録はM. Deuringの筆録による。日本語訳はAIによる翻訳。初版の制作主体はManuscript Typesetting Project / OpenAI Codexであり、当時の正確なモデルは現存する来歴資料からは確定していない。本版のAIによる訂正・組版：OpenAI Codex — GPT-6 Astra、Ultra。発行者による人間の翻訳または学術的査読を示すものではない。
 
-底本：[日本語版2026-08-13 r10](https://doi.org/10.5281/zenodo.21921485)、[ドイツ語版ED0014/v051](https://doi.org/10.5281/zenodo.21908301)。これらのDOIは底本の識別子であり、今回のGitHub版に付与された識別子ではない。各作品の原刊情報、署名および引用は本文に記載する。
+底本：[日本語版2026-08-13 r10](https://github.com/KokunoYumeto/emmy-noether-ja/releases/tag/ja-r10-20260813)、ドイツ語版ED0014/v051。各作品の原刊情報、署名および引用は本文に記載する。
 
 ## 権利
 
