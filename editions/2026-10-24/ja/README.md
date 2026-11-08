@@ -28,8 +28,8 @@
 
 ## 権利
 
-原著および保護される派生的寄与の権利は、それぞれの権利者に帰属する。本版は、権利者が異議を唱えないであろうとの発行者の推定に基づき、非商用かつ純粋に教育的な目的のために無料で提供する。これは推定であり、許諾が確認されたことを意味しない。無料で閲覧できること自体は、派生版の公開を許可するものではない。
+Emmy Noether の著作はパブリックドメインである。AI による翻訳・訂正・組版について発行者が権利を有する範囲で、それらの権利は [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja) によりパブリックドメインに提供される。M. Deuring が筆録した講義、H. Kapferer の論文、および明記された共著者の寄与は、それぞれの法的地位を保つ。本版は非営利の教育目的で公開するものであり、発行者は自らが有しない権利を主張しない。
 
-権利者は[GitHubのissue](https://github.com/KokunoYumeto/emmy-noether-ja/issues/new)から異議を申し出ることができる。発行者は権利者の要請に応じ、該当資料を取り下げる。本版による新たな包括的ライセンスの付与またはパブリックドメインへの提供は行わない。旧版の権利表示は、その旧版と実際に付与された権利の範囲に限り存続する。
+権利者は[GitHubのissue](https://github.com/KokunoYumeto/emmy-noether-ja/issues/new)から異議を申し出ることができる。発行者は権利者の要請に応じ、該当資料を取り下げる。旧版の権利表示は、その旧版と実際に付与された権利の範囲に限り存続する。
 
 [著者・来歴・権利](reader-edition/RIGHTS.md) · [旧版の権利表示](reader-edition/NOTICE_HISTORIQUE.md) · [旧版](https://github.com/KokunoYumeto/emmy-noether-ja/releases/tag/ja-r10-20260813)
