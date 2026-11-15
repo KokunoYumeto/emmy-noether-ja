@@ -18,7 +18,7 @@ translation. What was done in each round, the measured figures and what is still
 
 ## 制作方法
 
-日本語訳は AI による翻訳です。翻訳は OpenAI Codex のモデルが行いましたが、どのモデルが翻訳したかは記録されていません。本版の底本は、2026年8月13日の日本語版 r10 とドイツ語版 ED0014/v051 です。本版の訂正と組版は、OpenAI Codex — GPT-6 Astra（推論設定 Ultra、2026年10月23–24日）と Claude Opus 5.5（Anthropic、2026年10月26–27日）が行いました。Claude Opus 5.5 は、数式を Noether の印刷ページから読んだドイツ語本文と照合して合わせました。組版プログラムは OpenAI Codex — GPT-6 Astra（Ultra、2026年10月24日）が作成しました。
+日本語訳は AI による翻訳です。翻訳は OpenAI Codex のモデルが行いました（ユーザーの説明によれば、主に GPT-5.6 Sol、推論設定 ultra）。本版の底本は、2026年8月13日の日本語版 r10 とドイツ語版 ED0014/v051 です。本版の訂正と組版は、OpenAI Codex — GPT-6 Astra（推論設定 Ultra、2026年10月23–24日）と Claude Opus 5.5（Anthropic、推論設定 max、2026年10月26–27日）が行いました。Claude Opus 5.5 は、数式を Noether の印刷ページから読んだドイツ語本文と照合して合わせました。組版プログラムは OpenAI Codex — GPT-6 Astra（Ultra、2026年10月24日）が作成しました。
 
 ## 現状
 

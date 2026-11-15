@@ -30,7 +30,7 @@ translation. What was done in each round, the measured figures and what is still
 
 底本：[日本語版2026-08-13 r10](https://github.com/KokunoYumeto/emmy-noether-ja/releases/tag/ja-r10-20260813)、ドイツ語版ED0014/v051。各作品の原刊情報、署名および引用は本文に記載する。
 
-継承した翻訳の正確なモデルと推論設定は、現存する制作記録からは確定していません。 AIによる訂正・組版：2026年10月23–24日；Claude Opus 5.5（Anthropic）、2026年10月26–27日（数式は Noether の印刷ページから読んだドイツ語本文と照合）。刊行日：2026年10月27日。
+継承した翻訳は、ユーザーの説明によれば、主に GPT-5.6 Sol（OpenAI Codex、推論設定 ultra）が行いました。 AIによる訂正・組版：2026年10月23–24日；Claude Opus 5.5（Anthropic、推論設定 max）、2026年10月26–27日（数式は Noether の印刷ページから読んだドイツ語本文と照合）。刊行日：2026年10月27日。
 
 直接入手できる累積LaTeXには、各本文とプリアンブルが編集可能なコードとして収録されています。付属のPythonプログラムで元のファイル構成を展開し、XeLaTeXで組版した各PDFを読む順序で結合します。画像やPDFページを翻刻の代わりには用いません。ZIPには元の構成、同じ累積LaTeX、組版プログラムを収録しています。Python 3、pypdf、および各プリアンブルに指定されたTeXパッケージとフォントが必要です。TeXとフォントの版によってPDFのバイト列は変わる場合があります。固定された内部組版日は刊行日ではありません。
 
