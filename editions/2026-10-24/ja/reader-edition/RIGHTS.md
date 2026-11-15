@@ -2,7 +2,7 @@
 
 原著者はEmmy Noetherおよび各作品に記載された共著者である。1929/30年冬学期の講義録はM. Deuringの筆録による。H. Kapfererの論文とE. Noetherの補遺についても、それぞれの署名と刊行情報を保持する。
 
-日本語訳はAIによる翻訳である。日本語版2026-08-13 r10の制作主体はManuscript Typesetting Project / OpenAI Codex。当時の正確なモデルは現存する来歴資料からは確定していない。本版のAIによる訂正・組版：OpenAI Codex — GPT-6 Astra、Ultra。発行者による人間の翻訳または学術的査読を示すものではない。
+日本語訳はAIによる翻訳である。日本語版2026-08-13 r10の制作主体はManuscript Typesetting Project / OpenAI Codex。主に GPT-5.6 Sol（推論設定 ultra）が翻訳した。本版のAIによる訂正・組版：OpenAI Codex — GPT-6 Astra、推論設定 Ultra。発行者による人間の翻訳または学術的査読を示すものではない。
 
 - 日本語版2026-08-13 r10：[リリース ja-r10-20260813](https://github.com/KokunoYumeto/emmy-noether-ja/releases/tag/ja-r10-20260813)
 - ドイツ語版ED0014/v051

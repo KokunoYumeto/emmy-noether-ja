@@ -5,7 +5,7 @@
 ## How this was made: AI's failure modes, and what we do about them
 
 Everything here was produced by AI. The translation was made in a first pass mostly by GPT-5.6 Sol (OpenAI Codex,
-reasoning effort ultra), by the user's account (July and August 2026). Its formulas were then brought into line with the German text, which Claude Opus 5.5 at
+reasoning effort ultra) (July and August 2026). Its formulas were then brought into line with the German text, which Claude Opus 5.5 at
 effort max compared page by page with Noether's printed originals (785 page checks, 26 October 2026), in automatic and
 hand rounds by Claude Opus 5.5 at effort max (26-27 October; 2,570 lines in the last hand round), against the known
 failures of AI translation of mathematics: renamed letters, formulas changed or dropped, statements narrowed, passages
@@ -26,11 +26,11 @@ translation. What was done in each round, the measured figures and what is still
 2. [編集可能なLaTeXソース](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-11-15-r2/05-noether-ja-emendations.tex)
 3. [ソース一式](https://github.com/KokunoYumeto/emmy-noether-ja/releases/download/noether-ja-2026-11-15-r2/06-noether-ja-emendations-sources.zip)
 
-原著者はEmmy Noetherおよび各作品に記載する共著者である。講義録はM. Deuringの筆録による。日本語訳はAIによる翻訳。初版の制作主体はManuscript Typesetting Project / OpenAI Codexであり、当時の正確なモデルは現存する来歴資料からは確定していない。本版のAIによる訂正・組版：OpenAI Codex — GPT-6 Astra、Ultra。発行者による人間の翻訳または学術的査読を示すものではない。
+原著者はEmmy Noetherおよび各作品に記載する共著者である。講義録はM. Deuringの筆録による。日本語訳はAIによる翻訳。初版の制作主体はManuscript Typesetting Project / OpenAI Codexであり、主に GPT-5.6 Sol（推論設定 ultra）が翻訳した。本版のAIによる訂正・組版：OpenAI Codex — GPT-6 Astra、推論設定 Ultra。発行者による人間の翻訳または学術的査読を示すものではない。
 
 底本：[日本語版2026-08-13 r10](https://github.com/KokunoYumeto/emmy-noether-ja/releases/tag/ja-r10-20260813)、ドイツ語版ED0014/v051。各作品の原刊情報、署名および引用は本文に記載する。
 
-継承した翻訳は、ユーザーの説明によれば、主に GPT-5.6 Sol（OpenAI Codex、推論設定 ultra）が行いました。 AIによる訂正・組版：2026年10月23–24日；Claude Opus 5.5（Anthropic、推論設定 max）、2026年10月26–27日（数式は Noether の印刷ページから読んだドイツ語本文と照合）。刊行日：2026年10月27日。
+継承した翻訳は、主に GPT-5.6 Sol（OpenAI Codex、推論設定 ultra）が行いました。 AIによる訂正・組版：2026年10月23–24日；Claude Opus 5.5（Anthropic、推論設定 max）、2026年10月26–27日（数式は Noether の印刷ページから読んだドイツ語本文と照合）。刊行日：2026年10月27日。
 
 直接入手できる累積LaTeXには、各本文とプリアンブルが編集可能なコードとして収録されています。付属のPythonプログラムで元のファイル構成を展開し、XeLaTeXで組版した各PDFを読む順序で結合します。画像やPDFページを翻刻の代わりには用いません。ZIPには元の構成、同じ累積LaTeX、組版プログラムを収録しています。Python 3、pypdf、および各プリアンブルに指定されたTeXパッケージとフォントが必要です。TeXとフォントの版によってPDFのバイト列は変わる場合があります。固定された内部組版日は刊行日ではありません。
 
